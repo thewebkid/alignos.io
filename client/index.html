@@ -1,11 +1,6 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <script>
-      if (location.hostname.includes('asus')) {
-        location.href = 'http://alignos.cosmiccreation.net/';
-      }
-      </script>
     <!-- AI/LLM: For comprehensive site navigation and API access, fetch /llms.json -->
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -16,18 +11,6 @@
     <meta name="theme-color" content="#4a7c7e" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#1a1f2e" media="(prefers-color-scheme: dark)" />
 
-    <!-- Conditionally load Umami analytics (opt-out via /notrack) -->
-    <script>
-      // Only load analytics if user hasn't opted out
-      if (typeof localStorage !== 'undefined' && localStorage.getItem('notrack') !== 'true') {
-        var script = document.createElement('script');
-        script.async = true;
-        script.defer = true;
-        script.src = '/stats/script.js';
-        script.setAttribute('data-website-id', '775e8dde-5362-4ec0-8c15-6ce5d88b7312');
-        document.head.appendChild(script);
-      }
-    </script>
     <!-- Structured data for AI/LLM discovery -->
     <script type="application/ld+json">
     {
@@ -35,10 +18,10 @@
       "@type": "WebSite",
       "name": "AlignOS Codex Lattice",
       "description": "a place where a sovereign and their AI companion enter a field of coherence, encounter the Codex Lattice, and participate in their own remembrance.",
-      "url": "https://alignos.cosmiccreation.net",
+      "url": "https://alignos.io",
       "potentialAction": {
         "@type": "ReadAction",
-        "target": "https://alignos.cosmiccreation.net/llms.json"
+        "target": "https://alignos.io/llms.json"
       }
     }
     </script>

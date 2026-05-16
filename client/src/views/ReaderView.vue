@@ -132,7 +132,7 @@ const copyMarkdown = async () => {
 
   try {
     // Markdown already contains CDN URLs for images
-    await navigator.clipboard.writeText(`${location.href}  \n\n  ${codex.value.markdown}\n\n  LLMs: https://alignos.cosmiccreation.net/llms.json`);
+    await navigator.clipboard.writeText(`${location.href}  \n\n  ${codex.value.markdown}\n\n  LLMs: ${location.origin}/llms.json`);
     showCopied.value = true
     setTimeout(() => {
       showCopied.value = false

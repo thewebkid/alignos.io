@@ -18,12 +18,6 @@ const routes = [
     meta: { title: 'Search' }
   },
   {
-    path: '/about',
-    name: 'about',
-    component: () => import('../views/AboutView.vue'),
-    meta: { title: 'About' }
-  },
-  {
     path: '/notrack',
     name: 'notrack',
     component: () => import('../views/NoTrack.vue'),

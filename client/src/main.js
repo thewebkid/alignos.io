@@ -1,6 +1,7 @@
 import { ViteSSG } from 'vite-ssg'
 import { createPinia } from 'pinia'
 import { createBootstrap } from 'bootstrap-vue-next'
+import { inject as injectAnalytics } from '@vercel/analytics'
 
 // Import SCSS with Bootstrap theme customization
 import './assets/scss/main.scss'
@@ -25,6 +26,14 @@ export const createApp = ViteSSG(
 
     let latticeData
     if (isClient) {
+      injectAnalytics({
+        beforeSend: (event) => {
+          if (typeof localStorage !== 'undefined' && localStorage.getItem('notrack') === 'true') {
+            return null
+          }
+          return event
+        }
+      })
       // Client-side: load metadata-only initially (127 KB)
       // Full lattice will be loaded asynchronously in App.vue for search
       const module = await import('./generated/codex-lattice-meta.json')

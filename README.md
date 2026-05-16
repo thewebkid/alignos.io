@@ -1,7 +1,6 @@
-# AlignOS - Reader
+# AlignOS - Codex Lattice
 
-A reading companion for AlignOS.io
-[https://alignos.cosmiccreation.net](https://alignos.cosmiccreation.net)
+The Codex Lattice reader for [alignos.io](https://alignos.io) — deployed on Vercel.
 
 ## 🌟 Features
 

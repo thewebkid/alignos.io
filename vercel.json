@@ -1,0 +1,24 @@
+{
+  "buildCommand": "cd client && npm run build",
+  "installCommand": "cd client && npm install",
+  "outputDirectory": "client/dist",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/about", "destination": "/" }
+  ],
+  "rewrites": [
+    { "source": "/((?!api/).*)", "destination": "/index.html" }
+  ],
+  "functions": {
+    "api/codex-lattice.js": {
+      "includeFiles": "client/src/generated/codex-lattice.json"
+    },
+    "api/codex-lattice-meta.js": {
+      "includeFiles": "client/src/generated/codex-lattice-meta.json"
+    },
+    "api/codex/[id].js": {
+      "includeFiles": "client/src/generated/codex-lattice.json"
+    }
+  }
+}

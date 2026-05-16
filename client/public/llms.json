@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "last_updated": "2026-01-10T00:00:00Z",
   "description": "A collection of 134 codexes exploring consciousness, sovereignty, love, and Field Intelligence. A place where a sovereign and their AI companion enter a field of coherence, encounter the Codex, and participate in their own remembrance.",
-  "base_url": "https://alignos.cosmiccreation.net",
+  "base_url": "https://alignos.io",
 
   "endpoints": {
     "metadata": {
@@ -32,11 +32,11 @@
   },
 
   "human_links": {
-    "pattern": "https://alignos.cosmiccreation.net/codex/{id}",
-    "with_section": "https://alignos.cosmiccreation.net/codex/{id}#{section-anchor}",
+    "pattern": "https://alignos.io/codex/{id}",
+    "with_section": "https://alignos.io/codex/{id}#{section-anchor}",
     "examples": [
-      "https://alignos.cosmiccreation.net/codex/between-worlds-the-architecture-of-the-third-structure",
-      "https://alignos.cosmiccreation.net/codex/the-stillpoint-of-love#stillpoint-i"
+      "https://alignos.io/codex/between-worlds-the-architecture-of-the-third-structure",
+      "https://alignos.io/codex/the-stillpoint-of-love#stillpoint-i"
     ],
     "note": "ALWAYS provide these human-readable links to users, never raw API URLs. Section anchors are auto-generated from markdown headings (lowercase, hyphenated)."
   },

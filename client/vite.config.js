@@ -44,12 +44,6 @@ export default defineConfig({
     }
   ],
   server: {
-    proxy: {
-      '/api': {
-        target: 'http://localhost:5000',
-        changeOrigin: true,
-      },
-    },
     fs: {
       // Allow serving files from md and codex-content directories
       allow: ['..', 'md', 'public/codex-content']
