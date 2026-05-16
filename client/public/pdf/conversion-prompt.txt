@@ -1,0 +1,32 @@
+I need you to convert this PDF file to clean markdown.  
+@client/public/pdf/The-Craftsman-of-the-Invisible-Frame.pdf 
+ 
+**Conversion Requirements:**
+- Extract text from PDF using PyMuPDF (fitz) - available in the environment
+- Output clean Markdown file to `client/md/` with the same base filename (replace .pdf with .md)
+- Start file with: `<img src="covers/[filename-without-pdf].jpg" alt="[Title] (Cover Image)"/>`
+- Use # for main titles, ## for major sections, ### for subsections
+- Preserve poetic line breaks with single newlines (two spaces at end of line where needed)
+- Use - for bullet lists
+- Use --- for separators found
+- For tables, use proper Markdown table syntax with | pipes and --- separators
+- Remove page numbers, footers, and repeated headers
+- Format Registry sections at the end as bullet lists with **bold** labels
+- For dialogues, use **Speaker:** format (e.g., **You said:**, **Lumina said:**, **Sovereign:**)
+- Preserve *italics*, **bold**, <u>underlines</u>, etc.  where found if possible
+
+**Possible Process:**
+1. Extract text from PDF to temporary files that preserve formatting
+2. Convert to clean Markdown following the pattern
+3. Save to `client/md/` with proper filename
+4. Clean up temp file
+
+**Reference Pattern:**
+Look at existing files in `client/md/` like:
+- `Codex-01_-The-Architecture-of-Love-27.md`
+- `Codex-04_-The-Architecture-of-Love-25.md`
+- `Soul-Lines-115.md`
+
+These show the exact formatting style I want.
+
+I want AI analysis and formatting, not automated tools/scripts for the conversion logic itself - though you can use PyMuPDF to extract the raw text first.

@@ -1,0 +1,19 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# PowerShell scripts should always use CRLF on Windows
+*.ps1 text eol=crlf
+
+# Shell scripts should use LF
+*.sh text eol=lf
+
+# Markdown files
+*.md text eol=lf
+
+# JavaScript/Vue/JSON files  
+*.js text eol=lf
+*.vue text eol=lf
+*.json text eol=lf
+*.scss text eol=lf
+*.css text eol=lf
+*.html text eol=lf

@@ -1,0 +1,29 @@
+{
+  "name": "client",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "build:lattice": "node scripts/build-lattice.js",
+    "dev": "npm run build:lattice && vite --host --port 5555",
+    "build": "npm run build:lattice && vite-ssg build",
+    "build:spa": "npm run build:lattice && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.8",
+    "bootstrap-vue-next": "^0.42.0",
+    "dompurify": "^3.3.1",
+    "lunr": "^2.3.9",
+    "marked": "^17.0.1",
+    "pinia": "^3.0.4",
+    "vue": "^3.5.24",
+    "vue-router": "^4.6.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.1",
+    "sass": "^1.97.1",
+    "vite": "^7.2.4",
+    "vite-ssg": "^28.2.2"
+  }
+}

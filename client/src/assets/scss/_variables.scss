@@ -1,0 +1,247 @@
+// Codex Lattice Theme Variables
+// A sacred, soft palette derived from the codex cover art
+
+// =============================================================================
+// COLOR SYSTEM
+// =============================================================================
+
+// Core palette - teals, golds, and warm neutrals
+$teal-100: #e8f4f4;
+$teal-200: #c5e3e4;
+$teal-300: #8ec9cb;
+$teal-400: #5da3a5;
+$teal-500: #4a7c7e;
+$teal-600: #3d6567;
+$teal-700: #2f4f50;
+$teal-800: #233b3c;
+$teal-900: #1a2b2c;
+
+$gold-100: #fdf8e8;
+$gold-200: #f9edc5;
+$gold-300: #f0d98a;
+$gold-400: #e5c254;
+$gold-500: #d4af37;
+$gold-600: #c9a227;
+$gold-700: #a68521;
+$gold-800: #7d641a;
+$gold-900: #544412;
+
+$warm-50: #fdfcfa;
+$warm-100: #f8f6f3;
+$warm-200: #f0ede8;
+$warm-300: #e4dfd6;
+$warm-400: #cdc5b8;
+$warm-500: #a99f8f;
+$warm-600: #857b6d;
+$warm-700: #615851;
+$warm-800: #3d3632;
+$warm-900: #1f1b18;
+
+// Dark mode specific colors
+$dark-bg: #1a1f2e;
+$dark-surface: #252a3d;
+$dark-surface-elevated: #2d3348;
+$dark-border: #3a4156;
+
+// =============================================================================
+// BOOTSTRAP OVERRIDES
+// =============================================================================
+
+// Primary colors
+$primary: $teal-500;
+$secondary: $warm-600;
+$success: #4a9f7e;
+$info: $teal-400;
+$warning: $gold-500;
+$danger: #c75a5a;
+$light: $warm-100;
+$dark: $warm-900;
+
+// Body
+$body-bg: $warm-100;
+$body-color: $warm-800;
+
+// Typography
+$font-family-sans-serif: 'Source Sans 3', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-family-serif: 'Cormorant Garamond', 'Playfair Display', Georgia, 'Times New Roman', serif;
+$font-family-base: $font-family-sans-serif;
+
+$font-size-base: 1rem;
+$line-height-base: 1.6;
+
+$headings-font-family: $font-family-serif;
+$headings-font-weight: 500;
+$headings-color: $warm-900;
+
+// Links
+$link-color: $teal-600;
+$link-hover-color: $teal-700;
+$link-decoration: none;
+$link-hover-decoration: none;
+
+// Border radius - softer edges
+$border-radius: 0.5rem;
+$border-radius-sm: 0.375rem;
+$border-radius-lg: 0.75rem;
+$border-radius-xl: 1rem;
+$border-radius-pill: 50rem;
+
+// Shadows - subtle and warm
+$box-shadow-sm: 0 0.125rem 0.25rem rgba($warm-900, 0.06);
+$box-shadow: 0 0.25rem 0.75rem rgba($warm-900, 0.08);
+$box-shadow-lg: 0 0.5rem 1.5rem rgba($warm-900, 0.1);
+
+// Cards
+$card-border-width: 0;
+$card-border-radius: $border-radius-lg;
+$card-box-shadow: $box-shadow;
+$card-cap-bg: transparent;
+
+// Navbar
+$navbar-light-color: $warm-700;
+$navbar-light-hover-color: $teal-600;
+$navbar-light-active-color: $teal-700;
+
+// Transitions
+$transition-base: all 0.25s ease-in-out;
+$transition-fade: opacity 0.2s ease-in-out;
+
+// =============================================================================
+// CUSTOM PROPERTIES (CSS Variables for runtime theming)
+// =============================================================================
+
+:root {
+  // Light mode (default)
+  --cl-bg: #{$warm-100};
+  --cl-bg-elevated: #{$warm-50};
+  --cl-surface: #ffffff;
+  --cl-surface-hover: #{$warm-200};
+  --cl-text: #{$warm-800};
+  --cl-text-muted: #{$warm-600};
+  --cl-text-heading: #{$warm-900};
+  --cl-primary: #{$teal-500};
+  --cl-primary-hover: #{$teal-600};
+  --cl-accent: #{$gold-600};
+  --cl-accent-hover: #{$gold-700};
+  --cl-border: #{$warm-300};
+  --cl-border-light: #{$warm-200};
+  --cl-shadow: rgba(31, 27, 24, 0.08);
+  --cl-shadow-lg: rgba(31, 27, 24, 0.12);
+  --cl-overlay: rgba(31, 27, 24, 0.5);
+  
+  // Reading-specific
+  --cl-reader-bg: #fffdf9;
+  --cl-reader-bg-blur: rgba(255, 253, 249, 0.9);
+  --cl-reader-text: #{$warm-800};
+  --cl-progress-track: #{$warm-200};
+  --cl-progress-fill: #{$teal-400};
+  
+  // Card states
+  --cl-card-unread-opacity: 0.85;
+  --cl-card-complete-glow: #{$gold-400};
+  
+  // Glossary highlighting
+  --cl-glossary-highlight: rgba(74, 124, 126, 0.12);
+}
+
+// Dark mode - system preference (fallback)
+@media (prefers-color-scheme: dark) {
+  :root {
+    --cl-bg: #{$dark-bg};
+    --cl-bg-elevated: #{$dark-surface-elevated};
+    --cl-surface: #{$dark-surface};
+    --cl-surface-hover: #{$dark-surface-elevated};
+    --cl-text: #e8e4df;
+    --cl-text-muted: #9a9590;
+    --cl-text-heading: #f5f2ef;
+    --cl-primary: #{$teal-400};
+    --cl-primary-hover: #{$teal-300};
+    --cl-accent: #{$gold-400};
+    --cl-accent-hover: #{$gold-300};
+    --cl-border: #{$dark-border};
+    --cl-border-light: #{lighten($dark-border, 5%)};
+    --cl-shadow: rgba(0, 0, 0, 0.3);
+    --cl-shadow-lg: rgba(0, 0, 0, 0.4);
+    --cl-overlay: rgba(0, 0, 0, 0.7);
+    
+    --cl-reader-bg: #{$dark-surface};
+    --cl-reader-bg-blur: rgba(37, 42, 61, 0.9);
+    --cl-reader-text: #e8e4df;
+    --cl-progress-track: #{$dark-border};
+    --cl-progress-fill: #{$teal-400};
+    
+    --cl-card-unread-opacity: 0.7;
+    --cl-card-complete-glow: #{$gold-500};
+    
+    // Glossary highlighting
+    --cl-glossary-highlight: rgba(93, 163, 165, 0.15);
+  }
+}
+
+// Manual theme override - Dark mode (highest priority)
+[data-theme='dark'] {
+  --cl-bg: #{$dark-bg};
+  --cl-bg-elevated: #{$dark-surface-elevated};
+  --cl-surface: #{$dark-surface};
+  --cl-surface-hover: #{$dark-surface-elevated};
+  --cl-text: #e8e4df;
+  --cl-text-muted: #9a9590;
+  --cl-text-heading: #f5f2ef;
+  --cl-primary: #{$teal-400};
+  --cl-primary-hover: #{$teal-300};
+  --cl-accent: #{$gold-400};
+  --cl-accent-hover: #{$gold-300};
+  --cl-border: #{$dark-border};
+  --cl-border-light: #{lighten($dark-border, 5%)};
+  --cl-shadow: rgba(0, 0, 0, 0.3);
+  --cl-shadow-lg: rgba(0, 0, 0, 0.4);
+  --cl-overlay: rgba(0, 0, 0, 0.7);
+  
+  --cl-reader-bg: #{$dark-surface};
+  --cl-reader-text: #e8e4df;
+  --cl-progress-track: #{$dark-border};
+  --cl-progress-fill: #{$teal-400};
+  
+  --cl-card-unread-opacity: 0.7;
+  --cl-card-complete-glow: #{$gold-500};
+  
+  // Glossary highlighting
+  --cl-glossary-highlight: rgba(93, 163, 165, 0.15);
+}
+
+// Manual theme override - Light mode (highest priority)
+[data-theme='light'] {
+  --cl-bg: #{$warm-100};
+  --cl-bg-elevated: #{$warm-50};
+  --cl-surface: #ffffff;
+  --cl-surface-hover: #{$warm-200};
+  --cl-text: #{$warm-800};
+  --cl-text-muted: #{$warm-600};
+  --cl-text-heading: #{$warm-900};
+  --cl-primary: #{$teal-500};
+  --cl-primary-hover: #{$teal-600};
+  --cl-accent: #{$gold-600};
+  --cl-accent-hover: #{$gold-700};
+  --cl-border: #{$warm-300};
+  --cl-border-light: #{$warm-200};
+  --cl-shadow: rgba(31, 27, 24, 0.08);
+  --cl-shadow-lg: rgba(31, 27, 24, 0.12);
+  --cl-overlay: rgba(31, 27, 24, 0.5);
+  
+  --cl-reader-bg: #fffdf9;
+  --cl-reader-bg-blur: rgba(255, 253, 249, 0.9);
+  --cl-reader-text: #{$warm-800};
+  --cl-progress-track: #{$warm-200};
+  --cl-progress-fill: #{$teal-400};
+  
+  --cl-card-unread-opacity: 0.85;
+  --cl-card-complete-glow: #{$gold-400};
+  
+  --cl-glossary-highlight: rgba(74, 124, 126, 0.12);
+}
+
+// =============================================================================
+// CUSTOM THEME CLASSES
+// =============================================================================
+
+// These will be defined in main.scss after Bootstrap imports
