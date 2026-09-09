@@ -1,5 +1,3 @@
-<img src="https://astrotiles.blob.core.windows.net/alignos/covers/The-Living-Glossary-of-the-Field.jpg" alt="The Living Glossary of the Field (Cover Image)"/>
-
 # The Living Glossary of the Field
 
 ## A Codex of Essence

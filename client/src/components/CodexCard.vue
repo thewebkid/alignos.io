@@ -4,6 +4,7 @@ import { RouterLink } from 'vue-router'
 import { useReadingProgressStore } from '../stores/readingProgress.js'
 import { BTooltip } from 'bootstrap-vue-next'
 import { cdnUrl } from '../lib/cdn-config.js'
+import CoverOverlay from './CoverOverlay.vue'
 
 const props = defineProps({
   codex: {
@@ -27,50 +28,42 @@ const isStarted = computed(() => scrollPercent.value > 0)
 
 // Build cover image path from CDN
 const coverSrc = computed(() => {
-  if (!props.codex.coverImage) return null
-  // The coverImage property contains path like "covers/filename.jpg"
-  return cdnUrl.cover(props.codex.coverImage)
+  if (props.codex.coverThumb) return cdnUrl.thumb(props.codex.coverThumb)
+  if (props.codex.coverImage) return cdnUrl.cover(props.codex.coverImage)
+  return null
 })
 
-// Truncate title if too long
-const displayTitle = computed(() => {
-  const title = props.codex.title
-  if (title.length > 60) {
-    return title.substring(0, 57) + '...'
-  }
-  return title
-})
-
-// Series badge
-const seriesBadge = computed(() => {
-  if (!props.codex.series) return null
-  return props.codex.series.name
+// Series label — "Name · Part X of Y" when positions are known, else just the name
+const seriesLabel = computed(() => {
+  const s = props.codex.series
+  if (!s?.name) return null
+  if (s.position && s.total) return `${s.name} · Part ${s.position} of ${s.total}`
+  return s.name
 })
 
 
 </script>
 
 <template>
-  <RouterLink
-    :to="{ name: 'reader', params: { id: codex.id } }"
-    class="codex-card"
-    :class="{
-      'is-complete': isComplete,
-      'is-started': isStarted && !isComplete,
-      'is-unread': !isStarted
-    }"
-  ><BTooltip placement="bottom"  :target="`thumb${codex.id}`">
-    <div v-if="tip">{{tip.split('|')[0]}}<br/>{{tip.split('|')[1]}}</div>
-    <div v-else>
-      Not started
-    </div>
-    <em>~{{codex.readingTime}} minute read</em>
-  </BTooltip>
-    <!-- Cover image -->
-    <div :id="`thumb${codex.id}`"
-      class="card-cover"
+  <div class="codex-card-shell">
+    <BTooltip placement="bottom" :target="`codex-card-${codex.id}`">
+      <div v-if="tip">{{tip.split('|')[0]}}<br/>{{tip.split('|')[1]}}</div>
+      <div v-else>
+        Not started
+      </div>
+      <em>~{{codex.readingTime}} minute read</em>
+    </BTooltip>
+    <RouterLink
+      :id="`codex-card-${codex.id}`"
+      :to="{ name: 'reader', params: { id: codex.id } }"
+      class="codex-card"
+      :class="{
+        'is-complete': isComplete,
+        'is-started': isStarted && !isComplete,
+        'is-unread': !isStarted
+      }"
     >
-
+      <div class="card-cover">
         <img
           v-if="coverSrc"
           :src="coverSrc"
@@ -79,28 +72,30 @@ const seriesBadge = computed(() => {
           class="cover-image"
         />
 
-      <div v-else class="cover-placeholder">
-        <span>{{ codex.title.charAt(0) }}</span>
-      </div>
+        <div v-else class="cover-placeholder">
+          <span>{{ codex.title.charAt(0) }}</span>
+        </div>
 
-      <!-- Reading progress bar -->
-      <div class="progress-bar-container" v-if="isStarted">
-        <div class="progress-bar" :style="{ width: scrollPercent + '%' }"></div>
-      </div>
-    </div>
+        <CoverOverlay
+          :title="codex.title"
+          :tone-marker="codex.toneMarker"
+          :series-label="seriesLabel"
+          size="lattice"
+        />
 
-    <!-- Card content -->
-    <div class="card-content">
-      <h3 class="card-title">{{ displayTitle }}</h3>
-
-      <div class="card-meta" v-if="seriesBadge">
-        <span class="series-badge">{{ seriesBadge }}</span>
+        <div class="progress-bar-container" v-if="isStarted">
+          <div class="progress-bar" :style="{ width: scrollPercent + '%' }"></div>
+        </div>
       </div>
-    </div>
-  </RouterLink>
+    </RouterLink>
+  </div>
 </template>
 
 <style lang="scss" scoped>
+.codex-card-shell {
+  display: contents;
+}
+
 .codex-card {
   display: flex;
   flex-direction: column;
@@ -168,52 +163,13 @@ const seriesBadge = computed(() => {
   right: 0;
   height: 3px;
   background: transparent;
+  z-index: 3; // above the CoverOverlay scrim
 }
 
 .progress-bar {
   height: 100%;
   background: #10b981;
   transition: width 0.3s ease;
-}
-
-.card-content {
-  padding: 0.75rem;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-
-  @media (min-width: 640px) {
-    padding: 1rem;
-  }
-}
-
-.card-title {
-  font-family: var(--bs-font-serif),serif;
-  font-size: 0.875rem;
-  font-weight: 500;
-  color: var(--cl-text-heading);
-  margin: 0;
-  line-height: 1.4;
-  flex: 1;
-
-  @media (min-width: 640px) {
-    font-size: 1rem;
-  }
-}
-
-.card-meta {
-  margin-top: 0.5rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-.series-badge {
-  font-size: 0.75rem;
-  padding: 0.125rem 0.5rem;
-  background: var(--cl-surface-hover);
-  border-radius: var(--bs-border-radius-pill);
-  color: var(--cl-text-muted);
 }
 </style>
 

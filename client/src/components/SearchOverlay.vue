@@ -4,6 +4,7 @@ import { useRouter } from 'vue-router'
 import { markdown2Html } from '../lib/markdown.js'
 import { cdnUrl } from '../lib/cdn-config.js'
 import {track} from '../lib/tracker.js';
+import CoverOverlay from './CoverOverlay.vue'
 
 const props = defineProps({
   show: Boolean
@@ -240,12 +241,17 @@ const goToFullResults = () => {
               @click="selectResult(result)"
               @mouseenter="selectedIndex = index"
             >
-              <div class="result-cover" v-if="result.codex?.coverImage">
+              <div class="result-cover" v-if="result.codex?.coverThumb || result.codex?.coverImage">
                 <img
-                  :src="cdnUrl.cover(result.codex.coverImage)"
+                  :src="result.codex.coverThumb ? cdnUrl.thumb(result.codex.coverThumb) : cdnUrl.cover(result.codex.coverImage)"
                   :alt="result.codex.title"
                   loading="lazy"
                   @error="handleImageError"
+                />
+                <CoverOverlay
+                  :title="result.codex.title"
+                  :tone-marker="result.codex.toneMarker"
+                  size="compact"
                 />
               </div>
               <div class="result-content">
@@ -440,6 +446,7 @@ const goToFullResults = () => {
 }
 
 .result-cover {
+  position: relative;
   width: 48px;
   height: 64px;
   border-radius: var(--bs-border-radius-sm);

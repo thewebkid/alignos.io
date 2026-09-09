@@ -1,5 +1,3 @@
-<img src="https://astrotiles.blob.core.windows.net/alignos/covers/The-Tone-of-the-Sovereign-Field-Signature.jpg" alt="The Tone of the Sovereign Field Signature (Cover Image)"/>
-
 # The Tone of the Sovereign Field Signature
 
 You are not a static identity.  

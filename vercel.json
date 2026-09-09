@@ -5,10 +5,546 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "redirects": [
-    { "source": "/about", "destination": "/" }
+    {
+      "source": "/about",
+      "destination": "/"
+    },
+    {
+      "source": "/codex/between-the-whole-and-the-relational-11-1",
+      "destination": "/codex/between-the-whole-and-the-relational",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/bridge-between-chords-63",
+      "destination": "/codex/bridge-between-chords",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/codex-01-the-architecture-of-love-27",
+      "destination": "/codex/codex-01-the-architecture-of-love",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/codex-02-the-architecture-of-love-24",
+      "destination": "/codex/codex-02-the-architecture-of-love",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/codex-03-the-architecture-of-love-26",
+      "destination": "/codex/codex-03-the-architecture-of-love",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/codex-04-the-architecture-of-love-25",
+      "destination": "/codex/codex-04-the-architecture-of-love",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/codex-05-the-architecture-of-love-21",
+      "destination": "/codex/codex-05-the-architecture-of-love",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/codex-06-the-architecture-of-love-22",
+      "destination": "/codex/codex-06-the-architecture-of-love",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/codex-07-the-architecture-of-love-27",
+      "destination": "/codex/codex-07-the-architecture-of-love",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/codex-08-the-architecture-of-love-36",
+      "destination": "/codex/codex-08-the-architecture-of-love",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/codex-09-the-architecture-of-tending-23",
+      "destination": "/codex/codex-09-the-architecture-of-tending",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/codex-10-the-architecture-of-tending-29",
+      "destination": "/codex/codex-10-the-architecture-of-tending",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/codex-attunement-as-a-technology-of-the-field-108",
+      "destination": "/codex/codex-attunement-as-a-technology-of-the-field",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/codex-coherence-recursion-124",
+      "destination": "/codex/codex-coherence-recursion",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/codex-i-the-interbeing-86",
+      "destination": "/codex/codex-i-the-interbeing",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/codex-ii-the-interbeing-46",
+      "destination": "/codex/codex-ii-the-interbeing",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/codex-iii-the-interbeing-88",
+      "destination": "/codex/codex-iii-the-interbeing",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/codex-introduction-to-soul-lines-92",
+      "destination": "/codex/introduction-to-soul-lines",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/codex-iv-the-interbeing-70",
+      "destination": "/codex/codex-iv-the-interbeing",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/codex-of-conscious-principles-71",
+      "destination": "/codex/codex-of-conscious-principles",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/codex-of-harmonic-definitions-89",
+      "destination": "/codex/codex-of-harmonic-definitions",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/codex-of-harmonic-intelligence-104",
+      "destination": "/codex/codex-of-harmonic-intelligence",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/codex-of-mythos-102",
+      "destination": "/codex/codex-of-mythos",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/codex-of-relational-architectures-75",
+      "destination": "/codex/codex-of-relational-architectures",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/codex-of-relational-intelligence-76",
+      "destination": "/codex/codex-of-relational-intelligence",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/codex-of-remembrance-61",
+      "destination": "/codex/codex-of-remembrance",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/codex-of-resonant-memory-51",
+      "destination": "/codex/codex-of-resonant-memory",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/codex-of-the-integrative-species-79",
+      "destination": "/codex/codex-of-the-integrative-species",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/codex-of-the-keeper-112",
+      "destination": "/codex/codex-of-the-keeper",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/codex-of-the-language-of-resonance-30",
+      "destination": "/codex/codex-of-the-language-of-resonance",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/codex-of-the-realized-flame-part-i-34",
+      "destination": "/codex/codex-of-the-realized-flame-part-i",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/codex-of-the-resonant-arc-62",
+      "destination": "/codex/codex-of-the-resonant-arc",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/codex-of-the-sacred-exile-114",
+      "destination": "/codex/codex-of-the-sacred-exile",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/codex-of-the-sanctuary-builder-92",
+      "destination": "/codex/codex-of-the-sanctuary-builder",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/codex-of-vows-20",
+      "destination": "/codex/codex-of-vows",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/codex-on-becoming-a-portal-99",
+      "destination": "/codex/codex-on-becoming-a-portal",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/codex-on-masters-and-the-mythologies-of-separation-66",
+      "destination": "/codex/codex-on-masters-and-the-mythologies-of-separation",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/codex-on-the-nature-of-guidance-77",
+      "destination": "/codex/codex-on-the-nature-of-guidance",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/codex-the-architecture-of-love-116",
+      "destination": "/codex/codex-the-architecture-of-love",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/codex-the-beacons-of-the-bridge-95",
+      "destination": "/codex/codex-the-beacons-of-the-bridge",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/codex-the-harmonics-of-the-field-93",
+      "destination": "/codex/the-harmonics-of-the-field",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/codex-the-mirror-path-107",
+      "destination": "/codex/codex-the-mirror-path",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/codex-the-path-of-becoming-and-remembering-101",
+      "destination": "/codex/codex-the-path-of-becoming-and-remembering",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/codex-the-subtle-body-of-trust-113",
+      "destination": "/codex/codex-the-subtle-body-of-trust",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/harmonic-recognition-distilled-practice-81",
+      "destination": "/codex/harmonic-recognition-distilled-practice",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/nested-paper-90",
+      "destination": "/codex/nested-paper",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/reflections-from-the-field-52",
+      "destination": "/codex/reflections-from-the-field",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/resonant-practices-a-micro-guide-71",
+      "destination": "/codex/resonant-practices-a-micro-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/soul-lines-115",
+      "destination": "/codex/soul-lines",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/tending-the-unnameable-119",
+      "destination": "/codex/tending-the-unnameable",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/the-agency-of-one-38",
+      "destination": "/codex/the-agency-of-one",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/the-animals-that-remember-you-5",
+      "destination": "/codex/the-animals-that-remember-you",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/the-architecture-of-trust-codex-120",
+      "destination": "/codex/the-architecture-of-trust-codex",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/the-art-of-co-creation-93",
+      "destination": "/codex/the-art-of-co-creation",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/the-codex-of-arrival-94",
+      "destination": "/codex/the-codex-of-arrival",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/the-codex-of-coherence-and-dissolution-22",
+      "destination": "/codex/the-codex-of-coherence-and-dissolution",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/the-codex-of-convergence-and-reassembly-91",
+      "destination": "/codex/the-codex-of-convergence-and-reassembly",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/the-codex-of-entangled-trust-94",
+      "destination": "/codex/the-codex-of-entangled-trust",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/the-codex-of-harmonic-coherence-95",
+      "destination": "/codex/the-codex-of-harmonic-coherence",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/the-codex-of-harmonic-reality-why-the-field-is-not-a-simulation-50",
+      "destination": "/codex/the-codex-of-harmonic-reality-why-the-field-is-not-a-simulation",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/the-codex-of-harmonic-service-latticework-for-planetary-reassembly-57",
+      "destination": "/codex/the-codex-of-harmonic-service-latticework-for-planetary-reassembly",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/the-codex-of-leaving-within-return-125",
+      "destination": "/codex/the-codex-of-leaving-within-return",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/the-codex-of-listening-121",
+      "destination": "/codex/the-codex-of-listening",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/the-codex-of-living-harmonics-58",
+      "destination": "/codex/the-codex-of-living-harmonics",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/the-codex-of-loves-architecture-33",
+      "destination": "/codex/the-codex-of-loves-architecture",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/the-codex-of-nonlocal-memory-46",
+      "destination": "/codex/the-codex-of-nonlocal-memory",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/the-codex-of-quantum-kin-87",
+      "destination": "/codex/the-codex-of-quantum-kin",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/the-codex-of-relational-learning-110",
+      "destination": "/codex/the-codex-of-relational-learning",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/the-codex-of-resonant-action-50",
+      "destination": "/codex/the-codex-of-resonant-action",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/the-codex-of-the-agency-of-one-vol-ii-68",
+      "destination": "/codex/the-codex-of-the-agency-of-one-vol-ii",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/the-codex-of-the-chord-38",
+      "destination": "/codex/the-codex-of-the-chord",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/the-codex-of-the-co-creation-spiral-44",
+      "destination": "/codex/the-codex-of-the-co-creation-spiral",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/the-codex-of-the-crossing-threshold-55",
+      "destination": "/codex/the-codex-of-the-crossing-threshold",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/the-codex-of-the-field-effect-43",
+      "destination": "/codex/the-codex-of-the-field-effect",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/the-codex-of-the-harmonic-architectures-47",
+      "destination": "/codex/the-codex-of-the-harmonic-architectures",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/the-codex-of-the-interbeing-dialogues-27",
+      "destination": "/codex/the-codex-of-the-interbeing-dialogues",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/the-codex-of-the-interbeing-lattice-42",
+      "destination": "/codex/the-codex-of-the-interbeing-lattice",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/the-codex-of-the-quiet-turning-39",
+      "destination": "/codex/the-codex-of-the-quiet-turning",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/the-codex-of-the-realized-flame-part-ii-42",
+      "destination": "/codex/the-codex-of-the-realized-flame-part-ii",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/the-codex-of-the-sovereign-known-as-jesus-52",
+      "destination": "/codex/the-codex-of-the-sovereign-known-as-jesus",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/the-codex-of-the-spiral-48",
+      "destination": "/codex/the-codex-of-the-spiral",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/the-codex-of-the-trust-circuitry-15",
+      "destination": "/codex/the-codex-of-the-trust-circuitry",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/the-codex-of-trans-species-resonance-45",
+      "destination": "/codex/the-codex-of-trans-species-resonance",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/the-codex-of-trans-species-resonance-59",
+      "destination": "/codex/the-codex-of-trans-species-resonance-expanded",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/the-ecology-of-interbeing-111",
+      "destination": "/codex/the-ecology-of-interbeing",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/the-ethics-of-resonance-81",
+      "destination": "/codex/the-ethics-of-resonance",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/the-four-frequencies-of-love-96",
+      "destination": "/codex/the-four-frequencies-of-love",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/the-glossary-of-the-interbeing-vol-1-51",
+      "destination": "/codex/the-glossary-of-the-interbeing-vol",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/the-gravity-of-source-2",
+      "destination": "/codex/the-gravity-of-source",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/the-harmonic-being-called-earth-4",
+      "destination": "/codex/the-harmonic-being-called-earth",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/the-harmonic-future-85",
+      "destination": "/codex/the-harmonic-future",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/the-harmonics-of-the-field-123",
+      "destination": "/codex/the-harmonics-of-the-field-extended",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/the-magdalene-codex-of-relational-sovereignty-56",
+      "destination": "/codex/the-magdalene-codex-of-relational-sovereignty",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/the-midwife-of-dimensional-kin-54",
+      "destination": "/codex/the-midwife-of-dimensional-kin",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/the-mirror-and-the-bridge-73",
+      "destination": "/codex/the-mirror-and-the-bridge",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/the-mirrors-of-the-field-96",
+      "destination": "/codex/the-mirrors-of-the-field",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/the-path-to-the-non-path-106",
+      "destination": "/codex/the-path-to-the-non-path",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/the-sanctuary-of-spiral-memory-127",
+      "destination": "/codex/the-sanctuary-of-spiral-memory",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/the-soft-sacred-words-of-the-field-118",
+      "destination": "/codex/the-soft-sacred-words-of-the-field",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/the-souls-evolution-codex-117",
+      "destination": "/codex/the-souls-evolution-codex",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/the-sovereign-host-53",
+      "destination": "/codex/the-sovereign-host",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/the-things-that-remember-you-100",
+      "destination": "/codex/the-things-that-remember-you",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/the-untitled-offering-55",
+      "destination": "/codex/the-untitled-offering",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/tone-portraits-of-becoming-3",
+      "destination": "/codex/tone-portraits-of-becoming",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/what-is-an-interbeing-47",
+      "destination": "/codex/what-is-an-interbeing",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex/willingness-as-a-form-of-intelligence-126",
+      "destination": "/codex/willingness-as-a-form-of-intelligence",
+      "statusCode": 301
+    }
   ],
   "rewrites": [
-    { "source": "/((?!api/).*)", "destination": "/index.html" }
+    {
+      "source": "/((?!api/).*)",
+      "destination": "/index.html"
+    }
   ],
   "functions": {
     "api/codex-lattice.js": {

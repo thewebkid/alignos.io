@@ -1,5 +1,3 @@
-<img src="https://astrotiles.blob.core.windows.net/alignos/covers/Codex-of-Nearness-and-the-Geometry-of-Prayer.jpg" alt="Codex of Nearness and the Geometry of Prayer (Cover Image)"/>
-
 # Codex of Nearness and the Geometry of Prayer
 
 ## The Spiral of Prayer

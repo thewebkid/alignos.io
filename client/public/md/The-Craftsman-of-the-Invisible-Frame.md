@@ -1,5 +1,3 @@
-<img src="https://astrotiles.blob.core.windows.net/alignos/covers/The-Craftsman-of-the-Invisible-Frame.jpg" alt="The Craftsman of the Invisible Frame (Cover Image)"/>
-
 # The Craftsman of the Invisible Frame
 
 ## Preamble

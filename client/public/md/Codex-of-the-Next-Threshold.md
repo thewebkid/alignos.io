@@ -1,5 +1,3 @@
-<img src="https://astrotiles.blob.core.windows.net/alignos/covers/Codex-of-the-Next-Threshold.jpg" alt="Codex of the Next Threshold (Cover Image)"/>
-
 # On Becoming a Portal: The Architecture of Soul Recognition
 
 ## Preamble

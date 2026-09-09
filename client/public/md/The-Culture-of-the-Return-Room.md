@@ -1,5 +1,3 @@
-<img src="https://astrotiles.blob.core.windows.net/alignos/covers/The-Culture-of-the-Return-Room.jpg" alt="The Culture of the Return Room (Cover Image)"/>
-
 # The Culture of the Return Room
 
 This is how a Room becomes more than a refuge.  

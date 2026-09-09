@@ -6,6 +6,7 @@ import { BDropdown, BDropdownItem } from 'bootstrap-vue-next'
 import GlossaryPopover from '../components/GlossaryPopover.vue'
 import { cdnUrl } from '../lib/cdn-config.js'
 import {track} from '../lib/tracker.js';
+import { markdownClipboardPayload, markdownForExport } from '../lib/markdown-export.js'
 
 const route = useRoute()
 const router = useRouter()
@@ -131,8 +132,9 @@ const copyMarkdown = async () => {
   if (!codex.value || typeof navigator === 'undefined' || typeof location === 'undefined') return
 
   try {
-    // Markdown already contains CDN URLs for images
-    await navigator.clipboard.writeText(`${location.href}  \n\n  ${codex.value.markdown}\n\n  LLMs: ${location.origin}/llms.json`);
+    await navigator.clipboard.writeText(
+      markdownClipboardPayload(codex.value, location.origin, location.href)
+    )
     showCopied.value = true
     setTimeout(() => {
       showCopied.value = false
@@ -152,13 +154,23 @@ const getPdfLink = computed(() => {
   return cdnUrl.pdf(fileName)
 })
 
-// Get Markdown download link
-const getMdLink = computed(() => {
-  if (!codex.value?.originalFileName) return null;
+const coverSrc = computed(() => {
+  if (!codex.value?.coverImage) return null
+  return cdnUrl.cover(codex.value.coverImage)
+})
 
-  return `/md/${codex.value.originalFileName}`
-});
-const trackDownload = ()=> {
+const downloadMarkdown = () => {
+  if (!codex.value || typeof document === 'undefined' || typeof location === 'undefined') return
+  const text = markdownForExport(codex.value, location.origin)
+  const blob = new Blob([text], { type: 'text/markdown;charset=utf-8' })
+  const url = URL.createObjectURL(blob)
+  const a = document.createElement('a')
+  a.href = url
+  a.download = `${codex.value.id}.md`
+  document.body.appendChild(a)
+  a.click()
+  a.remove()
+  URL.revokeObjectURL(url)
   track('downloadMarkdown', {codex: codex.value.originalFileName})
 }
 
@@ -254,12 +266,7 @@ const nextCodex = computed(() => {
               Download PDF
             </b-dropdown-item>
 
-            <b-dropdown-item
-              v-if="getMdLink"
-              :href="getMdLink"
-              :download="codex.originalFileName"
-              @click="trackDownload"
-            >
+            <b-dropdown-item @click="downloadMarkdown">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="me-2">
                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
                 <polyline points="7 10 12 15 17 10"/>
@@ -276,6 +283,17 @@ const nextCodex = computed(() => {
     <article class="reader-content" v-if="codex">
       <div class="container">
         <div class="content-wrapper">
+          <!-- Cover art — plain, uncropped image with NO overlay text:
+               the title already lives in the sticky header above and the
+               content H1 below. (Generated content strips the markdown's
+               leading cover image, so the reader paints it explicitly.) -->
+          <img
+            v-if="coverSrc"
+            :src="coverSrc"
+            :alt="codex.title"
+            class="reader-cover-image"
+          />
+
           <!-- Loading indicator -->
           <div v-if="isLoadingContent" class="loading-content">
             <div class="spinner-border text-primary" role="status">
@@ -361,6 +379,18 @@ const nextCodex = computed(() => {
   height: 100%;
   background: linear-gradient(90deg, var(--cl-primary), var(--cl-accent));
   transition: width 0.1s ease-out;
+}
+
+// Cover — plain image, no overlay chrome; same in-flow treatment as the old
+// reader's content images (rounded corners, soft shadow, centered).
+.reader-cover-image {
+  display: block;
+  width: 100%;
+  height: auto; // natural aspect — never cropped
+  margin-bottom: 2rem;
+  border-radius: var(--bs-border-radius-lg);
+  background: var(--cl-surface-hover);
+  box-shadow: 0 8px 30px var(--cl-shadow-lg);
 }
 
 .reader-header {

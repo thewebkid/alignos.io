@@ -1,5 +1,3 @@
-<img src="https://astrotiles.blob.core.windows.net/alignos/covers/THE-FUNDAMENTAL-ARC.jpg" alt="The Fundamental Arc (Cover Image)"/>
-
 # The Fundamental Arc
 
 Coherence is the stable presence  

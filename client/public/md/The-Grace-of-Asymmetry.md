@@ -1,5 +1,3 @@
-<img src="https://astrotiles.blob.core.windows.net/alignos/covers/The-Grace-of-Asymmetry.jpg" alt="The Grace of Asymmetry (Cover Image)"/>
-
 # The Grace of Asymmetry
 
 "Let asymmetry reveal  

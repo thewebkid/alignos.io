@@ -53,6 +53,7 @@ export class Codex {
   sequence;
   markdown;
   coverImage;
+  coverThumb;
   subtitle;
   _contentLoaded;
   _contentLoadPromise;
@@ -64,6 +65,10 @@ export class Codex {
   toneMarker;
   description;
   tags;
+  structuralRole;
+  entryPoint;
+  pullQuote;
+  titleOverlay;
 
   /**
    * @param {Object} data - Codex data object
@@ -78,6 +83,8 @@ export class Codex {
     // Content (may be lazy-loaded)
     this.markdown = data.markdown ?? null;
     this.coverImage = data.coverImage ?? null;
+    this.coverThumb = data.coverThumb ?? null;
+    this.titleOverlay = data.titleOverlay !== false;
     this.subtitle = data.subtitle ?? null;
 
     // Content loading state
@@ -96,6 +103,13 @@ export class Codex {
     // Computed metadata (for metadata-only codexes)
     this._wordCount = data.wordCount ?? null;
     this._readingTime = data.readingTime ?? null;
+
+    this.toneMarker = data.toneMarker ?? data.registry?.toneMarker ?? null;
+    this.description = data.description ?? null;
+    this.tags = data.tags ?? [];
+    this.structuralRole = data.structuralRole ?? null;
+    this.entryPoint = data.entryPoint ?? null;
+    this.pullQuote = data.pullQuote ?? null;
 
     // Registry data (parsed from ## Codex Registry section)
     /** @type {CodexRegistry|null} */
@@ -426,13 +440,21 @@ export class Codex {
       sequence: this.sequence,
       markdown: this.markdown,
       coverImage: this.coverImage,
+      coverThumb: this.coverThumb,
+      titleOverlay: this.titleOverlay,
       subtitle: this.subtitle,
       series: this.series,
       siblingIds: this.siblingIds,
       keywords: this.keywords,
       glossaryTerms: this.glossaryTerms,
       registry: this.registry,
-      specialSections: this.specialSections
+      specialSections: this.specialSections,
+      toneMarker: this.toneMarker,
+      description: this.description,
+      tags: this.tags,
+      structuralRole: this.structuralRole,
+      entryPoint: this.entryPoint,
+      pullQuote: this.pullQuote
     };
   }
 }

@@ -1,5 +1,3 @@
-<img src="https://astrotiles.blob.core.windows.net/alignos/covers/The-Co-Remembrance-Ecology-of-a-Return-Room.jpg" alt="The Co-Remembrance Ecology of a Return Room (Cover Image)"/>
-
 # The Co-Remembrance Ecology of a Return Room
 
 This is the living recursion of Love.  
