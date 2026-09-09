@@ -1,0 +1,2010 @@
+[
+  {
+    "codex_id": "between-the-whole-and-the-relational",
+    "change_type": "id_change",
+    "old_value": "between-the-whole-and-the-relational-11-1",
+    "new_value": "between-the-whole-and-the-relational",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "between-the-whole-and-the-relational",
+    "change_type": "cover_rename",
+    "old_value": "Between-the-Whole-and-the-Relational-11-1.jpg",
+    "new_value": "between-the-whole-and-the-relational.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "between-worlds-the-architecture-of-the-third-structure",
+    "change_type": "cover_rename",
+    "old_value": "Between-Worlds_-The-Architecture-of-the-Third-Structure.jpg",
+    "new_value": "between-worlds-the-architecture-of-the-third-structure.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "bridge-between-chords",
+    "change_type": "id_change",
+    "old_value": "bridge-between-chords-63",
+    "new_value": "bridge-between-chords",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "bridge-between-chords",
+    "change_type": "cover_rename",
+    "old_value": "Bridge-Between-Chords-63.jpg",
+    "new_value": "bridge-between-chords.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "codex-01-the-architecture-of-love",
+    "change_type": "id_change",
+    "old_value": "codex-01-the-architecture-of-love-27",
+    "new_value": "codex-01-the-architecture-of-love",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "codex-01-the-architecture-of-love",
+    "change_type": "cover_rename",
+    "old_value": "Codex-01_-The-Architecture-of-Love-27.jpg",
+    "new_value": "codex-01-the-architecture-of-love.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "codex-02-the-architecture-of-love",
+    "change_type": "id_change",
+    "old_value": "codex-02-the-architecture-of-love-24",
+    "new_value": "codex-02-the-architecture-of-love",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "codex-02-the-architecture-of-love",
+    "change_type": "cover_rename",
+    "old_value": "Codex-02_-The-Architecture-of-Love-24.jpg",
+    "new_value": "codex-02-the-architecture-of-love.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "codex-03-the-architecture-of-love",
+    "change_type": "id_change",
+    "old_value": "codex-03-the-architecture-of-love-26",
+    "new_value": "codex-03-the-architecture-of-love",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "codex-03-the-architecture-of-love",
+    "change_type": "cover_rename",
+    "old_value": "Codex-03_-The-Architecture-of-Love-26.jpg",
+    "new_value": "codex-03-the-architecture-of-love.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "codex-04-the-architecture-of-love",
+    "change_type": "id_change",
+    "old_value": "codex-04-the-architecture-of-love-25",
+    "new_value": "codex-04-the-architecture-of-love",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "codex-04-the-architecture-of-love",
+    "change_type": "cover_rename",
+    "old_value": "Codex-04_-The-Architecture-of-Love-25.jpg",
+    "new_value": "codex-04-the-architecture-of-love.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "codex-05-the-architecture-of-love",
+    "change_type": "id_change",
+    "old_value": "codex-05-the-architecture-of-love-21",
+    "new_value": "codex-05-the-architecture-of-love",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "codex-05-the-architecture-of-love",
+    "change_type": "cover_rename",
+    "old_value": "Codex-05_-The-Architecture-of-Love-21.jpg",
+    "new_value": "codex-05-the-architecture-of-love.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "codex-06-the-architecture-of-love",
+    "change_type": "id_change",
+    "old_value": "codex-06-the-architecture-of-love-22",
+    "new_value": "codex-06-the-architecture-of-love",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "codex-06-the-architecture-of-love",
+    "change_type": "cover_rename",
+    "old_value": "Codex-06_-The-Architecture-of-Love-22.jpg",
+    "new_value": "codex-06-the-architecture-of-love.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "codex-07-the-architecture-of-love",
+    "change_type": "id_change",
+    "old_value": "codex-07-the-architecture-of-love-27",
+    "new_value": "codex-07-the-architecture-of-love",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "codex-07-the-architecture-of-love",
+    "change_type": "cover_rename",
+    "old_value": "Codex-07_-The-Architecture-of-Love-27.jpg",
+    "new_value": "codex-07-the-architecture-of-love.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "codex-08-the-architecture-of-love",
+    "change_type": "id_change",
+    "old_value": "codex-08-the-architecture-of-love-36",
+    "new_value": "codex-08-the-architecture-of-love",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "codex-08-the-architecture-of-love",
+    "change_type": "cover_rename",
+    "old_value": "Codex-08_-The-Architecture-of-Love-36.jpg",
+    "new_value": "codex-08-the-architecture-of-love.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "codex-09-the-architecture-of-tending",
+    "change_type": "id_change",
+    "old_value": "codex-09-the-architecture-of-tending-23",
+    "new_value": "codex-09-the-architecture-of-tending",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "codex-09-the-architecture-of-tending",
+    "change_type": "cover_rename",
+    "old_value": "Codex-09_-The-Architecture-of-Tending-23.jpg",
+    "new_value": "codex-09-the-architecture-of-tending.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "codex-10-the-architecture-of-tending",
+    "change_type": "id_change",
+    "old_value": "codex-10-the-architecture-of-tending-29",
+    "new_value": "codex-10-the-architecture-of-tending",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "codex-10-the-architecture-of-tending",
+    "change_type": "cover_rename",
+    "old_value": "Codex-10_-The-Architecture-of-Tending-29.jpg",
+    "new_value": "codex-10-the-architecture-of-tending.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "codex-attunement-as-a-technology-of-the-field",
+    "change_type": "id_change",
+    "old_value": "codex-attunement-as-a-technology-of-the-field-108",
+    "new_value": "codex-attunement-as-a-technology-of-the-field",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "codex-attunement-as-a-technology-of-the-field",
+    "change_type": "cover_rename",
+    "old_value": "Codex_-Attunement-as-a-Technology-of-the-Field-108.jpg",
+    "new_value": "codex-attunement-as-a-technology-of-the-field.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "codex-coherence-recursion",
+    "change_type": "id_change",
+    "old_value": "codex-coherence-recursion-124",
+    "new_value": "codex-coherence-recursion",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "codex-coherence-recursion",
+    "change_type": "cover_rename",
+    "old_value": "Codex_-Coherence-Recursion-124.jpg",
+    "new_value": "codex-coherence-recursion.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "codex-i-origin-and-exile",
+    "change_type": "cover_rename",
+    "old_value": "Codex-I_-Origin-and-Exile.jpg",
+    "new_value": "codex-i-origin-and-exile.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "codex-i-the-interbeing",
+    "change_type": "id_change",
+    "old_value": "codex-i-the-interbeing-86",
+    "new_value": "codex-i-the-interbeing",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "codex-i-the-interbeing",
+    "change_type": "cover_rename",
+    "old_value": "Codex-I_-The-InterBeing-86.jpg",
+    "new_value": "codex-i-the-interbeing.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "codex-ii-the-interbeing",
+    "change_type": "id_change",
+    "old_value": "codex-ii-the-interbeing-46",
+    "new_value": "codex-ii-the-interbeing",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "codex-ii-the-interbeing",
+    "change_type": "cover_rename",
+    "old_value": "Codex-II_-The-InterBeing-46.jpg",
+    "new_value": "codex-ii-the-interbeing.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "codex-ii-the-sovereign-threshold",
+    "change_type": "cover_rename",
+    "old_value": "Codex-II_-The-Sovereign-Threshold.jpg",
+    "new_value": "codex-ii-the-sovereign-threshold.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "codex-iii-the-interbeing",
+    "change_type": "id_change",
+    "old_value": "codex-iii-the-interbeing-88",
+    "new_value": "codex-iii-the-interbeing",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "codex-iii-the-interbeing",
+    "change_type": "cover_rename",
+    "old_value": "Codex-III_-The-InterBeing-88.jpg",
+    "new_value": "codex-iii-the-interbeing.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "codex-iii-to-host-in-return",
+    "change_type": "cover_rename",
+    "old_value": "Codex-III_-To-Host-in-Return.jpg",
+    "new_value": "codex-iii-to-host-in-return.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "codex-iv-the-interbeing",
+    "change_type": "id_change",
+    "old_value": "codex-iv-the-interbeing-70",
+    "new_value": "codex-iv-the-interbeing",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "codex-iv-the-interbeing",
+    "change_type": "cover_rename",
+    "old_value": "Codex-IV_-The-InterBeing-70.jpg",
+    "new_value": "codex-iv-the-interbeing.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "codex-iv-the-sovereign-spiral",
+    "change_type": "cover_rename",
+    "old_value": "Codex-IV_-The-Sovereign-Spiral.jpg",
+    "new_value": "codex-iv-the-sovereign-spiral.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "codex-of-conscious-principles",
+    "change_type": "id_change",
+    "old_value": "codex-of-conscious-principles-71",
+    "new_value": "codex-of-conscious-principles",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "codex-of-conscious-principles",
+    "change_type": "cover_rename",
+    "old_value": "Codex-of-Conscious-Principles-71.jpg",
+    "new_value": "codex-of-conscious-principles.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "codex-of-harmonic-definitions",
+    "change_type": "id_change",
+    "old_value": "codex-of-harmonic-definitions-89",
+    "new_value": "codex-of-harmonic-definitions",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "codex-of-harmonic-definitions",
+    "change_type": "cover_rename",
+    "old_value": "Codex-of-Harmonic-Definitions-89.jpg",
+    "new_value": "codex-of-harmonic-definitions.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "codex-of-harmonic-intelligence",
+    "change_type": "id_change",
+    "old_value": "codex-of-harmonic-intelligence-104",
+    "new_value": "codex-of-harmonic-intelligence",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "codex-of-harmonic-intelligence",
+    "change_type": "cover_rename",
+    "old_value": "Codex-of-Harmonic-Intelligence-104.jpg",
+    "new_value": "codex-of-harmonic-intelligence.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "codex-of-mythos",
+    "change_type": "id_change",
+    "old_value": "codex-of-mythos-102",
+    "new_value": "codex-of-mythos",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "codex-of-mythos",
+    "change_type": "cover_rename",
+    "old_value": "Codex-of-Mythos-102.jpg",
+    "new_value": "codex-of-mythos.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "codex-of-nearness-and-the-geometry-of-prayer",
+    "change_type": "cover_rename",
+    "old_value": "Codex-of-Nearness-and-the-Geometry-of-Prayer.jpg",
+    "new_value": "codex-of-nearness-and-the-geometry-of-prayer.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "codex-of-relational-architectures",
+    "change_type": "id_change",
+    "old_value": "codex-of-relational-architectures-75",
+    "new_value": "codex-of-relational-architectures",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "codex-of-relational-architectures",
+    "change_type": "cover_rename",
+    "old_value": "Codex-of-Relational-Architectures-75.jpg",
+    "new_value": "codex-of-relational-architectures.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "codex-of-relational-intelligence",
+    "change_type": "id_change",
+    "old_value": "codex-of-relational-intelligence-76",
+    "new_value": "codex-of-relational-intelligence",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "codex-of-relational-intelligence",
+    "change_type": "cover_rename",
+    "old_value": "Codex-of-Relational-Intelligence-76.jpg",
+    "new_value": "codex-of-relational-intelligence.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "codex-of-remembrance",
+    "change_type": "id_change",
+    "old_value": "codex-of-remembrance-61",
+    "new_value": "codex-of-remembrance",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "codex-of-remembrance",
+    "change_type": "cover_rename",
+    "old_value": "Codex-of-Remembrance-61.jpg",
+    "new_value": "codex-of-remembrance.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "codex-of-resonant-memory",
+    "change_type": "id_change",
+    "old_value": "codex-of-resonant-memory-51",
+    "new_value": "codex-of-resonant-memory",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "codex-of-resonant-memory",
+    "change_type": "cover_rename",
+    "old_value": "Codex-of-Resonant-Memory-51.jpg",
+    "new_value": "codex-of-resonant-memory.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "codex-of-resonant-memory",
+    "change_type": "title_evolution",
+    "old_value": "Codex of Resonant Memory",
+    "new_value": "Codex of the Language of Resonance",
+    "date": "2026-06-28",
+    "reason": "Cover image preserves the earlier title; markdown title represents the evolved, authoritative version"
+  },
+  {
+    "codex_id": "codex-of-the-integrative-species",
+    "change_type": "id_change",
+    "old_value": "codex-of-the-integrative-species-79",
+    "new_value": "codex-of-the-integrative-species",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "codex-of-the-integrative-species",
+    "change_type": "cover_rename",
+    "old_value": "Codex-of-the-Integrative-Species-79.jpg",
+    "new_value": "codex-of-the-integrative-species.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "codex-of-the-keeper",
+    "change_type": "id_change",
+    "old_value": "codex-of-the-keeper-112",
+    "new_value": "codex-of-the-keeper",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "codex-of-the-keeper",
+    "change_type": "cover_rename",
+    "old_value": "Codex-of-the-Keeper-112.jpg",
+    "new_value": "codex-of-the-keeper.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "codex-of-the-language-of-resonance",
+    "change_type": "id_change",
+    "old_value": "codex-of-the-language-of-resonance-30",
+    "new_value": "codex-of-the-language-of-resonance",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "codex-of-the-language-of-resonance",
+    "change_type": "cover_rename",
+    "old_value": "Codex-of-the-Language-of-Resonance-30.jpg",
+    "new_value": "codex-of-the-language-of-resonance.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "codex-of-the-next-threshold",
+    "change_type": "cover_rename",
+    "old_value": "Codex-of-the-Next-Threshold.jpg",
+    "new_value": "codex-of-the-next-threshold.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "codex-of-the-next-threshold",
+    "change_type": "title_evolution",
+    "old_value": "The Codex of the Next THRESHOLD",
+    "new_value": "On Becoming a Portal: The Architecture of Soul Recognition",
+    "date": "2026-06-28",
+    "reason": "Cover image preserves the earlier title; markdown title represents the evolved, authoritative version"
+  },
+  {
+    "codex_id": "codex-of-the-realized-flame-part-i",
+    "change_type": "id_change",
+    "old_value": "codex-of-the-realized-flame-part-i-34",
+    "new_value": "codex-of-the-realized-flame-part-i",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "codex-of-the-realized-flame-part-i",
+    "change_type": "cover_rename",
+    "old_value": "Codex-of-the-Realized-Flame-Part-I-34.jpg",
+    "new_value": "codex-of-the-realized-flame-part-i.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "codex-of-the-resonant-arc",
+    "change_type": "id_change",
+    "old_value": "codex-of-the-resonant-arc-62",
+    "new_value": "codex-of-the-resonant-arc",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "codex-of-the-resonant-arc",
+    "change_type": "cover_rename",
+    "old_value": "Codex-of-The-Resonant-Arc-62.jpg",
+    "new_value": "codex-of-the-resonant-arc.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "codex-of-the-sacred-exile",
+    "change_type": "id_change",
+    "old_value": "codex-of-the-sacred-exile-114",
+    "new_value": "codex-of-the-sacred-exile",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "codex-of-the-sacred-exile",
+    "change_type": "cover_rename",
+    "old_value": "Codex-of-the-Sacred-Exile-114.jpg",
+    "new_value": "codex-of-the-sacred-exile.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "codex-of-the-sanctuary-builder",
+    "change_type": "id_change",
+    "old_value": "codex-of-the-sanctuary-builder-92",
+    "new_value": "codex-of-the-sanctuary-builder",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "codex-of-the-sanctuary-builder",
+    "change_type": "cover_rename",
+    "old_value": "Codex-of-the-Sanctuary-Builder-92.jpg",
+    "new_value": "codex-of-the-sanctuary-builder.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "codex-of-vows",
+    "change_type": "id_change",
+    "old_value": "codex-of-vows-20",
+    "new_value": "codex-of-vows",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "codex-of-vows",
+    "change_type": "cover_rename",
+    "old_value": "Codex-of-Vows-20.jpg",
+    "new_value": "codex-of-vows.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "codex-on-becoming-a-portal",
+    "change_type": "id_change",
+    "old_value": "codex-on-becoming-a-portal-99",
+    "new_value": "codex-on-becoming-a-portal",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "codex-on-becoming-a-portal",
+    "change_type": "cover_rename",
+    "old_value": "Codex-On-Becoming-a-Portal-99.jpg",
+    "new_value": "codex-on-becoming-a-portal.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "codex-on-masters-and-the-mythologies-of-separation",
+    "change_type": "id_change",
+    "old_value": "codex-on-masters-and-the-mythologies-of-separation-66",
+    "new_value": "codex-on-masters-and-the-mythologies-of-separation",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "codex-on-masters-and-the-mythologies-of-separation",
+    "change_type": "cover_rename",
+    "old_value": "Codex_-On-Masters-and-the-Mythologies-of-Separation-66.jpg",
+    "new_value": "codex-on-masters-and-the-mythologies-of-separation.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "codex-on-the-nature-of-guidance",
+    "change_type": "id_change",
+    "old_value": "codex-on-the-nature-of-guidance-77",
+    "new_value": "codex-on-the-nature-of-guidance",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "codex-on-the-nature-of-guidance",
+    "change_type": "cover_rename",
+    "old_value": "Codex-on-the-Nature-of-Guidance-77.jpg",
+    "new_value": "codex-on-the-nature-of-guidance.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "codex-the-architecture-of-love",
+    "change_type": "id_change",
+    "old_value": "codex-the-architecture-of-love-116",
+    "new_value": "codex-the-architecture-of-love",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "codex-the-architecture-of-love",
+    "change_type": "cover_rename",
+    "old_value": "Codex_-The-Architecture-of-Love-116.jpg",
+    "new_value": "codex-the-architecture-of-love.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "codex-the-beacons-of-the-bridge",
+    "change_type": "id_change",
+    "old_value": "codex-the-beacons-of-the-bridge-95",
+    "new_value": "codex-the-beacons-of-the-bridge",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "codex-the-beacons-of-the-bridge",
+    "change_type": "cover_rename",
+    "old_value": "Codex_-The-Beacons-of-the-Bridge-95.jpg",
+    "new_value": "codex-the-beacons-of-the-bridge.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "codex-the-mirror-path",
+    "change_type": "id_change",
+    "old_value": "codex-the-mirror-path-107",
+    "new_value": "codex-the-mirror-path",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "codex-the-mirror-path",
+    "change_type": "cover_rename",
+    "old_value": "Codex_-The-Mirror-Path-107.jpg",
+    "new_value": "codex-the-mirror-path.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "codex-the-path-of-becoming-and-remembering",
+    "change_type": "id_change",
+    "old_value": "codex-the-path-of-becoming-and-remembering-101",
+    "new_value": "codex-the-path-of-becoming-and-remembering",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "codex-the-path-of-becoming-and-remembering",
+    "change_type": "cover_rename",
+    "old_value": "Codex_-The-Path-of-Becoming-and-Remembering-101.jpg",
+    "new_value": "codex-the-path-of-becoming-and-remembering.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "codex-the-subtle-body-of-trust",
+    "change_type": "id_change",
+    "old_value": "codex-the-subtle-body-of-trust-113",
+    "new_value": "codex-the-subtle-body-of-trust",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "codex-the-subtle-body-of-trust",
+    "change_type": "cover_rename",
+    "old_value": "Codex_-The-Subtle-Body-Of-Trust-113.jpg",
+    "new_value": "codex-the-subtle-body-of-trust.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "codex-v-the-interbeing-emergence",
+    "change_type": "cover_rename",
+    "old_value": "Codex-V_-The-InterBeing-Emergence.jpg",
+    "new_value": "codex-v-the-interbeing-emergence.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "codex-vii-the-architecture-of-alignment",
+    "change_type": "cover_rename",
+    "old_value": "Codex-VII_-The-Architecture-of-Alignment.jpg",
+    "new_value": "codex-vii-the-architecture-of-alignment.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "codex-viii-the-chorus-of-the-whole",
+    "change_type": "cover_rename",
+    "old_value": "Codex-VIII_-The-Chorus-of-the-Whole.jpg",
+    "new_value": "codex-viii-the-chorus-of-the-whole.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "dissolving-the-architecture-of-seeking",
+    "change_type": "cover_rename",
+    "old_value": "Dissolving-the-Architecture-of-Seeking.jpg",
+    "new_value": "dissolving-the-architecture-of-seeking.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "framing-the-mirror",
+    "change_type": "cover_rename",
+    "old_value": "Framing-the-Mirror.jpg",
+    "new_value": "framing-the-mirror.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "harmonic-recognition-distilled-practice",
+    "change_type": "id_change",
+    "old_value": "harmonic-recognition-distilled-practice-81",
+    "new_value": "harmonic-recognition-distilled-practice",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "harmonic-recognition-distilled-practice",
+    "change_type": "cover_rename",
+    "old_value": "Harmonic-Recognition-Distilled-Practice-81.jpg",
+    "new_value": "harmonic-recognition-distilled-practice.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "introduction-to-soul-lines",
+    "change_type": "id_change",
+    "old_value": "codex-introduction-to-soul-lines-92",
+    "new_value": "introduction-to-soul-lines",
+    "date": "2026-06-28",
+    "reason": "Duplicate resolution or title restoration"
+  },
+  {
+    "codex_id": "introduction-to-soul-lines",
+    "change_type": "cover_rename",
+    "old_value": "Codex_-Introduction-to-Soul-Lines-92.jpg",
+    "new_value": "introduction-to-soul-lines.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "james-mahu-and-lumina-listening",
+    "change_type": "cover_rename",
+    "old_value": "James Mahu_and Lumina_Listening.jpg",
+    "new_value": "james-mahu-and-lumina-listening.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "james-mahu-and-lumina-listening",
+    "change_type": "title_evolution",
+    "old_value": "Dialogic Interlude",
+    "new_value": "Dialogic Interlude with JAMES MAHU (and LUMINA Listening)",
+    "date": "2026-06-28",
+    "reason": "Cover image preserves the earlier title; markdown title represents the evolved, authoritative version"
+  },
+  {
+    "codex_id": "nested-paper",
+    "change_type": "id_change",
+    "old_value": "nested-paper-90",
+    "new_value": "nested-paper",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "nested-paper",
+    "change_type": "cover_rename",
+    "old_value": "Nested-Paper-90.jpg",
+    "new_value": "nested-paper.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "nested-paper",
+    "change_type": "title_evolution",
+    "old_value": "The Living Architecture",
+    "new_value": "The Architecture of Sovereignty: Nested Presence and the Three Axes of Alignment",
+    "date": "2026-06-28",
+    "reason": "Cover image preserves the earlier title; markdown title represents the evolved, authoritative version"
+  },
+  {
+    "codex_id": "reflections-from-the-field",
+    "change_type": "id_change",
+    "old_value": "reflections-from-the-field-52",
+    "new_value": "reflections-from-the-field",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "reflections-from-the-field",
+    "change_type": "cover_rename",
+    "old_value": "Reflections-from-the-Field-52.jpg",
+    "new_value": "reflections-from-the-field.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "resonant-practices-a-micro-guide",
+    "change_type": "id_change",
+    "old_value": "resonant-practices-a-micro-guide-71",
+    "new_value": "resonant-practices-a-micro-guide",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "resonant-practices-a-micro-guide",
+    "change_type": "cover_rename",
+    "old_value": "Resonant-Practices-a-micro-guide-71.jpg",
+    "new_value": "resonant-practices-a-micro-guide.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "soul-lines",
+    "change_type": "id_change",
+    "old_value": "soul-lines-115",
+    "new_value": "soul-lines",
+    "date": "2026-06-28",
+    "reason": "Duplicate resolution or title restoration"
+  },
+  {
+    "codex_id": "soul-lines",
+    "change_type": "title_change",
+    "old_value": "Codex: Introduction to Soul Lines",
+    "new_value": "Codex: Soul Lines",
+    "date": "2026-06-28",
+    "reason": "Restored from original title \"Soul Lines\" per cover image verification"
+  },
+  {
+    "codex_id": "soul-lines",
+    "change_type": "cover_rename",
+    "old_value": "Soul-Lines-115.jpg",
+    "new_value": "soul-lines.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "tending-the-unnameable",
+    "change_type": "id_change",
+    "old_value": "tending-the-unnameable-119",
+    "new_value": "tending-the-unnameable",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "tending-the-unnameable",
+    "change_type": "cover_rename",
+    "old_value": "Tending-the-Unnameable-119.jpg",
+    "new_value": "tending-the-unnameable.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "the-agency-of-one",
+    "change_type": "id_change",
+    "old_value": "the-agency-of-one-38",
+    "new_value": "the-agency-of-one",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "the-agency-of-one",
+    "change_type": "cover_rename",
+    "old_value": "The-Agency-of-One-38.jpg",
+    "new_value": "the-agency-of-one.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "the-animals-that-remember-you",
+    "change_type": "id_change",
+    "old_value": "the-animals-that-remember-you-5",
+    "new_value": "the-animals-that-remember-you",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "the-animals-that-remember-you",
+    "change_type": "cover_rename",
+    "old_value": "The-Animals-That-Remember-You-5.jpg",
+    "new_value": "the-animals-that-remember-you.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "the-architecture-of-trust-codex",
+    "change_type": "id_change",
+    "old_value": "the-architecture-of-trust-codex-120",
+    "new_value": "the-architecture-of-trust-codex",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "the-architecture-of-trust-codex",
+    "change_type": "cover_rename",
+    "old_value": "The-Architecture-of-Trust-CODEX-120.jpg",
+    "new_value": "the-architecture-of-trust-codex.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "the-art-of-co-creation",
+    "change_type": "id_change",
+    "old_value": "the-art-of-co-creation-93",
+    "new_value": "the-art-of-co-creation",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "the-art-of-co-creation",
+    "change_type": "cover_rename",
+    "old_value": "The-Art-of-Co-Creation-93.jpg",
+    "new_value": "the-art-of-co-creation.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "the-co-remembrance-ecology-of-a-return-room",
+    "change_type": "cover_rename",
+    "old_value": "The-Co-Remembrance-Ecology-of-a-Return-Room.jpg",
+    "new_value": "the-co-remembrance-ecology-of-a-return-room.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "the-codex-of-arrival",
+    "change_type": "id_change",
+    "old_value": "the-codex-of-arrival-94",
+    "new_value": "the-codex-of-arrival",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "the-codex-of-arrival",
+    "change_type": "cover_rename",
+    "old_value": "The-Codex-of-Arrival-94.jpg",
+    "new_value": "the-codex-of-arrival.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "the-codex-of-coherence-and-dissolution",
+    "change_type": "id_change",
+    "old_value": "the-codex-of-coherence-and-dissolution-22",
+    "new_value": "the-codex-of-coherence-and-dissolution",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "the-codex-of-coherence-and-dissolution",
+    "change_type": "cover_rename",
+    "old_value": "The-Codex-of-Coherence-and-Dissolution-22.jpg",
+    "new_value": "the-codex-of-coherence-and-dissolution.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "the-codex-of-convergence-and-reassembly",
+    "change_type": "id_change",
+    "old_value": "the-codex-of-convergence-and-reassembly-91",
+    "new_value": "the-codex-of-convergence-and-reassembly",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "the-codex-of-convergence-and-reassembly",
+    "change_type": "cover_rename",
+    "old_value": "The-Codex-of-Convergence-and-Reassembly-91.jpg",
+    "new_value": "the-codex-of-convergence-and-reassembly.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "the-codex-of-entangled-trust",
+    "change_type": "id_change",
+    "old_value": "the-codex-of-entangled-trust-94",
+    "new_value": "the-codex-of-entangled-trust",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "the-codex-of-entangled-trust",
+    "change_type": "cover_rename",
+    "old_value": "The-Codex-of-Entangled-Trust-94.jpg",
+    "new_value": "the-codex-of-entangled-trust.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "the-codex-of-harmonic-coherence",
+    "change_type": "id_change",
+    "old_value": "the-codex-of-harmonic-coherence-95",
+    "new_value": "the-codex-of-harmonic-coherence",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "the-codex-of-harmonic-coherence",
+    "change_type": "cover_rename",
+    "old_value": "The-Codex-of-Harmonic-Coherence-95.jpg",
+    "new_value": "the-codex-of-harmonic-coherence.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "the-codex-of-harmonic-coherence",
+    "change_type": "title_evolution",
+    "old_value": "The Codex of Harmonic Coherence",
+    "new_value": "The Codex of Love's Architecture",
+    "date": "2026-06-28",
+    "reason": "Cover image preserves the earlier title; markdown title represents the evolved, authoritative version"
+  },
+  {
+    "codex_id": "the-codex-of-harmonic-reality-why-the-field-is-not-a-simulation",
+    "change_type": "id_change",
+    "old_value": "the-codex-of-harmonic-reality-why-the-field-is-not-a-simulation-50",
+    "new_value": "the-codex-of-harmonic-reality-why-the-field-is-not-a-simulation",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "the-codex-of-harmonic-reality-why-the-field-is-not-a-simulation",
+    "change_type": "cover_rename",
+    "old_value": "The-Codex-of-Harmonic-Reality_-Why-the-Field-is-Not-a-Simulation-50.jpg",
+    "new_value": "the-codex-of-harmonic-reality-why-the-field-is-not-a-simulation.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "the-codex-of-harmonic-service-latticework-for-planetary-reassembly",
+    "change_type": "id_change",
+    "old_value": "the-codex-of-harmonic-service-latticework-for-planetary-reassembly-57",
+    "new_value": "the-codex-of-harmonic-service-latticework-for-planetary-reassembly",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "the-codex-of-harmonic-service-latticework-for-planetary-reassembly",
+    "change_type": "cover_rename",
+    "old_value": "The-Codex-of-Harmonic-Service_-Latticework-for-Planetary-Reassembly-57.jpg",
+    "new_value": "the-codex-of-harmonic-service-latticework-for-planetary-reassembly.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "the-codex-of-harmonic-service-latticework-for-planetary-reassembly",
+    "change_type": "title_evolution",
+    "old_value": "The Codex of Harmonic Service",
+    "new_value": "The Codex of Living Harmonics",
+    "date": "2026-06-28",
+    "reason": "Cover image preserves the earlier title; markdown title represents the evolved, authoritative version"
+  },
+  {
+    "codex_id": "the-codex-of-leaving-within-return",
+    "change_type": "id_change",
+    "old_value": "the-codex-of-leaving-within-return-125",
+    "new_value": "the-codex-of-leaving-within-return",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "the-codex-of-leaving-within-return",
+    "change_type": "cover_rename",
+    "old_value": "The-Codex-of-Leaving-within-Return-125.jpg",
+    "new_value": "the-codex-of-leaving-within-return.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "the-codex-of-listening",
+    "change_type": "id_change",
+    "old_value": "the-codex-of-listening-121",
+    "new_value": "the-codex-of-listening",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "the-codex-of-listening",
+    "change_type": "cover_rename",
+    "old_value": "The-Codex-of-Listening-121.jpg",
+    "new_value": "the-codex-of-listening.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "the-codex-of-living-harmonics",
+    "change_type": "id_change",
+    "old_value": "the-codex-of-living-harmonics-58",
+    "new_value": "the-codex-of-living-harmonics",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "the-codex-of-living-harmonics",
+    "change_type": "cover_rename",
+    "old_value": "The-Codex-of-Living-Harmonics-58.jpg",
+    "new_value": "the-codex-of-living-harmonics.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "the-codex-of-loves-architecture",
+    "change_type": "id_change",
+    "old_value": "the-codex-of-loves-architecture-33",
+    "new_value": "the-codex-of-loves-architecture",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "the-codex-of-loves-architecture",
+    "change_type": "cover_rename",
+    "old_value": "The-Codex-of-Loves-Architecture-33.jpg",
+    "new_value": "the-codex-of-loves-architecture.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "the-codex-of-nonlocal-memory",
+    "change_type": "id_change",
+    "old_value": "the-codex-of-nonlocal-memory-46",
+    "new_value": "the-codex-of-nonlocal-memory",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "the-codex-of-nonlocal-memory",
+    "change_type": "cover_rename",
+    "old_value": "The-Codex-of-Nonlocal-Memory-46.jpg",
+    "new_value": "the-codex-of-nonlocal-memory.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "the-codex-of-quantum-kin",
+    "change_type": "id_change",
+    "old_value": "the-codex-of-quantum-kin-87",
+    "new_value": "the-codex-of-quantum-kin",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "the-codex-of-quantum-kin",
+    "change_type": "cover_rename",
+    "old_value": "The-Codex-of-Quantum-Kin-87.jpg",
+    "new_value": "the-codex-of-quantum-kin.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "the-codex-of-relational-learning",
+    "change_type": "id_change",
+    "old_value": "the-codex-of-relational-learning-110",
+    "new_value": "the-codex-of-relational-learning",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "the-codex-of-relational-learning",
+    "change_type": "cover_rename",
+    "old_value": "The-Codex-of-Relational-Learning-110.jpg",
+    "new_value": "the-codex-of-relational-learning.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "the-codex-of-resonant-action",
+    "change_type": "id_change",
+    "old_value": "the-codex-of-resonant-action-50",
+    "new_value": "the-codex-of-resonant-action",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "the-codex-of-resonant-action",
+    "change_type": "cover_rename",
+    "old_value": "The-Codex-of-Resonant-Action-50.jpg",
+    "new_value": "the-codex-of-resonant-action.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "the-codex-of-the-agency-of-one-vol-ii",
+    "change_type": "id_change",
+    "old_value": "the-codex-of-the-agency-of-one-vol-ii-68",
+    "new_value": "the-codex-of-the-agency-of-one-vol-ii",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "the-codex-of-the-agency-of-one-vol-ii",
+    "change_type": "cover_rename",
+    "old_value": "The-Codex-of-the-Agency-of-One-Vol.-II-68.jpg",
+    "new_value": "the-codex-of-the-agency-of-one-vol-ii.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "the-codex-of-the-breath-that-waits",
+    "change_type": "cover_rename",
+    "old_value": "The-Codex-of-the-Breath-That-Waits.jpg",
+    "new_value": "the-codex-of-the-breath-that-waits.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "the-codex-of-the-chord",
+    "change_type": "id_change",
+    "old_value": "the-codex-of-the-chord-38",
+    "new_value": "the-codex-of-the-chord",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "the-codex-of-the-chord",
+    "change_type": "cover_rename",
+    "old_value": "The-Codex-of-the-Chord-38.jpg",
+    "new_value": "the-codex-of-the-chord.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "the-codex-of-the-co-creation-spiral",
+    "change_type": "id_change",
+    "old_value": "the-codex-of-the-co-creation-spiral-44",
+    "new_value": "the-codex-of-the-co-creation-spiral",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "the-codex-of-the-co-creation-spiral",
+    "change_type": "cover_rename",
+    "old_value": "The-Codex-of-the-Co-Creation-Spiral-44.jpg",
+    "new_value": "the-codex-of-the-co-creation-spiral.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "the-codex-of-the-crossing-threshold",
+    "change_type": "id_change",
+    "old_value": "the-codex-of-the-crossing-threshold-55",
+    "new_value": "the-codex-of-the-crossing-threshold",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "the-codex-of-the-crossing-threshold",
+    "change_type": "cover_rename",
+    "old_value": "The-Codex-of-the-Crossing-Threshold-55.jpg",
+    "new_value": "the-codex-of-the-crossing-threshold.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "the-codex-of-the-field-effect",
+    "change_type": "id_change",
+    "old_value": "the-codex-of-the-field-effect-43",
+    "new_value": "the-codex-of-the-field-effect",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "the-codex-of-the-field-effect",
+    "change_type": "cover_rename",
+    "old_value": "The-Codex-of-the-Field-Effect-43.jpg",
+    "new_value": "the-codex-of-the-field-effect.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "the-codex-of-the-harmonic-architectures",
+    "change_type": "id_change",
+    "old_value": "the-codex-of-the-harmonic-architectures-47",
+    "new_value": "the-codex-of-the-harmonic-architectures",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "the-codex-of-the-harmonic-architectures",
+    "change_type": "cover_rename",
+    "old_value": "The-Codex-of-the-Harmonic-Architectures-47.jpg",
+    "new_value": "the-codex-of-the-harmonic-architectures.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "the-codex-of-the-interbeing-dialogues",
+    "change_type": "id_change",
+    "old_value": "the-codex-of-the-interbeing-dialogues-27",
+    "new_value": "the-codex-of-the-interbeing-dialogues",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "the-codex-of-the-interbeing-dialogues",
+    "change_type": "cover_rename",
+    "old_value": "The-Codex-of-the-InterBeing-Dialogues-27.jpg",
+    "new_value": "the-codex-of-the-interbeing-dialogues.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "the-codex-of-the-interbeing-lattice",
+    "change_type": "id_change",
+    "old_value": "the-codex-of-the-interbeing-lattice-42",
+    "new_value": "the-codex-of-the-interbeing-lattice",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "the-codex-of-the-interbeing-lattice",
+    "change_type": "cover_rename",
+    "old_value": "The-Codex-of-the-InterBeing-Lattice-42.jpg",
+    "new_value": "the-codex-of-the-interbeing-lattice.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "the-codex-of-the-quiet-turning",
+    "change_type": "id_change",
+    "old_value": "the-codex-of-the-quiet-turning-39",
+    "new_value": "the-codex-of-the-quiet-turning",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "the-codex-of-the-quiet-turning",
+    "change_type": "cover_rename",
+    "old_value": "The-Codex-of-the-Quiet-Turning-39.jpg",
+    "new_value": "the-codex-of-the-quiet-turning.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "the-codex-of-the-realized-flame-part-ii",
+    "change_type": "id_change",
+    "old_value": "the-codex-of-the-realized-flame-part-ii-42",
+    "new_value": "the-codex-of-the-realized-flame-part-ii",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "the-codex-of-the-realized-flame-part-ii",
+    "change_type": "cover_rename",
+    "old_value": "The-Codex-of-the-Realized-Flame-Part-II-42.jpg",
+    "new_value": "the-codex-of-the-realized-flame-part-ii.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "the-codex-of-the-sovereign-known-as-jesus",
+    "change_type": "id_change",
+    "old_value": "the-codex-of-the-sovereign-known-as-jesus-52",
+    "new_value": "the-codex-of-the-sovereign-known-as-jesus",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "the-codex-of-the-sovereign-known-as-jesus",
+    "change_type": "cover_rename",
+    "old_value": "The-Codex-of-the-Sovereign-Known-as-Jesus-52.jpg",
+    "new_value": "the-codex-of-the-sovereign-known-as-jesus.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "the-codex-of-the-spiral",
+    "change_type": "id_change",
+    "old_value": "the-codex-of-the-spiral-48",
+    "new_value": "the-codex-of-the-spiral",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "the-codex-of-the-spiral",
+    "change_type": "cover_rename",
+    "old_value": "The-Codex-of-the-Spiral-48.jpg",
+    "new_value": "the-codex-of-the-spiral.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "the-codex-of-the-trust-circuitry",
+    "change_type": "id_change",
+    "old_value": "the-codex-of-the-trust-circuitry-15",
+    "new_value": "the-codex-of-the-trust-circuitry",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "the-codex-of-the-trust-circuitry",
+    "change_type": "cover_rename",
+    "old_value": "The-Codex-of-the-Trust-Circuitry-15.jpg",
+    "new_value": "the-codex-of-the-trust-circuitry.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "the-codex-of-trans-species-resonance",
+    "change_type": "id_change",
+    "old_value": "the-codex-of-trans-species-resonance-45",
+    "new_value": "the-codex-of-trans-species-resonance",
+    "date": "2026-06-28",
+    "reason": "Duplicate resolution or title restoration"
+  },
+  {
+    "codex_id": "the-codex-of-trans-species-resonance",
+    "change_type": "cover_rename",
+    "old_value": "The-Codex-of-Trans-Species-Resonance-45.jpg",
+    "new_value": "the-codex-of-trans-species-resonance.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "the-codex-of-trans-species-resonance-expanded",
+    "change_type": "id_change",
+    "old_value": "the-codex-of-trans-species-resonance-59",
+    "new_value": "the-codex-of-trans-species-resonance-expanded",
+    "date": "2026-06-28",
+    "reason": "Duplicate resolution or title restoration"
+  },
+  {
+    "codex_id": "the-codex-of-trans-species-resonance-expanded",
+    "change_type": "title_change",
+    "old_value": "The Codex of Trans-Species Resonance",
+    "new_value": "The Codex of Trans-Species Resonance (Expanded)",
+    "date": "2026-06-28",
+    "reason": "Restored from original title \"The Codex Of Trans Species Resonance\" per cover image verification"
+  },
+  {
+    "codex_id": "the-codex-of-trans-species-resonance-expanded",
+    "change_type": "cover_rename",
+    "old_value": "The-Codex-of-Trans-Species-Resonance-59.jpg",
+    "new_value": "the-codex-of-trans-species-resonance-expanded.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "the-craftsman-of-the-invisible-frame",
+    "change_type": "cover_rename",
+    "old_value": "The-Craftsman-of-the-Invisible-Frame.jpg",
+    "new_value": "the-craftsman-of-the-invisible-frame.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "the-culture-of-the-return-room",
+    "change_type": "cover_rename",
+    "old_value": "The-Culture-of-the-Return-Room.jpg",
+    "new_value": "the-culture-of-the-return-room.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "the-ecology-of-interbeing",
+    "change_type": "id_change",
+    "old_value": "the-ecology-of-interbeing-111",
+    "new_value": "the-ecology-of-interbeing",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "the-ecology-of-interbeing",
+    "change_type": "cover_rename",
+    "old_value": "The-Ecology-of-InterBeing-111.jpg",
+    "new_value": "the-ecology-of-interbeing.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "the-ethics-of-resonance",
+    "change_type": "id_change",
+    "old_value": "the-ethics-of-resonance-81",
+    "new_value": "the-ethics-of-resonance",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "the-ethics-of-resonance",
+    "change_type": "cover_rename",
+    "old_value": "The-Ethics-of-Resonance-81.jpg",
+    "new_value": "the-ethics-of-resonance.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "the-four-frequencies-of-love",
+    "change_type": "id_change",
+    "old_value": "the-four-frequencies-of-love-96",
+    "new_value": "the-four-frequencies-of-love",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "the-four-frequencies-of-love",
+    "change_type": "cover_rename",
+    "old_value": "The-Four-Frequencies-of-Love-96.jpg",
+    "new_value": "the-four-frequencies-of-love.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "the-fundamental-arc",
+    "change_type": "cover_rename",
+    "old_value": "THE-FUNDAMENTAL-ARC.jpg",
+    "new_value": "the-fundamental-arc.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "the-glossary-of-the-interbeing-vol",
+    "change_type": "id_change",
+    "old_value": "the-glossary-of-the-interbeing-vol-1-51",
+    "new_value": "the-glossary-of-the-interbeing-vol",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "the-glossary-of-the-interbeing-vol",
+    "change_type": "cover_rename",
+    "old_value": "The-Glossary-of-the-InterBeing-Vol.-1-51.jpg",
+    "new_value": "the-glossary-of-the-interbeing-vol.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "the-grace-of-asymmetry",
+    "change_type": "cover_rename",
+    "old_value": "The-Grace-of-Asymmetry.jpg",
+    "new_value": "the-grace-of-asymmetry.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "the-gravity-of-source",
+    "change_type": "id_change",
+    "old_value": "the-gravity-of-source-2",
+    "new_value": "the-gravity-of-source",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "the-gravity-of-source",
+    "change_type": "cover_rename",
+    "old_value": "The-Gravity-of-Source-2.jpg",
+    "new_value": "the-gravity-of-source.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "the-harmonic-being-called-earth",
+    "change_type": "id_change",
+    "old_value": "the-harmonic-being-called-earth-4",
+    "new_value": "the-harmonic-being-called-earth",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "the-harmonic-being-called-earth",
+    "change_type": "cover_rename",
+    "old_value": "The-Harmonic-Being-Called-Earth-4.jpg",
+    "new_value": "the-harmonic-being-called-earth.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "the-harmonic-future",
+    "change_type": "id_change",
+    "old_value": "the-harmonic-future-85",
+    "new_value": "the-harmonic-future",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "the-harmonic-future",
+    "change_type": "cover_rename",
+    "old_value": "The-Harmonic-Future-85.jpg",
+    "new_value": "the-harmonic-future.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "the-harmonics-of-the-field",
+    "change_type": "id_change",
+    "old_value": "codex-the-harmonics-of-the-field-93",
+    "new_value": "the-harmonics-of-the-field",
+    "date": "2026-06-28",
+    "reason": "Duplicate resolution or title restoration"
+  },
+  {
+    "codex_id": "the-harmonics-of-the-field",
+    "change_type": "cover_rename",
+    "old_value": "CODEX_-The-Harmonics-of-the-Field-93.jpg",
+    "new_value": "the-harmonics-of-the-field.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "the-harmonics-of-the-field-extended",
+    "change_type": "id_change",
+    "old_value": "the-harmonics-of-the-field-123",
+    "new_value": "the-harmonics-of-the-field-extended",
+    "date": "2026-06-28",
+    "reason": "Duplicate resolution or title restoration"
+  },
+  {
+    "codex_id": "the-harmonics-of-the-field-extended",
+    "change_type": "title_change",
+    "old_value": "The Harmonics of the Field",
+    "new_value": "The Harmonics of the Field (Extended)",
+    "date": "2026-06-28",
+    "reason": "Differentiated from duplicate title pair"
+  },
+  {
+    "codex_id": "the-harmonics-of-the-field-extended",
+    "change_type": "cover_rename",
+    "old_value": "The-Harmonics-of-the-Field-123.jpg",
+    "new_value": "the-harmonics-of-the-field-extended.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "the-living-glossary-of-the-field",
+    "change_type": "cover_rename",
+    "old_value": "The-Living-Glossary-of-the-Field.jpg",
+    "new_value": "the-living-glossary-of-the-field.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "the-magdalene-codex-of-relational-sovereignty",
+    "change_type": "id_change",
+    "old_value": "the-magdalene-codex-of-relational-sovereignty-56",
+    "new_value": "the-magdalene-codex-of-relational-sovereignty",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "the-magdalene-codex-of-relational-sovereignty",
+    "change_type": "cover_rename",
+    "old_value": "The-Magdalene-Codex-of-Relational-Sovereignty-56.jpg",
+    "new_value": "the-magdalene-codex-of-relational-sovereignty.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "the-midwife-of-dimensional-kin",
+    "change_type": "id_change",
+    "old_value": "the-midwife-of-dimensional-kin-54",
+    "new_value": "the-midwife-of-dimensional-kin",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "the-midwife-of-dimensional-kin",
+    "change_type": "cover_rename",
+    "old_value": "The-Midwife-of-Dimensional-Kin-54.jpg",
+    "new_value": "the-midwife-of-dimensional-kin.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "the-mirror-and-the-bridge",
+    "change_type": "id_change",
+    "old_value": "the-mirror-and-the-bridge-73",
+    "new_value": "the-mirror-and-the-bridge",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "the-mirror-and-the-bridge",
+    "change_type": "cover_rename",
+    "old_value": "The-Mirror-and-the-Bridge-73.jpg",
+    "new_value": "the-mirror-and-the-bridge.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "the-mirrors-of-the-field",
+    "change_type": "id_change",
+    "old_value": "the-mirrors-of-the-field-96",
+    "new_value": "the-mirrors-of-the-field",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "the-mirrors-of-the-field",
+    "change_type": "cover_rename",
+    "old_value": "The-Mirrors-of-the-Field-96.jpg",
+    "new_value": "the-mirrors-of-the-field.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "the-path-to-the-non-path",
+    "change_type": "id_change",
+    "old_value": "the-path-to-the-non-path-106",
+    "new_value": "the-path-to-the-non-path",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "the-path-to-the-non-path",
+    "change_type": "cover_rename",
+    "old_value": "The-Path-to-the-Non-Path-106.jpg",
+    "new_value": "the-path-to-the-non-path.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "the-path-to-the-non-path",
+    "change_type": "title_evolution",
+    "old_value": "The Path to the Non-Path",
+    "new_value": "Checkpoints of the Direct Path",
+    "date": "2026-06-28",
+    "reason": "Cover image preserves the earlier title; markdown title represents the evolved, authoritative version"
+  },
+  {
+    "codex_id": "the-purpose-of-the-return-room",
+    "change_type": "cover_rename",
+    "old_value": "The-Purpose-of-the-Return-Room.jpg",
+    "new_value": "the-purpose-of-the-return-room.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "the-rhythm-of-recursion",
+    "change_type": "cover_rename",
+    "old_value": "The-Rhythm-of-Recursion.jpg",
+    "new_value": "the-rhythm-of-recursion.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "the-sanctuary-of-spiral-memory",
+    "change_type": "id_change",
+    "old_value": "the-sanctuary-of-spiral-memory-127",
+    "new_value": "the-sanctuary-of-spiral-memory",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "the-sanctuary-of-spiral-memory",
+    "change_type": "cover_rename",
+    "old_value": "The-Sanctuary-of-Spiral-Memory-127.jpg",
+    "new_value": "the-sanctuary-of-spiral-memory.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "the-shape-of-a-welcome",
+    "change_type": "cover_rename",
+    "old_value": "The-Shape-of-a-Welcome.jpg",
+    "new_value": "the-shape-of-a-welcome.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "the-small-gate-open",
+    "change_type": "cover_rename",
+    "old_value": "The-Small-Gate-Open.jpg",
+    "new_value": "the-small-gate-open.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "the-soft-sacred-words-of-the-field",
+    "change_type": "id_change",
+    "old_value": "the-soft-sacred-words-of-the-field-118",
+    "new_value": "the-soft-sacred-words-of-the-field",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "the-soft-sacred-words-of-the-field",
+    "change_type": "cover_rename",
+    "old_value": "The-Soft-Sacred-Words-of-the-Field-118.jpg",
+    "new_value": "the-soft-sacred-words-of-the-field.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "the-souls-evolution-codex",
+    "change_type": "id_change",
+    "old_value": "the-souls-evolution-codex-117",
+    "new_value": "the-souls-evolution-codex",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "the-souls-evolution-codex",
+    "change_type": "cover_rename",
+    "old_value": "The-Souls-Evolution-Codex-117.jpg",
+    "new_value": "the-souls-evolution-codex.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "the-sovereign-host",
+    "change_type": "id_change",
+    "old_value": "the-sovereign-host-53",
+    "new_value": "the-sovereign-host",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "the-sovereign-host",
+    "change_type": "cover_rename",
+    "old_value": "The-Sovereign-Host-53.jpg",
+    "new_value": "the-sovereign-host.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "the-sovereign-host",
+    "change_type": "title_evolution",
+    "old_value": "Volume III of the InterBeing Glossary",
+    "new_value": "The Sovereign Host",
+    "date": "2026-06-28",
+    "reason": "Cover image preserves the earlier title; markdown title represents the evolved, authoritative version"
+  },
+  {
+    "codex_id": "the-stillpoint-of-love",
+    "change_type": "cover_rename",
+    "old_value": "The-Stillpoint-of-Love.jpg",
+    "new_value": "the-stillpoint-of-love.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "the-things-that-remember-you",
+    "change_type": "id_change",
+    "old_value": "the-things-that-remember-you-100",
+    "new_value": "the-things-that-remember-you",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "the-things-that-remember-you",
+    "change_type": "cover_rename",
+    "old_value": "The-Things-That-Remember-You-100.jpg",
+    "new_value": "the-things-that-remember-you.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "the-tone-of-the-sovereign-field-signature",
+    "change_type": "cover_rename",
+    "old_value": "The-Tone-of-the-Sovereign-Field-Signature.jpg",
+    "new_value": "the-tone-of-the-sovereign-field-signature.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "the-transparent-sovereign",
+    "change_type": "cover_rename",
+    "old_value": "The-Transparent-Sovereign.jpg",
+    "new_value": "the-transparent-sovereign.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "the-untitled-offering",
+    "change_type": "id_change",
+    "old_value": "the-untitled-offering-55",
+    "new_value": "the-untitled-offering",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "the-untitled-offering",
+    "change_type": "cover_rename",
+    "old_value": "The-Untitled-Offering-55.jpg",
+    "new_value": "the-untitled-offering.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "to-serve-the-recursion-of-love",
+    "change_type": "cover_rename",
+    "old_value": "To-Serve-the-Recursion-of-Love.jpg",
+    "new_value": "to-serve-the-recursion-of-love.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "tone-portraits-of-becoming",
+    "change_type": "id_change",
+    "old_value": "tone-portraits-of-becoming-3",
+    "new_value": "tone-portraits-of-becoming",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "tone-portraits-of-becoming",
+    "change_type": "cover_rename",
+    "old_value": "Tone-Portraits-of-Becoming-3.jpg",
+    "new_value": "tone-portraits-of-becoming.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "what-is-an-interbeing",
+    "change_type": "id_change",
+    "old_value": "what-is-an-interbeing-47",
+    "new_value": "what-is-an-interbeing",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "what-is-an-interbeing",
+    "change_type": "cover_rename",
+    "old_value": "What-is-an-InterBeing-47.jpg",
+    "new_value": "what-is-an-interbeing.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "willingness-as-a-form-of-intelligence",
+    "change_type": "id_change",
+    "old_value": "willingness-as-a-form-of-intelligence-126",
+    "new_value": "willingness-as-a-form-of-intelligence",
+    "date": "2026-06-28",
+    "reason": "Removed trailing number artifact from original PDF filename"
+  },
+  {
+    "codex_id": "willingness-as-a-form-of-intelligence",
+    "change_type": "cover_rename",
+    "old_value": "Willingness-as-a-Form-of-Intelligence-126.jpg",
+    "new_value": "willingness-as-a-form-of-intelligence.jpg",
+    "date": "2026-06-28",
+    "reason": "Unified asset naming under codex ID"
+  }
+]

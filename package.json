@@ -8,6 +8,11 @@
     "install:client": "cd client && npm install"
   },
   "keywords": [],
-  "author": "thewebkid",
-  "license": "ISC"
+  "author": "kid@thewebkid.com",
+  "license": "ISC",
+  "dependencies": {
+    "csv-parse": "^7.0.0",
+    "exceljs": "^4.4.0",
+    "tesseract.js": "^7.0.0"
+  }
 }

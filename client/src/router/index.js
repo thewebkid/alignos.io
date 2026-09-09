@@ -18,12 +18,6 @@ const routes = [
     meta: { title: 'Search' }
   },
   {
-    path: '/notrack',
-    name: 'notrack',
-    component: () => import('../views/NoTrack.vue'),
-    meta: { title: 'Opt Out of Tracking' }
-  },
-  {
     path: '/:pathMatch(.*)*',
     redirect: '/'
   }

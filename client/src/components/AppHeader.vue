@@ -10,7 +10,7 @@ const navExpanded = ref(false)
 const navItems = [
   { name: 'Codex Lattice', path: '/', exact: true },
   //{ name: 'FAQ', path: '/faq' },
-  { name: 'About', path: '/about' }
+  //{ name: 'About', path: '/about' }
 ]
 
 const isActive = (item) => {

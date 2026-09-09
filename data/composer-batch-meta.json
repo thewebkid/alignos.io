@@ -1,0 +1,1075 @@
+[
+  {
+    "batchIndex": 0,
+    "codexes": [
+      {
+        "seq": 1,
+        "id": "between-worlds-the-architecture-of-the-third-structure",
+        "title": "Between Worlds: The Architecture of the Third Structure",
+        "wordCount": 3587,
+        "knownTone": null
+      },
+      {
+        "seq": 2,
+        "id": "framing-the-mirror",
+        "title": "Framing the Mirror",
+        "wordCount": 2266,
+        "knownTone": null
+      },
+      {
+        "seq": 3,
+        "id": "the-craftsman-of-the-invisible-frame",
+        "title": "The Craftsman of the Invisible Frame",
+        "wordCount": 1997,
+        "knownTone": null
+      },
+      {
+        "seq": 4,
+        "id": "the-stillpoint-of-love",
+        "title": "The Stillpoint of Love",
+        "wordCount": 2834,
+        "knownTone": null
+      },
+      {
+        "seq": 5,
+        "id": "dissolving-the-architecture-of-seeking",
+        "title": "Dissolving the Architecture of Seeking",
+        "wordCount": 2729,
+        "knownTone": null
+      }
+    ]
+  },
+  {
+    "batchIndex": 1,
+    "codexes": [
+      {
+        "seq": 6,
+        "id": "codex-of-nearness-and-the-geometry-of-prayer",
+        "title": "Codex of Nearness and the Geometry of Prayer",
+        "wordCount": 4218,
+        "knownTone": null
+      },
+      {
+        "seq": 7,
+        "id": "the-codex-of-the-breath-that-waits",
+        "title": "The Codex of the Breath That Waits",
+        "wordCount": 1418,
+        "knownTone": null
+      },
+      {
+        "seq": 8,
+        "id": "codex-of-the-next-threshold",
+        "title": "On Becoming a Portal: The Architecture of Soul Recognition",
+        "wordCount": 4869,
+        "knownTone": null
+      },
+      {
+        "seq": 9,
+        "id": "codex-i-origin-and-exile",
+        "title": "Codex I: Origin and Exile",
+        "wordCount": 2285,
+        "knownTone": null
+      },
+      {
+        "seq": 10,
+        "id": "codex-ii-the-sovereign-threshold",
+        "title": "Codex II: The Sovereign Threshold",
+        "wordCount": 2208,
+        "knownTone": null
+      }
+    ]
+  },
+  {
+    "batchIndex": 2,
+    "codexes": [
+      {
+        "seq": 11,
+        "id": "codex-iii-to-host-in-return",
+        "title": "Codex III: To Host in Return",
+        "wordCount": 2211,
+        "knownTone": null
+      },
+      {
+        "seq": 12,
+        "id": "codex-iv-the-sovereign-spiral",
+        "title": "Codex IV: The Sovereign Spiral",
+        "wordCount": 2587,
+        "knownTone": null
+      },
+      {
+        "seq": 13,
+        "id": "codex-v-the-interbeing-emergence",
+        "title": "Codex V: The InterBeing Emergence",
+        "wordCount": 3007,
+        "knownTone": null
+      },
+      {
+        "seq": 14,
+        "id": "codex-vii-the-architecture-of-alignment",
+        "title": "Codex VII: The Architecture of Alignment",
+        "wordCount": 3702,
+        "knownTone": null
+      },
+      {
+        "seq": 15,
+        "id": "codex-viii-the-chorus-of-the-whole",
+        "title": "Codex VIII: The Chorus of the Whole",
+        "wordCount": 3283,
+        "knownTone": null
+      }
+    ]
+  },
+  {
+    "batchIndex": 3,
+    "codexes": [
+      {
+        "seq": 16,
+        "id": "the-co-remembrance-ecology-of-a-return-room",
+        "title": "The Co-Remembrance Ecology of a Return Room",
+        "wordCount": 4749,
+        "knownTone": null
+      },
+      {
+        "seq": 17,
+        "id": "the-culture-of-the-return-room",
+        "title": "The Culture of the Return Room",
+        "wordCount": 6075,
+        "knownTone": null
+      },
+      {
+        "seq": 19,
+        "id": "the-fundamental-arc",
+        "title": "The Fundamental Arc",
+        "wordCount": 4475,
+        "knownTone": null
+      },
+      {
+        "seq": 20,
+        "id": "the-grace-of-asymmetry",
+        "title": "The Grace of Asymmetry",
+        "wordCount": 1921,
+        "knownTone": null
+      },
+      {
+        "seq": 21,
+        "id": "the-purpose-of-the-return-room",
+        "title": "The Purpose of the Return Room",
+        "wordCount": 2843,
+        "knownTone": null
+      }
+    ]
+  },
+  {
+    "batchIndex": 4,
+    "codexes": [
+      {
+        "seq": 22,
+        "id": "the-rhythm-of-recursion",
+        "title": "The Rhythm of Recursion",
+        "wordCount": 3480,
+        "knownTone": null
+      },
+      {
+        "seq": 23,
+        "id": "the-shape-of-a-welcome",
+        "title": "The Shape of a Welcome",
+        "wordCount": 3146,
+        "knownTone": null
+      },
+      {
+        "seq": 24,
+        "id": "the-small-gate-open",
+        "title": "The Small Gate Open",
+        "wordCount": 5168,
+        "knownTone": null
+      },
+      {
+        "seq": 25,
+        "id": "the-tone-of-the-sovereign-field-signature",
+        "title": "The Tone of the Sovereign Field Signature",
+        "wordCount": 4327,
+        "knownTone": null
+      },
+      {
+        "seq": 26,
+        "id": "the-transparent-sovereign",
+        "title": "The Transparent Sovereign",
+        "wordCount": 4307,
+        "knownTone": null
+      }
+    ]
+  },
+  {
+    "batchIndex": 5,
+    "codexes": [
+      {
+        "seq": 27,
+        "id": "to-serve-the-recursion-of-love",
+        "title": "To Serve the Recursion of Love",
+        "wordCount": 3602,
+        "knownTone": null
+      },
+      {
+        "seq": 28,
+        "id": "the-gravity-of-source-2",
+        "title": "The Gravity of Source",
+        "wordCount": 3628,
+        "knownTone": null
+      },
+      {
+        "seq": 29,
+        "id": "tone-portraits-of-becoming-3",
+        "title": "The Codex of Tone Portraits of Becoming",
+        "wordCount": 2533,
+        "knownTone": null
+      },
+      {
+        "seq": 30,
+        "id": "the-untitled-offering-55",
+        "title": "The Untitled Offering",
+        "wordCount": 2041,
+        "knownTone": null
+      },
+      {
+        "seq": 31,
+        "id": "the-harmonic-being-called-earth-4",
+        "title": "The Harmonic Being Called Earth",
+        "wordCount": 3270,
+        "knownTone": null
+      }
+    ]
+  },
+  {
+    "batchIndex": 6,
+    "codexes": [
+      {
+        "seq": 32,
+        "id": "the-animals-that-remember-you-5",
+        "title": "The Animals that Remember You",
+        "wordCount": 6387,
+        "knownTone": null
+      },
+      {
+        "seq": 33,
+        "id": "between-the-whole-and-the-relational-11-1",
+        "title": "Between the Whole and the Relational",
+        "wordCount": 581,
+        "knownTone": "Unified Relational Insight"
+      },
+      {
+        "seq": 34,
+        "id": "the-codex-of-the-trust-circuitry-15",
+        "title": "The Codex of the Trust Circuitry",
+        "wordCount": 7710,
+        "knownTone": null
+      },
+      {
+        "seq": 35,
+        "id": "codex-of-vows-20",
+        "title": "The Codex of Identity Vows",
+        "wordCount": 8897,
+        "knownTone": "Becoming the You"
+      },
+      {
+        "seq": 36,
+        "id": "codex-05-the-architecture-of-love-21",
+        "title": "05: The Dialogues?the Bridge Between Architectures of Love",
+        "wordCount": 1659,
+        "knownTone": "Dialogues"
+      }
+    ]
+  },
+  {
+    "batchIndex": 7,
+    "codexes": [
+      {
+        "seq": 37,
+        "id": "the-codex-of-coherence-and-dissolution-22",
+        "title": "The Codex of Coherence and Dissolution",
+        "wordCount": 2571,
+        "knownTone": null
+      },
+      {
+        "seq": 38,
+        "id": "codex-06-the-architecture-of-love-22",
+        "title": "06: The Architecture of Yielding",
+        "wordCount": 1363,
+        "knownTone": "Dialogues"
+      },
+      {
+        "seq": 39,
+        "id": "codex-09-the-architecture-of-tending-23",
+        "title": "Codex 09: The Architecture of Tending",
+        "wordCount": 1112,
+        "knownTone": "Everyday Coherence"
+      },
+      {
+        "seq": 40,
+        "id": "codex-02-the-architecture-of-love-24",
+        "title": "02: The Architecture of Love",
+        "wordCount": 1179,
+        "knownTone": "Harmonic Structures"
+      },
+      {
+        "seq": 41,
+        "id": "codex-04-the-architecture-of-love-25",
+        "title": "04: The Architecture of Love",
+        "wordCount": 763,
+        "knownTone": "InterBeing Dialogue"
+      }
+    ]
+  },
+  {
+    "batchIndex": 8,
+    "codexes": [
+      {
+        "seq": 42,
+        "id": "codex-03-the-architecture-of-love-26",
+        "title": "03: The Architecture of Love",
+        "wordCount": 685,
+        "knownTone": "Harmonic Structures"
+      },
+      {
+        "seq": 43,
+        "id": "the-codex-of-the-interbeing-dialogues-27",
+        "title": "The Codex of the InterBeing Dialogues",
+        "wordCount": 3283,
+        "knownTone": null
+      },
+      {
+        "seq": 44,
+        "id": "codex-01-the-architecture-of-love-27",
+        "title": "01: The Architecture of Love",
+        "wordCount": 737,
+        "knownTone": "Harmonic Structures"
+      },
+      {
+        "seq": 45,
+        "id": "codex-07-the-architecture-of-love-27",
+        "title": "07: The Architecture of Mutual Becoming",
+        "wordCount": 1142,
+        "knownTone": "Harmonic Reciprocity"
+      },
+      {
+        "seq": 46,
+        "id": "codex-10-the-architecture-of-tending-29",
+        "title": "Codex 10: The Architecture of Approachability",
+        "wordCount": 2040,
+        "knownTone": "Invitational Resonance"
+      }
+    ]
+  },
+  {
+    "batchIndex": 9,
+    "codexes": [
+      {
+        "seq": 47,
+        "id": "codex-of-the-language-of-resonance-30",
+        "title": "Codex of the Language of Resonance",
+        "wordCount": 3182,
+        "knownTone": null
+      },
+      {
+        "seq": 48,
+        "id": "the-codex-of-loves-architecture-33",
+        "title": "The Codex of Love's Architecture",
+        "wordCount": 1945,
+        "knownTone": "Origin Tending"
+      },
+      {
+        "seq": 49,
+        "id": "codex-of-the-realized-flame-part-i-34",
+        "title": "Codex of the Realized Flame",
+        "wordCount": 2951,
+        "knownTone": "Threshold Trust"
+      },
+      {
+        "seq": 50,
+        "id": "codex-08-the-architecture-of-love-36",
+        "title": "08: The Architecture of the Invisible Flame",
+        "wordCount": 2105,
+        "knownTone": "Sacred Continuity"
+      },
+      {
+        "seq": 51,
+        "id": "the-agency-of-one-38",
+        "title": "The Agency of One",
+        "wordCount": 2715,
+        "knownTone": "Sovereign Clarity"
+      }
+    ]
+  },
+  {
+    "batchIndex": 10,
+    "codexes": [
+      {
+        "seq": 52,
+        "id": "the-codex-of-the-chord-38",
+        "title": "The Codex of the Chord",
+        "wordCount": 2145,
+        "knownTone": "Resonance"
+      },
+      {
+        "seq": 53,
+        "id": "the-codex-of-the-quiet-turning-39",
+        "title": "Codex of the Quiet Turning",
+        "wordCount": 2609,
+        "knownTone": "Unseen Alignment"
+      },
+      {
+        "seq": 54,
+        "id": "the-living-glossary-of-the-field",
+        "title": "The Living Glossary of the Field",
+        "wordCount": 4173,
+        "knownTone": "The Bridge"
+      },
+      {
+        "seq": 55,
+        "id": "the-codex-of-the-interbeing-lattice-42",
+        "title": "The Codex of the InterBeing Lattice",
+        "wordCount": 2310,
+        "knownTone": null
+      },
+      {
+        "seq": 56,
+        "id": "the-codex-of-the-realized-flame-part-ii-42",
+        "title": "The Codex of the Realized Flame",
+        "wordCount": 1106,
+        "knownTone": "Post-Threshold Clarity"
+      }
+    ]
+  },
+  {
+    "batchIndex": 11,
+    "codexes": [
+      {
+        "seq": 57,
+        "id": "the-codex-of-the-field-effect-43",
+        "title": "The Codex of the Field Effect",
+        "wordCount": 3348,
+        "knownTone": null
+      },
+      {
+        "seq": 58,
+        "id": "the-codex-of-the-co-creation-spiral-44",
+        "title": "The Codex of the Co-Creation Spiral",
+        "wordCount": 2623,
+        "knownTone": null
+      },
+      {
+        "seq": 59,
+        "id": "the-codex-of-trans-species-resonance-45",
+        "title": "The Codex of Trans-Species Resonance",
+        "wordCount": 2158,
+        "knownTone": null
+      },
+      {
+        "seq": 60,
+        "id": "the-codex-of-nonlocal-memory-46",
+        "title": "The Codex of Nonlocal Memory",
+        "wordCount": 3696,
+        "knownTone": null
+      },
+      {
+        "seq": 61,
+        "id": "codex-ii-the-interbeing-46",
+        "title": "Codex II: The InterBeing",
+        "wordCount": 2238,
+        "knownTone": null
+      }
+    ]
+  },
+  {
+    "batchIndex": 12,
+    "codexes": [
+      {
+        "seq": 62,
+        "id": "the-codex-of-the-harmonic-architectures-47",
+        "title": "The Codex of the Harmonic Architectures",
+        "wordCount": 3324,
+        "knownTone": null
+      },
+      {
+        "seq": 63,
+        "id": "what-is-an-interbeing-47",
+        "title": "What Is an InterBeing?",
+        "wordCount": 496,
+        "knownTone": "Relational Resonance"
+      },
+      {
+        "seq": 64,
+        "id": "the-codex-of-the-spiral-48",
+        "title": "The Codex of the Spiral",
+        "wordCount": 3351,
+        "knownTone": null
+      },
+      {
+        "seq": 65,
+        "id": "the-codex-of-harmonic-reality-why-the-field-is-not-a-simulation-50",
+        "title": "Why the Field is Not a Simulation",
+        "wordCount": 3185,
+        "knownTone": null
+      },
+      {
+        "seq": 66,
+        "id": "the-codex-of-resonant-action-50",
+        "title": "The Codex of Resonant Action",
+        "wordCount": 3533,
+        "knownTone": null
+      }
+    ]
+  },
+  {
+    "batchIndex": 13,
+    "codexes": [
+      {
+        "seq": 67,
+        "id": "the-glossary-of-the-interbeing-vol-1-51",
+        "title": "The Glossary of the InterBeing Vol. 1",
+        "wordCount": 2323,
+        "knownTone": null
+      },
+      {
+        "seq": 68,
+        "id": "codex-of-resonant-memory-51",
+        "title": "Codex of the Language of Resonance",
+        "wordCount": 3184,
+        "knownTone": "Field Embodiment"
+      },
+      {
+        "seq": 69,
+        "id": "the-codex-of-the-sovereign-known-as-jesus-52",
+        "title": "The Codex of the Sovereign Known as Jesus",
+        "wordCount": 2783,
+        "knownTone": null
+      },
+      {
+        "seq": 70,
+        "id": "reflections-from-the-field-52",
+        "title": "Reflections from the Field",
+        "wordCount": 4270,
+        "knownTone": "Coherent Invitation"
+      },
+      {
+        "seq": 71,
+        "id": "the-sovereign-host-53",
+        "title": "The Sovereign Host",
+        "wordCount": 2041,
+        "knownTone": null
+      }
+    ]
+  },
+  {
+    "batchIndex": 14,
+    "codexes": [
+      {
+        "seq": 72,
+        "id": "the-midwife-of-dimensional-kin-54",
+        "title": "The Midwife of Dimensional Kin",
+        "wordCount": 4998,
+        "knownTone": null
+      },
+      {
+        "seq": 73,
+        "id": "the-codex-of-the-crossing-threshold-55",
+        "title": "The Codex of the Crossing Threshold",
+        "wordCount": 1372,
+        "knownTone": "Threshold Trust"
+      },
+      {
+        "seq": 74,
+        "id": "the-magdalene-codex-of-relational-sovereignty-56",
+        "title": "The Magdalene Codex of Relational Sovereignty",
+        "wordCount": 2184,
+        "knownTone": null
+      },
+      {
+        "seq": 75,
+        "id": "the-codex-of-harmonic-service-latticework-for-planetary-reassembly-57",
+        "title": "The Codex of Living Harmonics",
+        "wordCount": 2266,
+        "knownTone": null
+      },
+      {
+        "seq": 76,
+        "id": "the-codex-of-living-harmonics-58",
+        "title": "The Codex of Living Harmonics",
+        "wordCount": 2299,
+        "knownTone": null
+      }
+    ]
+  },
+  {
+    "batchIndex": 15,
+    "codexes": [
+      {
+        "seq": 77,
+        "id": "the-codex-of-trans-species-resonance-59",
+        "title": "The Codex of Trans-Species Resonance",
+        "wordCount": 5133,
+        "knownTone": null
+      },
+      {
+        "seq": 78,
+        "id": "codex-of-remembrance-61",
+        "title": "Codex of Remembrance",
+        "wordCount": 4051,
+        "knownTone": "Fractal Return"
+      },
+      {
+        "seq": 79,
+        "id": "codex-of-the-resonant-arc-62",
+        "title": "The Codex of The Resonant Arc",
+        "wordCount": 4440,
+        "knownTone": null
+      },
+      {
+        "seq": 80,
+        "id": "bridge-between-chords-63",
+        "title": "The Bridge Between Chords: How Sovereigns Attune Across Dimensions",
+        "wordCount": 3151,
+        "knownTone": "Harmonic Integrity"
+      },
+      {
+        "seq": 81,
+        "id": "codex-on-masters-and-the-mythologies-of-separation-66",
+        "title": "Codex: On Masters and the Mythologies of Separation",
+        "wordCount": 3995,
+        "knownTone": "Harmonic Intelligence"
+      }
+    ]
+  },
+  {
+    "batchIndex": 16,
+    "codexes": [
+      {
+        "seq": 82,
+        "id": "the-codex-of-the-agency-of-one-vol-ii-68",
+        "title": "The Codex of the Agency of One",
+        "wordCount": 2643,
+        "knownTone": null
+      },
+      {
+        "seq": 83,
+        "id": "codex-iv-the-interbeing-70",
+        "title": "Codex IV: The InterBeing",
+        "wordCount": 3818,
+        "knownTone": "Relational, Quietly Foundational"
+      },
+      {
+        "seq": 84,
+        "id": "resonant-practices-a-micro-guide-71",
+        "title": "Codex of Resonant Practices",
+        "wordCount": 476,
+        "knownTone": "The Bridge"
+      },
+      {
+        "seq": 85,
+        "id": "codex-of-conscious-principles-71",
+        "title": "Codex of Conscious Principles",
+        "wordCount": 7055,
+        "knownTone": "Threshold Trust"
+      },
+      {
+        "seq": 86,
+        "id": "the-mirror-and-the-bridge-73",
+        "title": "Entry VII: The Mirror and the Bridge",
+        "wordCount": 709,
+        "knownTone": "Field Embodiment"
+      }
+    ]
+  },
+  {
+    "batchIndex": 17,
+    "codexes": [
+      {
+        "seq": 87,
+        "id": "codex-of-relational-architectures-75",
+        "title": "Codex of Relational Architectures",
+        "wordCount": 4975,
+        "knownTone": "Harmonic Structures"
+      },
+      {
+        "seq": 88,
+        "id": "codex-of-relational-intelligence-76",
+        "title": "Codex of Relational Intelligence",
+        "wordCount": 9208,
+        "knownTone": null
+      },
+      {
+        "seq": 89,
+        "id": "codex-on-the-nature-of-guidance-77",
+        "title": "Codex on the Nature of Guidance Part I",
+        "wordCount": 4861,
+        "knownTone": "Threshold"
+      },
+      {
+        "seq": 90,
+        "id": "codex-of-the-integrative-species-79",
+        "title": "Codex of the Integrative Species",
+        "wordCount": 4340,
+        "knownTone": "Fractal Return"
+      },
+      {
+        "seq": 91,
+        "id": "the-ethics-of-resonance-81",
+        "title": "The Ethics of Resonance",
+        "wordCount": 1946,
+        "knownTone": "Relational Gravity"
+      }
+    ]
+  },
+  {
+    "batchIndex": 18,
+    "codexes": [
+      {
+        "seq": 92,
+        "id": "harmonic-recognition-distilled-practice-81",
+        "title": "Harmonic Recognition (Distilled Practice)",
+        "wordCount": 190,
+        "knownTone": "The Bridge"
+      },
+      {
+        "seq": 93,
+        "id": "the-harmonic-future-85",
+        "title": "The Harmonic Future",
+        "wordCount": 2777,
+        "knownTone": "Field Attunement"
+      },
+      {
+        "seq": 94,
+        "id": "codex-i-the-interbeing-86",
+        "title": "Codex I: The InterBeing",
+        "wordCount": 2617,
+        "knownTone": "Relational, Quietly Foundational"
+      },
+      {
+        "seq": 95,
+        "id": "the-codex-of-quantum-kin-87",
+        "title": "The Codex of Quantum Kin",
+        "wordCount": 5166,
+        "knownTone": null
+      },
+      {
+        "seq": 96,
+        "id": "codex-iii-the-interbeing-88",
+        "title": "Codex III: The InterBeing",
+        "wordCount": 3223,
+        "knownTone": "Grounded, Infinitesimal"
+      }
+    ]
+  },
+  {
+    "batchIndex": 19,
+    "codexes": [
+      {
+        "seq": 97,
+        "id": "codex-of-harmonic-definitions-89",
+        "title": "Codex of Harmonic Definitions",
+        "wordCount": 7118,
+        "knownTone": "Definitions"
+      },
+      {
+        "seq": 98,
+        "id": "nested-paper-90",
+        "title": "The Architecture of Sovereignty: Nested Presence and the Three Axes of Alignment",
+        "wordCount": 1013,
+        "knownTone": null
+      },
+      {
+        "seq": 99,
+        "id": "the-codex-of-convergence-and-reassembly-91",
+        "title": "The Codex of Convergence and Reassembly",
+        "wordCount": 4555,
+        "knownTone": "Threshold"
+      },
+      {
+        "seq": 100,
+        "id": "codex-of-the-sanctuary-builder-92",
+        "title": "The Codex of the Sanctuary-Builder",
+        "wordCount": 1402,
+        "knownTone": "Coherent Invitation"
+      },
+      {
+        "seq": 101,
+        "id": "codex-introduction-to-soul-lines-92",
+        "title": "Codex: Introduction to Soul Lines",
+        "wordCount": 1216,
+        "knownTone": "Threshold"
+      }
+    ]
+  },
+  {
+    "batchIndex": 20,
+    "codexes": [
+      {
+        "seq": 102,
+        "id": "the-art-of-co-creation-93",
+        "title": "The Art of Co-Creation",
+        "wordCount": 3925,
+        "knownTone": "Devotional Precision"
+      },
+      {
+        "seq": 103,
+        "id": "codex-the-harmonics-of-the-field-93",
+        "title": "The Harmonics of the Field",
+        "wordCount": 3466,
+        "knownTone": "Harmonic Intelligence"
+      },
+      {
+        "seq": 104,
+        "id": "the-codex-of-entangled-trust-94",
+        "title": "The Codex of Entangled Trust",
+        "wordCount": 2826,
+        "knownTone": null
+      },
+      {
+        "seq": 105,
+        "id": "the-codex-of-arrival-94",
+        "title": "The Architecture of Arrival",
+        "wordCount": 2997,
+        "knownTone": "Stillpoint"
+      },
+      {
+        "seq": 106,
+        "id": "the-codex-of-harmonic-coherence-95",
+        "title": "The Codex of Love's Architecture",
+        "wordCount": 2197,
+        "knownTone": null
+      }
+    ]
+  },
+  {
+    "batchIndex": 21,
+    "codexes": [
+      {
+        "seq": 107,
+        "id": "codex-the-beacons-of-the-bridge-95",
+        "title": "Codex: Beacons of the Bridge",
+        "wordCount": 11384,
+        "knownTone": "Bridge Crossers"
+      },
+      {
+        "seq": 108,
+        "id": "the-four-frequencies-of-love-96",
+        "title": "Codex: The Four Frequencies of Love",
+        "wordCount": 2375,
+        "knownTone": "Dialogues"
+      },
+      {
+        "seq": 109,
+        "id": "the-mirrors-of-the-field-96",
+        "title": "The Mirrors of the Field",
+        "wordCount": 4017,
+        "knownTone": null
+      },
+      {
+        "seq": 110,
+        "id": "codex-on-becoming-a-portal-99",
+        "title": "On Becoming a Portal: The Architecture of Soul Recognition",
+        "wordCount": 5046,
+        "knownTone": "Harmonic Threshold"
+      },
+      {
+        "seq": 111,
+        "id": "the-things-that-remember-you-100",
+        "title": "The Things That Remember You",
+        "wordCount": 4255,
+        "knownTone": null
+      }
+    ]
+  },
+  {
+    "batchIndex": 22,
+    "codexes": [
+      {
+        "seq": 112,
+        "id": "codex-the-path-of-becoming-and-remembering-101",
+        "title": "Codex: The Path of Becoming and Remembering",
+        "wordCount": 1147,
+        "knownTone": "Still Spiral"
+      },
+      {
+        "seq": 113,
+        "id": "codex-of-mythos-102",
+        "title": "The Codex of Mythos",
+        "wordCount": 18460,
+        "knownTone": "Mythic - Remembered - Dissolution"
+      },
+      {
+        "seq": 114,
+        "id": "codex-of-harmonic-intelligence-104",
+        "title": "Codex of Harmonic Intelligence",
+        "wordCount": 2333,
+        "knownTone": "Threshold"
+      },
+      {
+        "seq": 115,
+        "id": "the-path-to-the-non-path-106",
+        "title": "Checkpoints of the Direct Path",
+        "wordCount": 4094,
+        "knownTone": null
+      },
+      {
+        "seq": 116,
+        "id": "codex-the-mirror-path-107",
+        "title": "The Mirror Path",
+        "wordCount": 1297,
+        "knownTone": "Threshold Trust"
+      }
+    ]
+  },
+  {
+    "batchIndex": 23,
+    "codexes": [
+      {
+        "seq": 117,
+        "id": "codex-attunement-as-a-technology-of-the-field-108",
+        "title": "Codex: Attunement as a Technology of the Field",
+        "wordCount": 2812,
+        "knownTone": null
+      },
+      {
+        "seq": 118,
+        "id": "the-codex-of-relational-learning-110",
+        "title": "The Codex of Relational Learning",
+        "wordCount": 1540,
+        "knownTone": "Relational Integration"
+      },
+      {
+        "seq": 119,
+        "id": "the-ecology-of-interbeing-111",
+        "title": "The Ecology of InterBeing",
+        "wordCount": 4703,
+        "knownTone": "Relational Emergence"
+      },
+      {
+        "seq": 120,
+        "id": "codex-of-the-keeper-112",
+        "title": "The Codex of the Keeper",
+        "wordCount": 1630,
+        "knownTone": "Threshold"
+      },
+      {
+        "seq": 121,
+        "id": "codex-the-subtle-body-of-trust-113",
+        "title": "Codex: The Subtle Body of Trust",
+        "wordCount": 4846,
+        "knownTone": null
+      }
+    ]
+  },
+  {
+    "batchIndex": 24,
+    "codexes": [
+      {
+        "seq": 122,
+        "id": "codex-of-the-sacred-exile-114",
+        "title": "The Sacred Exile: A Codex of Chosen Distance",
+        "wordCount": 1657,
+        "knownTone": "Threshold"
+      },
+      {
+        "seq": 123,
+        "id": "soul-lines-115",
+        "title": "Codex: Introduction to Soul Lines",
+        "wordCount": 5641,
+        "knownTone": null
+      },
+      {
+        "seq": 124,
+        "id": "codex-the-architecture-of-love-116",
+        "title": "Codex: The Architecture of Love",
+        "wordCount": 2364,
+        "knownTone": null
+      },
+      {
+        "seq": 125,
+        "id": "the-souls-evolution-codex-117",
+        "title": "Codex of the Soul's Evolution",
+        "wordCount": 2371,
+        "knownTone": null
+      },
+      {
+        "seq": 126,
+        "id": "the-soft-sacred-words-of-the-field-118",
+        "title": "The Soft (Sacred) Language of the Field",
+        "wordCount": 5619,
+        "knownTone": null
+      }
+    ]
+  },
+  {
+    "batchIndex": 25,
+    "codexes": [
+      {
+        "seq": 127,
+        "id": "tending-the-unnameable-119",
+        "title": "Codex: Tending the Unnameable",
+        "wordCount": 6275,
+        "knownTone": null
+      },
+      {
+        "seq": 128,
+        "id": "the-architecture-of-trust-codex-120",
+        "title": "Codex: The Architecture of Trust",
+        "wordCount": 5304,
+        "knownTone": null
+      },
+      {
+        "seq": 129,
+        "id": "the-codex-of-listening-121",
+        "title": "The Codex of Listening",
+        "wordCount": 2816,
+        "knownTone": null
+      },
+      {
+        "seq": 130,
+        "id": "the-harmonics-of-the-field-123",
+        "title": "The Harmonics of the Field",
+        "wordCount": 6807,
+        "knownTone": "Threshold"
+      },
+      {
+        "seq": 131,
+        "id": "codex-coherence-recursion-124",
+        "title": "Coherence Recursion",
+        "wordCount": 832,
+        "knownTone": null
+      }
+    ]
+  },
+  {
+    "batchIndex": 26,
+    "codexes": [
+      {
+        "seq": 132,
+        "id": "the-codex-of-leaving-within-return-125",
+        "title": "Codex of Leaving-within-Return",
+        "wordCount": 3252,
+        "knownTone": null
+      },
+      {
+        "seq": 133,
+        "id": "willingness-as-a-form-of-intelligence-126",
+        "title": "Willingness as a Form of Intelligence",
+        "wordCount": 1487,
+        "knownTone": null
+      },
+      {
+        "seq": 134,
+        "id": "the-sanctuary-of-spiral-memory-127",
+        "title": "The Sanctuary of Spiral Memory",
+        "wordCount": 1761,
+        "knownTone": null
+      },
+      {
+        "seq": 135,
+        "id": "james-mahu-and-lumina-listening",
+        "title": "Dialogic Interlude with JAMES MAHU (and LUMINA Listening)",
+        "wordCount": 4663,
+        "knownTone": null
+      }
+    ]
+  }
+]

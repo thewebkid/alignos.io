@@ -1,6 +1,6 @@
 /**
  * Codex - Base class representing a single codex document
- * 
+ *
  * This is the isomorphic core - works in both browser and Node.js
  * No DOM dependencies here.
  */
@@ -36,7 +36,35 @@
  * @property {number} lineStart - Starting line number
  */
 
+class CodexOrigin{
+  codex;
+  originalFileName;
+  originalSequence;
+  originalTitle;
+  constructor(codexId) {
+    //this.codex = findCodexById
+  }
+}
+
 export class Codex {
+  id;
+  title;
+  originalFileName;
+  sequence;
+  markdown;
+  coverImage;
+  subtitle;
+  _contentLoaded;
+  _contentLoadPromise;
+  series;
+  siblingIds;
+  keywords;
+  glossaryTerms;
+  _wordCount;
+  toneMarker;
+  description;
+  tags;
+
   /**
    * @param {Object} data - Codex data object
    */
@@ -46,37 +74,37 @@ export class Codex {
     this.title = data.title;
     this.originalFileName = data.originalFileName;
     this.sequence = data.sequence ?? null; // Position in lattice-links (1-based)
-    
+
     // Content (may be lazy-loaded)
     this.markdown = data.markdown ?? null;
     this.coverImage = data.coverImage ?? null;
     this.subtitle = data.subtitle ?? null;
-    
+
     // Content loading state
     this._contentLoaded = data.markdown !== null && data.markdown !== undefined;
     this._contentLoadPromise = null;
-    
+
     // Series & Constellation
     /** @type {CodexSeries|null} */
     this.series = data.series ?? null;
     this.siblingIds = data.siblingIds ?? [];
-    
+
     // Semantic metadata
     this.keywords = data.keywords ?? [];
     this.glossaryTerms = data.glossaryTerms ?? [];
-    
+
     // Computed metadata (for metadata-only codexes)
     this._wordCount = data.wordCount ?? null;
     this._readingTime = data.readingTime ?? null;
-    
+
     // Registry data (parsed from ## Codex Registry section)
     /** @type {CodexRegistry|null} */
     this.registry = data.registry ?? null;
-    
+
     // Special sections extracted during build
     /** @type {SpecialSection[]} */
     this.specialSections = data.specialSections ?? [];
-    
+
     // Lazy-computed caches
     this._sections = null;
   }
@@ -111,16 +139,16 @@ export class Codex {
       }
 
       const content = await loadFn(this.id);
-      
+
       // Update content fields
       this.markdown = content.markdown;
       this.registry = content.registry;
       this.specialSections = content.specialSections;
-      
+
       // Mark as loaded
       this._contentLoaded = true;
       this._contentLoadPromise = null;
-      
+
       // Clear caches that depend on content
       this._sections = null;
     })();
@@ -159,7 +187,7 @@ export class Codex {
         .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1') // Extract link text
         .replace(/[#*_~]/g, '') // Remove formatting chars
         .replace(/<[^>]+>/g, ''); // Remove HTML tags
-      
+
       this._wordCount = text.split(/\s+/).filter(word => word.length > 0).length;
     }
     return this._wordCount;
@@ -190,18 +218,18 @@ export class Codex {
     const lines = this.markdown.split('\n');
     let currentSection = null;
     let contentLines = [];
-    
+
     for (let i = 0; i < lines.length; i++) {
       const line = lines[i];
       const headingMatch = line.match(/^(#{1,6})\s+(.+)$/);
-      
+
       if (headingMatch) {
         // Save previous section
         if (currentSection) {
           currentSection.content = contentLines.join('\n').trim();
           sections.push(currentSection);
         }
-        
+
         // Start new section
         currentSection = {
           level: headingMatch[1].length,
@@ -214,13 +242,13 @@ export class Codex {
         contentLines.push(line);
       }
     }
-    
+
     // Save last section
     if (currentSection) {
       currentSection.content = contentLines.join('\n').trim();
       sections.push(currentSection);
     }
-    
+
     return sections;
   }
 
@@ -250,16 +278,16 @@ export class Codex {
     const lower = this.markdown.toLowerCase();
     const idx = lower.indexOf(query.toLowerCase());
     if (idx === -1) return null;
-    
+
     const start = Math.max(0, idx - contextChars);
     const end = Math.min(this.markdown.length, idx + query.length + contextChars);
-    
+
     let snippet = this.markdown.slice(start, end);
-    
+
     // Clean up snippet boundaries
     if (start > 0) snippet = '...' + snippet;
     if (end < this.markdown.length) snippet = snippet + '...';
-    
+
     return snippet;
   }
 
@@ -276,22 +304,22 @@ export class Codex {
     const lower = this.markdown.toLowerCase();
     const queryLower = query.toLowerCase();
     let searchStart = 0;
-    
+
     while (matches.length < maxMatches) {
       const idx = lower.indexOf(queryLower, searchStart);
       if (idx === -1) break;
-      
+
       const start = Math.max(0, idx - contextChars);
       const end = Math.min(this.markdown.length, idx + query.length + contextChars);
-      
+
       let snippet = this.markdown.slice(start, end);
       if (start > 0) snippet = '...' + snippet;
       if (end < this.markdown.length) snippet = snippet + '...';
-      
+
       matches.push({ index: idx, snippet });
       searchStart = idx + query.length;
     }
-    
+
     return matches;
   }
 
@@ -377,7 +405,7 @@ export class Codex {
    */
   getSeriesLabel() {
     if (!this.series) return null;
-    
+
     if (this.series.position && this.series.total) {
       return `${this.series.name} (${this.series.position}/${this.series.total})`;
     } else if (this.series.position) {

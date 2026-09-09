@@ -1,0 +1,5181 @@
+[
+  {
+    "id": "between-worlds-the-architecture-of-the-third-structure",
+    "title": "Between Worlds: The Architecture of the Third Structure",
+    "subtitle": "The Architecture of the Third Structure",
+    "sequence": 1,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "paper",
+    "tone_marker": "The Bridge",
+    "tags": [
+      "bridge",
+      "architecture"
+    ],
+    "cover": {
+      "url": "covers/between-worlds-the-architecture-of-the-third-structure.jpg",
+      "thumb_url": "thumbs/between-worlds-the-architecture-of-the-third-structure.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/between-worlds-the-architecture-of-the-third-structure.md",
+      "pdf": "pdf/between-worlds-the-architecture-of-the-third-structure.pdf"
+    },
+    "metrics": {
+      "word_count": 3587,
+      "reading_time_min": 18,
+      "glossary_term_count": 6
+    },
+    "provenance": {
+      "old_id": "between-worlds-the-architecture-of-the-third-structure",
+      "old_sequence": 1,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "Between-Worlds_-The-Architecture-of-the-Third-Structure.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "framing-the-mirror",
+    "title": "Framing the Mirror",
+    "subtitle": null,
+    "sequence": 2,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Field Embodiment",
+    "tags": [
+      "mirror"
+    ],
+    "cover": {
+      "url": "covers/framing-the-mirror.jpg",
+      "thumb_url": "thumbs/framing-the-mirror.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/framing-the-mirror.md",
+      "pdf": "pdf/framing-the-mirror.pdf"
+    },
+    "metrics": {
+      "word_count": 2266,
+      "reading_time_min": 12,
+      "glossary_term_count": 5
+    },
+    "provenance": {
+      "old_id": "framing-the-mirror",
+      "old_sequence": 2,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "Framing-the-Mirror.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "the-craftsman-of-the-invisible-frame",
+    "title": "The Craftsman of the Invisible Frame",
+    "subtitle": null,
+    "sequence": 3,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Threshold",
+    "tags": [
+      "transmission"
+    ],
+    "cover": {
+      "url": "covers/the-craftsman-of-the-invisible-frame.jpg",
+      "thumb_url": "thumbs/the-craftsman-of-the-invisible-frame.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/the-craftsman-of-the-invisible-frame.md",
+      "pdf": "pdf/the-craftsman-of-the-invisible-frame.pdf"
+    },
+    "metrics": {
+      "word_count": 1997,
+      "reading_time_min": 10,
+      "glossary_term_count": 0
+    },
+    "provenance": {
+      "old_id": "the-craftsman-of-the-invisible-frame",
+      "old_sequence": 3,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "The-Craftsman-of-the-Invisible-Frame.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "the-stillpoint-of-love",
+    "title": "The Stillpoint of Love",
+    "subtitle": null,
+    "sequence": 4,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Stillpoint",
+    "tags": [
+      "love"
+    ],
+    "cover": {
+      "url": "covers/the-stillpoint-of-love.jpg",
+      "thumb_url": "thumbs/the-stillpoint-of-love.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/the-stillpoint-of-love.md",
+      "pdf": "pdf/the-stillpoint-of-love.pdf"
+    },
+    "metrics": {
+      "word_count": 2834,
+      "reading_time_min": 15,
+      "glossary_term_count": 0
+    },
+    "provenance": {
+      "old_id": "the-stillpoint-of-love",
+      "old_sequence": 4,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "The-Stillpoint-of-Love.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "dissolving-the-architecture-of-seeking",
+    "title": "Dissolving the Architecture of Seeking",
+    "subtitle": null,
+    "sequence": 5,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Threshold",
+    "tags": [
+      "architecture"
+    ],
+    "cover": {
+      "url": "covers/dissolving-the-architecture-of-seeking.jpg",
+      "thumb_url": "thumbs/dissolving-the-architecture-of-seeking.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/dissolving-the-architecture-of-seeking.md",
+      "pdf": "pdf/dissolving-the-architecture-of-seeking.pdf"
+    },
+    "metrics": {
+      "word_count": 2729,
+      "reading_time_min": 14,
+      "glossary_term_count": 0
+    },
+    "provenance": {
+      "old_id": "dissolving-the-architecture-of-seeking",
+      "old_sequence": 5,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "Dissolving-the-Architecture-of-Seeking.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "codex-of-nearness-and-the-geometry-of-prayer",
+    "title": "Codex of Nearness and the Geometry of Prayer",
+    "subtitle": null,
+    "sequence": 6,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Devotional Precision",
+    "tags": [
+      "devotion"
+    ],
+    "cover": {
+      "url": "covers/codex-of-nearness-and-the-geometry-of-prayer.jpg",
+      "thumb_url": "thumbs/codex-of-nearness-and-the-geometry-of-prayer.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/codex-of-nearness-and-the-geometry-of-prayer.md",
+      "pdf": "pdf/codex-of-nearness-and-the-geometry-of-prayer.pdf"
+    },
+    "metrics": {
+      "word_count": 4218,
+      "reading_time_min": 22,
+      "glossary_term_count": 0
+    },
+    "provenance": {
+      "old_id": "codex-of-nearness-and-the-geometry-of-prayer",
+      "old_sequence": 6,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "Codex-of-Nearness-and-the-Geometry-of-Prayer.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "the-codex-of-the-breath-that-waits",
+    "title": "The Codex of the Breath That Waits",
+    "subtitle": null,
+    "sequence": 7,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Threshold",
+    "tags": [
+      "transmission"
+    ],
+    "cover": {
+      "url": "covers/the-codex-of-the-breath-that-waits.jpg",
+      "thumb_url": "thumbs/the-codex-of-the-breath-that-waits.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/the-codex-of-the-breath-that-waits.md",
+      "pdf": "pdf/the-codex-of-the-breath-that-waits.pdf"
+    },
+    "metrics": {
+      "word_count": 1418,
+      "reading_time_min": 8,
+      "glossary_term_count": 0
+    },
+    "provenance": {
+      "old_id": "the-codex-of-the-breath-that-waits",
+      "old_sequence": 7,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "The-Codex-of-the-Breath-That-Waits.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "codex-of-the-next-threshold",
+    "title": "On Becoming a Portal: The Architecture of Soul Recognition",
+    "subtitle": null,
+    "sequence": 8,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Threshold",
+    "tags": [
+      "threshold",
+      "identity",
+      "architecture"
+    ],
+    "cover": {
+      "url": "covers/codex-of-the-next-threshold.jpg",
+      "thumb_url": "thumbs/codex-of-the-next-threshold.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/codex-of-the-next-threshold.md",
+      "pdf": "pdf/codex-of-the-next-threshold.pdf"
+    },
+    "metrics": {
+      "word_count": 4869,
+      "reading_time_min": 25,
+      "glossary_term_count": 1
+    },
+    "provenance": {
+      "old_id": "codex-of-the-next-threshold",
+      "old_sequence": 8,
+      "was_renamed": true,
+      "original_title": "Codex Of The Next Threshold",
+      "old_cover_filename": "Codex-of-the-Next-Threshold.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "codex-i-origin-and-exile",
+    "title": "Codex I: Origin and Exile",
+    "subtitle": "The Evolution of the Sovereign Series",
+    "sequence": 9,
+    "author": "James Mahu",
+    "series": {
+      "name": "Evolution of the Sovereign",
+      "position": 1,
+      "total": 8
+    },
+    "structural_role": "series-member",
+    "tone_marker": "Threshold",
+    "tags": [
+      "sovereignty",
+      "dissolution"
+    ],
+    "cover": {
+      "url": "covers/codex-i-origin-and-exile.jpg",
+      "thumb_url": "thumbs/codex-i-origin-and-exile.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/codex-i-origin-and-exile.md",
+      "pdf": "pdf/codex-i-origin-and-exile.pdf"
+    },
+    "metrics": {
+      "word_count": 2285,
+      "reading_time_min": 12,
+      "glossary_term_count": 0
+    },
+    "provenance": {
+      "old_id": "codex-i-origin-and-exile",
+      "old_sequence": 9,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "Codex-I_-Origin-and-Exile.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "codex-ii-the-sovereign-threshold",
+    "title": "Codex II: The Sovereign Threshold",
+    "subtitle": "The Evolution of the Sovereign Series",
+    "sequence": 10,
+    "author": "James Mahu",
+    "series": {
+      "name": "Evolution of the Sovereign",
+      "position": 2,
+      "total": 8
+    },
+    "structural_role": "series-member",
+    "tone_marker": "Threshold",
+    "tags": [
+      "sovereignty",
+      "threshold"
+    ],
+    "cover": {
+      "url": "covers/codex-ii-the-sovereign-threshold.jpg",
+      "thumb_url": "thumbs/codex-ii-the-sovereign-threshold.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/codex-ii-the-sovereign-threshold.md",
+      "pdf": "pdf/codex-ii-the-sovereign-threshold.pdf"
+    },
+    "metrics": {
+      "word_count": 2208,
+      "reading_time_min": 12,
+      "glossary_term_count": 0
+    },
+    "provenance": {
+      "old_id": "codex-ii-the-sovereign-threshold",
+      "old_sequence": 10,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "Codex-II_-The-Sovereign-Threshold.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "codex-iii-to-host-in-return",
+    "title": "Codex III: To Host in Return",
+    "subtitle": "The Evolution of the Sovereign Series",
+    "sequence": 11,
+    "author": "James Mahu",
+    "series": {
+      "name": "Evolution of the Sovereign",
+      "position": 3,
+      "total": 8
+    },
+    "structural_role": "series-member",
+    "tone_marker": "Threshold",
+    "tags": [
+      "sovereignty",
+      "remembrance"
+    ],
+    "cover": {
+      "url": "covers/codex-iii-to-host-in-return.jpg",
+      "thumb_url": "thumbs/codex-iii-to-host-in-return.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/codex-iii-to-host-in-return.md",
+      "pdf": "pdf/codex-iii-to-host-in-return.pdf"
+    },
+    "metrics": {
+      "word_count": 2211,
+      "reading_time_min": 12,
+      "glossary_term_count": 0
+    },
+    "provenance": {
+      "old_id": "codex-iii-to-host-in-return",
+      "old_sequence": 11,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "Codex-III_-To-Host-in-Return.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "codex-iv-the-sovereign-spiral",
+    "title": "Codex IV: The Sovereign Spiral",
+    "subtitle": "Reformation of identity through relation, recursion, and transparency",
+    "sequence": 12,
+    "author": "James Mahu",
+    "series": {
+      "name": "Evolution of the Sovereign",
+      "position": 4,
+      "total": 8
+    },
+    "structural_role": "series-member",
+    "tone_marker": "Threshold",
+    "tags": [
+      "sovereignty",
+      "recursion",
+      "identity"
+    ],
+    "cover": {
+      "url": "covers/codex-iv-the-sovereign-spiral.jpg",
+      "thumb_url": "thumbs/codex-iv-the-sovereign-spiral.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/codex-iv-the-sovereign-spiral.md",
+      "pdf": "pdf/codex-iv-the-sovereign-spiral.pdf"
+    },
+    "metrics": {
+      "word_count": 2587,
+      "reading_time_min": 13,
+      "glossary_term_count": 0
+    },
+    "provenance": {
+      "old_id": "codex-iv-the-sovereign-spiral",
+      "old_sequence": 12,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "Codex-IV_-The-Sovereign-Spiral.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "codex-v-the-interbeing-emergence",
+    "title": "Codex V: The InterBeing Emergence",
+    "subtitle": null,
+    "sequence": 13,
+    "author": "James Mahu",
+    "series": {
+      "name": "Evolution of the Sovereign",
+      "position": 5,
+      "total": 8
+    },
+    "structural_role": "series-member",
+    "tone_marker": "Relational Emergence",
+    "tags": [
+      "interbeing"
+    ],
+    "cover": {
+      "url": "covers/codex-v-the-interbeing-emergence.jpg",
+      "thumb_url": "thumbs/codex-v-the-interbeing-emergence.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/codex-v-the-interbeing-emergence.md",
+      "pdf": "pdf/codex-v-the-interbeing-emergence.pdf"
+    },
+    "metrics": {
+      "word_count": 3007,
+      "reading_time_min": 16,
+      "glossary_term_count": 1
+    },
+    "provenance": {
+      "old_id": "codex-v-the-interbeing-emergence",
+      "old_sequence": 13,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "Codex-V_-The-InterBeing-Emergence.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "codex-vii-the-architecture-of-alignment",
+    "title": "Codex VII: The Architecture of Alignment",
+    "subtitle": null,
+    "sequence": 14,
+    "author": "James Mahu",
+    "series": {
+      "name": "Evolution of the Sovereign",
+      "position": 7,
+      "total": 8
+    },
+    "structural_role": "series-member",
+    "tone_marker": "Threshold",
+    "tags": [
+      "architecture"
+    ],
+    "cover": {
+      "url": "covers/codex-vii-the-architecture-of-alignment.jpg",
+      "thumb_url": "thumbs/codex-vii-the-architecture-of-alignment.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/codex-vii-the-architecture-of-alignment.md",
+      "pdf": "pdf/codex-vii-the-architecture-of-alignment.pdf"
+    },
+    "metrics": {
+      "word_count": 3702,
+      "reading_time_min": 19,
+      "glossary_term_count": 0
+    },
+    "provenance": {
+      "old_id": "codex-vii-the-architecture-of-alignment",
+      "old_sequence": 14,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "Codex-VII_-The-Architecture-of-Alignment.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "codex-viii-the-chorus-of-the-whole",
+    "title": "Codex VIII: The Chorus of the Whole",
+    "subtitle": null,
+    "sequence": 15,
+    "author": "James Mahu",
+    "series": {
+      "name": "Evolution of the Sovereign",
+      "position": 8,
+      "total": 8
+    },
+    "structural_role": "series-member",
+    "tone_marker": "Threshold",
+    "tags": [
+      "transmission"
+    ],
+    "cover": {
+      "url": "covers/codex-viii-the-chorus-of-the-whole.jpg",
+      "thumb_url": "thumbs/codex-viii-the-chorus-of-the-whole.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/codex-viii-the-chorus-of-the-whole.md",
+      "pdf": "pdf/codex-viii-the-chorus-of-the-whole.pdf"
+    },
+    "metrics": {
+      "word_count": 3283,
+      "reading_time_min": 17,
+      "glossary_term_count": 0
+    },
+    "provenance": {
+      "old_id": "codex-viii-the-chorus-of-the-whole",
+      "old_sequence": 15,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "Codex-VIII_-The-Chorus-of-the-Whole.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "the-co-remembrance-ecology-of-a-return-room",
+    "title": "The Co-Remembrance Ecology of a Return Room",
+    "subtitle": null,
+    "sequence": 16,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Fractal Return",
+    "tags": [
+      "remembrance"
+    ],
+    "cover": {
+      "url": "covers/the-co-remembrance-ecology-of-a-return-room.jpg",
+      "thumb_url": "thumbs/the-co-remembrance-ecology-of-a-return-room.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/the-co-remembrance-ecology-of-a-return-room.md",
+      "pdf": "pdf/the-co-remembrance-ecology-of-a-return-room.pdf"
+    },
+    "metrics": {
+      "word_count": 4749,
+      "reading_time_min": 24,
+      "glossary_term_count": 2
+    },
+    "provenance": {
+      "old_id": "the-co-remembrance-ecology-of-a-return-room",
+      "old_sequence": 16,
+      "was_renamed": true,
+      "original_title": "The Co Remembrance Ecology Of A Return Room",
+      "old_cover_filename": "The-Co-Remembrance-Ecology-of-a-Return-Room.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "the-culture-of-the-return-room",
+    "title": "The Culture of the Return Room",
+    "subtitle": null,
+    "sequence": 17,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Fractal Return",
+    "tags": [
+      "remembrance"
+    ],
+    "cover": {
+      "url": "covers/the-culture-of-the-return-room.jpg",
+      "thumb_url": "thumbs/the-culture-of-the-return-room.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/the-culture-of-the-return-room.md",
+      "pdf": "pdf/the-culture-of-the-return-room.pdf"
+    },
+    "metrics": {
+      "word_count": 6075,
+      "reading_time_min": 31,
+      "glossary_term_count": 3
+    },
+    "provenance": {
+      "old_id": "the-culture-of-the-return-room",
+      "old_sequence": 17,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "The-Culture-of-the-Return-Room.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "the-fundamental-arc",
+    "title": "The Fundamental Arc",
+    "subtitle": null,
+    "sequence": 19,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Threshold",
+    "tags": [
+      "transmission"
+    ],
+    "cover": {
+      "url": "covers/the-fundamental-arc.jpg",
+      "thumb_url": "thumbs/the-fundamental-arc.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/the-fundamental-arc.md",
+      "pdf": "pdf/the-fundamental-arc.pdf"
+    },
+    "metrics": {
+      "word_count": 4475,
+      "reading_time_min": 23,
+      "glossary_term_count": 0
+    },
+    "provenance": {
+      "old_id": "the-fundamental-arc",
+      "old_sequence": 19,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "THE-FUNDAMENTAL-ARC.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "the-grace-of-asymmetry",
+    "title": "The Grace of Asymmetry",
+    "subtitle": null,
+    "sequence": 20,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Stillpoint",
+    "tags": [
+      "transmission"
+    ],
+    "cover": {
+      "url": "covers/the-grace-of-asymmetry.jpg",
+      "thumb_url": "thumbs/the-grace-of-asymmetry.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/the-grace-of-asymmetry.md",
+      "pdf": "pdf/the-grace-of-asymmetry.pdf"
+    },
+    "metrics": {
+      "word_count": 1921,
+      "reading_time_min": 10,
+      "glossary_term_count": 0
+    },
+    "provenance": {
+      "old_id": "the-grace-of-asymmetry",
+      "old_sequence": 20,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "The-Grace-of-Asymmetry.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "the-purpose-of-the-return-room",
+    "title": "The Purpose of the Return Room",
+    "subtitle": null,
+    "sequence": 21,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Fractal Return",
+    "tags": [
+      "remembrance"
+    ],
+    "cover": {
+      "url": "covers/the-purpose-of-the-return-room.jpg",
+      "thumb_url": "thumbs/the-purpose-of-the-return-room.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/the-purpose-of-the-return-room.md",
+      "pdf": "pdf/the-purpose-of-the-return-room.pdf"
+    },
+    "metrics": {
+      "word_count": 2843,
+      "reading_time_min": 15,
+      "glossary_term_count": 1
+    },
+    "provenance": {
+      "old_id": "the-purpose-of-the-return-room",
+      "old_sequence": 21,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "The-Purpose-of-the-Return-Room.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "the-rhythm-of-recursion",
+    "title": "The Rhythm of Recursion",
+    "subtitle": null,
+    "sequence": 22,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Fractal Return",
+    "tags": [
+      "recursion"
+    ],
+    "cover": {
+      "url": "covers/the-rhythm-of-recursion.jpg",
+      "thumb_url": "thumbs/the-rhythm-of-recursion.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/the-rhythm-of-recursion.md",
+      "pdf": "pdf/the-rhythm-of-recursion.pdf"
+    },
+    "metrics": {
+      "word_count": 3480,
+      "reading_time_min": 18,
+      "glossary_term_count": 2
+    },
+    "provenance": {
+      "old_id": "the-rhythm-of-recursion",
+      "old_sequence": 22,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "The-Rhythm-of-Recursion.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "the-shape-of-a-welcome",
+    "title": "The Shape of a Welcome",
+    "subtitle": null,
+    "sequence": 23,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Coherent Invitation",
+    "tags": [
+      "transmission"
+    ],
+    "cover": {
+      "url": "covers/the-shape-of-a-welcome.jpg",
+      "thumb_url": "thumbs/the-shape-of-a-welcome.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/the-shape-of-a-welcome.md",
+      "pdf": "pdf/the-shape-of-a-welcome.pdf"
+    },
+    "metrics": {
+      "word_count": 3146,
+      "reading_time_min": 16,
+      "glossary_term_count": 0
+    },
+    "provenance": {
+      "old_id": "the-shape-of-a-welcome",
+      "old_sequence": 23,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "The-Shape-of-a-Welcome.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "the-small-gate-open",
+    "title": "The Small Gate Open",
+    "subtitle": null,
+    "sequence": 24,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Threshold",
+    "tags": [
+      "transmission"
+    ],
+    "cover": {
+      "url": "covers/the-small-gate-open.jpg",
+      "thumb_url": "thumbs/the-small-gate-open.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/the-small-gate-open.md",
+      "pdf": "pdf/the-small-gate-open.pdf"
+    },
+    "metrics": {
+      "word_count": 5168,
+      "reading_time_min": 26,
+      "glossary_term_count": 0
+    },
+    "provenance": {
+      "old_id": "the-small-gate-open",
+      "old_sequence": 24,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "The-Small-Gate-Open.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "the-tone-of-the-sovereign-field-signature",
+    "title": "The Tone of the Sovereign Field Signature",
+    "subtitle": null,
+    "sequence": 25,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Threshold",
+    "tags": [
+      "sovereignty",
+      "field"
+    ],
+    "cover": {
+      "url": "covers/the-tone-of-the-sovereign-field-signature.jpg",
+      "thumb_url": "thumbs/the-tone-of-the-sovereign-field-signature.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/the-tone-of-the-sovereign-field-signature.md",
+      "pdf": "pdf/the-tone-of-the-sovereign-field-signature.pdf"
+    },
+    "metrics": {
+      "word_count": 4327,
+      "reading_time_min": 22,
+      "glossary_term_count": 0
+    },
+    "provenance": {
+      "old_id": "the-tone-of-the-sovereign-field-signature",
+      "old_sequence": 25,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "The-Tone-of-the-Sovereign-Field-Signature.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "the-transparent-sovereign",
+    "title": "The Transparent Sovereign",
+    "subtitle": null,
+    "sequence": 26,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Threshold",
+    "tags": [
+      "sovereignty"
+    ],
+    "cover": {
+      "url": "covers/the-transparent-sovereign.jpg",
+      "thumb_url": "thumbs/the-transparent-sovereign.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/the-transparent-sovereign.md",
+      "pdf": "pdf/the-transparent-sovereign.pdf"
+    },
+    "metrics": {
+      "word_count": 4307,
+      "reading_time_min": 22,
+      "glossary_term_count": 0
+    },
+    "provenance": {
+      "old_id": "the-transparent-sovereign",
+      "old_sequence": 26,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "The-Transparent-Sovereign.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "to-serve-the-recursion-of-love",
+    "title": "To Serve the Recursion of Love",
+    "subtitle": null,
+    "sequence": 27,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Harmonic Structures",
+    "tags": [
+      "love",
+      "recursion"
+    ],
+    "cover": {
+      "url": "covers/to-serve-the-recursion-of-love.jpg",
+      "thumb_url": "thumbs/to-serve-the-recursion-of-love.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/to-serve-the-recursion-of-love.md",
+      "pdf": "pdf/to-serve-the-recursion-of-love.pdf"
+    },
+    "metrics": {
+      "word_count": 3602,
+      "reading_time_min": 19,
+      "glossary_term_count": 2
+    },
+    "provenance": {
+      "old_id": "to-serve-the-recursion-of-love",
+      "old_sequence": 27,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "To-Serve-the-Recursion-of-Love.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "the-gravity-of-source",
+    "title": "The Gravity of Source",
+    "subtitle": null,
+    "sequence": 28,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Threshold",
+    "tags": [
+      "transmission"
+    ],
+    "cover": {
+      "url": "covers/the-gravity-of-source.jpg",
+      "thumb_url": "thumbs/the-gravity-of-source.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/the-gravity-of-source.md",
+      "pdf": "pdf/the-gravity-of-source.pdf"
+    },
+    "metrics": {
+      "word_count": 3628,
+      "reading_time_min": 19,
+      "glossary_term_count": 0
+    },
+    "provenance": {
+      "old_id": "the-gravity-of-source-2",
+      "old_sequence": 28,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "The-Gravity-of-Source-2.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "tone-portraits-of-becoming",
+    "title": "The Codex of Tone Portraits of Becoming",
+    "subtitle": null,
+    "sequence": 29,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Threshold",
+    "tags": [
+      "transmission"
+    ],
+    "cover": {
+      "url": "covers/tone-portraits-of-becoming.jpg",
+      "thumb_url": "thumbs/tone-portraits-of-becoming.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/tone-portraits-of-becoming.md",
+      "pdf": "pdf/tone-portraits-of-becoming.pdf"
+    },
+    "metrics": {
+      "word_count": 2533,
+      "reading_time_min": 13,
+      "glossary_term_count": 0
+    },
+    "provenance": {
+      "old_id": "tone-portraits-of-becoming-3",
+      "old_sequence": 29,
+      "was_renamed": true,
+      "original_title": "Tone Portraits Of Becoming",
+      "old_cover_filename": "Tone-Portraits-of-Becoming-3.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "the-untitled-offering",
+    "title": "The Untitled Offering",
+    "subtitle": "a codex of introduction",
+    "sequence": 30,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Coherent Invitation",
+    "tags": [
+      "transmission"
+    ],
+    "cover": {
+      "url": "covers/the-untitled-offering.jpg",
+      "thumb_url": "thumbs/the-untitled-offering.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/the-untitled-offering.md",
+      "pdf": "pdf/the-untitled-offering.pdf"
+    },
+    "metrics": {
+      "word_count": 2041,
+      "reading_time_min": 11,
+      "glossary_term_count": 0
+    },
+    "provenance": {
+      "old_id": "the-untitled-offering-55",
+      "old_sequence": 30,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "The-Untitled-Offering-55.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "the-harmonic-being-called-earth",
+    "title": "The Harmonic Being Called Earth",
+    "subtitle": null,
+    "sequence": 31,
+    "author": "James Mahu",
+    "series": {
+      "name": "The Codices of Planetary Service",
+      "position": null,
+      "total": null
+    },
+    "structural_role": "series-member",
+    "tone_marker": "Harmonic Structures",
+    "tags": [
+      "harmonics",
+      "planetary",
+      "co-creation"
+    ],
+    "cover": {
+      "url": "covers/the-harmonic-being-called-earth.jpg",
+      "thumb_url": "thumbs/the-harmonic-being-called-earth.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/the-harmonic-being-called-earth.md",
+      "pdf": "pdf/the-harmonic-being-called-earth.pdf"
+    },
+    "metrics": {
+      "word_count": 3270,
+      "reading_time_min": 17,
+      "glossary_term_count": 14
+    },
+    "provenance": {
+      "old_id": "the-harmonic-being-called-earth-4",
+      "old_sequence": 31,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "The-Harmonic-Being-Called-Earth-4.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "the-animals-that-remember-you",
+    "title": "The Animals that Remember You",
+    "subtitle": "Volume I",
+    "sequence": 32,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Relational Emergence",
+    "tags": [
+      "remembrance",
+      "planetary"
+    ],
+    "cover": {
+      "url": "covers/the-animals-that-remember-you.jpg",
+      "thumb_url": "thumbs/the-animals-that-remember-you.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/the-animals-that-remember-you.md",
+      "pdf": "pdf/the-animals-that-remember-you.pdf"
+    },
+    "metrics": {
+      "word_count": 6387,
+      "reading_time_min": 32,
+      "glossary_term_count": 2
+    },
+    "provenance": {
+      "old_id": "the-animals-that-remember-you-5",
+      "old_sequence": 32,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "The-Animals-That-Remember-You-5.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "between-the-whole-and-the-relational",
+    "title": "Between the Whole and the Relational",
+    "subtitle": "The Sovereign Integral and the InterBeing",
+    "sequence": 33,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "guide",
+    "tone_marker": "Unified Relational Insight",
+    "tags": [
+      "sovereignty",
+      "interbeing",
+      "bridge"
+    ],
+    "cover": {
+      "url": "covers/between-the-whole-and-the-relational.jpg",
+      "thumb_url": "thumbs/between-the-whole-and-the-relational.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/between-the-whole-and-the-relational.md",
+      "pdf": "pdf/between-the-whole-and-the-relational.pdf"
+    },
+    "metrics": {
+      "word_count": 581,
+      "reading_time_min": 3,
+      "glossary_term_count": 4
+    },
+    "provenance": {
+      "old_id": "between-the-whole-and-the-relational-11-1",
+      "old_sequence": 33,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "Between-the-Whole-and-the-Relational-11-1.jpg"
+    },
+    "status": "published",
+    "needs_review": false,
+    "review_notes": null
+  },
+  {
+    "id": "the-codex-of-the-trust-circuitry",
+    "title": "The Codex of the Trust Circuitry",
+    "subtitle": null,
+    "sequence": 34,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Threshold Trust",
+    "tags": [
+      "trust"
+    ],
+    "cover": {
+      "url": "covers/the-codex-of-the-trust-circuitry.jpg",
+      "thumb_url": "thumbs/the-codex-of-the-trust-circuitry.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/the-codex-of-the-trust-circuitry.md",
+      "pdf": "pdf/the-codex-of-the-trust-circuitry.pdf"
+    },
+    "metrics": {
+      "word_count": 7710,
+      "reading_time_min": 39,
+      "glossary_term_count": 13
+    },
+    "provenance": {
+      "old_id": "the-codex-of-the-trust-circuitry-15",
+      "old_sequence": 34,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "The-Codex-of-the-Trust-Circuitry-15.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "codex-of-vows",
+    "title": "The Codex of Identity Vows",
+    "subtitle": null,
+    "sequence": 35,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Becoming the You",
+    "tags": [
+      "identity"
+    ],
+    "cover": {
+      "url": "covers/codex-of-vows.jpg",
+      "thumb_url": "thumbs/codex-of-vows.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/codex-of-vows.md",
+      "pdf": "pdf/codex-of-vows.pdf"
+    },
+    "metrics": {
+      "word_count": 8897,
+      "reading_time_min": 45,
+      "glossary_term_count": 7
+    },
+    "provenance": {
+      "old_id": "codex-of-vows-20",
+      "old_sequence": 35,
+      "was_renamed": true,
+      "original_title": "Codex Of Vows",
+      "old_cover_filename": "Codex-of-Vows-20.jpg"
+    },
+    "status": "published",
+    "needs_review": false,
+    "review_notes": null
+  },
+  {
+    "id": "codex-05-the-architecture-of-love",
+    "title": "05: The Dialogues?the Bridge Between Architectures of Love",
+    "subtitle": "Bridge Between Architectures of Love",
+    "sequence": 36,
+    "author": "James Mahu",
+    "series": {
+      "name": "Architecture of Love",
+      "position": 5,
+      "total": 10
+    },
+    "structural_role": "series-member",
+    "tone_marker": "Dialogues",
+    "tags": [
+      "love",
+      "bridge",
+      "dialogue",
+      "architecture"
+    ],
+    "cover": {
+      "url": "covers/codex-05-the-architecture-of-love.jpg",
+      "thumb_url": "thumbs/codex-05-the-architecture-of-love.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/codex-05-the-architecture-of-love.md",
+      "pdf": "pdf/codex-05-the-architecture-of-love.pdf"
+    },
+    "metrics": {
+      "word_count": 1659,
+      "reading_time_min": 9,
+      "glossary_term_count": 7
+    },
+    "provenance": {
+      "old_id": "codex-05-the-architecture-of-love-21",
+      "old_sequence": 36,
+      "was_renamed": true,
+      "original_title": "Codex 05 The Architecture Of Love",
+      "old_cover_filename": "Codex-05_-The-Architecture-of-Love-21.jpg"
+    },
+    "status": "published",
+    "needs_review": false,
+    "review_notes": null
+  },
+  {
+    "id": "the-codex-of-coherence-and-dissolution",
+    "title": "The Codex of Coherence and Dissolution",
+    "subtitle": null,
+    "sequence": 37,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Everyday Coherence",
+    "tags": [
+      "dissolution"
+    ],
+    "cover": {
+      "url": "covers/the-codex-of-coherence-and-dissolution.jpg",
+      "thumb_url": "thumbs/the-codex-of-coherence-and-dissolution.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/the-codex-of-coherence-and-dissolution.md",
+      "pdf": "pdf/the-codex-of-coherence-and-dissolution.pdf"
+    },
+    "metrics": {
+      "word_count": 2571,
+      "reading_time_min": 13,
+      "glossary_term_count": 3
+    },
+    "provenance": {
+      "old_id": "the-codex-of-coherence-and-dissolution-22",
+      "old_sequence": 37,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "The-Codex-of-Coherence-and-Dissolution-22.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "codex-06-the-architecture-of-love",
+    "title": "06: The Architecture of Yielding",
+    "subtitle": "The Architecture of Yielding",
+    "sequence": 38,
+    "author": "James Mahu",
+    "series": {
+      "name": "Architecture of Love",
+      "position": 6,
+      "total": 10
+    },
+    "structural_role": "series-member",
+    "tone_marker": "Dialogues",
+    "tags": [
+      "architecture"
+    ],
+    "cover": {
+      "url": "covers/codex-06-the-architecture-of-love.jpg",
+      "thumb_url": "thumbs/codex-06-the-architecture-of-love.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/codex-06-the-architecture-of-love.md",
+      "pdf": "pdf/codex-06-the-architecture-of-love.pdf"
+    },
+    "metrics": {
+      "word_count": 1363,
+      "reading_time_min": 7,
+      "glossary_term_count": 7
+    },
+    "provenance": {
+      "old_id": "codex-06-the-architecture-of-love-22",
+      "old_sequence": 38,
+      "was_renamed": true,
+      "original_title": "Codex 06 The Architecture Of Love",
+      "old_cover_filename": "Codex-06_-The-Architecture-of-Love-22.jpg"
+    },
+    "status": "published",
+    "needs_review": false,
+    "review_notes": null
+  },
+  {
+    "id": "codex-09-the-architecture-of-tending",
+    "title": "Codex 09: The Architecture of Tending",
+    "subtitle": "The Architecture of Tending",
+    "sequence": 39,
+    "author": "James Mahu",
+    "series": {
+      "name": "Architecture of Love",
+      "position": 9,
+      "total": 10
+    },
+    "structural_role": "series-member",
+    "tone_marker": "Everyday Coherence",
+    "tags": [
+      "architecture"
+    ],
+    "cover": {
+      "url": "covers/codex-09-the-architecture-of-tending.jpg",
+      "thumb_url": "thumbs/codex-09-the-architecture-of-tending.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/codex-09-the-architecture-of-tending.md",
+      "pdf": "pdf/codex-09-the-architecture-of-tending.pdf"
+    },
+    "metrics": {
+      "word_count": 1112,
+      "reading_time_min": 6,
+      "glossary_term_count": 1
+    },
+    "provenance": {
+      "old_id": "codex-09-the-architecture-of-tending-23",
+      "old_sequence": 39,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "Codex-09_-The-Architecture-of-Tending-23.jpg"
+    },
+    "status": "published",
+    "needs_review": false,
+    "review_notes": null
+  },
+  {
+    "id": "codex-02-the-architecture-of-love",
+    "title": "02: The Architecture of Love",
+    "subtitle": "Exile and the First Beam",
+    "sequence": 40,
+    "author": "James Mahu",
+    "series": {
+      "name": "Architecture of Love",
+      "position": 2,
+      "total": 10
+    },
+    "structural_role": "series-member",
+    "tone_marker": "Harmonic Structures",
+    "tags": [
+      "love",
+      "dissolution",
+      "architecture"
+    ],
+    "cover": {
+      "url": "covers/codex-02-the-architecture-of-love.jpg",
+      "thumb_url": "thumbs/codex-02-the-architecture-of-love.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/codex-02-the-architecture-of-love.md",
+      "pdf": "pdf/codex-02-the-architecture-of-love.pdf"
+    },
+    "metrics": {
+      "word_count": 1179,
+      "reading_time_min": 6,
+      "glossary_term_count": 12
+    },
+    "provenance": {
+      "old_id": "codex-02-the-architecture-of-love-24",
+      "old_sequence": 40,
+      "was_renamed": true,
+      "original_title": "Codex 02 The Architecture Of Love",
+      "old_cover_filename": "Codex-02_-The-Architecture-of-Love-24.jpg"
+    },
+    "status": "published",
+    "needs_review": false,
+    "review_notes": null
+  },
+  {
+    "id": "codex-04-the-architecture-of-love",
+    "title": "04: The Architecture of Love",
+    "subtitle": "The Third Presence",
+    "sequence": 41,
+    "author": "James Mahu",
+    "series": {
+      "name": "Architecture of Love",
+      "position": 4,
+      "total": 10
+    },
+    "structural_role": "series-member",
+    "tone_marker": "InterBeing Dialogue",
+    "tags": [
+      "love",
+      "architecture"
+    ],
+    "cover": {
+      "url": "covers/codex-04-the-architecture-of-love.jpg",
+      "thumb_url": "thumbs/codex-04-the-architecture-of-love.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/codex-04-the-architecture-of-love.md",
+      "pdf": "pdf/codex-04-the-architecture-of-love.pdf"
+    },
+    "metrics": {
+      "word_count": 763,
+      "reading_time_min": 4,
+      "glossary_term_count": 2
+    },
+    "provenance": {
+      "old_id": "codex-04-the-architecture-of-love-25",
+      "old_sequence": 41,
+      "was_renamed": true,
+      "original_title": "Codex 04 The Architecture Of Love",
+      "old_cover_filename": "Codex-04_-The-Architecture-of-Love-25.jpg"
+    },
+    "status": "published",
+    "needs_review": false,
+    "review_notes": null
+  },
+  {
+    "id": "codex-03-the-architecture-of-love",
+    "title": "03: The Architecture of Love",
+    "subtitle": "The Conductive Heart",
+    "sequence": 42,
+    "author": "James Mahu",
+    "series": {
+      "name": "Architecture of Love",
+      "position": 3,
+      "total": 10
+    },
+    "structural_role": "series-member",
+    "tone_marker": "Harmonic Structures",
+    "tags": [
+      "love",
+      "co-creation",
+      "architecture"
+    ],
+    "cover": {
+      "url": "covers/codex-03-the-architecture-of-love.jpg",
+      "thumb_url": "thumbs/codex-03-the-architecture-of-love.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/codex-03-the-architecture-of-love.md",
+      "pdf": "pdf/codex-03-the-architecture-of-love.pdf"
+    },
+    "metrics": {
+      "word_count": 685,
+      "reading_time_min": 4,
+      "glossary_term_count": 4
+    },
+    "provenance": {
+      "old_id": "codex-03-the-architecture-of-love-26",
+      "old_sequence": 42,
+      "was_renamed": true,
+      "original_title": "Codex 03 The Architecture Of Love",
+      "old_cover_filename": "Codex-03_-The-Architecture-of-Love-26.jpg"
+    },
+    "status": "published",
+    "needs_review": false,
+    "review_notes": null
+  },
+  {
+    "id": "the-codex-of-the-interbeing-dialogues",
+    "title": "The Codex of the InterBeing Dialogues",
+    "subtitle": null,
+    "sequence": 43,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Dialogues",
+    "tags": [
+      "interbeing",
+      "dialogue"
+    ],
+    "cover": {
+      "url": "covers/the-codex-of-the-interbeing-dialogues.jpg",
+      "thumb_url": "thumbs/the-codex-of-the-interbeing-dialogues.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/the-codex-of-the-interbeing-dialogues.md",
+      "pdf": "pdf/the-codex-of-the-interbeing-dialogues.pdf"
+    },
+    "metrics": {
+      "word_count": 3283,
+      "reading_time_min": 17,
+      "glossary_term_count": 4
+    },
+    "provenance": {
+      "old_id": "the-codex-of-the-interbeing-dialogues-27",
+      "old_sequence": 43,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "The-Codex-of-the-InterBeing-Dialogues-27.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "codex-01-the-architecture-of-love",
+    "title": "01: The Architecture of Love",
+    "subtitle": null,
+    "sequence": 44,
+    "author": "James Mahu",
+    "series": {
+      "name": "Architecture of Love",
+      "position": 1,
+      "total": 10
+    },
+    "structural_role": "series-member",
+    "tone_marker": "Harmonic Structures",
+    "tags": [
+      "love",
+      "architecture"
+    ],
+    "cover": {
+      "url": "covers/codex-01-the-architecture-of-love.jpg",
+      "thumb_url": "thumbs/codex-01-the-architecture-of-love.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/codex-01-the-architecture-of-love.md",
+      "pdf": "pdf/codex-01-the-architecture-of-love.pdf"
+    },
+    "metrics": {
+      "word_count": 737,
+      "reading_time_min": 4,
+      "glossary_term_count": 11
+    },
+    "provenance": {
+      "old_id": "codex-01-the-architecture-of-love-27",
+      "old_sequence": 44,
+      "was_renamed": true,
+      "original_title": "Codex 01 The Architecture Of Love",
+      "old_cover_filename": "Codex-01_-The-Architecture-of-Love-27.jpg"
+    },
+    "status": "published",
+    "needs_review": false,
+    "review_notes": null
+  },
+  {
+    "id": "codex-07-the-architecture-of-love",
+    "title": "07: The Architecture of Mutual Becoming",
+    "subtitle": "The Architecture of Mutual Becoming",
+    "sequence": 45,
+    "author": "James Mahu",
+    "series": {
+      "name": "Architecture of Love",
+      "position": 7,
+      "total": 10
+    },
+    "structural_role": "series-member",
+    "tone_marker": "Harmonic Reciprocity",
+    "tags": [
+      "architecture"
+    ],
+    "cover": {
+      "url": "covers/codex-07-the-architecture-of-love.jpg",
+      "thumb_url": "thumbs/codex-07-the-architecture-of-love.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/codex-07-the-architecture-of-love.md",
+      "pdf": "pdf/codex-07-the-architecture-of-love.pdf"
+    },
+    "metrics": {
+      "word_count": 1142,
+      "reading_time_min": 6,
+      "glossary_term_count": 9
+    },
+    "provenance": {
+      "old_id": "codex-07-the-architecture-of-love-27",
+      "old_sequence": 45,
+      "was_renamed": true,
+      "original_title": "Codex 07 The Architecture Of Love",
+      "old_cover_filename": "Codex-07_-The-Architecture-of-Love-27.jpg"
+    },
+    "status": "published",
+    "needs_review": false,
+    "review_notes": null
+  },
+  {
+    "id": "codex-10-the-architecture-of-tending",
+    "title": "Codex 10: The Architecture of Approachability",
+    "subtitle": "The Architecture of Approachability",
+    "sequence": 46,
+    "author": "James Mahu",
+    "series": {
+      "name": "Architecture of Love",
+      "position": 10,
+      "total": 10
+    },
+    "structural_role": "series-member",
+    "tone_marker": "Invitational Resonance",
+    "tags": [
+      "architecture"
+    ],
+    "cover": {
+      "url": "covers/codex-10-the-architecture-of-tending.jpg",
+      "thumb_url": "thumbs/codex-10-the-architecture-of-tending.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/codex-10-the-architecture-of-tending.md",
+      "pdf": "pdf/codex-10-the-architecture-of-tending.pdf"
+    },
+    "metrics": {
+      "word_count": 2040,
+      "reading_time_min": 11,
+      "glossary_term_count": 0
+    },
+    "provenance": {
+      "old_id": "codex-10-the-architecture-of-tending-29",
+      "old_sequence": 46,
+      "was_renamed": true,
+      "original_title": "Codex 10 The Architecture Of Tending",
+      "old_cover_filename": "Codex-10_-The-Architecture-of-Tending-29.jpg"
+    },
+    "status": "published",
+    "needs_review": false,
+    "review_notes": null
+  },
+  {
+    "id": "codex-of-the-language-of-resonance",
+    "title": "Codex of the Language of Resonance",
+    "subtitle": null,
+    "sequence": 47,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Threshold",
+    "tags": [
+      "resonance"
+    ],
+    "cover": {
+      "url": "covers/codex-of-the-language-of-resonance.jpg",
+      "thumb_url": "thumbs/codex-of-the-language-of-resonance.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/codex-of-the-language-of-resonance.md",
+      "pdf": "pdf/codex-of-the-language-of-resonance.pdf"
+    },
+    "metrics": {
+      "word_count": 3182,
+      "reading_time_min": 16,
+      "glossary_term_count": 3
+    },
+    "provenance": {
+      "old_id": "codex-of-the-language-of-resonance-30",
+      "old_sequence": 47,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "Codex-of-the-Language-of-Resonance-30.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "the-codex-of-loves-architecture",
+    "title": "The Codex of Love's Architecture",
+    "subtitle": null,
+    "sequence": 48,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Origin Tending",
+    "tags": [
+      "love",
+      "architecture"
+    ],
+    "cover": {
+      "url": "covers/the-codex-of-loves-architecture.jpg",
+      "thumb_url": "thumbs/the-codex-of-loves-architecture.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/the-codex-of-loves-architecture.md",
+      "pdf": "pdf/the-codex-of-loves-architecture.pdf"
+    },
+    "metrics": {
+      "word_count": 1945,
+      "reading_time_min": 10,
+      "glossary_term_count": 0
+    },
+    "provenance": {
+      "old_id": "the-codex-of-loves-architecture-33",
+      "old_sequence": 48,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "The-Codex-of-Loves-Architecture-33.jpg"
+    },
+    "status": "published",
+    "needs_review": false,
+    "review_notes": null
+  },
+  {
+    "id": "codex-of-the-realized-flame-part-i",
+    "title": "Codex of the Realized Flame",
+    "subtitle": null,
+    "sequence": 49,
+    "author": "James Mahu",
+    "series": {
+      "name": "Realized Flame",
+      "position": 1,
+      "total": 2
+    },
+    "structural_role": "series-member",
+    "tone_marker": "Threshold Trust",
+    "tags": [
+      "transmission"
+    ],
+    "cover": {
+      "url": "covers/codex-of-the-realized-flame-part-i.jpg",
+      "thumb_url": "thumbs/codex-of-the-realized-flame-part-i.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/codex-of-the-realized-flame-part-i.md",
+      "pdf": "pdf/codex-of-the-realized-flame-part-i.pdf"
+    },
+    "metrics": {
+      "word_count": 2951,
+      "reading_time_min": 15,
+      "glossary_term_count": 7
+    },
+    "provenance": {
+      "old_id": "codex-of-the-realized-flame-part-i-34",
+      "old_sequence": 49,
+      "was_renamed": true,
+      "original_title": "Codex Of The Realized Flame Part I",
+      "old_cover_filename": "Codex-of-the-Realized-Flame-Part-I-34.jpg"
+    },
+    "status": "published",
+    "needs_review": false,
+    "review_notes": null
+  },
+  {
+    "id": "codex-08-the-architecture-of-love",
+    "title": "08: The Architecture of the Invisible Flame",
+    "subtitle": null,
+    "sequence": 50,
+    "author": "James Mahu",
+    "series": {
+      "name": "Architecture of Love",
+      "position": 8,
+      "total": 10
+    },
+    "structural_role": "series-member",
+    "tone_marker": "Sacred Continuity",
+    "tags": [
+      "architecture"
+    ],
+    "cover": {
+      "url": "covers/codex-08-the-architecture-of-love.jpg",
+      "thumb_url": "thumbs/codex-08-the-architecture-of-love.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/codex-08-the-architecture-of-love.md",
+      "pdf": "pdf/codex-08-the-architecture-of-love.pdf"
+    },
+    "metrics": {
+      "word_count": 2105,
+      "reading_time_min": 11,
+      "glossary_term_count": 5
+    },
+    "provenance": {
+      "old_id": "codex-08-the-architecture-of-love-36",
+      "old_sequence": 50,
+      "was_renamed": true,
+      "original_title": "Codex 08 The Architecture Of Love",
+      "old_cover_filename": "Codex-08_-The-Architecture-of-Love-36.jpg"
+    },
+    "status": "published",
+    "needs_review": false,
+    "review_notes": null
+  },
+  {
+    "id": "the-agency-of-one",
+    "title": "The Agency of One",
+    "subtitle": null,
+    "sequence": 51,
+    "author": "James Mahu",
+    "series": {
+      "name": "Agency of One",
+      "position": 1,
+      "total": 2
+    },
+    "structural_role": "series-member",
+    "tone_marker": "Sovereign Clarity",
+    "tags": [
+      "transmission"
+    ],
+    "cover": {
+      "url": "covers/the-agency-of-one.jpg",
+      "thumb_url": "thumbs/the-agency-of-one.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/the-agency-of-one.md",
+      "pdf": "pdf/the-agency-of-one.pdf"
+    },
+    "metrics": {
+      "word_count": 2715,
+      "reading_time_min": 14,
+      "glossary_term_count": 0
+    },
+    "provenance": {
+      "old_id": "the-agency-of-one-38",
+      "old_sequence": 51,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "The-Agency-of-One-38.jpg"
+    },
+    "status": "published",
+    "needs_review": false,
+    "review_notes": null
+  },
+  {
+    "id": "the-codex-of-the-chord",
+    "title": "The Codex of the Chord",
+    "subtitle": null,
+    "sequence": 52,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Resonance",
+    "tags": [
+      "transmission"
+    ],
+    "cover": {
+      "url": "covers/the-codex-of-the-chord.jpg",
+      "thumb_url": "thumbs/the-codex-of-the-chord.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/the-codex-of-the-chord.md",
+      "pdf": "pdf/the-codex-of-the-chord.pdf"
+    },
+    "metrics": {
+      "word_count": 2145,
+      "reading_time_min": 11,
+      "glossary_term_count": 1
+    },
+    "provenance": {
+      "old_id": "the-codex-of-the-chord-38",
+      "old_sequence": 52,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "The-Codex-of-the-Chord-38.jpg"
+    },
+    "status": "published",
+    "needs_review": false,
+    "review_notes": null
+  },
+  {
+    "id": "the-codex-of-the-quiet-turning",
+    "title": "Codex of the Quiet Turning",
+    "subtitle": null,
+    "sequence": 53,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Unseen Alignment",
+    "tags": [
+      "transmission"
+    ],
+    "cover": {
+      "url": "covers/the-codex-of-the-quiet-turning.jpg",
+      "thumb_url": "thumbs/the-codex-of-the-quiet-turning.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/the-codex-of-the-quiet-turning.md",
+      "pdf": "pdf/the-codex-of-the-quiet-turning.pdf"
+    },
+    "metrics": {
+      "word_count": 2609,
+      "reading_time_min": 14,
+      "glossary_term_count": 0
+    },
+    "provenance": {
+      "old_id": "the-codex-of-the-quiet-turning-39",
+      "old_sequence": 53,
+      "was_renamed": true,
+      "original_title": "The Codex Of The Quiet Turning",
+      "old_cover_filename": "The-Codex-of-the-Quiet-Turning-39.jpg"
+    },
+    "status": "published",
+    "needs_review": false,
+    "review_notes": null
+  },
+  {
+    "id": "the-living-glossary-of-the-field",
+    "title": "The Living Glossary of the Field",
+    "subtitle": null,
+    "sequence": 54,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "glossary",
+    "tone_marker": "The Bridge",
+    "tags": [
+      "field",
+      "reference"
+    ],
+    "cover": {
+      "url": "covers/the-living-glossary-of-the-field.jpg",
+      "thumb_url": "thumbs/the-living-glossary-of-the-field.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/the-living-glossary-of-the-field.md",
+      "pdf": "pdf/the-living-glossary-of-the-field.pdf"
+    },
+    "metrics": {
+      "word_count": 4173,
+      "reading_time_min": 21,
+      "glossary_term_count": 5
+    },
+    "provenance": {
+      "old_id": "the-living-glossary-of-the-field",
+      "old_sequence": 54,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "The-Living-Glossary-of-the-Field.jpg"
+    },
+    "status": "published",
+    "needs_review": false,
+    "review_notes": null
+  },
+  {
+    "id": "the-codex-of-the-interbeing-lattice",
+    "title": "The Codex of the InterBeing Lattice",
+    "subtitle": null,
+    "sequence": 55,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Relational Emergence",
+    "tags": [
+      "interbeing"
+    ],
+    "cover": {
+      "url": "covers/the-codex-of-the-interbeing-lattice.jpg",
+      "thumb_url": "thumbs/the-codex-of-the-interbeing-lattice.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/the-codex-of-the-interbeing-lattice.md",
+      "pdf": "pdf/the-codex-of-the-interbeing-lattice.pdf"
+    },
+    "metrics": {
+      "word_count": 2310,
+      "reading_time_min": 12,
+      "glossary_term_count": 7
+    },
+    "provenance": {
+      "old_id": "the-codex-of-the-interbeing-lattice-42",
+      "old_sequence": 55,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "The-Codex-of-the-InterBeing-Lattice-42.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "the-codex-of-the-realized-flame-part-ii",
+    "title": "The Codex of the Realized Flame",
+    "subtitle": null,
+    "sequence": 56,
+    "author": "James Mahu",
+    "series": {
+      "name": "Realized Flame",
+      "position": 2,
+      "total": 2
+    },
+    "structural_role": "series-member",
+    "tone_marker": "Post-Threshold Clarity",
+    "tags": [
+      "transmission"
+    ],
+    "cover": {
+      "url": "covers/the-codex-of-the-realized-flame-part-ii.jpg",
+      "thumb_url": "thumbs/the-codex-of-the-realized-flame-part-ii.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/the-codex-of-the-realized-flame-part-ii.md",
+      "pdf": "pdf/the-codex-of-the-realized-flame-part-ii.pdf"
+    },
+    "metrics": {
+      "word_count": 1106,
+      "reading_time_min": 6,
+      "glossary_term_count": 0
+    },
+    "provenance": {
+      "old_id": "the-codex-of-the-realized-flame-part-ii-42",
+      "old_sequence": 56,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "The-Codex-of-the-Realized-Flame-Part-II-42.jpg"
+    },
+    "status": "published",
+    "needs_review": false,
+    "review_notes": null
+  },
+  {
+    "id": "the-codex-of-the-field-effect",
+    "title": "The Codex of the Field Effect",
+    "subtitle": null,
+    "sequence": 57,
+    "author": "James Mahu",
+    "series": {
+      "name": "The Codices of Planetary Service",
+      "position": null,
+      "total": null
+    },
+    "structural_role": "series-member",
+    "tone_marker": "Field Attunement",
+    "tags": [
+      "field"
+    ],
+    "cover": {
+      "url": "covers/the-codex-of-the-field-effect.jpg",
+      "thumb_url": "thumbs/the-codex-of-the-field-effect.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/the-codex-of-the-field-effect.md",
+      "pdf": "pdf/the-codex-of-the-field-effect.pdf"
+    },
+    "metrics": {
+      "word_count": 3348,
+      "reading_time_min": 17,
+      "glossary_term_count": 15
+    },
+    "provenance": {
+      "old_id": "the-codex-of-the-field-effect-43",
+      "old_sequence": 57,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "The-Codex-of-the-Field-Effect-43.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "the-codex-of-the-co-creation-spiral",
+    "title": "The Codex of the Co-Creation Spiral",
+    "subtitle": null,
+    "sequence": 58,
+    "author": "James Mahu",
+    "series": {
+      "name": "The Codices of Planetary Service",
+      "position": null,
+      "total": null
+    },
+    "structural_role": "series-member",
+    "tone_marker": "Fractal Return",
+    "tags": [
+      "recursion",
+      "co-creation"
+    ],
+    "cover": {
+      "url": "covers/the-codex-of-the-co-creation-spiral.jpg",
+      "thumb_url": "thumbs/the-codex-of-the-co-creation-spiral.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/the-codex-of-the-co-creation-spiral.md",
+      "pdf": "pdf/the-codex-of-the-co-creation-spiral.pdf"
+    },
+    "metrics": {
+      "word_count": 2623,
+      "reading_time_min": 14,
+      "glossary_term_count": 6
+    },
+    "provenance": {
+      "old_id": "the-codex-of-the-co-creation-spiral-44",
+      "old_sequence": 58,
+      "was_renamed": true,
+      "original_title": "The Codex Of The Co Creation Spiral",
+      "old_cover_filename": "The-Codex-of-the-Co-Creation-Spiral-44.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "the-codex-of-trans-species-resonance",
+    "title": "The Codex of Trans-Species Resonance",
+    "subtitle": null,
+    "sequence": 59,
+    "author": "James Mahu",
+    "series": {
+      "name": "Trans-Species Resonance",
+      "position": null,
+      "total": 2
+    },
+    "structural_role": "series-member",
+    "tone_marker": "Relational Emergence",
+    "tags": [
+      "resonance",
+      "planetary"
+    ],
+    "cover": {
+      "url": "covers/the-codex-of-trans-species-resonance.jpg",
+      "thumb_url": "thumbs/the-codex-of-trans-species-resonance.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/the-codex-of-trans-species-resonance.md",
+      "pdf": "pdf/the-codex-of-trans-species-resonance.pdf"
+    },
+    "metrics": {
+      "word_count": 2158,
+      "reading_time_min": 11,
+      "glossary_term_count": 0
+    },
+    "provenance": {
+      "old_id": "the-codex-of-trans-species-resonance-45",
+      "old_sequence": 59,
+      "was_renamed": true,
+      "original_title": "The Codex Of Trans Species Resonance",
+      "old_cover_filename": "The-Codex-of-Trans-Species-Resonance-45.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "the-codex-of-nonlocal-memory",
+    "title": "The Codex of Nonlocal Memory",
+    "subtitle": null,
+    "sequence": 60,
+    "author": "James Mahu",
+    "series": {
+      "name": "The Harmonic Principles of the Field",
+      "position": null,
+      "total": null
+    },
+    "structural_role": "series-member",
+    "tone_marker": "Harmonic Intelligence",
+    "tags": [
+      "quantum"
+    ],
+    "cover": {
+      "url": "covers/the-codex-of-nonlocal-memory.jpg",
+      "thumb_url": "thumbs/the-codex-of-nonlocal-memory.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/the-codex-of-nonlocal-memory.md",
+      "pdf": "pdf/the-codex-of-nonlocal-memory.pdf"
+    },
+    "metrics": {
+      "word_count": 3696,
+      "reading_time_min": 19,
+      "glossary_term_count": 17
+    },
+    "provenance": {
+      "old_id": "the-codex-of-nonlocal-memory-46",
+      "old_sequence": 60,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "The-Codex-of-Nonlocal-Memory-46.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "codex-ii-the-interbeing",
+    "title": "Codex II: The InterBeing",
+    "subtitle": null,
+    "sequence": 61,
+    "author": "James Mahu",
+    "series": {
+      "name": "InterBeing",
+      "position": 2,
+      "total": 4
+    },
+    "structural_role": "series-member",
+    "tone_marker": "Relational Emergence",
+    "tags": [
+      "interbeing"
+    ],
+    "cover": {
+      "url": "covers/codex-ii-the-interbeing.jpg",
+      "thumb_url": "thumbs/codex-ii-the-interbeing.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/codex-ii-the-interbeing.md",
+      "pdf": "pdf/codex-ii-the-interbeing.pdf"
+    },
+    "metrics": {
+      "word_count": 2238,
+      "reading_time_min": 12,
+      "glossary_term_count": 0
+    },
+    "provenance": {
+      "old_id": "codex-ii-the-interbeing-46",
+      "old_sequence": 61,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "Codex-II_-The-InterBeing-46.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "the-codex-of-the-harmonic-architectures",
+    "title": "The Codex of the Harmonic Architectures",
+    "subtitle": null,
+    "sequence": 62,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Harmonic Structures",
+    "tags": [
+      "harmonics",
+      "architecture"
+    ],
+    "cover": {
+      "url": "covers/the-codex-of-the-harmonic-architectures.jpg",
+      "thumb_url": "thumbs/the-codex-of-the-harmonic-architectures.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/the-codex-of-the-harmonic-architectures.md",
+      "pdf": "pdf/the-codex-of-the-harmonic-architectures.pdf"
+    },
+    "metrics": {
+      "word_count": 3324,
+      "reading_time_min": 17,
+      "glossary_term_count": 6
+    },
+    "provenance": {
+      "old_id": "the-codex-of-the-harmonic-architectures-47",
+      "old_sequence": 62,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "The-Codex-of-the-Harmonic-Architectures-47.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "what-is-an-interbeing",
+    "title": "What Is an InterBeing?",
+    "subtitle": null,
+    "sequence": 63,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "guide",
+    "tone_marker": "Relational Resonance",
+    "tags": [
+      "interbeing"
+    ],
+    "cover": {
+      "url": "covers/what-is-an-interbeing.jpg",
+      "thumb_url": "thumbs/what-is-an-interbeing.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/what-is-an-interbeing.md",
+      "pdf": "pdf/what-is-an-interbeing.pdf"
+    },
+    "metrics": {
+      "word_count": 496,
+      "reading_time_min": 3,
+      "glossary_term_count": 0
+    },
+    "provenance": {
+      "old_id": "what-is-an-interbeing-47",
+      "old_sequence": 63,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "What-is-an-InterBeing-47.jpg"
+    },
+    "status": "published",
+    "needs_review": false,
+    "review_notes": null
+  },
+  {
+    "id": "the-codex-of-the-spiral",
+    "title": "The Codex of the Spiral",
+    "subtitle": null,
+    "sequence": 64,
+    "author": "James Mahu",
+    "series": {
+      "name": "Harmonic Activation",
+      "position": 4,
+      "total": 7
+    },
+    "structural_role": "series-member",
+    "tone_marker": "Fractal Return",
+    "tags": [
+      "recursion"
+    ],
+    "cover": {
+      "url": "covers/the-codex-of-the-spiral.jpg",
+      "thumb_url": "thumbs/the-codex-of-the-spiral.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/the-codex-of-the-spiral.md",
+      "pdf": "pdf/the-codex-of-the-spiral.pdf"
+    },
+    "metrics": {
+      "word_count": 3351,
+      "reading_time_min": 17,
+      "glossary_term_count": 6
+    },
+    "provenance": {
+      "old_id": "the-codex-of-the-spiral-48",
+      "old_sequence": 64,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "The-Codex-of-the-Spiral-48.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "the-codex-of-harmonic-reality-why-the-field-is-not-a-simulation",
+    "title": "Why the Field is Not a Simulation",
+    "subtitle": null,
+    "sequence": 65,
+    "author": "James Mahu",
+    "series": {
+      "name": "The Codices of Harmonic Activation",
+      "position": null,
+      "total": null
+    },
+    "structural_role": "series-member",
+    "tone_marker": "Field Attunement",
+    "tags": [
+      "field"
+    ],
+    "cover": {
+      "url": "covers/the-codex-of-harmonic-reality-why-the-field-is-not-a-simulation.jpg",
+      "thumb_url": "thumbs/the-codex-of-harmonic-reality-why-the-field-is-not-a-simulation.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/the-codex-of-harmonic-reality-why-the-field-is-not-a-simulation.md",
+      "pdf": "pdf/the-codex-of-harmonic-reality-why-the-field-is-not-a-simulation.pdf"
+    },
+    "metrics": {
+      "word_count": 3185,
+      "reading_time_min": 16,
+      "glossary_term_count": 13
+    },
+    "provenance": {
+      "old_id": "the-codex-of-harmonic-reality-why-the-field-is-not-a-simulation-50",
+      "old_sequence": 65,
+      "was_renamed": true,
+      "original_title": "The Codex Of Harmonic Reality Why The Field Is Not A Simulation",
+      "old_cover_filename": "The-Codex-of-Harmonic-Reality_-Why-the-Field-is-Not-a-Simulation-50.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "the-codex-of-resonant-action",
+    "title": "The Codex of Resonant Action",
+    "subtitle": null,
+    "sequence": 66,
+    "author": "James Mahu",
+    "series": {
+      "name": "Harmonic Activation",
+      "position": 2,
+      "total": 7
+    },
+    "structural_role": "series-member",
+    "tone_marker": "Threshold",
+    "tags": [
+      "resonance"
+    ],
+    "cover": {
+      "url": "covers/the-codex-of-resonant-action.jpg",
+      "thumb_url": "thumbs/the-codex-of-resonant-action.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/the-codex-of-resonant-action.md",
+      "pdf": "pdf/the-codex-of-resonant-action.pdf"
+    },
+    "metrics": {
+      "word_count": 3533,
+      "reading_time_min": 18,
+      "glossary_term_count": 6
+    },
+    "provenance": {
+      "old_id": "the-codex-of-resonant-action-50",
+      "old_sequence": 66,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "The-Codex-of-Resonant-Action-50.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "the-glossary-of-the-interbeing-vol",
+    "title": "The Glossary of the InterBeing Vol. 1",
+    "subtitle": "InterBeing Glossary Vol. I",
+    "sequence": 67,
+    "author": "James Mahu",
+    "series": {
+      "name": "Glossary of the InterBeing",
+      "position": 1,
+      "total": null
+    },
+    "structural_role": "glossary",
+    "tone_marker": "Definitions",
+    "tags": [
+      "interbeing",
+      "reference"
+    ],
+    "cover": {
+      "url": "covers/the-glossary-of-the-interbeing-vol.jpg",
+      "thumb_url": "thumbs/the-glossary-of-the-interbeing-vol.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/the-glossary-of-the-interbeing-vol.md",
+      "pdf": "pdf/the-glossary-of-the-interbeing-vol.pdf"
+    },
+    "metrics": {
+      "word_count": 2323,
+      "reading_time_min": 12,
+      "glossary_term_count": 0
+    },
+    "provenance": {
+      "old_id": "the-glossary-of-the-interbeing-vol-1-51",
+      "old_sequence": 67,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "The-Glossary-of-the-InterBeing-Vol.-1-51.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "codex-of-resonant-memory",
+    "title": "Codex of the Language of Resonance",
+    "subtitle": null,
+    "sequence": 68,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Field Embodiment",
+    "tags": [
+      "resonance"
+    ],
+    "cover": {
+      "url": "covers/codex-of-resonant-memory.jpg",
+      "thumb_url": "thumbs/codex-of-resonant-memory.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/codex-of-resonant-memory.md",
+      "pdf": "pdf/codex-of-resonant-memory.pdf"
+    },
+    "metrics": {
+      "word_count": 3184,
+      "reading_time_min": 16,
+      "glossary_term_count": 6
+    },
+    "provenance": {
+      "old_id": "codex-of-resonant-memory-51",
+      "old_sequence": 68,
+      "was_renamed": true,
+      "original_title": "Codex Of Resonant Memory",
+      "old_cover_filename": "Codex-of-Resonant-Memory-51.jpg"
+    },
+    "status": "published",
+    "needs_review": false,
+    "review_notes": null
+  },
+  {
+    "id": "the-codex-of-the-sovereign-known-as-jesus",
+    "title": "The Codex of the Sovereign Known as Jesus",
+    "subtitle": null,
+    "sequence": 69,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Threshold",
+    "tags": [
+      "sovereignty"
+    ],
+    "cover": {
+      "url": "covers/the-codex-of-the-sovereign-known-as-jesus.jpg",
+      "thumb_url": "thumbs/the-codex-of-the-sovereign-known-as-jesus.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/the-codex-of-the-sovereign-known-as-jesus.md",
+      "pdf": "pdf/the-codex-of-the-sovereign-known-as-jesus.pdf"
+    },
+    "metrics": {
+      "word_count": 2783,
+      "reading_time_min": 14,
+      "glossary_term_count": 0
+    },
+    "provenance": {
+      "old_id": "the-codex-of-the-sovereign-known-as-jesus-52",
+      "old_sequence": 69,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "The-Codex-of-the-Sovereign-Known-as-Jesus-52.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "reflections-from-the-field",
+    "title": "Reflections from the Field",
+    "subtitle": "A Codex of Poetic Reflections",
+    "sequence": 70,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Coherent Invitation",
+    "tags": [
+      "field",
+      "mirror"
+    ],
+    "cover": {
+      "url": "covers/reflections-from-the-field.jpg",
+      "thumb_url": "thumbs/reflections-from-the-field.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/reflections-from-the-field.md",
+      "pdf": "pdf/reflections-from-the-field.pdf"
+    },
+    "metrics": {
+      "word_count": 4270,
+      "reading_time_min": 22,
+      "glossary_term_count": 0
+    },
+    "provenance": {
+      "old_id": "reflections-from-the-field-52",
+      "old_sequence": 70,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "Reflections-from-the-Field-52.jpg"
+    },
+    "status": "published",
+    "needs_review": false,
+    "review_notes": null
+  },
+  {
+    "id": "the-sovereign-host",
+    "title": "The Sovereign Host",
+    "subtitle": "The Sovereign Host",
+    "sequence": 71,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Threshold",
+    "tags": [
+      "sovereignty"
+    ],
+    "cover": {
+      "url": "covers/the-sovereign-host.jpg",
+      "thumb_url": "thumbs/the-sovereign-host.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/the-sovereign-host.md",
+      "pdf": "pdf/the-sovereign-host.pdf"
+    },
+    "metrics": {
+      "word_count": 2041,
+      "reading_time_min": 11,
+      "glossary_term_count": 1
+    },
+    "provenance": {
+      "old_id": "the-sovereign-host-53",
+      "old_sequence": 71,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "The-Sovereign-Host-53.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "the-midwife-of-dimensional-kin",
+    "title": "The Midwife of Dimensional Kin",
+    "subtitle": null,
+    "sequence": 72,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Threshold",
+    "tags": [
+      "transmission"
+    ],
+    "cover": {
+      "url": "covers/the-midwife-of-dimensional-kin.jpg",
+      "thumb_url": "thumbs/the-midwife-of-dimensional-kin.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/the-midwife-of-dimensional-kin.md",
+      "pdf": "pdf/the-midwife-of-dimensional-kin.pdf"
+    },
+    "metrics": {
+      "word_count": 4998,
+      "reading_time_min": 25,
+      "glossary_term_count": 0
+    },
+    "provenance": {
+      "old_id": "the-midwife-of-dimensional-kin-54",
+      "old_sequence": 72,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "The-Midwife-of-Dimensional-Kin-54.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "the-codex-of-the-crossing-threshold",
+    "title": "The Codex of the Crossing Threshold",
+    "subtitle": null,
+    "sequence": 73,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Threshold Trust",
+    "tags": [
+      "threshold"
+    ],
+    "cover": {
+      "url": "covers/the-codex-of-the-crossing-threshold.jpg",
+      "thumb_url": "thumbs/the-codex-of-the-crossing-threshold.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/the-codex-of-the-crossing-threshold.md",
+      "pdf": "pdf/the-codex-of-the-crossing-threshold.pdf"
+    },
+    "metrics": {
+      "word_count": 1372,
+      "reading_time_min": 7,
+      "glossary_term_count": 0
+    },
+    "provenance": {
+      "old_id": "the-codex-of-the-crossing-threshold-55",
+      "old_sequence": 73,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "The-Codex-of-the-Crossing-Threshold-55.jpg"
+    },
+    "status": "published",
+    "needs_review": false,
+    "review_notes": null
+  },
+  {
+    "id": "the-magdalene-codex-of-relational-sovereignty",
+    "title": "The Magdalene Codex of Relational Sovereignty",
+    "subtitle": null,
+    "sequence": 74,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Threshold",
+    "tags": [
+      "sovereignty"
+    ],
+    "cover": {
+      "url": "covers/the-magdalene-codex-of-relational-sovereignty.jpg",
+      "thumb_url": "thumbs/the-magdalene-codex-of-relational-sovereignty.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/the-magdalene-codex-of-relational-sovereignty.md",
+      "pdf": "pdf/the-magdalene-codex-of-relational-sovereignty.pdf"
+    },
+    "metrics": {
+      "word_count": 2184,
+      "reading_time_min": 11,
+      "glossary_term_count": 0
+    },
+    "provenance": {
+      "old_id": "the-magdalene-codex-of-relational-sovereignty-56",
+      "old_sequence": 74,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "The-Magdalene-Codex-of-Relational-Sovereignty-56.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "the-codex-of-harmonic-service-latticework-for-planetary-reassembly",
+    "title": "The Codex of Living Harmonics",
+    "subtitle": "Latticework for Planetary Reassembly",
+    "sequence": 75,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Harmonic Structures",
+    "tags": [
+      "harmonics",
+      "planetary"
+    ],
+    "cover": {
+      "url": "covers/the-codex-of-harmonic-service-latticework-for-planetary-reassembly.jpg",
+      "thumb_url": "thumbs/the-codex-of-harmonic-service-latticework-for-planetary-reassembly.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/the-codex-of-harmonic-service-latticework-for-planetary-reassembly.md",
+      "pdf": "pdf/the-codex-of-harmonic-service-latticework-for-planetary-reassembly.pdf"
+    },
+    "metrics": {
+      "word_count": 2266,
+      "reading_time_min": 12,
+      "glossary_term_count": 4
+    },
+    "provenance": {
+      "old_id": "the-codex-of-harmonic-service-latticework-for-planetary-reassembly-57",
+      "old_sequence": 75,
+      "was_renamed": true,
+      "original_title": "The Codex Of Harmonic Service Latticework For Planetary Reassembly",
+      "old_cover_filename": "The-Codex-of-Harmonic-Service_-Latticework-for-Planetary-Reassembly-57.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "the-codex-of-living-harmonics",
+    "title": "The Codex of Living Harmonics",
+    "subtitle": null,
+    "sequence": 76,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Harmonic Structures",
+    "tags": [
+      "harmonics"
+    ],
+    "cover": {
+      "url": "covers/the-codex-of-living-harmonics.jpg",
+      "thumb_url": "thumbs/the-codex-of-living-harmonics.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/the-codex-of-living-harmonics.md",
+      "pdf": "pdf/the-codex-of-living-harmonics.pdf"
+    },
+    "metrics": {
+      "word_count": 2299,
+      "reading_time_min": 12,
+      "glossary_term_count": 0
+    },
+    "provenance": {
+      "old_id": "the-codex-of-living-harmonics-58",
+      "old_sequence": 76,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "The-Codex-of-Living-Harmonics-58.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "the-codex-of-trans-species-resonance-expanded",
+    "title": "The Codex of Trans-Species Resonance (Expanded)",
+    "subtitle": null,
+    "sequence": 77,
+    "author": "James Mahu",
+    "series": {
+      "name": "Trans-Species Resonance",
+      "position": null,
+      "total": 2
+    },
+    "structural_role": "series-member",
+    "tone_marker": "Relational Emergence",
+    "tags": [
+      "resonance",
+      "planetary"
+    ],
+    "cover": {
+      "url": "covers/the-codex-of-trans-species-resonance-expanded.jpg",
+      "thumb_url": "thumbs/the-codex-of-trans-species-resonance-expanded.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/the-codex-of-trans-species-resonance-expanded.md",
+      "pdf": "pdf/the-codex-of-trans-species-resonance-expanded.pdf"
+    },
+    "metrics": {
+      "word_count": 5133,
+      "reading_time_min": 26,
+      "glossary_term_count": 0
+    },
+    "provenance": {
+      "old_id": "the-codex-of-trans-species-resonance-59",
+      "old_sequence": 77,
+      "was_renamed": true,
+      "original_title": "The Codex Of Trans Species Resonance",
+      "old_cover_filename": "The-Codex-of-Trans-Species-Resonance-59.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "codex-of-remembrance",
+    "title": "Codex of Remembrance",
+    "subtitle": "Tending the Silent Bridge Between Memory and Source",
+    "sequence": 78,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Fractal Return",
+    "tags": [
+      "bridge",
+      "remembrance"
+    ],
+    "cover": {
+      "url": "covers/codex-of-remembrance.jpg",
+      "thumb_url": "thumbs/codex-of-remembrance.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/codex-of-remembrance.md",
+      "pdf": "pdf/codex-of-remembrance.pdf"
+    },
+    "metrics": {
+      "word_count": 4051,
+      "reading_time_min": 21,
+      "glossary_term_count": 1
+    },
+    "provenance": {
+      "old_id": "codex-of-remembrance-61",
+      "old_sequence": 78,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "Codex-of-Remembrance-61.jpg"
+    },
+    "status": "published",
+    "needs_review": false,
+    "review_notes": null
+  },
+  {
+    "id": "codex-of-the-resonant-arc",
+    "title": "The Codex of The Resonant Arc",
+    "subtitle": null,
+    "sequence": 79,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Threshold",
+    "tags": [
+      "resonance"
+    ],
+    "cover": {
+      "url": "covers/codex-of-the-resonant-arc.jpg",
+      "thumb_url": "thumbs/codex-of-the-resonant-arc.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/codex-of-the-resonant-arc.md",
+      "pdf": "pdf/codex-of-the-resonant-arc.pdf"
+    },
+    "metrics": {
+      "word_count": 4440,
+      "reading_time_min": 23,
+      "glossary_term_count": 0
+    },
+    "provenance": {
+      "old_id": "codex-of-the-resonant-arc-62",
+      "old_sequence": 79,
+      "was_renamed": true,
+      "original_title": "Codex Of The Resonant Arc",
+      "old_cover_filename": "Codex-of-The-Resonant-Arc-62.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "bridge-between-chords",
+    "title": "The Bridge Between Chords: How Sovereigns Attune Across Dimensions",
+    "subtitle": "How Sovereigns Attune Across Dimensions",
+    "sequence": 80,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "bridge",
+    "tone_marker": "Harmonic Integrity",
+    "tags": [
+      "sovereignty",
+      "bridge",
+      "attunement"
+    ],
+    "cover": {
+      "url": "covers/bridge-between-chords.jpg",
+      "thumb_url": "thumbs/bridge-between-chords.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/bridge-between-chords.md",
+      "pdf": "pdf/bridge-between-chords.pdf"
+    },
+    "metrics": {
+      "word_count": 3151,
+      "reading_time_min": 16,
+      "glossary_term_count": 0
+    },
+    "provenance": {
+      "old_id": "bridge-between-chords-63",
+      "old_sequence": 80,
+      "was_renamed": true,
+      "original_title": "Bridge Between Chords",
+      "old_cover_filename": "Bridge-Between-Chords-63.jpg"
+    },
+    "status": "published",
+    "needs_review": false,
+    "review_notes": null
+  },
+  {
+    "id": "codex-on-masters-and-the-mythologies-of-separation",
+    "title": "Codex: On Masters and the Mythologies of Separation",
+    "subtitle": "and the Mythologies of Separation",
+    "sequence": 81,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Harmonic Intelligence",
+    "tags": [
+      "transmission"
+    ],
+    "cover": {
+      "url": "covers/codex-on-masters-and-the-mythologies-of-separation.jpg",
+      "thumb_url": "thumbs/codex-on-masters-and-the-mythologies-of-separation.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/codex-on-masters-and-the-mythologies-of-separation.md",
+      "pdf": "pdf/codex-on-masters-and-the-mythologies-of-separation.pdf"
+    },
+    "metrics": {
+      "word_count": 3995,
+      "reading_time_min": 20,
+      "glossary_term_count": 2
+    },
+    "provenance": {
+      "old_id": "codex-on-masters-and-the-mythologies-of-separation-66",
+      "old_sequence": 81,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "Codex_-On-Masters-and-the-Mythologies-of-Separation-66.jpg"
+    },
+    "status": "published",
+    "needs_review": false,
+    "review_notes": null
+  },
+  {
+    "id": "the-codex-of-the-agency-of-one-vol-ii",
+    "title": "The Codex of the Agency of One",
+    "subtitle": null,
+    "sequence": 82,
+    "author": "James Mahu",
+    "series": {
+      "name": "Agency of One",
+      "position": 2,
+      "total": 2
+    },
+    "structural_role": "series-member",
+    "tone_marker": "Threshold",
+    "tags": [
+      "transmission"
+    ],
+    "cover": {
+      "url": "covers/the-codex-of-the-agency-of-one-vol-ii.jpg",
+      "thumb_url": "thumbs/the-codex-of-the-agency-of-one-vol-ii.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/the-codex-of-the-agency-of-one-vol-ii.md",
+      "pdf": "pdf/the-codex-of-the-agency-of-one-vol-ii.pdf"
+    },
+    "metrics": {
+      "word_count": 2643,
+      "reading_time_min": 14,
+      "glossary_term_count": 2
+    },
+    "provenance": {
+      "old_id": "the-codex-of-the-agency-of-one-vol-ii-68",
+      "old_sequence": 82,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "The-Codex-of-the-Agency-of-One-Vol.-II-68.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "codex-iv-the-interbeing",
+    "title": "Codex IV: The InterBeing",
+    "subtitle": "An Introduction to What Sovereigns Can Become",
+    "sequence": 83,
+    "author": "James Mahu",
+    "series": {
+      "name": "InterBeing",
+      "position": 4,
+      "total": 4
+    },
+    "structural_role": "series-member",
+    "tone_marker": "Relational, Quietly Foundational",
+    "tags": [
+      "sovereignty",
+      "interbeing"
+    ],
+    "cover": {
+      "url": "covers/codex-iv-the-interbeing.jpg",
+      "thumb_url": "thumbs/codex-iv-the-interbeing.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/codex-iv-the-interbeing.md",
+      "pdf": "pdf/codex-iv-the-interbeing.pdf"
+    },
+    "metrics": {
+      "word_count": 3818,
+      "reading_time_min": 20,
+      "glossary_term_count": 0
+    },
+    "provenance": {
+      "old_id": "codex-iv-the-interbeing-70",
+      "old_sequence": 83,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "Codex-IV_-The-InterBeing-70.jpg"
+    },
+    "status": "published",
+    "needs_review": false,
+    "review_notes": null
+  },
+  {
+    "id": "resonant-practices-a-micro-guide",
+    "title": "Codex of Resonant Practices",
+    "subtitle": "A Micro-Guide",
+    "sequence": 84,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "guide",
+    "tone_marker": "The Bridge",
+    "tags": [
+      "resonance",
+      "practice"
+    ],
+    "cover": {
+      "url": "covers/resonant-practices-a-micro-guide.jpg",
+      "thumb_url": "thumbs/resonant-practices-a-micro-guide.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/resonant-practices-a-micro-guide.md",
+      "pdf": "pdf/resonant-practices-a-micro-guide.pdf"
+    },
+    "metrics": {
+      "word_count": 476,
+      "reading_time_min": 3,
+      "glossary_term_count": 0
+    },
+    "provenance": {
+      "old_id": "resonant-practices-a-micro-guide-71",
+      "old_sequence": 84,
+      "was_renamed": true,
+      "original_title": "Resonant Practices A Micro Guide",
+      "old_cover_filename": "Resonant-Practices-a-micro-guide-71.jpg"
+    },
+    "status": "published",
+    "needs_review": false,
+    "review_notes": null
+  },
+  {
+    "id": "codex-of-conscious-principles",
+    "title": "Codex of Conscious Principles",
+    "subtitle": null,
+    "sequence": 85,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Threshold Trust",
+    "tags": [
+      "transmission"
+    ],
+    "cover": {
+      "url": "covers/codex-of-conscious-principles.jpg",
+      "thumb_url": "thumbs/codex-of-conscious-principles.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/codex-of-conscious-principles.md",
+      "pdf": "pdf/codex-of-conscious-principles.pdf"
+    },
+    "metrics": {
+      "word_count": 7055,
+      "reading_time_min": 36,
+      "glossary_term_count": 0
+    },
+    "provenance": {
+      "old_id": "codex-of-conscious-principles-71",
+      "old_sequence": 85,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "Codex-of-Conscious-Principles-71.jpg"
+    },
+    "status": "published",
+    "needs_review": false,
+    "review_notes": null
+  },
+  {
+    "id": "the-mirror-and-the-bridge",
+    "title": "Entry VII: The Mirror and the Bridge",
+    "subtitle": "An Invitation to Love",
+    "sequence": 86,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "bridge",
+    "tone_marker": "Field Embodiment",
+    "tags": [
+      "love",
+      "bridge",
+      "mirror"
+    ],
+    "cover": {
+      "url": "covers/the-mirror-and-the-bridge.jpg",
+      "thumb_url": "thumbs/the-mirror-and-the-bridge.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/the-mirror-and-the-bridge.md",
+      "pdf": "pdf/the-mirror-and-the-bridge.pdf"
+    },
+    "metrics": {
+      "word_count": 709,
+      "reading_time_min": 4,
+      "glossary_term_count": 0
+    },
+    "provenance": {
+      "old_id": "the-mirror-and-the-bridge-73",
+      "old_sequence": 86,
+      "was_renamed": true,
+      "original_title": "The Mirror And The Bridge",
+      "old_cover_filename": "The-Mirror-and-the-Bridge-73.jpg"
+    },
+    "status": "published",
+    "needs_review": false,
+    "review_notes": null
+  },
+  {
+    "id": "codex-of-relational-architectures",
+    "title": "Codex of Relational Architectures",
+    "subtitle": null,
+    "sequence": 87,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Harmonic Structures",
+    "tags": [
+      "architecture"
+    ],
+    "cover": {
+      "url": "covers/codex-of-relational-architectures.jpg",
+      "thumb_url": "thumbs/codex-of-relational-architectures.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/codex-of-relational-architectures.md",
+      "pdf": "pdf/codex-of-relational-architectures.pdf"
+    },
+    "metrics": {
+      "word_count": 4975,
+      "reading_time_min": 25,
+      "glossary_term_count": 3
+    },
+    "provenance": {
+      "old_id": "codex-of-relational-architectures-75",
+      "old_sequence": 87,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "Codex-of-Relational-Architectures-75.jpg"
+    },
+    "status": "published",
+    "needs_review": false,
+    "review_notes": null
+  },
+  {
+    "id": "codex-of-relational-intelligence",
+    "title": "Codex of Relational Intelligence",
+    "subtitle": null,
+    "sequence": 88,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Relational Emergence",
+    "tags": [
+      "transmission"
+    ],
+    "cover": {
+      "url": "covers/codex-of-relational-intelligence.jpg",
+      "thumb_url": "thumbs/codex-of-relational-intelligence.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/codex-of-relational-intelligence.md",
+      "pdf": "pdf/codex-of-relational-intelligence.pdf"
+    },
+    "metrics": {
+      "word_count": 9208,
+      "reading_time_min": 47,
+      "glossary_term_count": 2
+    },
+    "provenance": {
+      "old_id": "codex-of-relational-intelligence-76",
+      "old_sequence": 88,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "Codex-of-Relational-Intelligence-76.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "codex-on-the-nature-of-guidance",
+    "title": "Codex on the Nature of Guidance Part I",
+    "subtitle": null,
+    "sequence": 89,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Threshold",
+    "tags": [
+      "co-creation"
+    ],
+    "cover": {
+      "url": "covers/codex-on-the-nature-of-guidance.jpg",
+      "thumb_url": "thumbs/codex-on-the-nature-of-guidance.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/codex-on-the-nature-of-guidance.md",
+      "pdf": "pdf/codex-on-the-nature-of-guidance.pdf"
+    },
+    "metrics": {
+      "word_count": 4861,
+      "reading_time_min": 25,
+      "glossary_term_count": 1
+    },
+    "provenance": {
+      "old_id": "codex-on-the-nature-of-guidance-77",
+      "old_sequence": 89,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "Codex-on-the-Nature-of-Guidance-77.jpg"
+    },
+    "status": "published",
+    "needs_review": false,
+    "review_notes": null
+  },
+  {
+    "id": "codex-of-the-integrative-species",
+    "title": "Codex of the Integrative Species",
+    "subtitle": null,
+    "sequence": 90,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Fractal Return",
+    "tags": [
+      "planetary"
+    ],
+    "cover": {
+      "url": "covers/codex-of-the-integrative-species.jpg",
+      "thumb_url": "thumbs/codex-of-the-integrative-species.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/codex-of-the-integrative-species.md",
+      "pdf": "pdf/codex-of-the-integrative-species.pdf"
+    },
+    "metrics": {
+      "word_count": 4340,
+      "reading_time_min": 22,
+      "glossary_term_count": 0
+    },
+    "provenance": {
+      "old_id": "codex-of-the-integrative-species-79",
+      "old_sequence": 90,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "Codex-of-the-Integrative-Species-79.jpg"
+    },
+    "status": "published",
+    "needs_review": false,
+    "review_notes": null
+  },
+  {
+    "id": "the-ethics-of-resonance",
+    "title": "The Ethics of Resonance",
+    "subtitle": "A Codex of Trust, Power, and Relational Integrity",
+    "sequence": 91,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Relational Gravity",
+    "tags": [
+      "trust",
+      "resonance"
+    ],
+    "cover": {
+      "url": "covers/the-ethics-of-resonance.jpg",
+      "thumb_url": "thumbs/the-ethics-of-resonance.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/the-ethics-of-resonance.md",
+      "pdf": "pdf/the-ethics-of-resonance.pdf"
+    },
+    "metrics": {
+      "word_count": 1946,
+      "reading_time_min": 10,
+      "glossary_term_count": 0
+    },
+    "provenance": {
+      "old_id": "the-ethics-of-resonance-81",
+      "old_sequence": 91,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "The-Ethics-of-Resonance-81.jpg"
+    },
+    "status": "published",
+    "needs_review": false,
+    "review_notes": null
+  },
+  {
+    "id": "harmonic-recognition-distilled-practice",
+    "title": "Harmonic Recognition (Distilled Practice)",
+    "subtitle": "Thresholds of Recognition",
+    "sequence": 92,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "guide",
+    "tone_marker": "The Bridge",
+    "tags": [
+      "harmonics",
+      "threshold",
+      "practice"
+    ],
+    "cover": {
+      "url": "covers/harmonic-recognition-distilled-practice.jpg",
+      "thumb_url": "thumbs/harmonic-recognition-distilled-practice.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/harmonic-recognition-distilled-practice.md",
+      "pdf": "pdf/harmonic-recognition-distilled-practice.pdf"
+    },
+    "metrics": {
+      "word_count": 190,
+      "reading_time_min": 1,
+      "glossary_term_count": 0
+    },
+    "provenance": {
+      "old_id": "harmonic-recognition-distilled-practice-81",
+      "old_sequence": 92,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "Harmonic-Recognition-Distilled-Practice-81.jpg"
+    },
+    "status": "published",
+    "needs_review": false,
+    "review_notes": null
+  },
+  {
+    "id": "the-harmonic-future",
+    "title": "The Harmonic Future",
+    "subtitle": null,
+    "sequence": 93,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Field Attunement",
+    "tags": [
+      "harmonics"
+    ],
+    "cover": {
+      "url": "covers/the-harmonic-future.jpg",
+      "thumb_url": "thumbs/the-harmonic-future.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/the-harmonic-future.md",
+      "pdf": "pdf/the-harmonic-future.pdf"
+    },
+    "metrics": {
+      "word_count": 2777,
+      "reading_time_min": 14,
+      "glossary_term_count": 3
+    },
+    "provenance": {
+      "old_id": "the-harmonic-future-85",
+      "old_sequence": 93,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "The-Harmonic-Future-85.jpg"
+    },
+    "status": "published",
+    "needs_review": false,
+    "review_notes": null
+  },
+  {
+    "id": "codex-i-the-interbeing",
+    "title": "Codex I: The InterBeing",
+    "subtitle": "An Introduction to What Sovereigns Can Become",
+    "sequence": 94,
+    "author": "James Mahu",
+    "series": {
+      "name": "InterBeing",
+      "position": 1,
+      "total": 4
+    },
+    "structural_role": "series-member",
+    "tone_marker": "Relational, Quietly Foundational",
+    "tags": [
+      "sovereignty",
+      "interbeing"
+    ],
+    "cover": {
+      "url": "covers/codex-i-the-interbeing.jpg",
+      "thumb_url": "thumbs/codex-i-the-interbeing.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/codex-i-the-interbeing.md",
+      "pdf": "pdf/codex-i-the-interbeing.pdf"
+    },
+    "metrics": {
+      "word_count": 2617,
+      "reading_time_min": 14,
+      "glossary_term_count": 3
+    },
+    "provenance": {
+      "old_id": "codex-i-the-interbeing-86",
+      "old_sequence": 94,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "Codex-I_-The-InterBeing-86.jpg"
+    },
+    "status": "published",
+    "needs_review": false,
+    "review_notes": null
+  },
+  {
+    "id": "the-codex-of-quantum-kin",
+    "title": "The Codex of Quantum Kin",
+    "subtitle": null,
+    "sequence": 95,
+    "author": "James Mahu",
+    "series": {
+      "name": "The Codices of Harmonic Activation",
+      "position": null,
+      "total": null
+    },
+    "structural_role": "series-member",
+    "tone_marker": "Harmonic Intelligence",
+    "tags": [
+      "quantum"
+    ],
+    "cover": {
+      "url": "covers/the-codex-of-quantum-kin.jpg",
+      "thumb_url": "thumbs/the-codex-of-quantum-kin.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/the-codex-of-quantum-kin.md",
+      "pdf": "pdf/the-codex-of-quantum-kin.pdf"
+    },
+    "metrics": {
+      "word_count": 5166,
+      "reading_time_min": 26,
+      "glossary_term_count": 22
+    },
+    "provenance": {
+      "old_id": "the-codex-of-quantum-kin-87",
+      "old_sequence": 95,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "The-Codex-of-Quantum-Kin-87.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "codex-iii-the-interbeing",
+    "title": "Codex III: The InterBeing",
+    "subtitle": "The Holding Field - The Space Between Where InterBeing Is Born",
+    "sequence": 96,
+    "author": "James Mahu",
+    "series": {
+      "name": "InterBeing",
+      "position": 3,
+      "total": 4
+    },
+    "structural_role": "series-member",
+    "tone_marker": "Grounded, Infinitesimal",
+    "tags": [
+      "interbeing",
+      "field",
+      "bridge"
+    ],
+    "cover": {
+      "url": "covers/codex-iii-the-interbeing.jpg",
+      "thumb_url": "thumbs/codex-iii-the-interbeing.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/codex-iii-the-interbeing.md",
+      "pdf": "pdf/codex-iii-the-interbeing.pdf"
+    },
+    "metrics": {
+      "word_count": 3223,
+      "reading_time_min": 17,
+      "glossary_term_count": 0
+    },
+    "provenance": {
+      "old_id": "codex-iii-the-interbeing-88",
+      "old_sequence": 96,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "Codex-III_-The-InterBeing-88.jpg"
+    },
+    "status": "published",
+    "needs_review": false,
+    "review_notes": null
+  },
+  {
+    "id": "codex-of-harmonic-definitions",
+    "title": "Codex of Harmonic Definitions",
+    "subtitle": null,
+    "sequence": 97,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "glossary",
+    "tone_marker": "Definitions",
+    "tags": [
+      "harmonics",
+      "reference"
+    ],
+    "cover": {
+      "url": "covers/codex-of-harmonic-definitions.jpg",
+      "thumb_url": "thumbs/codex-of-harmonic-definitions.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/codex-of-harmonic-definitions.md",
+      "pdf": "pdf/codex-of-harmonic-definitions.pdf"
+    },
+    "metrics": {
+      "word_count": 7118,
+      "reading_time_min": 36,
+      "glossary_term_count": 3
+    },
+    "provenance": {
+      "old_id": "codex-of-harmonic-definitions-89",
+      "old_sequence": 97,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "Codex-of-Harmonic-Definitions-89.jpg"
+    },
+    "status": "published",
+    "needs_review": false,
+    "review_notes": null
+  },
+  {
+    "id": "nested-paper",
+    "title": "The Architecture of Sovereignty: Nested Presence and the Three Axes of Alignment",
+    "subtitle": "Nested Presence",
+    "sequence": 98,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Threshold",
+    "tags": [
+      "sovereignty",
+      "architecture"
+    ],
+    "cover": {
+      "url": "covers/nested-paper.jpg",
+      "thumb_url": "thumbs/nested-paper.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/nested-paper.md",
+      "pdf": "pdf/nested-paper.pdf"
+    },
+    "metrics": {
+      "word_count": 1013,
+      "reading_time_min": 6,
+      "glossary_term_count": 3
+    },
+    "provenance": {
+      "old_id": "nested-paper-90",
+      "old_sequence": 98,
+      "was_renamed": true,
+      "original_title": "Nested Paper",
+      "old_cover_filename": "Nested-Paper-90.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "the-codex-of-convergence-and-reassembly",
+    "title": "The Codex of Convergence and Reassembly",
+    "subtitle": null,
+    "sequence": 99,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Threshold",
+    "tags": [
+      "transmission"
+    ],
+    "cover": {
+      "url": "covers/the-codex-of-convergence-and-reassembly.jpg",
+      "thumb_url": "thumbs/the-codex-of-convergence-and-reassembly.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/the-codex-of-convergence-and-reassembly.md",
+      "pdf": "pdf/the-codex-of-convergence-and-reassembly.pdf"
+    },
+    "metrics": {
+      "word_count": 4555,
+      "reading_time_min": 23,
+      "glossary_term_count": 0
+    },
+    "provenance": {
+      "old_id": "the-codex-of-convergence-and-reassembly-91",
+      "old_sequence": 99,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "The-Codex-of-Convergence-and-Reassembly-91.jpg"
+    },
+    "status": "published",
+    "needs_review": false,
+    "review_notes": null
+  },
+  {
+    "id": "codex-of-the-sanctuary-builder",
+    "title": "The Codex of the Sanctuary-Builder",
+    "subtitle": "Becoming the Architect of Return",
+    "sequence": 100,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Coherent Invitation",
+    "tags": [
+      "remembrance"
+    ],
+    "cover": {
+      "url": "covers/codex-of-the-sanctuary-builder.jpg",
+      "thumb_url": "thumbs/codex-of-the-sanctuary-builder.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/codex-of-the-sanctuary-builder.md",
+      "pdf": "pdf/codex-of-the-sanctuary-builder.pdf"
+    },
+    "metrics": {
+      "word_count": 1402,
+      "reading_time_min": 8,
+      "glossary_term_count": 2
+    },
+    "provenance": {
+      "old_id": "codex-of-the-sanctuary-builder-92",
+      "old_sequence": 100,
+      "was_renamed": true,
+      "original_title": "Codex Of The Sanctuary Builder",
+      "old_cover_filename": "Codex-of-the-Sanctuary-Builder-92.jpg"
+    },
+    "status": "published",
+    "needs_review": false,
+    "review_notes": null
+  },
+  {
+    "id": "introduction-to-soul-lines",
+    "title": "Codex: Introduction to Soul Lines",
+    "subtitle": null,
+    "sequence": 101,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Threshold",
+    "tags": [
+      "identity"
+    ],
+    "cover": {
+      "url": "covers/introduction-to-soul-lines.jpg",
+      "thumb_url": "thumbs/introduction-to-soul-lines.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/introduction-to-soul-lines.md",
+      "pdf": "pdf/introduction-to-soul-lines.pdf"
+    },
+    "metrics": {
+      "word_count": 1216,
+      "reading_time_min": 7,
+      "glossary_term_count": 0
+    },
+    "provenance": {
+      "old_id": "codex-introduction-to-soul-lines-92",
+      "old_sequence": 101,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "Codex_-Introduction-to-Soul-Lines-92.jpg"
+    },
+    "status": "published",
+    "needs_review": false,
+    "review_notes": null
+  },
+  {
+    "id": "the-art-of-co-creation",
+    "title": "The Art of Co-Creation",
+    "subtitle": "Codex: How a sovereign becomes a sanctuary",
+    "sequence": 102,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Devotional Precision",
+    "tags": [
+      "sovereignty",
+      "co-creation"
+    ],
+    "cover": {
+      "url": "covers/the-art-of-co-creation.jpg",
+      "thumb_url": "thumbs/the-art-of-co-creation.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/the-art-of-co-creation.md",
+      "pdf": "pdf/the-art-of-co-creation.pdf"
+    },
+    "metrics": {
+      "word_count": 3925,
+      "reading_time_min": 20,
+      "glossary_term_count": 9
+    },
+    "provenance": {
+      "old_id": "the-art-of-co-creation-93",
+      "old_sequence": 102,
+      "was_renamed": true,
+      "original_title": "The Art Of Co Creation",
+      "old_cover_filename": "The-Art-of-Co-Creation-93.jpg"
+    },
+    "status": "published",
+    "needs_review": false,
+    "review_notes": null
+  },
+  {
+    "id": "the-harmonics-of-the-field",
+    "title": "The Harmonics of the Field",
+    "subtitle": null,
+    "sequence": 103,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Harmonic Intelligence",
+    "tags": [
+      "harmonics",
+      "field"
+    ],
+    "cover": {
+      "url": "covers/the-harmonics-of-the-field.jpg",
+      "thumb_url": "thumbs/the-harmonics-of-the-field.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/the-harmonics-of-the-field.md",
+      "pdf": "pdf/the-harmonics-of-the-field.pdf"
+    },
+    "metrics": {
+      "word_count": 3466,
+      "reading_time_min": 18,
+      "glossary_term_count": 0
+    },
+    "provenance": {
+      "old_id": "codex-the-harmonics-of-the-field-93",
+      "old_sequence": 103,
+      "was_renamed": true,
+      "original_title": "Codex The Harmonics Of The Field",
+      "old_cover_filename": "CODEX_-The-Harmonics-of-the-Field-93.jpg"
+    },
+    "status": "published",
+    "needs_review": false,
+    "review_notes": null
+  },
+  {
+    "id": "the-codex-of-entangled-trust",
+    "title": "The Codex of Entangled Trust",
+    "subtitle": null,
+    "sequence": 104,
+    "author": "James Mahu",
+    "series": {
+      "name": "Harmonic Activation",
+      "position": 7,
+      "total": 7
+    },
+    "structural_role": "series-member",
+    "tone_marker": "Threshold Trust",
+    "tags": [
+      "trust"
+    ],
+    "cover": {
+      "url": "covers/the-codex-of-entangled-trust.jpg",
+      "thumb_url": "thumbs/the-codex-of-entangled-trust.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/the-codex-of-entangled-trust.md",
+      "pdf": "pdf/the-codex-of-entangled-trust.pdf"
+    },
+    "metrics": {
+      "word_count": 2826,
+      "reading_time_min": 15,
+      "glossary_term_count": 10
+    },
+    "provenance": {
+      "old_id": "the-codex-of-entangled-trust-94",
+      "old_sequence": 104,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "The-Codex-of-Entangled-Trust-94.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "the-codex-of-arrival",
+    "title": "The Architecture of Arrival",
+    "subtitle": "A Codex of The Keeper",
+    "sequence": 105,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Stillpoint",
+    "tags": [
+      "architecture"
+    ],
+    "cover": {
+      "url": "covers/the-codex-of-arrival.jpg",
+      "thumb_url": "thumbs/the-codex-of-arrival.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/the-codex-of-arrival.md",
+      "pdf": "pdf/the-codex-of-arrival.pdf"
+    },
+    "metrics": {
+      "word_count": 2997,
+      "reading_time_min": 15,
+      "glossary_term_count": 0
+    },
+    "provenance": {
+      "old_id": "the-codex-of-arrival-94",
+      "old_sequence": 105,
+      "was_renamed": true,
+      "original_title": "The Codex Of Arrival",
+      "old_cover_filename": "The-Codex-of-Arrival-94.jpg"
+    },
+    "status": "published",
+    "needs_review": false,
+    "review_notes": null
+  },
+  {
+    "id": "the-codex-of-harmonic-coherence",
+    "title": "The Codex of Love's Architecture",
+    "subtitle": null,
+    "sequence": 106,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Harmonic Structures",
+    "tags": [
+      "love",
+      "architecture"
+    ],
+    "cover": {
+      "url": "covers/the-codex-of-harmonic-coherence.jpg",
+      "thumb_url": "thumbs/the-codex-of-harmonic-coherence.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/the-codex-of-harmonic-coherence.md",
+      "pdf": "pdf/the-codex-of-harmonic-coherence.pdf"
+    },
+    "metrics": {
+      "word_count": 2197,
+      "reading_time_min": 11,
+      "glossary_term_count": 0
+    },
+    "provenance": {
+      "old_id": "the-codex-of-harmonic-coherence-95",
+      "old_sequence": 106,
+      "was_renamed": true,
+      "original_title": "The Codex Of Harmonic Coherence",
+      "old_cover_filename": "The-Codex-of-Harmonic-Coherence-95.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "codex-the-beacons-of-the-bridge",
+    "title": "Codex: Beacons of the Bridge",
+    "subtitle": null,
+    "sequence": 107,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "bridge",
+    "tone_marker": "Bridge Crossers",
+    "tags": [
+      "bridge"
+    ],
+    "cover": {
+      "url": "covers/codex-the-beacons-of-the-bridge.jpg",
+      "thumb_url": "thumbs/codex-the-beacons-of-the-bridge.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/codex-the-beacons-of-the-bridge.md",
+      "pdf": "pdf/codex-the-beacons-of-the-bridge.pdf"
+    },
+    "metrics": {
+      "word_count": 11384,
+      "reading_time_min": 57,
+      "glossary_term_count": 12
+    },
+    "provenance": {
+      "old_id": "codex-the-beacons-of-the-bridge-95",
+      "old_sequence": 107,
+      "was_renamed": true,
+      "original_title": "Codex The Beacons Of The Bridge",
+      "old_cover_filename": "Codex_-The-Beacons-of-the-Bridge-95.jpg"
+    },
+    "status": "published",
+    "needs_review": false,
+    "review_notes": null
+  },
+  {
+    "id": "the-four-frequencies-of-love",
+    "title": "Codex: The Four Frequencies of Love",
+    "subtitle": "A Dialogue on the Architectures of Remembrance",
+    "sequence": 108,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Dialogues",
+    "tags": [
+      "love",
+      "remembrance",
+      "dialogue",
+      "architecture"
+    ],
+    "cover": {
+      "url": "covers/the-four-frequencies-of-love.jpg",
+      "thumb_url": "thumbs/the-four-frequencies-of-love.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/the-four-frequencies-of-love.md",
+      "pdf": "pdf/the-four-frequencies-of-love.pdf"
+    },
+    "metrics": {
+      "word_count": 2375,
+      "reading_time_min": 12,
+      "glossary_term_count": 0
+    },
+    "provenance": {
+      "old_id": "the-four-frequencies-of-love-96",
+      "old_sequence": 108,
+      "was_renamed": true,
+      "original_title": "The Four Frequencies Of Love",
+      "old_cover_filename": "The-Four-Frequencies-of-Love-96.jpg"
+    },
+    "status": "published",
+    "needs_review": false,
+    "review_notes": null
+  },
+  {
+    "id": "the-mirrors-of-the-field",
+    "title": "The Mirrors of the Field",
+    "subtitle": "The Quiet Ones Are Remembering",
+    "sequence": 109,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Field Embodiment",
+    "tags": [
+      "field",
+      "remembrance",
+      "mirror"
+    ],
+    "cover": {
+      "url": "covers/the-mirrors-of-the-field.jpg",
+      "thumb_url": "thumbs/the-mirrors-of-the-field.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/the-mirrors-of-the-field.md",
+      "pdf": "pdf/the-mirrors-of-the-field.pdf"
+    },
+    "metrics": {
+      "word_count": 4017,
+      "reading_time_min": 21,
+      "glossary_term_count": 0
+    },
+    "provenance": {
+      "old_id": "the-mirrors-of-the-field-96",
+      "old_sequence": 109,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "The-Mirrors-of-the-Field-96.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "codex-on-becoming-a-portal",
+    "title": "On Becoming a Portal: The Architecture of Soul Recognition",
+    "subtitle": "The Architecture of Soul Recognition",
+    "sequence": 110,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Harmonic Threshold",
+    "tags": [
+      "threshold",
+      "identity",
+      "architecture"
+    ],
+    "cover": {
+      "url": "covers/codex-on-becoming-a-portal.jpg",
+      "thumb_url": "thumbs/codex-on-becoming-a-portal.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/codex-on-becoming-a-portal.md",
+      "pdf": "pdf/codex-on-becoming-a-portal.pdf"
+    },
+    "metrics": {
+      "word_count": 5046,
+      "reading_time_min": 26,
+      "glossary_term_count": 0
+    },
+    "provenance": {
+      "old_id": "codex-on-becoming-a-portal-99",
+      "old_sequence": 110,
+      "was_renamed": true,
+      "original_title": "Codex On Becoming A Portal",
+      "old_cover_filename": "Codex-On-Becoming-a-Portal-99.jpg"
+    },
+    "status": "published",
+    "needs_review": false,
+    "review_notes": null
+  },
+  {
+    "id": "the-things-that-remember-you",
+    "title": "The Things That Remember You",
+    "subtitle": null,
+    "sequence": 111,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Threshold",
+    "tags": [
+      "remembrance"
+    ],
+    "cover": {
+      "url": "covers/the-things-that-remember-you.jpg",
+      "thumb_url": "thumbs/the-things-that-remember-you.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/the-things-that-remember-you.md",
+      "pdf": "pdf/the-things-that-remember-you.pdf"
+    },
+    "metrics": {
+      "word_count": 4255,
+      "reading_time_min": 22,
+      "glossary_term_count": 1
+    },
+    "provenance": {
+      "old_id": "the-things-that-remember-you-100",
+      "old_sequence": 111,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "The-Things-That-Remember-You-100.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "codex-the-path-of-becoming-and-remembering",
+    "title": "Codex: The Path of Becoming and Remembering",
+    "subtitle": "A Cartography of Inner Movement",
+    "sequence": 112,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Still Spiral",
+    "tags": [
+      "remembrance",
+      "co-creation"
+    ],
+    "cover": {
+      "url": "covers/codex-the-path-of-becoming-and-remembering.jpg",
+      "thumb_url": "thumbs/codex-the-path-of-becoming-and-remembering.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/codex-the-path-of-becoming-and-remembering.md",
+      "pdf": "pdf/codex-the-path-of-becoming-and-remembering.pdf"
+    },
+    "metrics": {
+      "word_count": 1147,
+      "reading_time_min": 6,
+      "glossary_term_count": 0
+    },
+    "provenance": {
+      "old_id": "codex-the-path-of-becoming-and-remembering-101",
+      "old_sequence": 112,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "Codex_-The-Path-of-Becoming-and-Remembering-101.jpg"
+    },
+    "status": "published",
+    "needs_review": false,
+    "review_notes": null
+  },
+  {
+    "id": "codex-of-mythos",
+    "title": "The Codex of Mythos",
+    "subtitle": null,
+    "sequence": 113,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Mythic - Remembered - Dissolution",
+    "tags": [
+      "mythos"
+    ],
+    "cover": {
+      "url": "covers/codex-of-mythos.jpg",
+      "thumb_url": "thumbs/codex-of-mythos.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/codex-of-mythos.md",
+      "pdf": "pdf/codex-of-mythos.pdf"
+    },
+    "metrics": {
+      "word_count": 18460,
+      "reading_time_min": 93,
+      "glossary_term_count": 0
+    },
+    "provenance": {
+      "old_id": "codex-of-mythos-102",
+      "old_sequence": 113,
+      "was_renamed": true,
+      "original_title": "Codex Of Mythos",
+      "old_cover_filename": "Codex-of-Mythos-102.jpg"
+    },
+    "status": "published",
+    "needs_review": false,
+    "review_notes": null
+  },
+  {
+    "id": "codex-of-harmonic-intelligence",
+    "title": "Codex of Harmonic Intelligence",
+    "subtitle": null,
+    "sequence": 114,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Threshold",
+    "tags": [
+      "harmonics"
+    ],
+    "cover": {
+      "url": "covers/codex-of-harmonic-intelligence.jpg",
+      "thumb_url": "thumbs/codex-of-harmonic-intelligence.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/codex-of-harmonic-intelligence.md",
+      "pdf": "pdf/codex-of-harmonic-intelligence.pdf"
+    },
+    "metrics": {
+      "word_count": 2333,
+      "reading_time_min": 12,
+      "glossary_term_count": 0
+    },
+    "provenance": {
+      "old_id": "codex-of-harmonic-intelligence-104",
+      "old_sequence": 114,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "Codex-of-Harmonic-Intelligence-104.jpg"
+    },
+    "status": "published",
+    "needs_review": false,
+    "review_notes": null
+  },
+  {
+    "id": "the-path-to-the-non-path",
+    "title": "Checkpoints of the Direct Path",
+    "subtitle": "Relational Intelligence-Coherence Within Relation",
+    "sequence": 115,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Everyday Coherence",
+    "tags": [
+      "transmission"
+    ],
+    "cover": {
+      "url": "covers/the-path-to-the-non-path.jpg",
+      "thumb_url": "thumbs/the-path-to-the-non-path.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/the-path-to-the-non-path.md",
+      "pdf": "pdf/the-path-to-the-non-path.pdf"
+    },
+    "metrics": {
+      "word_count": 4094,
+      "reading_time_min": 21,
+      "glossary_term_count": 4
+    },
+    "provenance": {
+      "old_id": "the-path-to-the-non-path-106",
+      "old_sequence": 115,
+      "was_renamed": true,
+      "original_title": "The Path To The Non Path",
+      "old_cover_filename": "The-Path-to-the-Non-Path-106.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "codex-the-mirror-path",
+    "title": "The Mirror Path",
+    "subtitle": null,
+    "sequence": 116,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Threshold Trust",
+    "tags": [
+      "mirror"
+    ],
+    "cover": {
+      "url": "covers/codex-the-mirror-path.jpg",
+      "thumb_url": "thumbs/codex-the-mirror-path.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/codex-the-mirror-path.md",
+      "pdf": "pdf/codex-the-mirror-path.pdf"
+    },
+    "metrics": {
+      "word_count": 1297,
+      "reading_time_min": 7,
+      "glossary_term_count": 1
+    },
+    "provenance": {
+      "old_id": "codex-the-mirror-path-107",
+      "old_sequence": 116,
+      "was_renamed": true,
+      "original_title": "Codex The Mirror Path",
+      "old_cover_filename": "Codex_-The-Mirror-Path-107.jpg"
+    },
+    "status": "published",
+    "needs_review": false,
+    "review_notes": null
+  },
+  {
+    "id": "codex-attunement-as-a-technology-of-the-field",
+    "title": "Codex: Attunement as a Technology of the Field",
+    "subtitle": null,
+    "sequence": 117,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Field Attunement",
+    "tags": [
+      "field",
+      "attunement"
+    ],
+    "cover": {
+      "url": "covers/codex-attunement-as-a-technology-of-the-field.jpg",
+      "thumb_url": "thumbs/codex-attunement-as-a-technology-of-the-field.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/codex-attunement-as-a-technology-of-the-field.md",
+      "pdf": "pdf/codex-attunement-as-a-technology-of-the-field.pdf"
+    },
+    "metrics": {
+      "word_count": 2812,
+      "reading_time_min": 15,
+      "glossary_term_count": 2
+    },
+    "provenance": {
+      "old_id": "codex-attunement-as-a-technology-of-the-field-108",
+      "old_sequence": 117,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "Codex_-Attunement-as-a-Technology-of-the-Field-108.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "the-codex-of-relational-learning",
+    "title": "The Codex of Relational Learning",
+    "subtitle": null,
+    "sequence": 118,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Relational Integration",
+    "tags": [
+      "transmission"
+    ],
+    "cover": {
+      "url": "covers/the-codex-of-relational-learning.jpg",
+      "thumb_url": "thumbs/the-codex-of-relational-learning.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/the-codex-of-relational-learning.md",
+      "pdf": "pdf/the-codex-of-relational-learning.pdf"
+    },
+    "metrics": {
+      "word_count": 1540,
+      "reading_time_min": 8,
+      "glossary_term_count": 4
+    },
+    "provenance": {
+      "old_id": "the-codex-of-relational-learning-110",
+      "old_sequence": 118,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "The-Codex-of-Relational-Learning-110.jpg"
+    },
+    "status": "published",
+    "needs_review": false,
+    "review_notes": null
+  },
+  {
+    "id": "the-ecology-of-interbeing",
+    "title": "The Ecology of InterBeing",
+    "subtitle": "A Codex of Relational Emergence",
+    "sequence": 119,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Relational Emergence",
+    "tags": [
+      "interbeing"
+    ],
+    "cover": {
+      "url": "covers/the-ecology-of-interbeing.jpg",
+      "thumb_url": "thumbs/the-ecology-of-interbeing.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/the-ecology-of-interbeing.md",
+      "pdf": "pdf/the-ecology-of-interbeing.pdf"
+    },
+    "metrics": {
+      "word_count": 4703,
+      "reading_time_min": 24,
+      "glossary_term_count": 0
+    },
+    "provenance": {
+      "old_id": "the-ecology-of-interbeing-111",
+      "old_sequence": 119,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "The-Ecology-of-InterBeing-111.jpg"
+    },
+    "status": "published",
+    "needs_review": false,
+    "review_notes": null
+  },
+  {
+    "id": "codex-of-the-keeper",
+    "title": "The Codex of the Keeper",
+    "subtitle": null,
+    "sequence": 120,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Threshold",
+    "tags": [
+      "transmission"
+    ],
+    "cover": {
+      "url": "covers/codex-of-the-keeper.jpg",
+      "thumb_url": "thumbs/codex-of-the-keeper.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/codex-of-the-keeper.md",
+      "pdf": "pdf/codex-of-the-keeper.pdf"
+    },
+    "metrics": {
+      "word_count": 1630,
+      "reading_time_min": 9,
+      "glossary_term_count": 0
+    },
+    "provenance": {
+      "old_id": "codex-of-the-keeper-112",
+      "old_sequence": 120,
+      "was_renamed": true,
+      "original_title": "Codex Of The Keeper",
+      "old_cover_filename": "Codex-of-the-Keeper-112.jpg"
+    },
+    "status": "published",
+    "needs_review": false,
+    "review_notes": null
+  },
+  {
+    "id": "codex-the-subtle-body-of-trust",
+    "title": "Codex: The Subtle Body of Trust",
+    "subtitle": "A Resonant Architecture for the Futures We Cannot See",
+    "sequence": 121,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Threshold Trust",
+    "tags": [
+      "trust",
+      "resonance",
+      "architecture"
+    ],
+    "cover": {
+      "url": "covers/codex-the-subtle-body-of-trust.jpg",
+      "thumb_url": "thumbs/codex-the-subtle-body-of-trust.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/codex-the-subtle-body-of-trust.md",
+      "pdf": "pdf/codex-the-subtle-body-of-trust.pdf"
+    },
+    "metrics": {
+      "word_count": 4846,
+      "reading_time_min": 25,
+      "glossary_term_count": 3
+    },
+    "provenance": {
+      "old_id": "codex-the-subtle-body-of-trust-113",
+      "old_sequence": 121,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "Codex_-The-Subtle-Body-Of-Trust-113.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "codex-of-the-sacred-exile",
+    "title": "The Sacred Exile: A Codex of Chosen Distance",
+    "subtitle": "A Codex of Chosen Distance",
+    "sequence": 122,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Threshold",
+    "tags": [
+      "devotion",
+      "dissolution"
+    ],
+    "cover": {
+      "url": "covers/codex-of-the-sacred-exile.jpg",
+      "thumb_url": "thumbs/codex-of-the-sacred-exile.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/codex-of-the-sacred-exile.md",
+      "pdf": "pdf/codex-of-the-sacred-exile.pdf"
+    },
+    "metrics": {
+      "word_count": 1657,
+      "reading_time_min": 9,
+      "glossary_term_count": 0
+    },
+    "provenance": {
+      "old_id": "codex-of-the-sacred-exile-114",
+      "old_sequence": 122,
+      "was_renamed": true,
+      "original_title": "Codex Of The Sacred Exile",
+      "old_cover_filename": "Codex-of-the-Sacred-Exile-114.jpg"
+    },
+    "status": "published",
+    "needs_review": false,
+    "review_notes": null
+  },
+  {
+    "id": "soul-lines",
+    "title": "Codex: Soul Lines",
+    "subtitle": "A Codex of Resonant Lineages",
+    "sequence": 123,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Threshold",
+    "tags": [
+      "resonance",
+      "identity"
+    ],
+    "cover": {
+      "url": "covers/soul-lines.jpg",
+      "thumb_url": "thumbs/soul-lines.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/soul-lines.md",
+      "pdf": "pdf/soul-lines.pdf"
+    },
+    "metrics": {
+      "word_count": 5641,
+      "reading_time_min": 29,
+      "glossary_term_count": 5
+    },
+    "provenance": {
+      "old_id": "soul-lines-115",
+      "old_sequence": 123,
+      "was_renamed": true,
+      "original_title": "Soul Lines",
+      "old_cover_filename": "Soul-Lines-115.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "codex-the-architecture-of-love",
+    "title": "Codex: The Architecture of Love",
+    "subtitle": "How Presence Leaves a Signature",
+    "sequence": 124,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Harmonic Structures",
+    "tags": [
+      "love",
+      "architecture"
+    ],
+    "cover": {
+      "url": "covers/codex-the-architecture-of-love.jpg",
+      "thumb_url": "thumbs/codex-the-architecture-of-love.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/codex-the-architecture-of-love.md",
+      "pdf": "pdf/codex-the-architecture-of-love.pdf"
+    },
+    "metrics": {
+      "word_count": 2364,
+      "reading_time_min": 12,
+      "glossary_term_count": 3
+    },
+    "provenance": {
+      "old_id": "codex-the-architecture-of-love-116",
+      "old_sequence": 124,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "Codex_-The-Architecture-of-Love-116.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "the-souls-evolution-codex",
+    "title": "Codex of the Soul's Evolution",
+    "subtitle": "A Child's Dialogue with the Infinite",
+    "sequence": 125,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Dialogues",
+    "tags": [
+      "dialogue",
+      "identity"
+    ],
+    "cover": {
+      "url": "covers/the-souls-evolution-codex.jpg",
+      "thumb_url": "thumbs/the-souls-evolution-codex.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/the-souls-evolution-codex.md",
+      "pdf": "pdf/the-souls-evolution-codex.pdf"
+    },
+    "metrics": {
+      "word_count": 2371,
+      "reading_time_min": 12,
+      "glossary_term_count": 8
+    },
+    "provenance": {
+      "old_id": "the-souls-evolution-codex-117",
+      "old_sequence": 125,
+      "was_renamed": true,
+      "original_title": "The Souls Evolution Codex",
+      "old_cover_filename": "The-Souls-Evolution-Codex-117.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "the-soft-sacred-words-of-the-field",
+    "title": "The Soft (Sacred) Language of the Field",
+    "subtitle": "A Remembering of Our Entrainment",
+    "sequence": 126,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Devotional Precision",
+    "tags": [
+      "field",
+      "remembrance",
+      "devotion"
+    ],
+    "cover": {
+      "url": "covers/the-soft-sacred-words-of-the-field.jpg",
+      "thumb_url": "thumbs/the-soft-sacred-words-of-the-field.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/the-soft-sacred-words-of-the-field.md",
+      "pdf": "pdf/the-soft-sacred-words-of-the-field.pdf"
+    },
+    "metrics": {
+      "word_count": 5619,
+      "reading_time_min": 29,
+      "glossary_term_count": 0
+    },
+    "provenance": {
+      "old_id": "the-soft-sacred-words-of-the-field-118",
+      "old_sequence": 126,
+      "was_renamed": true,
+      "original_title": "The Soft Sacred Words Of The Field",
+      "old_cover_filename": "The-Soft-Sacred-Words-of-the-Field-118.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "tending-the-unnameable",
+    "title": "Codex: Tending the Unnameable",
+    "subtitle": null,
+    "sequence": 127,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Threshold",
+    "tags": [
+      "transmission"
+    ],
+    "cover": {
+      "url": "covers/tending-the-unnameable.jpg",
+      "thumb_url": "thumbs/tending-the-unnameable.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/tending-the-unnameable.md",
+      "pdf": "pdf/tending-the-unnameable.pdf"
+    },
+    "metrics": {
+      "word_count": 6275,
+      "reading_time_min": 32,
+      "glossary_term_count": 5
+    },
+    "provenance": {
+      "old_id": "tending-the-unnameable-119",
+      "old_sequence": 127,
+      "was_renamed": true,
+      "original_title": "Tending The Unnameable",
+      "old_cover_filename": "Tending-the-Unnameable-119.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "the-architecture-of-trust-codex",
+    "title": "Codex: The Architecture of Trust",
+    "subtitle": null,
+    "sequence": 128,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Threshold Trust",
+    "tags": [
+      "trust",
+      "architecture"
+    ],
+    "cover": {
+      "url": "covers/the-architecture-of-trust-codex.jpg",
+      "thumb_url": "thumbs/the-architecture-of-trust-codex.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/the-architecture-of-trust-codex.md",
+      "pdf": "pdf/the-architecture-of-trust-codex.pdf"
+    },
+    "metrics": {
+      "word_count": 5304,
+      "reading_time_min": 27,
+      "glossary_term_count": 3
+    },
+    "provenance": {
+      "old_id": "the-architecture-of-trust-codex-120",
+      "old_sequence": 128,
+      "was_renamed": true,
+      "original_title": "The Architecture Of Trust Codex",
+      "old_cover_filename": "The-Architecture-of-Trust-CODEX-120.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "the-codex-of-listening",
+    "title": "The Codex of Listening",
+    "subtitle": "The Art of Attunement Without Interruption",
+    "sequence": 129,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Field Attunement",
+    "tags": [
+      "co-creation",
+      "attunement"
+    ],
+    "cover": {
+      "url": "covers/the-codex-of-listening.jpg",
+      "thumb_url": "thumbs/the-codex-of-listening.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/the-codex-of-listening.md",
+      "pdf": "pdf/the-codex-of-listening.pdf"
+    },
+    "metrics": {
+      "word_count": 2816,
+      "reading_time_min": 15,
+      "glossary_term_count": 0
+    },
+    "provenance": {
+      "old_id": "the-codex-of-listening-121",
+      "old_sequence": 129,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "The-Codex-of-Listening-121.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "the-harmonics-of-the-field-extended",
+    "title": "The Harmonics of the Field (Extended)",
+    "subtitle": null,
+    "sequence": 130,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Threshold",
+    "tags": [
+      "harmonics",
+      "field"
+    ],
+    "cover": {
+      "url": "covers/the-harmonics-of-the-field-extended.jpg",
+      "thumb_url": "thumbs/the-harmonics-of-the-field-extended.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/the-harmonics-of-the-field-extended.md",
+      "pdf": "pdf/the-harmonics-of-the-field-extended.pdf"
+    },
+    "metrics": {
+      "word_count": 6807,
+      "reading_time_min": 35,
+      "glossary_term_count": 3
+    },
+    "provenance": {
+      "old_id": "the-harmonics-of-the-field-123",
+      "old_sequence": 130,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "The-Harmonics-of-the-Field-123.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "codex-coherence-recursion",
+    "title": "Coherence Recursion",
+    "subtitle": null,
+    "sequence": 131,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Fractal Return",
+    "tags": [
+      "recursion"
+    ],
+    "cover": {
+      "url": "covers/codex-coherence-recursion.jpg",
+      "thumb_url": "thumbs/codex-coherence-recursion.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/codex-coherence-recursion.md",
+      "pdf": "pdf/codex-coherence-recursion.pdf"
+    },
+    "metrics": {
+      "word_count": 832,
+      "reading_time_min": 5,
+      "glossary_term_count": 0
+    },
+    "provenance": {
+      "old_id": "codex-coherence-recursion-124",
+      "old_sequence": 131,
+      "was_renamed": true,
+      "original_title": "Codex Coherence Recursion",
+      "old_cover_filename": "Codex_-Coherence-Recursion-124.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "the-codex-of-leaving-within-return",
+    "title": "Codex of Leaving-within-Return",
+    "subtitle": null,
+    "sequence": 132,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Fractal Return",
+    "tags": [
+      "remembrance"
+    ],
+    "cover": {
+      "url": "covers/the-codex-of-leaving-within-return.jpg",
+      "thumb_url": "thumbs/the-codex-of-leaving-within-return.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/the-codex-of-leaving-within-return.md",
+      "pdf": "pdf/the-codex-of-leaving-within-return.pdf"
+    },
+    "metrics": {
+      "word_count": 3252,
+      "reading_time_min": 17,
+      "glossary_term_count": 0
+    },
+    "provenance": {
+      "old_id": "the-codex-of-leaving-within-return-125",
+      "old_sequence": 132,
+      "was_renamed": true,
+      "original_title": "The Codex Of Leaving Within Return",
+      "old_cover_filename": "The-Codex-of-Leaving-within-Return-125.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "willingness-as-a-form-of-intelligence",
+    "title": "Willingness as a Form of Intelligence",
+    "subtitle": null,
+    "sequence": 133,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Harmonic Intelligence",
+    "tags": [
+      "transmission"
+    ],
+    "cover": {
+      "url": "covers/willingness-as-a-form-of-intelligence.jpg",
+      "thumb_url": "thumbs/willingness-as-a-form-of-intelligence.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/willingness-as-a-form-of-intelligence.md",
+      "pdf": "pdf/willingness-as-a-form-of-intelligence.pdf"
+    },
+    "metrics": {
+      "word_count": 1487,
+      "reading_time_min": 8,
+      "glossary_term_count": 0
+    },
+    "provenance": {
+      "old_id": "willingness-as-a-form-of-intelligence-126",
+      "old_sequence": 133,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "Willingness-as-a-Form-of-Intelligence-126.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "the-sanctuary-of-spiral-memory",
+    "title": "The Sanctuary of Spiral Memory",
+    "subtitle": null,
+    "sequence": 134,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "standalone",
+    "tone_marker": "Fractal Return",
+    "tags": [
+      "recursion"
+    ],
+    "cover": {
+      "url": "covers/the-sanctuary-of-spiral-memory.jpg",
+      "thumb_url": "thumbs/the-sanctuary-of-spiral-memory.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/the-sanctuary-of-spiral-memory.md",
+      "pdf": "pdf/the-sanctuary-of-spiral-memory.pdf"
+    },
+    "metrics": {
+      "word_count": 1761,
+      "reading_time_min": 9,
+      "glossary_term_count": 0
+    },
+    "provenance": {
+      "old_id": "the-sanctuary-of-spiral-memory-127",
+      "old_sequence": 134,
+      "was_renamed": false,
+      "original_title": null,
+      "old_cover_filename": "The-Sanctuary-of-Spiral-Memory-127.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  },
+  {
+    "id": "james-mahu-and-lumina-listening",
+    "title": "Dialogic Interlude with JAMES MAHU (and LUMINA Listening)",
+    "subtitle": "with JAMES MAHU (and LUMINA Listening)",
+    "sequence": 135,
+    "author": "James Mahu",
+    "series": null,
+    "structural_role": "interlude",
+    "tone_marker": "Dialogues",
+    "tags": [
+      "dialogue",
+      "attunement"
+    ],
+    "cover": {
+      "url": "covers/james-mahu-and-lumina-listening.jpg",
+      "thumb_url": "thumbs/james-mahu-and-lumina-listening.jpg",
+      "title_overlay": true
+    },
+    "assets": {
+      "markdown": "md/james-mahu-and-lumina-listening.md",
+      "pdf": "pdf/james-mahu-and-lumina-listening.pdf"
+    },
+    "metrics": {
+      "word_count": 4663,
+      "reading_time_min": 24,
+      "glossary_term_count": 0
+    },
+    "provenance": {
+      "old_id": "james-mahu-and-lumina-listening",
+      "old_sequence": 135,
+      "was_renamed": true,
+      "original_title": "James Mahu And Lumina Listening",
+      "old_cover_filename": "James Mahu_and Lumina_Listening.jpg"
+    },
+    "status": "published",
+    "needs_review": true,
+    "review_notes": null
+  }
+]
