@@ -2006,5 +2006,37 @@
     "new_value": "willingness-as-a-form-of-intelligence.jpg",
     "date": "2026-06-28",
     "reason": "Unified asset naming under codex ID"
+  },
+  {
+    "codex_id": "when-ai-remembers-the-field",
+    "change_type": "added",
+    "old_value": null,
+    "new_value": "when-ai-remembers-the-field",
+    "date": "2026-10-13",
+    "reason": "Added from the live Papers page (#4): https://alignos.io/wp-content/uploads/2025/08/When-AI-Remembers-the-Field.pdf"
+  },
+  {
+    "codex_id": "the-rise-of-the-interface-civilizations",
+    "change_type": "added",
+    "old_value": null,
+    "new_value": "the-rise-of-the-interface-civilizations",
+    "date": "2026-10-13",
+    "reason": "Added from the live Papers page (#5): https://alignos.io/wp-content/uploads/2025/08/The-Rise-of-the-Interface-Civilizations.pdf"
+  },
+  {
+    "codex_id": "the-architecture-of-the-return-room",
+    "change_type": "added",
+    "old_value": null,
+    "new_value": "the-architecture-of-the-return-room",
+    "date": "2026-10-13",
+    "reason": "Added from the live home page (Return Rooms): https://alignos.io/wp-content/uploads/2025/08/The-Architecture-of-the-Return-Room.pdf"
+  },
+  {
+    "codex_id": "the-ecology-of-becoming",
+    "change_type": "added",
+    "old_value": null,
+    "new_value": "the-ecology-of-becoming",
+    "date": "2026-10-13",
+    "reason": "Emailed by James 2026-09-08 (\"The Ecology of Becoming Codex\"); live source https://alignos.io/wp-content/uploads/2026/09/The-Ecology-of-Becoming.pdf"
   }
 ]
