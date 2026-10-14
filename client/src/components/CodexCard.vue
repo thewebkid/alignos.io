@@ -46,48 +46,49 @@ const seriesLabel = computed(() => {
 
 <template>
   <div class="codex-card-shell">
-    <BTooltip placement="bottom" :target="`codex-card-${codex.id}`">
+    <BTooltip placement="bottom" custom-class="codex-progress-tip">
+      <template #target>
+        <RouterLink
+          :to="{ name: 'reader', params: { id: codex.id } }"
+          class="codex-card"
+          :class="{
+            'is-complete': isComplete,
+            'is-started': isStarted && !isComplete,
+            'is-unread': !isStarted
+          }"
+        >
+          <div class="card-cover">
+            <img
+              v-if="coverSrc"
+              :src="coverSrc"
+              :alt="codex.title"
+              loading="lazy"
+              class="cover-image"
+            />
+
+            <div v-else class="cover-placeholder">
+              <span>{{ codex.title.charAt(0) }}</span>
+            </div>
+
+            <CoverOverlay
+              :title="codex.title"
+              :tone-marker="codex.toneMarker"
+              :series-label="seriesLabel"
+              size="lattice"
+            />
+
+            <div class="progress-bar-container" v-if="isStarted">
+              <div class="progress-bar" :style="{ width: scrollPercent + '%' }"></div>
+            </div>
+          </div>
+        </RouterLink>
+      </template>
       <div v-if="tip">{{tip.split('|')[0]}}<br/>{{tip.split('|')[1]}}</div>
       <div v-else>
         Not started
       </div>
       <em>~{{codex.readingTime}} minute read</em>
     </BTooltip>
-    <RouterLink
-      :id="`codex-card-${codex.id}`"
-      :to="{ name: 'reader', params: { id: codex.id } }"
-      class="codex-card"
-      :class="{
-        'is-complete': isComplete,
-        'is-started': isStarted && !isComplete,
-        'is-unread': !isStarted
-      }"
-    >
-      <div class="card-cover">
-        <img
-          v-if="coverSrc"
-          :src="coverSrc"
-          :alt="codex.title"
-          loading="lazy"
-          class="cover-image"
-        />
-
-        <div v-else class="cover-placeholder">
-          <span>{{ codex.title.charAt(0) }}</span>
-        </div>
-
-        <CoverOverlay
-          :title="codex.title"
-          :tone-marker="codex.toneMarker"
-          :series-label="seriesLabel"
-          size="lattice"
-        />
-
-        <div class="progress-bar-container" v-if="isStarted">
-          <div class="progress-bar" :style="{ width: scrollPercent + '%' }"></div>
-        </div>
-      </div>
-    </RouterLink>
   </div>
 </template>
 
