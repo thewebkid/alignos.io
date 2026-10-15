@@ -1,9 +1,8 @@
+# site-shell Specification
+
 ## Purpose
-
 Defines the Alignos site shell: the brand lockup, favicon, written brand name, primary navigation, footer, and the top-level route map that every page shares.
-
-## ADDED Requirements
-
+## Requirements
 ### Requirement: Brand lockup in the header
 Every page SHALL show the Alignos brand in the top-left of the header: the spiral mark (`alignos-spiral.png`) and the wordmark (`alignos-logo-text.svg`) side by side, linking to the home page (`/`). The lockup SHALL be about the same height as the previous header logo (spiral about 36px tall on desktop), and the wordmark SHALL scale without cropping. The header MUST serve reduced-size derivatives of the spiral, not the full-resolution master. The lockup SHALL have the accessible name "Alignos". The previous inline SVG spiral and the "AlignOS Reader" text MUST NOT appear.
 
@@ -68,7 +67,7 @@ In-app links that lead to the lattice (reader "back"/"browse" actions, search em
 - **THEN** they arrive at `/lattice`, not `/`
 
 ### Requirement: Every route is pre-rendered
-Every route in the route map, including each published `/codex/{id}`, SHALL be pre-rendered to static HTML at build time, so its content is readable without running JavaScript. Routes that are not in the route map MUST NOT be pre-rendered.
+Every route in the route map, including each published `/codex/{id}`, SHALL be pre-rendered to static HTML at build time, so its content is readable without running JavaScript. Routes that are not in the route map MUST NOT be pre-rendered, except the review pages that staging builds add (`staging-review`).
 
 #### Scenario: Static HTML for a page
 - **WHEN** `client/dist/papers.html` (or equivalent) is fetched from the build output
@@ -90,8 +89,9 @@ The header navigation SHALL show, in order: **Codex Lattice** (`/lattice`), **Re
 - **THEN** all nav items, including the three Return Rooms children, are reachable
 
 ### Requirement: Footer
-Every page SHALL end with a footer that shows the line "You are not asked to arrive complete. Only to return willing." and a contact link `mailto:info@alignos.io`. The footer MUST NOT reference `contact@alignos.io`, a contact form, or a newsletter. The footer SHALL link to the machine-readable entry point for AI readers (`/llms.txt` once it exists, otherwise `/llms.json`) and to Coherence Across Scales.
+Every page SHALL end with a footer that shows the line "You are not asked to arrive complete. Only to return willing." and a contact link `mailto:info@alignos.io`. The footer MUST NOT reference `contact@alignos.io`, a contact form, or a newsletter. The footer SHALL link to the machine-readable entry point for AI readers (`/llms.txt`) and to Coherence Across Scales.
 
 #### Scenario: Contact link
 - **WHEN** a visitor activates the footer's contact link
 - **THEN** it opens a mail draft to `info@alignos.io`
+

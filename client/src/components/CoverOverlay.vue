@@ -180,14 +180,11 @@ defineProps({
     );
 
   .overlay-title {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     line-height: 1.25;
-    // slight dual shadow: tight core + soft halo, for brighter top cover areas
-    text-shadow:
-      0 1px 2px rgba(var(--cov-scrim), 0.65),
-      0 2px 12px rgba(var(--cov-scrim), 0.5);
+    text-shadow: 0 0 1px black;
     display: -webkit-box;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-align: center;
@@ -209,8 +206,7 @@ defineProps({
     padding: 0.875rem;
 
     .overlay-title {
-      font-size: 1.2rem;
-      -webkit-line-clamp: 3;
+      font-size: 1.4rem;
     }
 
     .tone-marker-text {
