@@ -1,6 +1,7 @@
 <script setup>
 import { provide, ref, inject, onBeforeMount, onMounted } from 'vue'
 import { RouterView } from 'vue-router'
+import { Analytics } from '@vercel/analytics/vue'
 import AppHeader from './components/AppHeader.vue'
 import AppFooter from './components/AppFooter.vue'
 import SearchOverlay from './components/SearchOverlay.vue'
@@ -106,6 +107,15 @@ const handleKeydown = (e) => {
 </script>
 
 <template>
+  <Analytics
+    :beforeSend="(event) => {
+      // Respect user privacy preference
+      if (typeof localStorage !== 'undefined' && localStorage.getItem('notrack') === 'true') {
+        return null
+      }
+      return event
+    }"
+  />
   <div class="app-container" @keydown="handleKeydown" tabindex="-1">
     <AppHeader @open-search="openSearch" />
 
