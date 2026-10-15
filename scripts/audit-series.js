@@ -184,6 +184,10 @@ if (unknownSeries.size) {
   for (const [name, where] of [...unknownSeries].sort(([a], [b]) => a.localeCompare(b))) push(`- **"${name}"**: ${where.join('; ')}`);
   push('');
 }
+push('On the website:', '');
+push('- The home page blurb for *The Fundamental Arc* begins "This series traces the great curve of return…", but the catalog has it as a single codex in no series. We kept your words as written. Is it a series, or should the blurb say "This Codex"?');
+push('- On the Begin a Return Room page we changed one sentence of yours. "We invite you to upload these PDFs to your AI" now reads "We invite you to share these Codices with your AI". Every codex can now be read in the browser, and plain text serves an AI far better than PDF: the thirteen readings are 9 MB as PDFs and about 237 KB as text. The page now offers the readings as a single text file for your AI. Does the new wording sit right with you?');
+push('- We removed download lines that pointed readers to PDFs: "Download the full Codex:" at the end of Between Worlds, and "Click to download." after The Fundamental Arc on The Arc of Difference. Readers now go to each codex\'s page, where it can be read (and translated) in the browser, and the PDF is offered there. Is that all right with you?', '');
 
 push('## 5. Two editions of the same work', '');
 push('Both editions stay readable. The one we believe is earlier is marked "Earlier edition" and links to the later one, which holds the series position. Please confirm which is later.', '');

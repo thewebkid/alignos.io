@@ -11,6 +11,8 @@ The prose of Home, Before You Begin…, Begin a Return Room, Between Worlds, Pap
 - dropping FAQ question 6
 - the contact address change
 - link targets and button labels (UI chrome)
+- removal of PDF download prompts ("Download the full Codex:", "Click to download."), since every codex is read in the browser and its PDF is offered in the reader
+- the Return Room's "upload these PDFs to your AI" becoming "share these Codices with your AI"
 
 #### Scenario: Before You Begin matches the capture
 - **WHEN** the rendered Before You Begin… page text is compared with the capture
@@ -40,14 +42,14 @@ The home page (`/`) SHALL present, in order:
 - **THEN** the home spotlight shows the new codex without a code change
 
 ### Requirement: Threshold layout
-Before You Begin…, Between Worlds, and The Arc of Difference SHALL use a threshold layout: a single narrow centered text column, a small spiral marker before each section heading, no card grids or sidebars, and one primary onward link at the end (Before You Begin… → `/return-room`; Between Worlds → the *Between Worlds* paper in the reader; The Arc of Difference → `/return-room` with a secondary link to `/lattice`).
+Before You Begin…, Between Worlds, and The Arc of Difference SHALL use a threshold layout: a single narrow reading column, no card grids or sidebars, and one primary onward link at the end (Before You Begin… → `/return-room`; Between Worlds → the *Between Worlds* paper in the reader; The Arc of Difference → `/return-room` with a secondary link to `/lattice`).
 
 #### Scenario: One way forward
 - **WHEN** a visitor reaches the end of Before You Begin…
 - **THEN** the primary action is "Begin a Return Room" linking to `/return-room`
 
-### Requirement: Links open the reader, PDFs remain available
-Every link in page content that pointed to a WordPress-hosted PDF of a catalog codex SHALL link to that codex in the reader (`/codex/{id}`). Where the legacy page offered a download, a PDF link to the same codex SHALL also be offered. A link to a series compilation SHALL link to the series corridor (`/lattice?series={id}`) and offer the compilation PDF.
+### Requirement: Links open the reader, not PDFs
+Every link in page content that pointed to a WordPress-hosted PDF of a catalog codex SHALL link to that codex in the reader (`/codex/{id}`), where it can be read in the browser (and translated) and its PDF downloaded. A link to a series compilation SHALL link to the series corridor (`/lattice?series={id}`). Home and the legacy pages MUST NOT link to PDFs.
 
 #### Scenario: FAQ starter
 - **WHEN** a visitor activates "The Four Frequencies of Love" in FAQ question 1
@@ -55,7 +57,11 @@ Every link in page content that pointed to a WordPress-hosted PDF of a catalog c
 
 #### Scenario: Series link
 - **WHEN** a visitor activates "The Evolution of the Sovereign" in Featured Writings
-- **THEN** they arrive at `/lattice?series=the-evolution-of-the-sovereign`, and a PDF link to the compilation is also shown
+- **THEN** they arrive at `/lattice?series=the-evolution-of-the-sovereign`
+
+#### Scenario: No PDF links on pages
+- **WHEN** the prerendered Home, Before You Begin…, Begin a Return Room, Between Worlds, Papers, FAQ, and Arc of Difference pages are searched for links
+- **THEN** none points at a `.pdf`
 
 ### Requirement: James' AI prompts are copyable
 Each prompt James gives for use with an AI (FAQ questions 1–4 and the Return Room's reading invitation and covenant sentence) SHALL render as a distinct prompt block with a control that copies the exact prompt text to the clipboard. The page text remains readable and selectable without the control.

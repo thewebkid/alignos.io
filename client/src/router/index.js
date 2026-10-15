@@ -1,10 +1,10 @@
-const PagePending = () => import('../views/PagePending.vue')
+const PageView = () => import('../views/PageView.vue')
 
 const routes = [
   {
     path: '/',
     name: 'home',
-    component: PagePending,
+    component: () => import('../views/HomeView.vue'),
     meta: { title: null }
   },
   {
@@ -28,38 +28,60 @@ const routes = [
   {
     path: '/before-you-begin',
     name: 'before-you-begin',
-    component: PagePending,
-    meta: { title: 'Before You Begin…' }
+    component: PageView,
+    meta: {
+      title: 'Before You Begin…',
+      page: 'before-you-begin',
+      layout: 'threshold',
+      next: { label: 'Begin a Return Room', to: '/return-room' }
+    }
   },
   {
     path: '/return-room',
     name: 'return-room',
-    component: PagePending,
-    meta: { title: 'Begin a Return Room' }
+    component: PageView,
+    meta: { title: 'Begin a Return Room', page: 'return-room', layout: 'standard' }
   },
   {
     path: '/between-worlds',
     name: 'between-worlds',
-    component: PagePending,
-    meta: { title: 'Between Worlds' }
+    component: PageView,
+    meta: {
+      title: 'Between Worlds',
+      page: 'between-worlds',
+      layout: 'threshold',
+      next: {
+        label: 'Between Worlds: The Architecture of the Third Structure',
+        to: '/codex/between-worlds-the-architecture-of-the-third-structure'
+      }
+    }
   },
   {
     path: '/papers',
     name: 'papers',
-    component: PagePending,
-    meta: { title: 'Papers' }
+    component: PageView,
+    meta: { title: 'Papers', page: 'papers', layout: 'standard' }
   },
   {
     path: '/faq',
     name: 'faq',
-    component: PagePending,
-    meta: { title: 'FAQ' }
+    component: PageView,
+    meta: { title: 'FAQ', page: 'faq', layout: 'standard' }
   },
   {
     path: '/arc-of-difference',
     name: 'arc-of-difference',
-    component: PagePending,
-    meta: { title: 'The Arc of Difference' }
+    component: PageView,
+    meta: {
+      title: 'The Arc of Difference',
+      page: 'arc-of-difference',
+      layout: 'threshold',
+      next: {
+        label: 'Begin a Return Room',
+        to: '/return-room',
+        secondary: [{ label: 'Codex Lattice', to: '/lattice' }]
+      }
+    }
   },
   {
     path: '/:pathMatch(.*)*',

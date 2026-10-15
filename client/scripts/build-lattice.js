@@ -16,6 +16,7 @@ import { fileURLToPath } from 'url';
 import { existsSync } from 'fs';
 import { stripLeadingCoverImage } from '../src/lib/markdown-export.js';
 import { resolveSeries } from './series-registry.js';
+import { resolveCollections } from './collections.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -23,12 +24,14 @@ const CLIENT_DIR = path.join(__dirname, '..');
 const REPO_ROOT = path.join(CLIENT_DIR, '..');
 const CATALOG_FILE = path.join(REPO_ROOT, 'data', 'codex-catalog.json');
 const SERIES_FILE = path.join(REPO_ROOT, 'data', 'series.json');
+const COLLECTIONS_FILE = path.join(REPO_ROOT, 'data', 'collections.json');
 const MD_DIR = path.join(CLIENT_DIR, 'public/md');
 const PDF_DIR = path.join(CLIENT_DIR, 'public/pdf');
 const OUTPUT_DIR = path.join(CLIENT_DIR, 'src', 'generated');
 const OUTPUT_FILE = path.join(OUTPUT_DIR, 'codex-lattice.json');
 const OUTPUT_META_FILE = path.join(OUTPUT_DIR, 'codex-lattice-meta.json');
 const OUTPUT_SERIES_FILE = path.join(OUTPUT_DIR, 'series.json');
+const OUTPUT_COLLECTIONS_FILE = path.join(OUTPUT_DIR, 'collections.json');
 const CODEX_CONTENT_DIR = path.join(CLIENT_DIR, 'public', 'codex-content');
 
 const CORE_VOCABULARY = [
@@ -265,6 +268,16 @@ async function build() {
     throw new Error(`Series registry validation failed:\n  - ${seriesErrors.join('\n  - ')}`);
   }
 
+  const collectionsData = JSON.parse(await fs.readFile(COLLECTIONS_FILE, 'utf-8'));
+  const { errors: collectionErrors, published: publishedCollections } = resolveCollections(
+    collectionsData,
+    catalog,
+    publishedSeries
+  );
+  if (collectionErrors.length) {
+    throw new Error(`Collections validation failed:\n  - ${collectionErrors.join('\n  - ')}`);
+  }
+
   const codexes = [];
 
   for (const entry of catalog) {
@@ -317,6 +330,7 @@ async function build() {
   const metaSize = (await fs.stat(OUTPUT_META_FILE)).size;
 
   await fs.writeFile(OUTPUT_SERIES_FILE, JSON.stringify(publishedSeries, null, 2));
+  await fs.writeFile(OUTPUT_COLLECTIONS_FILE, JSON.stringify(publishedCollections, null, 2));
 
   let contentFilesWritten = 0;
   for (const codex of codexes) {
@@ -331,6 +345,7 @@ async function build() {
   console.log(`  Full: ${OUTPUT_FILE} (${(fullSize / 1024 / 1024).toFixed(2)} MB)`);
   console.log(`  Meta: ${OUTPUT_META_FILE} (${(metaSize / 1024).toFixed(0)} KB)`);
   console.log(`  Series: ${OUTPUT_SERIES_FILE} (${publishedSeries.length} series)`);
+  console.log(`  Collections: ${OUTPUT_COLLECTIONS_FILE} (${publishedCollections.length} collections)`);
   console.log(`  Content files: ${contentFilesWritten}`);
   console.log('─'.repeat(50) + '\n');
 }

@@ -8,6 +8,7 @@ import { cdnUrl } from '../lib/cdn-config.js'
 import seriesData from '../generated/series.json'
 
 const codexRegistry = inject('codexRegistry')
+const collections = inject('collections')
 const progressStore = useReadingProgressStore()
 const route = useRoute()
 const router = useRouter()
@@ -72,14 +73,33 @@ const selectedSeries = computed(() => {
 })
 
 const showNoSeries = computed(() => route.query.series === NO_SERIES)
-const seriesSelectValue = computed(() => selectedSeries.value?.id ?? (showNoSeries.value ? NO_SERIES : ''))
 
-const selectSeries = (id) => {
+// Curated collection — ?collection={id}; never active together with ?series=
+const collectionOptions = computed(() => [...(collections?.values() ?? [])].filter(c => c.showInLattice))
+
+const selectedCollection = computed(() => {
+  if (route.query.series) return null
+  const c = collections?.get(route.query.collection)
+  return c?.showInLattice ? c : null
+})
+
+// "Browse by" select values are prefixed so one control drives either filter
+const browseValue = computed(() => {
+  if (selectedSeries.value) return `series:${selectedSeries.value.id}`
+  if (showNoSeries.value) return `series:${NO_SERIES}`
+  if (selectedCollection.value) return `collection:${selectedCollection.value.id}`
+  return ''
+})
+
+const browse = (value) => {
+  const [kind, id] = value ? value.split(':') : []
   const query = { ...route.query }
-  if (id) query.series = id
-  else delete query.series
+  delete query.series
+  delete query.collection
+  if (kind && id) query[kind] = id
   router.replace({ query })
-  if (id) track('filterSeries', { series: id })
+  if (kind === 'series') track('filterSeries', { series: id })
+  if (kind === 'collection') track('filterCollection', { collection: id })
 }
 
 const getCodexes = (ids) => ids.map(id => codexRegistry?.get(id)).filter(Boolean)
@@ -129,10 +149,19 @@ const inAnySeries = (codex) =>
 
 const noSeriesCodexes = computed(() => allCodexes.value.filter(c => !inAnySeries(c)))
 
-// Codexes the progress chips count over: the corridor when one is selected
+// Collection order; series items expand to their positioned members (no planned positions)
+const collectionCodexes = computed(() => {
+  const c = selectedCollection.value
+  if (!c) return []
+  const ids = c.items.flatMap(item => (item.kind === 'series' ? item.memberIds : [item.id]))
+  return getCodexes([...new Set(ids)])
+})
+
+// Codexes the progress chips count over: the corridor or collection when one is selected
 const scopeCodexes = computed(() => {
   const c = corridor.value
   if (c) return [...c.positioned.filter(item => !item.planned), ...c.unplaced, ...c.companions]
+  if (selectedCollection.value) return collectionCodexes.value
   return showNoSeries.value ? noSeriesCodexes.value : allCodexes.value
 })
 
@@ -226,14 +255,18 @@ const filterCounts = computed(() => {
 
           <select
             class="form-select form-select-sm series-select"
-            aria-label="Series"
-            :value="seriesSelectValue"
-            @change="selectSeries($event.target.value)"
+            aria-label="Browse by"
+            :value="browseValue"
+            @change="browse($event.target.value)"
           >
             <option value="">All</option>
-
-            <option v-for="s in seriesOptions" :key="s.id" :value="s.id">{{ s.name }}</option>
-            <option :value="NO_SERIES">Not in a series</option>
+            <optgroup label="Series">
+              <option v-for="s in seriesOptions" :key="s.id" :value="`series:${s.id}`">{{ s.name }}</option>
+              <option :value="`series:${NO_SERIES}`">Not in a series</option>
+            </optgroup>
+            <optgroup v-if="collectionOptions.length" label="Collections">
+              <option v-for="c in collectionOptions" :key="c.id" :value="`collection:${c.id}`">{{ c.title }}</option>
+            </optgroup>
           </select>
         </div>
       </div>
@@ -255,7 +288,7 @@ const filterCounts = computed(() => {
                 <a :href="cdnUrl.pdf(corridor.series.compilationPdf)" :download="corridor.series.compilationPdf">Compilation PDF</a>
               </span>
             </p>
-            <button type="button" class="corridor-clear" @click="selectSeries('')">Show all codexes</button>
+            <button type="button" class="corridor-clear" @click="browse('')">Show all codexes</button>
           </header>
 
           <CodexGrid v-if="corridorPositioned.length" :codexes="corridorPositioned" />
@@ -281,7 +314,16 @@ const filterCounts = computed(() => {
             <p class="corridor-meta">
               <span>{{ noSeriesCodexes.length }} codexes</span>
             </p>
-            <button type="button" class="corridor-clear" @click="selectSeries('')">Show all codexes</button>
+            <button type="button" class="corridor-clear" @click="browse('')">Show all codexes</button>
+          </header>
+
+          <header v-else-if="selectedCollection" class="corridor-header">
+            <h2 class="corridor-title">{{ selectedCollection.title }}</h2>
+            <p class="corridor-meta">
+              <span v-if="selectedCollection.subtitle">{{ selectedCollection.subtitle }}</span>
+              <span>{{ collectionCodexes.length }} codexes</span>
+            </p>
+            <button type="button" class="corridor-clear" @click="browse('')">Show all codexes</button>
           </header>
 
           <CodexGrid :codexes="filteredCodexes" />
@@ -468,6 +510,16 @@ const filterCounts = computed(() => {
     box-shadow: none;
   }
 
+  // Some platforms render the open list natively and ignore these.
+  optgroup {
+    font-style: normal;
+    font-weight: 600;
+  }
+
+  option {
+    font-weight: 400;
+  }
+
   @media (min-width: 640px) {
     flex: 0 1 18rem;
   }
@@ -477,17 +529,21 @@ const filterCounts = computed(() => {
   padding: 2rem 0;
 }
 
+// Corridor and collection header
 .corridor-header {
   text-align: center;
-  margin-bottom: 2rem;
+  max-width: 44rem;
+  margin: 0 auto 2.5rem;
+  padding-bottom: 1.75rem;
+  border-bottom: 1px solid var(--cl-border-light);
 }
 
 .corridor-title {
   font-family: var(--bs-font-serif);
-  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-size: clamp(1.625rem, 3.5vw, 2.25rem);
   font-weight: 500;
   color: var(--cl-text-heading);
-  margin-bottom: 0.375rem;
+  margin-bottom: 0.5rem;
 }
 
 .corridor-meta {

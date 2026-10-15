@@ -13,7 +13,8 @@ The WordPress pages carry James' framing of Alignos (the Three Invitations, Befo
   - **FAQ** (`/faq`): questions 1–5 of the live FAQ. Question 6 (the forthcoming Dialogic Interlude) is dropped because that work is now in the lattice. The contact line uses `info@alignos.io`.
   - **The Arc of Difference** (`/arc-of-difference`): threshold layout.
 - Add a **threshold layout**: one narrow column, small spiral section markers, no grid or sidebar, a single way forward.
-- Rewrite links that pointed at WordPress PDFs so they open the codex in the reader (`/codex/{id}`), with the PDF offered alongside.
+- Rewrite links that pointed at WordPress PDFs so they open the codex in the reader (`/codex/{id}`), where it can be read and translated in the browser and its PDF downloaded. Pages carry no PDF links.
+- Generate a markdown readings bundle per lattice collection, and offer the Return Room's as its one download, for bringing the readings to an AI.
 - Render James' AI prompts (FAQ, Return Room) as copyable prompt blocks.
 - Add **collections** (`data/collections.json`): curated, ordered lists of codexes or series, each item carrying James' own note from the legacy page. Initial collections:
   - `papers` (registry name "Harmonic Topical Papers")
@@ -28,6 +29,7 @@ The WordPress pages carry James' framing of Alignos (the Three Invitations, Befo
 ### New Capabilities
 - `site-pages`: The home and legacy pages, their verbatim-content rules, the threshold layout, link rewriting, and copyable prompts.
 - `codex-collections`: Curated collections as data, their rendering on pages, and the lattice collection filter.
+- `reading-bundles`: Markdown bundles of each lattice collection's codexes for bringing them to an AI, and the Return Room's bundle download.
 
 ### Modified Capabilities
 <!-- None. Routes and nav are defined in site-shell (site-shell-and-brand); series ids come from series-registry (series-corridors-and-placeholders). -->

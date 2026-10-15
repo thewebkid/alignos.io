@@ -14,6 +14,7 @@ import routes from './router'
 import { CodexRegistry } from './lib/codex-registry.js'
 import { BrowserCodex } from './lib/codex-browser.js'
 import { createGlossaryFromRegistry } from './lib/glossary.js'
+import collectionsData from './generated/collections.json'
 
 // Export for vite-ssg
 export const createApp = ViteSSG(
@@ -52,6 +53,7 @@ export const createApp = ViteSSG(
     // Provide the registry and glossary to all components
     app.provide('codexRegistry', codexRegistry)
     app.provide('glossaryManager', glossaryManager)
+    app.provide('collections', new Map(collectionsData.map(c => [c.id, c])))
 
     // Also make them available globally for debugging (client-side only)
     if (isClient && typeof window !== 'undefined') {

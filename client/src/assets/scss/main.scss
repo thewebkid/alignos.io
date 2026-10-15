@@ -93,9 +93,46 @@ body {
   }
 }
 
+// Quiet outlined action used on pages and collections; the primary one fills on hover.
+.cl-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.3rem 0.9375rem;
+  border: 1px solid var(--cl-border-light);
+  border-radius: var(--bs-border-radius-pill);
+  background: transparent;
+  color: var(--cl-text-muted);
+  font-size: 0.8125rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  &:hover {
+    color: var(--cl-primary);
+    border-color: var(--cl-primary);
+  }
+
+  &--primary {
+    color: var(--cl-primary);
+    border-color: var(--cl-primary);
+
+    &:hover {
+      background: var(--cl-primary);
+      color: white;
+    }
+  }
+}
+
 // =============================================================================
 // CARD CUSTOMIZATIONS
 // =============================================================================
+
+.cl-panel {
+  background: var(--cl-surface);
+  border: 1px solid var(--cl-border-light);
+  border-radius: var(--bs-border-radius-lg);
+}
 
 .card {
   background-color: var(--cl-surface);
@@ -130,6 +167,15 @@ a {
 
 .text-muted {
   color: var(--cl-text-muted) !important;
+}
+
+.cl-title-link {
+  color: var(--cl-text-heading);
+  text-decoration: none;
+
+  &:hover {
+    color: var(--cl-primary);
+  }
 }
 
 // =============================================================================

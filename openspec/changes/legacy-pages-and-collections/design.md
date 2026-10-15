@@ -30,7 +30,7 @@
 
 **Non-Goals:**
 - New pages beyond the legacy set: no AI-companion page, no lineage page. The AI entry point is `ai-orientation-layer`.
-- The Return Room bundle download, which belongs to `ai-orientation-layer`. This change links individual readings only.
+- Series bundles, bundle links in the lattice, and `llms.txt`, which belong to `ai-orientation-layer`. This change builds collection bundles only (D9).
 - Contact form or newsletter. Both were dropped.
 
 ## Decisions
@@ -38,9 +38,11 @@
 ### D1. Prose pages are markdown with two fenced-block extensions
 - **Storage.** `client/src/content/pages/{slug}.md` holds before-you-begin, return-room, between-worlds, papers, faq and arc-of-difference.
 - **Rendering.** A single `PageView.vue` loads the file (Vite `?raw` import, so it's pre-rendered by vite-ssg). The layout (`threshold` or `standard`) comes from route meta.
-- **Fenced block extensions,** added in `markdown.js` as marked extensions and used only for pages:
+- **Fenced blocks,** used only for pages:
   - `` ```prompt `` renders `PromptBlock.vue` (quoted prompt and a copy button). Raw text in the block is the exact clipboard payload.
   - `` ```collection `` with a single line `{collection-id}` renders `CollectionList.vue`.
+- **Segment parser, not marked extensions.** `parsePageMarkdown` in `markdown.js` lexes the page with marked, splits at `prompt`/`collection` code tokens, and returns `html` / `prompt` / `collection` segments that `PageView` renders in order. Components can't be mounted from an HTML string, so splitting is simpler than an extension that emits placeholders. Page HTML skips DOMPurify: it is committed content, and the prerendered and hydrated output stay identical.
+- **Line breaks.** Pages parse with `breaks: true`. A blank line separates paragraphs, and a single newline is a poetic `<br>`, matching the `<br>`s in the live HTML. Editor hard-wraps in the captures that fall mid-sentence in prose are joined.
 - **Why fenced blocks.** They degrade to readable markdown when the same file is served raw to AI readers (`ai-orientation-layer` substitutes the collection list in text form).
 - *Alternative:* page text inline in Vue templates. Rejected because the text would be locked in markup, harder to diff against captures, and not reusable for `llms-full.txt`.
 - *Alternative:* a markdown component library (e.g. MDX-like). Rejected as overkill for two block types.
@@ -51,22 +53,29 @@ Home is a sequence of differently laid-out sections (hero, spotlight, three card
 ### D3. Collections file and build integration
 `data/collections.json` (snake_case, like the catalog) is validated by `build-lattice.js` against catalog ids and `data/series.json`, then emitted as `client/src/generated/collections.json` (camelCase) with resolved titles. It's loaded alongside the lattice registry. Items look like:
 ```json
-{ "codex": "framing-the-mirror",
+{ "codex": "framing-the-mirror", "label": "Framing the Mirror",
   "tagline": "How sovereigns are witnessed, and how trust becomes form.",
   "note": "This Paper reflects on the deep intimacy of being seen…" }
-{ "series": "the-evolution-of-the-sovereign", "group": "Recommended Codices",
+{ "series": "the-evolution-of-the-sovereign", "group": "path",
+  "label": "The Evolution of the Sovereign",
   "note": "(Why this matters, and how return happens through identity and trust)" }
 ```
-`group` reproduces the Return Room's two-part list (the three ✧ readings, then the numbered four) without a second collection.
+- `label` is the title as James' page prints it, which can differ from the catalog title ("Between Worlds" for the full catalog title, "To Serve the Recursion of Love (optional)").
+- A collection declares `groups: [{ "id": "threshold", "style": "star" }, { "id": "path", "style": "numbered" }]`, and items name a group id. This reproduces the Return Room's two-part list (the three ✧ readings, then the numbered four) without a second collection. Ungrouped collections render as one numbered list.
+- `show_in_lattice: false` keeps a collection off the lattice filter; the home spotlight uses this.
 
 ### D4. Links and actions
 - Content links to codexes use the `/codex/{id}` path in markdown. The renderer's existing link handling turns internal paths into router navigation.
-- "Download Paper →" buttons become a primary **Read** (reader) plus a secondary **PDF** (catalog PDF URL via the existing CDN builder). Button labels are UI chrome; James' surrounding prose is untouched.
-- Series items link to `/lattice?series={id}`, with the compilation PDF as the secondary action.
+- WordPress was a PDF-only site, so every work was a download. Here every codex is read in the browser, where in-browser translation works, and the reader offers the PDF. Pages therefore send readers to the reader and never link a PDF; download links were a distraction from reading.
+- "Download Paper →" buttons become a single **Read** (reader). Series items become **View series** (`/lattice?series={id}`). Button labels are UI chrome.
+- Inline codex links in page prose (the FAQ's starting points, "The Fundamental Arc" on Arc of Difference) go to the reader.
+- Closing links on threshold pages render from the route-meta `next`: one primary action and optional secondary links. Between Worlds' onward link is the full paper in the reader.
+- The one download on any page is the Return Room's readings bundle for AI (D9).
 
 ### D5. Threshold layout
-- A narrow measure (~38rem), generous vertical rhythm, and Cormorant Garamond headings (`--bs-font-serif`, already loaded).
+- A left-aligned serif column (~34rem, Cormorant Garamond via `--bs-font-serif`). Centering made the poetry read like slides. Each poetic line is its own paragraph, so paragraph spacing stays tight and `h2` top margins mark the sections.
 - A small spiral marker before each `h2`, using the header's 72px spiral derivative at ~18px.
+- Gold (`--cl-accent`) is the page's ritual accent: spiral markers, the home welcome and closing lines, series badges, blockquote bars. Actions are ghost pills that fill on hover.
 - No cards or grids, and one primary onward action rendered from a route-meta `next` link.
 - Before You Begin's closing italic lines ("You may now return to the portal page…") stay as text.
 
@@ -77,8 +86,10 @@ Home is a sequence of differently laid-out sections (hero, spotlight, three card
 4. FAQ question 6 is dropped. The Dialogic Interlude is now catalogued as `james-mahu-and-lumina-listening`.
 5. The FAQ contact `contact@alignos.io` (linked to the contact form) becomes `mailto:info@alignos.io`.
 6. Arc of Difference's closing "Codex Lattice" link pointed at `/`; it now points at `/lattice`.
-7. Return Room's "upload these PDFs to your AI" stays verbatim. Each reading offers its PDF; the bundle comes later.
+7. Return Room's "We invite you to upload these PDFs to your AI" becomes "We invite you to share these Codices with your AI". The sentence named the only format WordPress had. PDFs are a poor way to hand text to an AI (the 13 readings are 9 MB of PDF against 237 KB of markdown), "Codices" is the page's own word, and "share" won't age with formats. The mechanics live in the bundle action (D9). Noted on James' question list.
 8. The home blurb for *The Fundamental Arc* calls it a "series" while the catalog has it as a standalone codex. It stays verbatim and is noted on James' question list.
+9. Closing links render as the page's onward action after the body. On Before You Begin, "→ Begin a Return Room" now follows the two closing italic lines instead of preceding them. On Arc of Difference, "Begin a Return Room" is the primary action and comes before "Codex Lattice".
+10. PDF download prompts are removed (D4): Between Worlds' lead "Download the full Codex:" and the sentence "Click to download." after The Fundamental Arc on Arc of Difference. Noted on James' question list.
 
 ### D7. Lattice filters
 - The collection filter sits next to the series filter from `series-corridors-and-placeholders`, as one "Browse by" control with two option groups (Series, Collections).
@@ -86,7 +97,7 @@ Home is a sequence of differently laid-out sections (hero, spotlight, three card
 - Progress chips still apply on top.
 
 ### D8. Kimi K3 for page design
-A `kimi-k3-max` subagent designs and implements the visual layer within existing SCSS tokens:
+A `kimi-k3-max` subagent designs and implements the visual layer by its own judgment of the writing's atmosphere. It may add styles and tokens, extend the theme, or change theme values; changes that reach the reader app are reported. A consolidation pass afterwards folds new values into the theme and removes duplication. Areas:
 - the Home sections
 - the threshold layout
 - `PromptBlock`
@@ -94,9 +105,14 @@ A `kimi-k3-max` subagent designs and implements the visual layer within existing
 
 The text and data wiring are done first, so Kimi works against real content.
 
+### D9. Readings bundle for AI
+- `client/scripts/build-ai-layer.js` runs after `build-lattice.js` in `build:lattice` and writes `public/bundles/{collection-id}.md` (git-ignored) for each lattice collection. This is the generator `ai-orientation-layer` D1 planned; that change extends it with series bundles, `llms.txt`, and page markdown.
+- A bundle is the collection title, intro, an attribution line, then each codex's full markdown in page order with its canonical URL and James' note. Series items expand to published members. Codex headings are demoted one level under the bundle title. No catalog descriptions.
+- The Return Room shows one quiet download under its reading list. Other pages offer none: bundles are for the page that asks readers to bring texts to an AI.
+
 ## Risks / Trade-offs
 
-- [Verbatim drift during copy] → Task 5.1 diffs rendered page text (stripped of markup) against the captures and reports differences beyond D6.
+- [Verbatim drift during copy] → `scripts/check-legacy-pages.js` diffs the prerendered page text in `client/dist` against the captures, line by line and in order, and fails on anything beyond D6.
 - [`?raw` markdown pages and SSG] → Pages render at build like codexes. Verify the static HTML contains the body (spec in site-shell).
 - [Clipboard API unavailable (insecure context, old browsers)] → The copy button hides when `navigator.clipboard` is missing, and the text stays selectable.
 - [Home template text is not reusable by the AI layer] → Accepted; home is navigation, and the substantive guidance lives in the markdown pages.

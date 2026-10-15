@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "build:lattice": "node scripts/build-lattice.js",
+    "build:lattice": "node scripts/build-lattice.js && node scripts/build-ai-layer.js",
     "dev": "npm run build:lattice && vite --host --port 5555",
     "build": "npm run build:lattice && vite-ssg build",
     "build:spa": "npm run build:lattice && vite build",

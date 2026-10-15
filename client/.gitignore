@@ -16,7 +16,9 @@ dist-ssr
 src/generated/codex-lattice.json
 src/generated/codex-lattice-meta.json
 src/generated/series.json
+src/generated/collections.json
 public/codex-content/*.json
+public/bundles/
 
 # Editor directories and files
 .vscode/*
