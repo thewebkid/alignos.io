@@ -58,3 +58,4 @@
 - [ ] 7.4 Confirm SSL certificate is provisioned for `alignos.io`
 - [ ] 7.5 Smoke test: home page loads, codex reader works, search works, `/api/codex-lattice-meta` returns JSON
 - [ ] 7.6 Set up a permanent redirect on `alignos.cosmiccreation.net` to `alignos.io` (done on the old server, not this repo)
+  
