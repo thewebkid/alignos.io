@@ -7,7 +7,8 @@
 
 /**
  * @typedef {Object} CodexSeries
- * @property {string} name - Name of the series
+ * @property {string} id - Series registry id (data/series.json)
+ * @property {string} name - Canonical series name
  * @property {number|null} position - Position within the series (1-based)
  * @property {number|null} total - Total codexes in series (if known)
  */
@@ -59,6 +60,8 @@ export class Codex {
   _contentLoadPromise;
   series;
   siblingIds;
+  laterEditionId;
+  earlierEditionIds;
   keywords;
   glossaryTerms;
   _wordCount;
@@ -94,7 +97,12 @@ export class Codex {
     // Series & Constellation
     /** @type {CodexSeries|null} */
     this.series = data.series ?? null;
+    /** Positioned members of this codex's series in position order, including itself; empty when unplaced. */
     this.siblingIds = data.siblingIds ?? [];
+
+    // Editions
+    this.laterEditionId = data.laterEditionId ?? null;
+    this.earlierEditionIds = data.earlierEditionIds ?? [];
 
     // Semantic metadata
     this.keywords = data.keywords ?? [];
@@ -398,7 +406,15 @@ export class Codex {
    * @returns {boolean}
    */
   hasSiblings() {
-    return this.siblingIds.length > 0;
+    return this.siblingIds.length > 1;
+  }
+
+  /**
+   * Check if this codex is an earlier edition of another published codex
+   * @returns {boolean}
+   */
+  isEarlierEdition() {
+    return this.laterEditionId !== null;
   }
 
   /**
@@ -421,9 +437,9 @@ export class Codex {
     if (!this.series) return null;
 
     if (this.series.position && this.series.total) {
-      return `${this.series.name} (${this.series.position}/${this.series.total})`;
+      return `${this.series.name} · Part ${this.series.position} of ${this.series.total}`;
     } else if (this.series.position) {
-      return `${this.series.name} #${this.series.position}`;
+      return `${this.series.name} · Part ${this.series.position}`;
     }
     return this.series.name;
   }
@@ -445,6 +461,8 @@ export class Codex {
       subtitle: this.subtitle,
       series: this.series,
       siblingIds: this.siblingIds,
+      laterEditionId: this.laterEditionId,
+      earlierEditionIds: this.earlierEditionIds,
       keywords: this.keywords,
       glossaryTerms: this.glossaryTerms,
       registry: this.registry,

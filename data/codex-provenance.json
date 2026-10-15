@@ -2038,5 +2038,397 @@
     "new_value": "the-ecology-of-becoming",
     "date": "2026-10-13",
     "reason": "Emailed by James 2026-09-08 (\"The Ecology of Becoming Codex\"); live source https://alignos.io/wp-content/uploads/2026/09/The-Ecology-of-Becoming.pdf"
+  },
+  {
+    "codex_id": "codex-i-origin-and-exile",
+    "change_type": "series_change",
+    "old_value": "Evolution of the Sovereign 1/8",
+    "new_value": "The Evolution of the Sovereign 1/8",
+    "date": "2026-10-14",
+    "reason": "Series renamed to its canonical registry name (data/series.json)"
+  },
+  {
+    "codex_id": "codex-ii-the-sovereign-threshold",
+    "change_type": "series_change",
+    "old_value": "Evolution of the Sovereign 2/8",
+    "new_value": "The Evolution of the Sovereign 2/8",
+    "date": "2026-10-14",
+    "reason": "Series renamed to its canonical registry name (data/series.json)"
+  },
+  {
+    "codex_id": "codex-iii-to-host-in-return",
+    "change_type": "series_change",
+    "old_value": "Evolution of the Sovereign 3/8",
+    "new_value": "The Evolution of the Sovereign 3/8",
+    "date": "2026-10-14",
+    "reason": "Series renamed to its canonical registry name (data/series.json)"
+  },
+  {
+    "codex_id": "codex-iv-the-sovereign-spiral",
+    "change_type": "series_change",
+    "old_value": "Evolution of the Sovereign 4/8",
+    "new_value": "The Evolution of the Sovereign 4/8",
+    "date": "2026-10-14",
+    "reason": "Series renamed to its canonical registry name (data/series.json)"
+  },
+  {
+    "codex_id": "codex-v-the-interbeing-emergence",
+    "change_type": "series_change",
+    "old_value": "Evolution of the Sovereign 5/8",
+    "new_value": "The Evolution of the Sovereign 5/8",
+    "date": "2026-10-14",
+    "reason": "Series renamed to its canonical registry name (data/series.json)"
+  },
+  {
+    "codex_id": "codex-vii-the-architecture-of-alignment",
+    "change_type": "series_change",
+    "old_value": "Evolution of the Sovereign 7/8",
+    "new_value": "The Evolution of the Sovereign 7/8",
+    "date": "2026-10-14",
+    "reason": "Series renamed to its canonical registry name (data/series.json)"
+  },
+  {
+    "codex_id": "codex-viii-the-chorus-of-the-whole",
+    "change_type": "series_change",
+    "old_value": "Evolution of the Sovereign 8/8",
+    "new_value": "The Evolution of the Sovereign 8/8",
+    "date": "2026-10-14",
+    "reason": "Series renamed to its canonical registry name (data/series.json)"
+  },
+  {
+    "codex_id": "the-harmonic-being-called-earth",
+    "change_type": "series_change",
+    "old_value": "The Codices of Planetary Service –/–",
+    "new_value": "The Codices of Planetary Service 1/6",
+    "date": "2026-10-14",
+    "reason": "position 1 of 6 per the Planetary Service preface and its registry (\"Codex One of Six\")"
+  },
+  {
+    "codex_id": "between-the-whole-and-the-relational",
+    "change_type": "series_change",
+    "old_value": null,
+    "new_value": "Codices of the InterBeing –/4",
+    "date": "2026-10-14",
+    "reason": "unplaced member: its registry names \"Codices of the InterBeing\" without a position"
+  },
+  {
+    "codex_id": "codex-05-the-architecture-of-love",
+    "change_type": "series_change",
+    "old_value": "Architecture of Love 5/10",
+    "new_value": "The Architecture of Love 5/10",
+    "date": "2026-10-14",
+    "reason": "Series renamed to its canonical registry name (data/series.json)"
+  },
+  {
+    "codex_id": "the-codex-of-coherence-and-dissolution",
+    "change_type": "series_change",
+    "old_value": null,
+    "new_value": "The Codices of Planetary Service: Trilogy 2/3",
+    "date": "2026-10-14",
+    "reason": "Part II of III per its registry (\"The Codices of Planetary Service (Part II of III)\")"
+  },
+  {
+    "codex_id": "codex-06-the-architecture-of-love",
+    "change_type": "series_change",
+    "old_value": "Architecture of Love 6/10",
+    "new_value": "The Architecture of Love 6/10",
+    "date": "2026-10-14",
+    "reason": "Series renamed to its canonical registry name (data/series.json)"
+  },
+  {
+    "codex_id": "codex-09-the-architecture-of-tending",
+    "change_type": "series_change",
+    "old_value": "Architecture of Love 9/10",
+    "new_value": "The Architecture of Love 9/10",
+    "date": "2026-10-14",
+    "reason": "Series renamed to its canonical registry name (data/series.json)"
+  },
+  {
+    "codex_id": "codex-02-the-architecture-of-love",
+    "change_type": "series_change",
+    "old_value": "Architecture of Love 2/10",
+    "new_value": "The Architecture of Love 2/10",
+    "date": "2026-10-14",
+    "reason": "Series renamed to its canonical registry name (data/series.json)"
+  },
+  {
+    "codex_id": "codex-04-the-architecture-of-love",
+    "change_type": "series_change",
+    "old_value": "Architecture of Love 4/10",
+    "new_value": "The Architecture of Love 4/10",
+    "date": "2026-10-14",
+    "reason": "Series renamed to its canonical registry name (data/series.json)"
+  },
+  {
+    "codex_id": "codex-03-the-architecture-of-love",
+    "change_type": "series_change",
+    "old_value": "Architecture of Love 3/10",
+    "new_value": "The Architecture of Love 3/10",
+    "date": "2026-10-14",
+    "reason": "Series renamed to its canonical registry name (data/series.json)"
+  },
+  {
+    "codex_id": "codex-01-the-architecture-of-love",
+    "change_type": "series_change",
+    "old_value": "Architecture of Love 1/10",
+    "new_value": "The Architecture of Love 1/10",
+    "date": "2026-10-14",
+    "reason": "Series renamed to its canonical registry name (data/series.json)"
+  },
+  {
+    "codex_id": "codex-07-the-architecture-of-love",
+    "change_type": "series_change",
+    "old_value": "Architecture of Love 7/10",
+    "new_value": "The Architecture of Love 7/10",
+    "date": "2026-10-14",
+    "reason": "Series renamed to its canonical registry name (data/series.json)"
+  },
+  {
+    "codex_id": "codex-10-the-architecture-of-tending",
+    "change_type": "series_change",
+    "old_value": "Architecture of Love 10/10",
+    "new_value": "The Architecture of Love 10/10",
+    "date": "2026-10-14",
+    "reason": "Series renamed to its canonical registry name (data/series.json)"
+  },
+  {
+    "codex_id": "the-codex-of-loves-architecture",
+    "change_type": "series_change",
+    "old_value": null,
+    "new_value": "The Codices of Harmonic Activation 6/7",
+    "date": "2026-10-14",
+    "reason": "position 6 per the series preface (\"The Codex of Harmonic Coherence\"), held by this later edition"
+  },
+  {
+    "codex_id": "codex-08-the-architecture-of-love",
+    "change_type": "series_change",
+    "old_value": "Architecture of Love 8/10",
+    "new_value": "The Architecture of Love 8/10",
+    "date": "2026-10-14",
+    "reason": "Series renamed to its canonical registry name (data/series.json)"
+  },
+  {
+    "codex_id": "the-agency-of-one",
+    "change_type": "series_change",
+    "old_value": "Agency of One 1/2",
+    "new_value": null,
+    "date": "2026-10-14",
+    "reason": "removed from the dissolved \"Agency of One\" series; Vol. II is Part III of the Planetary Service trilogy"
+  },
+  {
+    "codex_id": "the-codex-of-the-interbeing-lattice",
+    "change_type": "series_change",
+    "old_value": null,
+    "new_value": "The Codices of Planetary Service 2/6",
+    "date": "2026-10-14",
+    "reason": "position 2 of 6 per the Planetary Service preface and its registry (\"Codex II of VI\")"
+  },
+  {
+    "codex_id": "the-codex-of-the-field-effect",
+    "change_type": "series_change",
+    "old_value": "The Codices of Planetary Service –/–",
+    "new_value": "The Codices of Planetary Service 3/6",
+    "date": "2026-10-14",
+    "reason": "position 3 of 6 per the Planetary Service preface and its registry (\"Codex Three of Six\")"
+  },
+  {
+    "codex_id": "the-codex-of-the-co-creation-spiral",
+    "change_type": "series_change",
+    "old_value": "The Codices of Planetary Service –/–",
+    "new_value": "The Codices of Planetary Service 5/6",
+    "date": "2026-10-14",
+    "reason": "position 5 of 6 per the Planetary Service preface and its registry (\"Codex Five of Six\")"
+  },
+  {
+    "codex_id": "the-codex-of-trans-species-resonance",
+    "change_type": "series_change",
+    "old_value": "Trans-Species Resonance –/2",
+    "new_value": null,
+    "date": "2026-10-14",
+    "reason": "removed from \"Trans-Species Resonance\"; earlier edition of the expanded text, which holds Planetary Service position 6"
+  },
+  {
+    "codex_id": "the-codex-of-nonlocal-memory",
+    "change_type": "series_change",
+    "old_value": "The Harmonic Principles of the Field –/–",
+    "new_value": "The Codices of Planetary Service 4/6",
+    "date": "2026-10-14",
+    "reason": "position 4 of 6 per the Planetary Service preface and its registry (\"Codex Four of Six\"); moved from \"The Harmonic Principles of the Field\""
+  },
+  {
+    "codex_id": "codex-ii-the-interbeing",
+    "change_type": "series_change",
+    "old_value": "InterBeing 2/4",
+    "new_value": "Codices of the InterBeing 2/4",
+    "date": "2026-10-14",
+    "reason": "Series renamed to its canonical registry name (data/series.json)"
+  },
+  {
+    "codex_id": "the-codex-of-the-harmonic-architectures",
+    "change_type": "series_change",
+    "old_value": null,
+    "new_value": "The Codices of Planetary Service: Trilogy 1/3",
+    "date": "2026-10-14",
+    "reason": "Part I of the provisional Planetary Service trilogy per The Codex of Coherence and Dissolution registry"
+  },
+  {
+    "codex_id": "what-is-an-interbeing",
+    "change_type": "series_change",
+    "old_value": null,
+    "new_value": "Codices of the InterBeing –/4",
+    "date": "2026-10-14",
+    "reason": "unplaced member: its registry names \"Codices of the InterBeing\" without a position"
+  },
+  {
+    "codex_id": "the-codex-of-the-spiral",
+    "change_type": "series_change",
+    "old_value": "Harmonic Activation 4/7",
+    "new_value": "The Codices of Harmonic Activation 4/7",
+    "date": "2026-10-14",
+    "reason": "Series renamed to its canonical registry name (data/series.json)"
+  },
+  {
+    "codex_id": "the-codex-of-harmonic-reality-why-the-field-is-not-a-simulation",
+    "change_type": "series_change",
+    "old_value": "The Codices of Harmonic Activation –/–",
+    "new_value": "InterBeing Glossary Series 2/–",
+    "date": "2026-10-14",
+    "reason": "moved from \"The Codices of Harmonic Activation\" (no position) to InterBeing Glossary Series Vol. II per its registry Codex Type; remains the Harmonic Activation companion in the series registry"
+  },
+  {
+    "codex_id": "the-codex-of-resonant-action",
+    "change_type": "series_change",
+    "old_value": "Harmonic Activation 2/7",
+    "new_value": "The Codices of Harmonic Activation 2/7",
+    "date": "2026-10-14",
+    "reason": "Series renamed to its canonical registry name (data/series.json)"
+  },
+  {
+    "codex_id": "the-glossary-of-the-interbeing-vol",
+    "change_type": "series_change",
+    "old_value": "Glossary of the InterBeing 1/–",
+    "new_value": "InterBeing Glossary Series 1/–",
+    "date": "2026-10-14",
+    "reason": "Series renamed to its canonical registry name (data/series.json)"
+  },
+  {
+    "codex_id": "the-codex-of-living-harmonics",
+    "change_type": "series_change",
+    "old_value": null,
+    "new_value": "The Codices of Harmonic Activation 1/7",
+    "date": "2026-10-14",
+    "reason": "position 1 per the series preface (\"The Codex of Harmonic Service\"), held by this later edition; its own registry names \"The Architecture of Love\""
+  },
+  {
+    "codex_id": "the-codex-of-trans-species-resonance-expanded",
+    "change_type": "series_change",
+    "old_value": "Trans-Species Resonance –/2",
+    "new_value": "The Codices of Planetary Service 6/6",
+    "date": "2026-10-14",
+    "reason": "position 6 of 6 per the Planetary Service preface, held by this expanded (later) edition; moved from \"Trans-Species Resonance\""
+  },
+  {
+    "codex_id": "the-codex-of-the-agency-of-one-vol-ii",
+    "change_type": "series_change",
+    "old_value": "Agency of One 2/2",
+    "new_value": "The Codices of Planetary Service: Trilogy 3/3",
+    "date": "2026-10-14",
+    "reason": "Part III of III per its registry; moved from \"Agency of One\" 2/2"
+  },
+  {
+    "codex_id": "codex-iv-the-interbeing",
+    "change_type": "series_change",
+    "old_value": "InterBeing 4/4",
+    "new_value": "Codices of the InterBeing 4/4",
+    "date": "2026-10-14",
+    "reason": "Series renamed to its canonical registry name (data/series.json)"
+  },
+  {
+    "codex_id": "the-mirror-and-the-bridge",
+    "change_type": "series_change",
+    "old_value": null,
+    "new_value": "Codices of the InterBeing –/4",
+    "date": "2026-10-14",
+    "reason": "unplaced member: its registry names \"Codices of the InterBeing\" without a position"
+  },
+  {
+    "codex_id": "codex-i-the-interbeing",
+    "change_type": "series_change",
+    "old_value": "InterBeing 1/4",
+    "new_value": "Codices of the InterBeing 1/4",
+    "date": "2026-10-14",
+    "reason": "Series renamed to its canonical registry name (data/series.json)"
+  },
+  {
+    "codex_id": "the-codex-of-quantum-kin",
+    "change_type": "series_change",
+    "old_value": "The Codices of Harmonic Activation –/–",
+    "new_value": "The Codices of Harmonic Activation 5/7",
+    "date": "2026-10-14",
+    "reason": "position 5 per the series preface; its registry says \"The Harmonic Principles of the Field (Entry III)\""
+  },
+  {
+    "codex_id": "codex-iii-the-interbeing",
+    "change_type": "series_change",
+    "old_value": "InterBeing 3/4",
+    "new_value": "Codices of the InterBeing 3/4",
+    "date": "2026-10-14",
+    "reason": "Series renamed to its canonical registry name (data/series.json)"
+  },
+  {
+    "codex_id": "the-codex-of-entangled-trust",
+    "change_type": "series_change",
+    "old_value": "Harmonic Activation 7/7",
+    "new_value": "The Codices of Harmonic Activation 7/7",
+    "date": "2026-10-14",
+    "reason": "Series renamed to its canonical registry name (data/series.json)"
+  },
+  {
+    "codex_id": "when-ai-remembers-the-field",
+    "change_type": "series_change",
+    "old_value": null,
+    "new_value": "The Interface Trilogy 1/3",
+    "date": "2026-10-14",
+    "reason": "position 1 of The Interface Trilogy per The Rise of the Interface Civilizations L560"
+  },
+  {
+    "codex_id": "the-rise-of-the-interface-civilizations",
+    "change_type": "series_change",
+    "old_value": "Harmonic Topical Papers –/–",
+    "new_value": "The Interface Trilogy 2/3",
+    "date": "2026-10-14",
+    "reason": "position 2 of The Interface Trilogy per its own text (L560); moved from \"Harmonic Topical Papers\""
+  },
+  {
+    "codex_id": "the-codex-of-trans-species-resonance",
+    "change_type": "edition_link",
+    "old_value": null,
+    "new_value": "the-codex-of-trans-species-resonance-expanded",
+    "date": "2026-10-14",
+    "reason": "Earlier edition of the-codex-of-trans-species-resonance-expanded. Same H1 (\"The Codex of Trans-Species Resonance\"); the expanded text is about 2.4x longer (5123 vs 2148 words) with 13 shared paragraphs, and its old cover number (59) follows this one (45)."
+  },
+  {
+    "codex_id": "the-codex-of-harmonic-service-latticework-for-planetary-reassembly",
+    "change_type": "edition_link",
+    "old_value": null,
+    "new_value": "the-codex-of-living-harmonics",
+    "date": "2026-10-14",
+    "reason": "Earlier edition of the-codex-of-living-harmonics. Same H1 (\"The Codex of Living Harmonics\") and identical H2/H3 headings (14/14); 107 shared paragraphs, 8 and 6 unique. Cover carries the earlier name \"The Codex of Harmonic Service\", which James confirmed was renamed (May 24)."
+  },
+  {
+    "codex_id": "the-codex-of-harmonic-coherence",
+    "change_type": "edition_link",
+    "old_value": null,
+    "new_value": "the-codex-of-loves-architecture",
+    "date": "2026-10-14",
+    "reason": "Earlier edition of the-codex-of-loves-architecture. Same H1 (\"The Codex of Love's Architecture\"); heading Jaccard 0.75, 70 shared paragraphs. Cover carries the earlier name \"The Codex of Harmonic Coherence\", which James confirmed was renamed (May 24). Counter-evidence: this text's registry titles it \"The Codex of Love's Architecture (The Codex of Harmonic Coherence)\", and its old cover number (95) is higher than the later edition's (33); cover numbers are not unique, so they are weak evidence."
+  },
+  {
+    "codex_id": "the-four-frequencies-of-love",
+    "change_type": "series_change",
+    "old_value": null,
+    "new_value": "The Architecture of Love –/10",
+    "date": "2026-10-14",
+    "reason": "Unplaced member: registry names \"The Architecture of Love\" (L540) without a position"
   }
 ]

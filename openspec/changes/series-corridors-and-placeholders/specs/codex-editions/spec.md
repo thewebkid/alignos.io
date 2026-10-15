@@ -15,6 +15,10 @@ A catalog entry that is an earlier edition of another published entry SHALL reco
 - **WHEN** the catalog is read
 - **THEN** `the-codex-of-harmonic-coherence` records `the-codex-of-loves-architecture` as its later edition, and the later edition holds position 6
 
+#### Scenario: Trans-Species Resonance pair
+- **WHEN** the catalog is read
+- **THEN** `the-codex-of-trans-species-resonance` records `the-codex-of-trans-species-resonance-expanded` as its later edition, and the later edition holds position 6 of "The Codices of Planetary Service"
+
 ### Requirement: Earlier editions stay visible and are marked
 Earlier editions SHALL remain in the lattice, search, and reader. Their cards SHALL show an "Earlier edition" marker.
 

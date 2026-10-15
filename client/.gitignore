@@ -15,6 +15,7 @@ dist-ssr
 # Generated files (regenerated during build)
 src/generated/codex-lattice.json
 src/generated/codex-lattice-meta.json
+src/generated/series.json
 public/codex-content/*.json
 
 # Editor directories and files

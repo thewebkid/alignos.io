@@ -78,17 +78,38 @@ Making them catalog entries would break the "catalog = published corpus" invaria
 | 6 | `the-codex-of-loves-architecture` (48) | later edition of seq 106 |
 | 7 | `the-codex-of-entangled-trust` (104) | |
 | companion | `the-codex-of-harmonic-reality-…` (65) | stays `structural_role: glossary` |
-| unplaced | `the-codex-of-nonlocal-memory` (60) | registry names the alias series |
 
 Seq 75 and 106 drop their series membership and become earlier editions (D5).
+
+*Revised during apply:* the design first made *The Codex of Nonlocal Memory* (60) an unplaced Harmonic Activation member, because its registry names "The Harmonic Principles of the Field". Two printed prefaces contradict that: the Planetary Service preface in seq 31 (L9–54) and seq 60's own preface (L18–63). Both list it as part 4 of the six-part Planetary Service corridor, and its registry says "Codex Four of Six". It moves there (D4). "The Harmonic Principles of the Field" stays a Harmonic Activation alias, because three Activation registries use it (66, 95, 104). The two prefaces that title Planetary Service with it (60, 77) are recorded in that record's review notes and on the question list.
 
 ### D4. Other registry records
 - **The Evolution of the Sovereign.** Canonical name taken from the home page and compilation PDF title. Alias "Evolution of the Sovereign". Total 8; planned position 6 "Codex VI: The Function of Presence", with subtitle from the Codex VI references in the other seven registries. `compilation_pdf: "the-evolution-of-the-sovereign.pdf"`, renamed by `site-shell-and-brand`. Its id doubles as the compilation basename.
 - **The Interface Trilogy.** Total 3; members 136 (1) and 137 (2); planned 3 "The Architecture of Listening", with no subtitle because none is stated. Seq 137 moves off "Harmonic Topical Papers". That label is recorded as the Papers collection's registry name in `legacy-pages-and-collections`, not as a series.
 - **All other catalog series** get a record. Positions and totals are fixed only where a registry or preface states them (task 2.1 audit). The rest stay null and go on the question list.
+- **The Codices of Planetary Service** (*revised during apply*). Total 6, from the preface in seq 31 and seq 60:
+  1. The Harmonic Being Called Earth (31)
+  2. The InterBeing Lattice (55)
+  3. The Field Effect (57)
+  4. Nonlocal Memory (60)
+  5. The Co-Creation Spiral (58)
+  6. Trans-Species Resonance (77, later edition of 59; see D5)
+
+  The catalog's "Trans-Species Resonance" series dissolves into this record.
+- **The Codices of Planetary Service: Trilogy** (*provisional name*). A second corridor carries the same series name, stated in seq 37 ("Part II of III") and seq 82 ("III of III", plus its afterword):
+  1. Harmonic Architectures (62)
+  2. Coherence and Dissolution (37)
+  3. The Codex of the Agency of One (82)
+
+  James gives it no distinct name, so the name is ours and flagged. The catalog's "Agency of One" series dissolves, and seq 51 leaves series membership.
+- **InterBeing Glossary Series.** Name from seq 65's registry ("InterBeing Glossary Series – Volume II"). Vol. I is seq 67 and Vol. II is seq 65. Seq 65 is also the Harmonic Activation companion; companionship lives in the registry, so it doesn't use the catalog series slot.
+- **Codices of the InterBeing.** Name from the registries of seq 63, 33 and 86. Codex I–IV keep positions 1–4. The three registry claimants become unplaced members.
+- **The Architecture of Love.** Name from its members' registries. The Living Harmonics (76) and Realized Flame I (49) registries also claim it; the preface and our existing grouping win, and the claims go on the question list.
+- **Realized Flame.** No series name appears in James' text. It's kept as our grouping and flagged.
 
 ### D5. Editions: `later_edition_id` on the earlier entry; build derives the reverse
 - Which text is "later" is our inference from the cover titles and James' rename note, so both pairs are `needs_review`.
+- *Added during apply:* Trans-Species Resonance. Seq 59 and seq 77 ("expanded") share the H1 and both claim the corridor's sixth slot. Seq 77 is treated as the later edition and holds part 6.
 - Task 3.1 diffs each pair. If the diff contradicts the cover evidence, the pair goes to James with no default.
 - The audit also checks pairs by normalized title and section-heading similarity (≥ 0.8 Jaccard on H2/H3 headings), for example Resonant Memory / Language of Resonance.
 - Marker UI: a small "Earlier edition" tag on the card (outside the cover art, alongside the existing progress affordances) and a notice at the top of the reader. The later edition gets a quiet "Earlier edition: {title}" link beside the series context.

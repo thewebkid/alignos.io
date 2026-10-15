@@ -10,18 +10,6 @@ export { Codex } from './codex.js';
 export { CodexRegistry } from './codex-registry.js';
 export { GlossaryManager, createGlossaryFromRegistry } from './glossary.js';
 
-// Series detection
-export { 
-  detectSeries, 
-  detectSeriesFromFilename, 
-  detectSeriesFromContent,
-  getKnownSeriesNames,
-  getSeriesMetadata,
-  romanToArabic,
-  arabicToRoman,
-  KNOWN_SERIES 
-} from './series-detector.js';
-
 // Browser-specific (only import in browser context)
 export { 
   BrowserCodex, 

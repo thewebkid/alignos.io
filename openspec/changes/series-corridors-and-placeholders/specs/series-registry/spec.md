@@ -40,9 +40,16 @@ A series record MAY list planned positions for works James has named but not wri
 ### Requirement: Members that carry the series but have no stated position
 A catalog entry MAY belong to a series without a position when James' text links it to the series but doesn't place it. Such members SHALL be shown as unplaced, and MUST NOT be assigned a position.
 
+#### Scenario: Registry claim without a position
+- **WHEN** *What Is an InterBeing?* names "Codices of the InterBeing" in its registry but no source places it
+- **THEN** it is an unplaced member of "Codices of the InterBeing" and appears on the question list for James
+
+### Requirement: Prefaces place members across corridors
+When a printed series preface lists a codex at a position, that placement SHALL take precedence over a registry line that names a different series, and the conflicting registry name SHALL be recorded in review notes.
+
 #### Scenario: Nonlocal Memory
-- **WHEN** *The Codex of Nonlocal Memory* names "The Harmonic Principles of the Field" in its registry but the preface does not list it
-- **THEN** it is an unplaced member of "The Codices of Harmonic Activation" and appears on the question list for James
+- **WHEN** the Planetary Service preface lists *The Codex of Nonlocal Memory* fourth of six, but its registry names "The Harmonic Principles of the Field"
+- **THEN** it is position 4 of "The Codices of Planetary Service", and the record's review notes cite the alias usage
 
 ### Requirement: Draft series records are flagged
 A series record whose name, order, membership, or planned positions involve our interpretation rather than a direct statement in James' text SHALL carry `needs_review: true` with `review_notes` explaining the interpretation.

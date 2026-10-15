@@ -181,25 +181,33 @@ const goBack = () => {
   }
 }
 
-// Series navigation
+// Series context — "{name} · Part n of N", linked to the corridor
+const seriesLabel = computed(() => codex.value?.series ? codex.value.getSeriesLabel() : null)
+const seriesLink = computed(() =>
+  codex.value?.series?.id ? { name: 'lattice', query: { series: codex.value.series.id } } : null
+)
+
+// Editions
+const laterEdition = computed(() =>
+  codex.value?.laterEditionId ? codexRegistry?.get(codex.value.laterEditionId) ?? null : null
+)
+const earlierEditions = computed(() =>
+  (codex.value?.earlierEditionIds ?? []).map(id => codexRegistry?.get(id)).filter(Boolean)
+)
+
+// Series navigation — siblingIds is the positioned members in order, including self
+const siblingIndex = computed(() => codex.value?.siblingIds?.indexOf(codex.value.id) ?? -1)
+
 const prevCodex = computed(() => {
-  if (!codex.value?.siblingIds?.length) return null
-  const siblings = codex.value.siblingIds
-  const currentIndex = siblings.indexOf(codex.value.id)
-  if (currentIndex > 0) {
-    return codexRegistry?.codexes.get(siblings[currentIndex - 1])
-  }
-  return null
+  const i = siblingIndex.value
+  if (i <= 0) return null
+  return codexRegistry?.codexes.get(codex.value.siblingIds[i - 1]) ?? null
 })
 
 const nextCodex = computed(() => {
-  if (!codex.value?.siblingIds?.length) return null
-  const siblings = codex.value.siblingIds
-  const currentIndex = siblings.indexOf(codex.value.id)
-  if (currentIndex < siblings.length - 1) {
-    return codexRegistry?.codexes.get(siblings[currentIndex + 1])
-  }
-  return null
+  const i = siblingIndex.value
+  if (i < 0 || i >= codex.value.siblingIds.length - 1) return null
+  return codexRegistry?.codexes.get(codex.value.siblingIds[i + 1]) ?? null
 })
 </script>
 
@@ -281,6 +289,21 @@ const nextCodex = computed(() => {
     <article class="reader-content" v-if="codex">
       <div class="container">
         <div class="content-wrapper">
+          <div v-if="laterEdition" class="edition-notice" role="note">
+            This is an earlier edition.
+            The later edition is
+            <RouterLink :to="{ name: 'reader', params: { id: laterEdition.id } }">{{ laterEdition.title }}</RouterLink>.
+          </div>
+
+          <div v-if="seriesLabel || earlierEditions.length" class="codex-context">
+            <RouterLink v-if="seriesLink" :to="seriesLink" class="context-series">{{ seriesLabel }}</RouterLink>
+            <span v-else-if="seriesLabel" class="context-series">{{ seriesLabel }}</span>
+            <span v-for="e in earlierEditions" :key="e.id" class="context-edition">
+              Earlier edition:
+              <RouterLink :to="{ name: 'reader', params: { id: e.id } }">{{ e.title }}</RouterLink>
+            </span>
+          </div>
+
           <!-- Cover art — plain, uncropped image with NO overlay text:
                the title already lives in the sticky header above and the
                content H1 below. (Generated content strips the markdown's
@@ -508,6 +531,51 @@ const nextCodex = computed(() => {
 .content-wrapper {
   max-width: 720px;
   margin: 0 auto;
+}
+
+// Earlier-edition note — an editor's marginalium rather than a boxed callout:
+// no surface slab, just a gold hairline (the tone-marker motif) and quiet
+// italic prose above the cover.
+.edition-notice {
+  margin-bottom: 1.5rem;
+  padding: 0.125rem 0 0.125rem 0.875rem;
+  border-left: 2px solid var(--cl-accent);
+  color: var(--cl-text-muted);
+  font-size: 0.9375rem;
+  font-style: italic;
+
+  a {
+    color: var(--cl-primary);
+    font-family: var(--bs-font-serif);
+  }
+}
+
+.codex-context {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.25rem 1.25rem;
+  margin-bottom: 1.25rem;
+  font-size: 0.875rem;
+  color: var(--cl-text-muted);
+  text-align: center;
+
+  a {
+    color: var(--cl-primary);
+  }
+}
+
+.context-series {
+  letter-spacing: 0.04em;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.context-edition {
+  font-style: italic;
 }
 
 .series-nav {

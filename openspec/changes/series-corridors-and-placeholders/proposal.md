@@ -33,7 +33,8 @@ We want James to see these corridors whole, including the gaps, so the staged si
 - Lattice gains a series filter that shows a corridor in position order. Planned positions appear as quiet "Not yet written" cards. The main "All" grid never shows planned positions.
 - Reader shows the series name and position, linked to the corridor. Earlier/later edition links appear as an optional lineage layer.
 - Rewrite the four new codexes' descriptions (seq 136–139) in the voice of the approved 134 (Grok 4.7 high, few-shot from approved entries). They stay `needs_review`.
-- Produce `docs/review/james-questions.md`: the planned positions, edition pairs, unplaced members (e.g. *The Codex of Nonlocal Memory*), unknown orders, and every `needs_review` entry, for Ron to send to James.
+- Rebuild Planetary Service from its printed preface as six positions, with *Nonlocal Memory* as part 4. Record the separate three-part "Planetary Service" trilogy (Harmonic Architectures, Coherence and Dissolution, Agency of One) under a provisional, flagged name. *Added during apply.*
+- Produce `docs/review/james-questions.md`: the planned positions, edition pairs, unplaced members, unknown orders, cross-corridor name conflicts, and every `needs_review` entry, for Ron to send to James.
 
 ## Capabilities
 

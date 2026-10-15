@@ -34,12 +34,9 @@ const coverSrc = computed(() => {
 })
 
 // Series label — "Name · Part X of Y" when positions are known, else just the name
-const seriesLabel = computed(() => {
-  const s = props.codex.series
-  if (!s?.name) return null
-  if (s.position && s.total) return `${s.name} · Part ${s.position} of ${s.total}`
-  return s.name
-})
+const seriesLabel = computed(() => props.codex.getSeriesLabel?.() ?? null)
+
+const editionLabel = computed(() => (props.codex.laterEditionId ? 'Earlier edition' : null))
 
 
 </script>
@@ -74,6 +71,7 @@ const seriesLabel = computed(() => {
               :title="codex.title"
               :tone-marker="codex.toneMarker"
               :series-label="seriesLabel"
+              :edition-label="editionLabel"
               size="lattice"
             />
 

@@ -13,17 +13,22 @@
 import fs from 'fs/promises';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { existsSync } from 'fs';
 import { stripLeadingCoverImage } from '../src/lib/markdown-export.js';
+import { resolveSeries } from './series-registry.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const CLIENT_DIR = path.join(__dirname, '..');
 const REPO_ROOT = path.join(CLIENT_DIR, '..');
 const CATALOG_FILE = path.join(REPO_ROOT, 'data', 'codex-catalog.json');
+const SERIES_FILE = path.join(REPO_ROOT, 'data', 'series.json');
 const MD_DIR = path.join(CLIENT_DIR, 'public/md');
+const PDF_DIR = path.join(CLIENT_DIR, 'public/pdf');
 const OUTPUT_DIR = path.join(CLIENT_DIR, 'src', 'generated');
 const OUTPUT_FILE = path.join(OUTPUT_DIR, 'codex-lattice.json');
 const OUTPUT_META_FILE = path.join(OUTPUT_DIR, 'codex-lattice-meta.json');
+const OUTPUT_SERIES_FILE = path.join(OUTPUT_DIR, 'series.json');
 const CODEX_CONTENT_DIR = path.join(CLIENT_DIR, 'public', 'codex-content');
 
 const CORE_VOCABULARY = [
@@ -175,7 +180,7 @@ function extractRegistry(markdown) {
   return Object.keys(registry).length > 0 ? registry : null;
 }
 
-function mapCatalogEntry(entry, markdown) {
+function mapCatalogEntry(entry, markdown, seriesInfo) {
   const wordCount = markdown.split(/\s+/).filter(Boolean).length;
   const readingTime = Math.max(1, Math.ceil(wordCount / 200));
 
@@ -189,8 +194,10 @@ function mapCatalogEntry(entry, markdown) {
     coverThumb: entry.cover?.thumb_url || null,
     titleOverlay: entry.cover?.title_overlay !== false,
     subtitle: entry.subtitle ?? null,
-    series: entry.series ?? null,
-    siblingIds: [],
+    series: seriesInfo.series,
+    siblingIds: seriesInfo.siblingIds,
+    laterEditionId: seriesInfo.laterEditionId,
+    earlierEditionIds: seriesInfo.earlierEditionIds,
     keywords: extractKeywords(markdown, entry.title),
     glossaryTerms: extractGlossaryTerms(markdown),
     wordCount,
@@ -218,6 +225,8 @@ function extractMetadata(codex) {
     subtitle: codex.subtitle,
     series: codex.series,
     siblingIds: codex.siblingIds,
+    laterEditionId: codex.laterEditionId,
+    earlierEditionIds: codex.earlierEditionIds,
     keywords: codex.keywords,
     glossaryTerms: codex.glossaryTerms,
     wordCount: codex.wordCount,
@@ -248,8 +257,15 @@ async function build() {
     .slice()
     .sort((a, b) => a.sequence - b.sequence);
 
+  const registry = JSON.parse(await fs.readFile(SERIES_FILE, 'utf-8'));
+  const { errors: seriesErrors, perCodex, published: publishedSeries } = resolveSeries(catalog, registry, {
+    pdfExists: (file) => existsSync(path.join(PDF_DIR, file)),
+  });
+  if (seriesErrors.length) {
+    throw new Error(`Series registry validation failed:\n  - ${seriesErrors.join('\n  - ')}`);
+  }
+
   const codexes = [];
-  const seriesMap = new Map();
 
   for (const entry of catalog) {
     const mdPath = path.join(MD_DIR, `${entry.id}.md`);
@@ -261,29 +277,21 @@ async function build() {
     }
 
     const markdown = stripLeadingCoverImage(raw);
-    const codex = mapCatalogEntry(entry, markdown);
+    const codex = mapCatalogEntry(entry, markdown, perCodex.get(entry.id));
     codexes.push(codex);
-
-    if (codex.series?.name) {
-      if (!seriesMap.has(codex.series.name)) {
-        seriesMap.set(codex.series.name, []);
-      }
-      seriesMap.get(codex.series.name).push(codex.id);
-    }
 
     const seriesStr = codex.series ? ` [${codex.series.name}]` : '';
     console.log(`  ✓ #${codex.sequence} ${codex.title.substring(0, 50)}${seriesStr}`);
   }
 
-  console.log('\nLinking series siblings...');
-  for (const [seriesName, codexIds] of seriesMap) {
-    console.log(`  • ${seriesName}: ${codexIds.length} codexes`);
-    for (const id of codexIds) {
-      const codex = codexes.find(c => c.id === id);
-      if (codex) {
-        codex.siblingIds = codexIds.filter(sibId => sibId !== id);
-      }
-    }
+  console.log('\nSeries:');
+  for (const s of publishedSeries) {
+    const extras = [
+      s.planned.length && `${s.planned.length} planned`,
+      s.unplacedIds.length && `${s.unplacedIds.length} unplaced`,
+      s.companionIds.length && `${s.companionIds.length} companion`,
+    ].filter(Boolean);
+    console.log(`  • ${s.name}: ${s.written} of ${s.total ?? '?'} written${extras.length ? ` (${extras.join(', ')})` : ''}`);
   }
 
   await fs.mkdir(OUTPUT_DIR, { recursive: true });
@@ -308,6 +316,8 @@ async function build() {
   await fs.writeFile(OUTPUT_META_FILE, JSON.stringify(metadataLattice, null, 2));
   const metaSize = (await fs.stat(OUTPUT_META_FILE)).size;
 
+  await fs.writeFile(OUTPUT_SERIES_FILE, JSON.stringify(publishedSeries, null, 2));
+
   let contentFilesWritten = 0;
   for (const codex of codexes) {
     const contentFile = path.join(CODEX_CONTENT_DIR, `${codex.id}.json`);
@@ -320,6 +330,7 @@ async function build() {
   console.log(`Lattice built: ${codexes.length} codexes in ${elapsed}s`);
   console.log(`  Full: ${OUTPUT_FILE} (${(fullSize / 1024 / 1024).toFixed(2)} MB)`);
   console.log(`  Meta: ${OUTPUT_META_FILE} (${(metaSize / 1024).toFixed(0)} KB)`);
+  console.log(`  Series: ${OUTPUT_SERIES_FILE} (${publishedSeries.length} series)`);
   console.log(`  Content files: ${contentFilesWritten}`);
   console.log('─'.repeat(50) + '\n');
 }

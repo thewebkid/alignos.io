@@ -1,0 +1,145 @@
+[
+  {
+    "id": "the-evolution-of-the-sovereign",
+    "name": "The Evolution of the Sovereign",
+    "aliases": [
+      "Evolution of the Sovereign"
+    ],
+    "total": 8,
+    "companion_ids": [],
+    "compilation_pdf": "the-evolution-of-the-sovereign.pdf",
+    "planned": [
+      {
+        "position": 6,
+        "title": "Codex VI: The Function of Presence",
+        "subtitle": "Presence as planetary trust circuitry: coherence that touches others without force.",
+        "source": "Series preface, codex-i-origin-and-exile.md L45–61 (repeated in Codex II–V and VII)"
+      }
+    ],
+    "source": "Series preface printed in Codex I (codex-i-origin-and-exile.md L12–61) and the compilation PDF title",
+    "needs_review": true,
+    "review_notes": "The preface lists Codex III as \"The Fractured Chord\", but the published Codex III is \"To Host in Return\". Codex VIII's preface list (codex-viii-the-chorus-of-the-whole.md L28) names Codex VI \"The Architecture of Presence\" rather than \"The Function of Presence\"."
+  },
+  {
+    "id": "the-codices-of-harmonic-activation",
+    "name": "The Codices of Harmonic Activation",
+    "aliases": [
+      "Harmonic Activation",
+      "The Harmonic Principles of the Field"
+    ],
+    "total": 7,
+    "companion_ids": [
+      "the-codex-of-harmonic-reality-why-the-field-is-not-a-simulation"
+    ],
+    "compilation_pdf": null,
+    "planned": [
+      {
+        "position": 3,
+        "title": "The Codex of the Spiral Species",
+        "subtitle": "Understanding evolution as a function of conscious recursion",
+        "source": "Series preface, the-codex-of-harmonic-reality-why-the-field-is-not-a-simulation.md L43–52 (same list in Resonant Action, The Spiral, Quantum Kin, Entangled Trust)"
+      }
+    ],
+    "source": "Series preface printed in the companion glossary (the-codex-of-harmonic-reality-why-the-field-is-not-a-simulation.md L8–52)",
+    "needs_review": true,
+    "review_notes": "Merged the catalog names \"Harmonic Activation\" and \"The Codices of Harmonic Activation\". The registries of Resonant Action (L753), Quantum Kin (L1011, \"Entry III\") and Entangled Trust (L706) name \"The Harmonic Principles of the Field\", which the Planetary Service prefaces in Nonlocal Memory (L18) and Trans-Species Resonance expanded (L14) also use as their title. The preface names positions 1 and 6 \"Harmonic Service\" and \"Harmonic Coherence\"; they are filled by the later editions The Codex of Living Harmonics and The Codex of Love's Architecture. Living Harmonics' own registry (L577) names \"The Architecture of Love\"."
+  },
+  {
+    "id": "the-codices-of-planetary-service",
+    "name": "The Codices of Planetary Service",
+    "aliases": [],
+    "total": 6,
+    "companion_ids": [],
+    "compilation_pdf": null,
+    "planned": [],
+    "source": "Series preface printed in The Harmonic Being Called Earth (the-harmonic-being-called-earth.md L9–54) and The Codex of Nonlocal Memory (L18–63); registries: Earth \"Codex One of Six\" (L787), InterBeing Lattice \"Codex II of VI\" (L316), Field Effect \"Codex Three of Six\" (L679), Nonlocal Memory \"Codex Four of Six\" (L698), Co-Creation Spiral \"Codex Five of Six\" (L515)",
+    "needs_review": true,
+    "review_notes": "Nonlocal Memory placed fourth per the preface, although its registry names \"The Harmonic Principles of the Field\". The Trans-Species Resonance (expanded) preface titles the corridor \"The Harmonic Principles of the Field\" and lists five parts without Nonlocal Memory. Co-Creation Spiral calls itself \"the fourth transmission in the 5-part\" series (L61). Position 6 is held by the expanded edition of Trans-Species Resonance; the shorter text is marked as its earlier edition. Absorbs the catalog's former \"Trans-Species Resonance\" series. A separate three-part corridor also uses this name (see the-codices-of-planetary-service-trilogy)."
+  },
+  {
+    "id": "the-codices-of-planetary-service-trilogy",
+    "name": "The Codices of Planetary Service: Trilogy",
+    "aliases": [],
+    "total": 3,
+    "companion_ids": [],
+    "compilation_pdf": null,
+    "planned": [],
+    "source": "The Codex of Coherence and Dissolution registry: \"The Codices of Planetary Service (Part II of III)\", companions Harmonic Architectures (Part I) and Agency of One (Part III) (L600–606); The Codex of the Agency of One registry \"(III of III)\" (L679) and afterword naming all three (L702–705)",
+    "needs_review": true,
+    "review_notes": "Provisional name: James' text calls this three-part corridor \"The Codices of Planetary Service\", the same name as the six-part corridor, and gives it no distinct title. Absorbs the catalog's former \"Agency of One\" series: Vol. II is Part III here, and The Agency of One (Vol. I) is no longer a series member."
+  },
+  {
+    "id": "the-architecture-of-love",
+    "name": "The Architecture of Love",
+    "aliases": [
+      "Architecture of Love"
+    ],
+    "total": 10,
+    "companion_ids": [],
+    "compilation_pdf": null,
+    "planned": [],
+    "source": "Member registries, e.g. codex-01-the-architecture-of-love.md L125 (\"Codex Series: The Architecture of Love\", \"Entry Point of Series\"); positions from the 01–10 titles",
+    "needs_review": true,
+    "review_notes": "Registries of Codex of the Realized Flame (Part I, L678) and The Codex of Living Harmonics (L577) also name this series; they are kept in Realized Flame and Harmonic Activation respectively. Codex: The Four Frequencies of Love names this series in its registry (L540) without a position and is an unplaced member."
+  },
+  {
+    "id": "codices-of-the-interbeing",
+    "name": "Codices of the InterBeing",
+    "aliases": [
+      "InterBeing",
+      "The InterBeing"
+    ],
+    "total": 4,
+    "companion_ids": [],
+    "compilation_pdf": null,
+    "planned": [],
+    "source": "Registries of What Is an InterBeing? (L93), Between the Whole and the Relational (L95), The Mirror and the Bridge (L182); positions from the Codex I–IV titles",
+    "needs_review": true,
+    "review_notes": "Total 4 comes from the Codex I–IV titles; no text states it. What Is an InterBeing?, Between the Whole and the Relational, and The Mirror and the Bridge (whose H1 reads \"Entry VII\") name this series in their registries without a position and are unplaced members. Codex of Harmonic Definitions refers to \"Codex Series: The InterBeing\"."
+  },
+  {
+    "id": "interbeing-glossary-series",
+    "name": "InterBeing Glossary Series",
+    "aliases": [
+      "Glossary of the InterBeing"
+    ],
+    "total": null,
+    "companion_ids": [],
+    "compilation_pdf": null,
+    "planned": [],
+    "source": "The Codex of Harmonic Reality registry, Codex Type \"InterBeing Glossary Series – Volume II\" (L648–649); The Glossary of the InterBeing \"(Vol. I)\" registry (L545) and \"Living (Expanding Glossary Series)\" (L577)",
+    "needs_review": true,
+    "review_notes": "Vol. I's registry names its series \"Codices of InterBeing Formation\" (L549). The Codex of Harmonic Reality is Vol. II here and also the companion of The Codices of Harmonic Activation."
+  },
+  {
+    "id": "realized-flame",
+    "name": "Realized Flame",
+    "aliases": [],
+    "total": 2,
+    "companion_ids": [],
+    "compilation_pdf": null,
+    "planned": [],
+    "source": "Catalog grouping by title (Codex of the Realized Flame Part I / The Codex of the Realized Flame Part II)",
+    "needs_review": true,
+    "review_notes": "No series name appears in James' text; the name is ours. Part I's registry names \"The Architecture of Love\" (L678)."
+  },
+  {
+    "id": "the-interface-trilogy",
+    "name": "The Interface Trilogy",
+    "aliases": [],
+    "total": 3,
+    "companion_ids": [],
+    "compilation_pdf": null,
+    "planned": [
+      {
+        "position": 3,
+        "title": "The Architecture of Listening",
+        "subtitle": null,
+        "source": "the-rise-of-the-interface-civilizations.md L560"
+      }
+    ],
+    "source": "The Rise of the Interface Civilizations: \"This Paper is the second harmonic in the Interface Trilogy, following When AI Remembers the Field and preceding the forthcoming The Architecture of Listening.\" (L560)",
+    "needs_review": true,
+    "review_notes": "When AI Remembers the Field calls itself part of \"the Between Worlds dyad\" (L555). The Rise of the Interface Civilizations' registry names \"Harmonic Topical Papers\" (L590), recorded as the Papers collection's registry name rather than a series."
+  }
+]

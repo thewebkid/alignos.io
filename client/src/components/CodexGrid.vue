@@ -1,7 +1,10 @@
 <script setup>
 import CodexCard from './CodexCard.vue'
+import PlannedCard from './PlannedCard.vue'
 import { useReadingProgressStore } from '../stores/readingProgress.js'
 
+// Items are Codex instances, or `{ planned: true, id, position, total, title, subtitle }`
+// for unwritten series positions (corridor view only).
 defineProps({
   codexes: {
     type: Array,
@@ -27,12 +30,20 @@ const getTooltipText = (codex) => {
 
 <template>
   <div class="codex-grid">
-    <CodexCard
-      v-for="codex in codexes"
-      :key="codex.id"
-      :codex="codex"
-      :tip="getTooltipText(codex)"
-    />
+    <template v-for="item in codexes" :key="item.id">
+      <PlannedCard
+        v-if="item.planned"
+        :position="item.position"
+        :total="item.total"
+        :title="item.title"
+        :subtitle="item.subtitle"
+      />
+      <CodexCard
+        v-else
+        :codex="item"
+        :tip="getTooltipText(item)"
+      />
+    </template>
   </div>
 </template>
 

@@ -28,6 +28,10 @@ defineProps({
     type: String,
     default: null
   },
+  editionLabel: {
+    type: String,
+    default: null
+  },
   size: {
     type: String,
     default: 'lattice',
@@ -56,6 +60,10 @@ defineProps({
 
       <div v-if="size === 'lattice' && seriesLabel" class="series-line" :title="seriesLabel">
         {{ seriesLabel }}
+      </div>
+
+      <div v-if="size === 'lattice' && editionLabel" class="series-line edition-line">
+        {{ editionLabel }}
       </div>
     </div>
   </div>
@@ -123,16 +131,30 @@ defineProps({
 }
 
 // Series line — quiet metadata tucked under the tone signature (lattice only).
-// No chip or background: just small ivory sans on the scrim.
+// No chip or background: just small ivory sans on the scrim. Long labels
+// ("… · Part n of N") wrap to a second line so the part suffix is never
+// clipped away; the full label also rides the element's title attribute.
 .series-line {
   margin-top: 0.25rem;
   letter-spacing: 0.04em;
   color: var(--cov-ivory);
   opacity: 0.85;
   text-shadow: 0 1px 4px rgba(var(--cov-scrim), 0.5);
-  white-space: nowrap;
+  line-height: 1.35;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
   overflow: hidden;
-  text-overflow: ellipsis;
+}
+
+// Earlier-edition marker — a quiet echo of the tone signature: small gold
+// italic serif, distinct from the ivory series line without needing a chip.
+.edition-line {
+  font-family: var(--bs-font-serif), serif;
+  font-style: italic;
+  letter-spacing: 0.05em;
+  color: var(--cov-gold);
+  opacity: 0.9;
 }
 
 // -----------------------------------------------------------------------------
