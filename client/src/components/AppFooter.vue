@@ -34,7 +34,7 @@ const totalCodexes = computed(() => codexRegistry?.size || 0)
             <span class="divider" aria-hidden="true">·</span>
           </span>
           <span class="footer-link-item">
-            <a href="/llms.json" class="footer-link">For AI explorers</a>
+            <a href="/llms.txt" class="footer-link">For AI explorers</a>
             <span class="divider" aria-hidden="true">·</span>
           </span>
           <span class="footer-link-item">

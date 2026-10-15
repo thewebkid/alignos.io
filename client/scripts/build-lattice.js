@@ -17,6 +17,7 @@ import { existsSync } from 'fs';
 import { stripLeadingCoverImage } from '../src/lib/markdown-export.js';
 import { resolveSeries } from './series-registry.js';
 import { resolveCollections } from './collections.js';
+import { codexUrl } from './canonical.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -192,6 +193,9 @@ function mapCatalogEntry(entry, markdown, seriesInfo) {
     title: entry.title,
     originalFileName: `${entry.id}.md`,
     sequence: entry.sequence,
+    author: entry.author,
+    canonicalUrl: codexUrl(entry.id),
+    metadataStatus: entry.needs_review ? 'draft' : 'reviewed',
     markdown,
     coverImage: entry.cover?.url || null,
     coverThumb: entry.cover?.thumb_url || null,
@@ -222,6 +226,9 @@ function extractMetadata(codex) {
     title: codex.title,
     originalFileName: codex.originalFileName,
     sequence: codex.sequence,
+    author: codex.author,
+    canonicalUrl: codex.canonicalUrl,
+    metadataStatus: codex.metadataStatus,
     coverImage: codex.coverImage,
     coverThumb: codex.coverThumb,
     titleOverlay: codex.titleOverlay,

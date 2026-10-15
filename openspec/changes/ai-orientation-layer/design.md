@@ -61,7 +61,7 @@ At roughly 3 MB (138 codexes), the file is large but in line with common llms-fu
 # {title}
 James Mahu with Lumina · {canonicalUrl}
 ```
-That sits above the cover `<img>`; the body follows. The clipboard payload's trailing line becomes `LLMs: {canonicalBase}/llms.txt`. The header is added only if the body's first heading isn't already the title, so headings don't repeat.
+That sits above the cover `<img>`; the body follows. The clipboard payload's trailing line becomes `LLMs: {canonicalBase}/llms.txt`, and it no longer opens with the browser URL (the header carries the canonical one). The download ends with the same pointer, so copy and download are one text, and `client/scripts/attribute-md.js` writes that text over `dist/md/{id}.md` after the build, so a codex fetched on its own carries its byline (sources in `public/md` are untouched; the dev server serves them raw). The header is always written; 135 of 138 bodies already open with `# {title}`, so the body's leading H1 is dropped when it matches the title, and headings don't repeat.
 
 ## Risks / Trade-offs
 

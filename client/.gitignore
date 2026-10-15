@@ -19,6 +19,10 @@ src/generated/series.json
 src/generated/collections.json
 public/codex-content/*.json
 public/bundles/
+public/pages/
+public/llms.txt
+public/llms-full.txt
+public/llms.json
 
 # Editor directories and files
 .vscode/*

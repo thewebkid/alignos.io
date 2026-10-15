@@ -287,6 +287,10 @@ const filterCounts = computed(() => {
               <span v-if="corridor.series.compilationPdf">
                 <a :href="cdnUrl.pdf(corridor.series.compilationPdf)" :download="corridor.series.compilationPdf">Compilation PDF</a>
               </span>
+              <span v-if="corridor.series.members.length || corridor.unplaced.length">
+                <a :href="`/bundles/series/${corridor.series.id}.md`" :download="`${corridor.series.id}.md`"
+                   @click="track('downloadBundle', { series: corridor.series.id })">Whole series in one file, for your AI</a>
+              </span>
             </p>
             <button type="button" class="corridor-clear" @click="browse('')">Show all codexes</button>
           </header>
@@ -322,6 +326,10 @@ const filterCounts = computed(() => {
             <p class="corridor-meta">
               <span v-if="selectedCollection.subtitle">{{ selectedCollection.subtitle }}</span>
               <span>{{ collectionCodexes.length }} codexes</span>
+              <span>
+                <a :href="`/bundles/${selectedCollection.id}.md`" :download="`${selectedCollection.id}.md`"
+                   @click="track('downloadBundle', { collection: selectedCollection.id })">Whole collection in one file, for your AI</a>
+              </span>
             </p>
             <button type="button" class="corridor-clear" @click="browse('')">Show all codexes</button>
           </header>

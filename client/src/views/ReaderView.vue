@@ -7,7 +7,7 @@ import { BDropdown, BDropdownItem } from 'bootstrap-vue-next'
 import GlossaryPopover from '../components/GlossaryPopover.vue'
 import { cdnUrl } from '../lib/cdn-config.js'
 import {track} from '../lib/tracker.js';
-import { markdownClipboardPayload, markdownForExport } from '../lib/markdown-export.js'
+import { markdownForExport } from '../lib/markdown-export.js'
 
 const route = useRoute()
 const router = useRouter()
@@ -59,6 +59,9 @@ const showCopied = ref(false)
 
 useHead({
   title: computed(() => codex.value?.title ?? null),
+  link: computed(() => (codex.value
+    ? [{ rel: 'alternate', type: 'text/markdown', href: `/md/${codex.value.id}.md`, title: codex.value.title }]
+    : [])),
 })
 
 // Get the scrollable container (main-content element from App.vue)
@@ -131,7 +134,7 @@ const copyMarkdown = async () => {
 
   try {
     await navigator.clipboard.writeText(
-      markdownClipboardPayload(codex.value, location.origin, location.href)
+      markdownForExport(codex.value, location.origin)
     )
     showCopied.value = true
     setTimeout(() => {
@@ -145,12 +148,7 @@ const copyMarkdown = async () => {
 }
 
 // Get PDF download link from CDN
-const getPdfLink = computed(() => {
-  if (!codex.value?.originalFileName) return null
-  // Remove .md extension if present before adding .pdf
-  const fileName = codex.value.originalFileName.replace(/\.md$/, '')
-  return cdnUrl.pdf(fileName)
-})
+const getPdfLink = computed(() => (codex.value?.id ? cdnUrl.pdf(codex.value.id) : null))
 
 const coverSrc = computed(() => {
   if (!codex.value?.coverImage) return null

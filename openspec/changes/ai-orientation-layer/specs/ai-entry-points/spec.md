@@ -64,7 +64,11 @@ The build SHALL generate `/llms-full.txt` containing the orientation, the guidan
 - **THEN** its text is preceded by its title, "James Mahu with Lumina", and `https://alignos.io/codex/the-fundamental-arc`
 
 ### Requirement: Raw markdown is addressable
-Each published codex's markdown SHALL be served at `/md/{id}.md`. Each guidance page's markdown SHALL be served at `/pages/{slug}.md`, with `collection` blocks expanded to plain markdown lists and `prompt` blocks kept as quoted text.
+Each published codex's markdown SHALL be served at `/md/{id}.md`, as the same text the reader's download produces (title, "James Mahu with Lumina", canonical URL, body, `/llms.txt` pointer); the source files are not modified. Each guidance page's markdown SHALL be served at `/pages/{slug}.md`, with `collection` blocks expanded to plain markdown lists and `prompt` blocks kept as quoted text.
+
+#### Scenario: Codex markdown is attributed
+- **WHEN** a client fetches `/md/the-fundamental-arc.md` from a production build
+- **THEN** its first lines are `# The Fundamental Arc` and `James Mahu with Lumina · https://alignos.io/codex/the-fundamental-arc`
 
 #### Scenario: Page markdown
 - **WHEN** a client fetches `/pages/faq.md`
