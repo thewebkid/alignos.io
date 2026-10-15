@@ -42,6 +42,6 @@
 
 ## 7. CDN prefix and verification
 
-- [ ] 7.1 After Ron uploads covers + thumbs and provides the blob prefix, update `CDN_BASE` / `VITE_BLOB_BASE_URL` only — no per-codex URL edits
+- [x] 7.1 Same-origin `public/covers` + `public/thumb` — no Azure/`CDN_BASE` prefix
 - [x] 7.2 Verify lattice grid loads thumbs, reader loads full covers, PDFs download, overlay titles remain if an image 404s
-- [x] 7.3 Leave `client/public/md/covers/` and `thumb/` in place for Ron to delete; do not `git rm` them in this change
+- [x] 7.3 Deleted unused `client/public/md/covers/` and `md/thumb/` (legacy baked-title set) after moving processed covers to `public/covers`
