@@ -14,12 +14,12 @@
 
 - [x] 3.1 `vercel.json`: `X-Robots-Tag: noindex` header for `*.vercel.app` hosts; confirm `generate-redirects.js` leaves it in place
 - [x] 3.2 `vercel-deployment-bootstrap/tasks.md`: before the DNS move, remove `ALIGNOS_REVIEW`, redeploy, confirm `/review` redirects home
-- [ ] 3.3 Set `ALIGNOS_REVIEW=1` on the Vercel project's Production environment (ask Ron before changing project settings)
+- [x] 3.3 Set `ALIGNOS_REVIEW=1` on the Vercel project's Production environment (ask Ron before changing project settings)
 
 ## 4. Verify
 
 - [x] 4.1 Build with the flag: both pages pre-rendered with their text and a robots `noindex` meta; links navigate in `vite preview`; no `/review` in `llms.txt`/`llms.json`
 - [x] 4.2 Build without the flag: no `dist/review*`, and no file in `dist` contains the review document's opening sentence
 - [x] 4.3 Visual check of both pages in light and dark (lists, blockquote, line breaks)
-- [ ] 4.4 After deploy: `X-Robots-Tag: noindex` on `alignos-omega.vercel.app`; `/review` and `/review/questions` load
+- [x] 4.4 After deploy: `X-Robots-Tag: noindex` on `alignos-omega.vercel.app`; `/review` and `/review/questions` load
 - [x] 4.5 `openspec validate review-route --strict`
