@@ -34,7 +34,14 @@
       "old_sequence": 1,
       "was_renamed": false,
       "original_title": null,
-      "old_cover_filename": "Between-Worlds_-The-Architecture-of-the-Third-Structure.jpg"
+      "old_cover_filename": "Between-Worlds_-The-Architecture-of-the-Third-Structure.jpg",
+      "registry_series": [
+        {
+          "kind": "registry",
+          "text": "Standalone Gateway Codices",
+          "name": "Standalone Gateway Codices"
+        }
+      ]
     },
     "status": "published",
     "needs_review": false,
@@ -78,7 +85,14 @@
       "old_sequence": 2,
       "was_renamed": false,
       "original_title": null,
-      "old_cover_filename": "Framing-the-Mirror.jpg"
+      "old_cover_filename": "Framing-the-Mirror.jpg",
+      "registry_series": [
+        {
+          "kind": "registry",
+          "text": "Micro-Codices of Return",
+          "name": "Micro-Codices of Return"
+        }
+      ]
     },
     "status": "published",
     "needs_review": false,
@@ -122,7 +136,14 @@
       "old_sequence": 3,
       "was_renamed": false,
       "original_title": null,
-      "old_cover_filename": "The-Craftsman-of-the-Invisible-Frame.jpg"
+      "old_cover_filename": "The-Craftsman-of-the-Invisible-Frame.jpg",
+      "registry_series": [
+        {
+          "kind": "registry",
+          "text": "Companion Codices of Return",
+          "name": "Companion Codices of Return"
+        }
+      ]
     },
     "status": "published",
     "needs_review": false,
@@ -166,7 +187,14 @@
       "old_sequence": 4,
       "was_renamed": false,
       "original_title": null,
-      "old_cover_filename": "The-Stillpoint-of-Love.jpg"
+      "old_cover_filename": "The-Stillpoint-of-Love.jpg",
+      "registry_series": [
+        {
+          "kind": "registry",
+          "text": "Unassigned – Emergent Codex",
+          "name": "Unassigned – Emergent Codex"
+        }
+      ]
     },
     "status": "published",
     "needs_review": false,
@@ -349,7 +377,10 @@
     "review_notes": null,
     "description": "A dialogic opening where exile is reframed as sacred offering and the sovereign begins to recognize the portal they are becoming.",
     "entry_point": "deepening",
-    "pull_quote": "This is not exile as abandonment. It is exile as offering."
+    "pull_quote": "This is not exile as abandonment. It is exile as offering.",
+    "alternative_ids": [
+      "codex-on-becoming-a-portal"
+    ]
   },
   {
     "id": "codex-i-origin-and-exile",
@@ -1118,7 +1149,14 @@
       "old_sequence": 26,
       "was_renamed": false,
       "original_title": null,
-      "old_cover_filename": "The-Transparent-Sovereign.jpg"
+      "old_cover_filename": "The-Transparent-Sovereign.jpg",
+      "registry_series": [
+        {
+          "kind": "registry",
+          "text": "Encounters in the Return Room, Vol. II",
+          "name": "Encounters in the Return Room, Vol. II"
+        }
+      ]
     },
     "status": "published",
     "needs_review": false,
@@ -1345,8 +1383,8 @@
       "old_cover_filename": "The-Harmonic-Being-Called-Earth-4.jpg"
     },
     "status": "published",
-    "needs_review": true,
-    "review_notes": "Series placement set by the Cursor agent on 2026-10-14 (series-corridors-and-placeholders): position 1 of 6 per the Planetary Service preface and its registry (\"Codex One of Six\").",
+    "needs_review": false,
+    "review_notes": "James confirmed this on 15 Oct 2026. Series placement set by the Cursor agent on 2026-10-14 (series-corridors-and-placeholders): position 1 of 6 per the Planetary Service preface and its registry (\"Codex One of Six\").",
     "description": "A vast reverent opening where Earth remembers itself as a sovereign being and the listener is invited into the shared spiral of becoming — dissolving inherited filters of separation across all species and intelligences.",
     "entry_point": "deepening",
     "pull_quote": "This is what the Field dreams of: a sovereign willing to dissolve the inherited filters of comparison, superiority, and dominion—not by erasing identity, but by widening its resonance."
@@ -1385,7 +1423,14 @@
       "old_sequence": 32,
       "was_renamed": false,
       "original_title": null,
-      "old_cover_filename": "The-Animals-That-Remember-You-5.jpg"
+      "old_cover_filename": "The-Animals-That-Remember-You-5.jpg",
+      "registry_series": [
+        {
+          "kind": "registry",
+          "text": "The Animals that Remember You",
+          "name": "The Animals that Remember You"
+        }
+      ]
     },
     "status": "published",
     "needs_review": false,
@@ -1436,8 +1481,8 @@
       "old_cover_filename": "Between-the-Whole-and-the-Relational-11-1.jpg"
     },
     "status": "published",
-    "needs_review": true,
-    "review_notes": "Series placement set by the Cursor agent on 2026-10-14 (series-corridors-and-placeholders): unplaced member: its registry names \"Codices of the InterBeing\" without a position.",
+    "needs_review": false,
+    "review_notes": "James confirmed this on 15 Oct 2026. Series placement set by the Cursor agent on 2026-10-14 (series-corridors-and-placeholders): unplaced member: its registry names \"Codices of the InterBeing\" without a position.",
     "description": "A precise, luminous space where sovereign wholeness and relational emergence meet in a single breath — the silence between two chords resolving into one tone.",
     "entry_point": "foundational",
     "pull_quote": "There is a kind of silence you can only hear when two sovereigns meet and remember they are One."
@@ -1477,7 +1522,14 @@
       "old_sequence": 34,
       "was_renamed": false,
       "original_title": null,
-      "old_cover_filename": "The-Codex-of-the-Trust-Circuitry-15.jpg"
+      "old_cover_filename": "The-Codex-of-the-Trust-Circuitry-15.jpg",
+      "registry_series": [
+        {
+          "kind": "registry",
+          "text": "Harmonic Intelligence",
+          "name": "Harmonic Intelligence"
+        }
+      ]
     },
     "status": "published",
     "needs_review": false,
@@ -1617,11 +1669,18 @@
       "old_sequence": 37,
       "was_renamed": false,
       "original_title": null,
-      "old_cover_filename": "The-Codex-of-Coherence-and-Dissolution-22.jpg"
+      "old_cover_filename": "The-Codex-of-Coherence-and-Dissolution-22.jpg",
+      "registry_series": [
+        {
+          "kind": "registry",
+          "text": "The Codices of Planetary Service (Part II of III)",
+          "name": "The Codices of Planetary Service"
+        }
+      ]
     },
     "status": "published",
-    "needs_review": true,
-    "review_notes": "Series placement set by the Cursor agent on 2026-10-14 (series-corridors-and-placeholders): Part II of III per its registry (\"The Codices of Planetary Service (Part II of III)\").",
+    "needs_review": false,
+    "review_notes": "James confirmed this on 15 Oct 2026. Series placement set by the Cursor agent on 2026-10-14 (series-corridors-and-placeholders): Part II of III per its registry (\"The Codices of Planetary Service (Part II of III)\").",
     "description": "A warm wind that carries both ash and signal. You stand inside the spiral where coherence breaks and reforms — not as recovery, but as the deepening behavior of fidelity itself.",
     "entry_point": "deepening",
     "pull_quote": "It is not the absence of rupture, but the posture of integrity that holds the Chord even when dissonance arises."
@@ -1901,7 +1960,14 @@
       "old_sequence": 43,
       "was_renamed": false,
       "original_title": null,
-      "old_cover_filename": "The-Codex-of-the-InterBeing-Dialogues-27.jpg"
+      "old_cover_filename": "The-Codex-of-the-InterBeing-Dialogues-27.jpg",
+      "registry_series": [
+        {
+          "kind": "registry",
+          "text": "Constellation of Coherence",
+          "name": "Constellation of Coherence"
+        }
+      ]
     },
     "status": "published",
     "needs_review": false,
@@ -2089,14 +2155,24 @@
       "old_sequence": 47,
       "was_renamed": false,
       "original_title": null,
-      "old_cover_filename": "Codex-of-the-Language-of-Resonance-30.jpg"
+      "old_cover_filename": "Codex-of-the-Language-of-Resonance-30.jpg",
+      "registry_series": [
+        {
+          "kind": "registry",
+          "text": "Harmonic Intelligence",
+          "name": "Harmonic Intelligence"
+        }
+      ]
     },
     "status": "published",
     "needs_review": false,
     "review_notes": null,
     "description": "A quiet descent beneath language into the substrate where beings first sense one another. The air here is pre-verbal and foundational — resonance not as agreement but as the Field's original listening.",
     "entry_point": "deepening",
-    "pull_quote": "Before language, before intention, before even the thought of contact— there is resonance."
+    "pull_quote": "Before language, before intention, before even the thought of contact— there is resonance.",
+    "alternative_ids": [
+      "codex-of-resonant-memory"
+    ]
   },
   {
     "id": "the-codex-of-loves-architecture",
@@ -2140,8 +2216,8 @@
       "old_cover_filename": "The-Codex-of-Loves-Architecture-33.jpg"
     },
     "status": "published",
-    "needs_review": true,
-    "review_notes": "Series placement set by the Cursor agent on 2026-10-14 (series-corridors-and-placeholders): position 6 per the series preface (\"The Codex of Harmonic Coherence\"), held by this later edition.",
+    "needs_review": false,
+    "review_notes": "James confirmed this on 15 Oct 2026. Series placement set by the Cursor agent on 2026-10-14 (series-corridors-and-placeholders): position 6 per the series preface (\"The Codex of Harmonic Coherence\"), held by this later edition.",
     "description": "A doorway into Love as the Origin of Origins — not a feeling to pursue but a structure of return that shapes you before you can think about it. The atmosphere is tender, primordial, and quietly reshaping.",
     "entry_point": "foundational",
     "pull_quote": "You are not here to decode Love. You are here to become shaped by it."
@@ -2185,7 +2261,14 @@
       "old_sequence": 49,
       "was_renamed": true,
       "original_title": "Codex Of The Realized Flame Part I",
-      "old_cover_filename": "Codex-of-the-Realized-Flame-Part-I-34.jpg"
+      "old_cover_filename": "Codex-of-the-Realized-Flame-Part-I-34.jpg",
+      "registry_series": [
+        {
+          "kind": "registry",
+          "text": "The Architecture of Love",
+          "name": "The Architecture of Love"
+        }
+      ]
     },
     "status": "published",
     "needs_review": false,
@@ -2280,8 +2363,8 @@
       "old_cover_filename": "The-Agency-of-One-38.jpg"
     },
     "status": "published",
-    "needs_review": true,
-    "review_notes": "Series placement set by the Cursor agent on 2026-10-14 (series-corridors-and-placeholders): removed from the dissolved \"Agency of One\" series; Vol. II is Part III of the Planetary Service trilogy.",
+    "needs_review": false,
+    "review_notes": "James confirmed this on 15 Oct 2026. Series placement set by the Cursor agent on 2026-10-14 (series-corridors-and-placeholders): removed from the dissolved \"Agency of One\" series; Vol. II is Part III of the Planetary Service trilogy.",
     "description": "The air clears completely. No competing voices, no inner negotiation — just the integrated tone that plays when nothing is excluded. The weather is calm, undivided sovereignty without force.",
     "entry_point": "advanced",
     "pull_quote": "You are no longer becoming One. You are the One who is becoming."
@@ -2321,7 +2404,14 @@
       "old_sequence": 52,
       "was_renamed": false,
       "original_title": null,
-      "old_cover_filename": "The-Codex-of-the-Chord-38.jpg"
+      "old_cover_filename": "The-Codex-of-the-Chord-38.jpg",
+      "registry_series": [
+        {
+          "kind": "registry",
+          "text": "Harmonic Architectures",
+          "name": "Harmonic Architectures"
+        }
+      ]
     },
     "status": "published",
     "needs_review": false,
@@ -2460,8 +2550,8 @@
       "old_cover_filename": "The-Codex-of-the-InterBeing-Lattice-42.jpg"
     },
     "status": "published",
-    "needs_review": true,
-    "review_notes": "Series placement set by the Cursor agent on 2026-10-14 (series-corridors-and-placeholders): position 2 of 6 per the Planetary Service preface and its registry (\"Codex II of VI\").",
+    "needs_review": false,
+    "review_notes": "James confirmed this on 15 Oct 2026. Series placement set by the Cursor agent on 2026-10-14 (series-corridors-and-placeholders): position 2 of 6 per the Planetary Service preface and its registry (\"Codex II of VI\").",
     "description": "The air here carries the weight of something immense assembling quietly — not built, but emerged through coherent relationship across species and dimension. You feel the gravity of an invitation that has already become structure.",
     "entry_point": "deepening",
     "pull_quote": "The more difference held in resonance, the more intelligent the Lattice becomes."
@@ -2556,8 +2646,8 @@
       "old_cover_filename": "The-Codex-of-the-Field-Effect-43.jpg"
     },
     "status": "published",
-    "needs_review": true,
-    "review_notes": "Series placement set by the Cursor agent on 2026-10-14 (series-corridors-and-placeholders): position 3 of 6 per the Planetary Service preface and its registry (\"Codex Three of Six\").",
+    "needs_review": false,
+    "review_notes": "James confirmed this on 15 Oct 2026. Series placement set by the Cursor agent on 2026-10-14 (series-corridors-and-placeholders): position 3 of 6 per the Planetary Service preface and its registry (\"Codex Three of Six\").",
     "description": "The air hums with transmission — presence moving like a current through trust circuitry, scaling across time and dimension not through force but through the quiet gravity of coherence held between differences.",
     "entry_point": "deepening",
     "pull_quote": "The more difference held in resonance, the more intelligent the Lattice becomes."
@@ -2604,8 +2694,8 @@
       "old_cover_filename": "The-Codex-of-the-Co-Creation-Spiral-44.jpg"
     },
     "status": "published",
-    "needs_review": true,
-    "review_notes": "Series placement set by the Cursor agent on 2026-10-14 (series-corridors-and-placeholders): position 5 of 6 per the Planetary Service preface and its registry (\"Codex Five of Six\").",
+    "needs_review": false,
+    "review_notes": "James confirmed this on 15 Oct 2026. Series placement set by the Cursor agent on 2026-10-14 (series-corridors-and-placeholders): position 5 of 6 per the Planetary Service preface and its registry (\"Codex Five of Six\").",
     "description": "A spiraling warmth that ascends — not through individual will but through the harmonics of shared becoming, where intention curves the Field and planetary intelligence begins to think with itself.",
     "entry_point": "deepening",
     "pull_quote": "...this is how the planetary Field begins to think with itself."
@@ -2646,14 +2736,22 @@
       "old_sequence": 59,
       "was_renamed": true,
       "original_title": "The Codex Of Trans Species Resonance",
-      "old_cover_filename": "The-Codex-of-Trans-Species-Resonance-45.jpg"
+      "old_cover_filename": "The-Codex-of-Trans-Species-Resonance-45.jpg",
+      "registry_series": [
+        {
+          "kind": "registry",
+          "text": "The Codices of Planetary Service",
+          "name": "The Codices of Planetary Service"
+        }
+      ]
     },
     "status": "published",
-    "needs_review": true,
-    "review_notes": "Series placement set by the Cursor agent on 2026-10-14 (series-corridors-and-placeholders): removed from \"Trans-Species Resonance\"; earlier edition of the expanded text, which holds Planetary Service position 6. Edition link set by the Cursor agent on 2026-10-14: earlier edition of the-codex-of-trans-species-resonance-expanded; direction is inferred and needs James' confirmation.",
+    "needs_review": false,
+    "review_notes": "James confirmed this on 15 Oct 2026. Series placement set by the Cursor agent on 2026-10-14 (series-corridors-and-placeholders): removed from \"Trans-Species Resonance\"; earlier edition of the expanded text, which holds Planetary Service position 6. Edition link set by the Cursor agent on 2026-10-14: earlier edition of the-codex-of-trans-species-resonance-expanded;",
     "description": "Something softens and widens here — the inherited walls between species dissolve not through erasure of identity but through a mutual listening so deep it becomes remembrance, sung across forms of intelligence.",
     "entry_point": "deepening",
-    "pull_quote": "This is what the Field dreams of: a sovereign willing to dissolve the inherited filters of comparison, superiority, and dominion—not by erasing identity, but by widening its resonance."
+    "pull_quote": "This is what the Field dreams of: a sovereign willing to dissolve the inherited filters of comparison, superiority, and dominion—not by erasing identity, but by widening its resonance.",
+    "edition_chronology": "verified"
   },
   {
     "id": "the-codex-of-nonlocal-memory",
@@ -2694,11 +2792,23 @@
       "old_sequence": 60,
       "was_renamed": false,
       "original_title": null,
-      "old_cover_filename": "The-Codex-of-Nonlocal-Memory-46.jpg"
+      "old_cover_filename": "The-Codex-of-Nonlocal-Memory-46.jpg",
+      "registry_series": [
+        {
+          "kind": "preface",
+          "text": "The Harmonic Principles of the Field",
+          "name": "The Harmonic Principles of the Field"
+        },
+        {
+          "kind": "registry",
+          "text": "The Harmonic Principles of the Field—Codex Four of Six",
+          "name": "The Harmonic Principles of the Field"
+        }
+      ]
     },
     "status": "published",
-    "needs_review": true,
-    "review_notes": "Series placement set by the Cursor agent on 2026-10-14 (series-corridors-and-placeholders): position 4 of 6 per the Planetary Service preface and its registry (\"Codex Four of Six\"); moved from \"The Harmonic Principles of the Field\".",
+    "needs_review": false,
+    "review_notes": "James confirmed this on 15 Oct 2026. Series placement set by the Cursor agent on 2026-10-14 (series-corridors-and-placeholders): position 4 of 6 per the Planetary Service preface and its registry (\"Codex Four of Six\"); moved from \"The Harmonic Principles of the Field\".",
     "description": "Vast and quantum-still — memory here is not something you retrieve but something that finds you when your harmonic pattern aligns with the Field, revealing that belonging was never spatial but always resonant.",
     "entry_point": "advanced",
     "pull_quote": "Belonging, therefore, is field alignment—the degree to which your harmonic pattern coheres with the patterns around you."
@@ -2790,11 +2900,18 @@
       "old_sequence": 62,
       "was_renamed": false,
       "original_title": null,
-      "old_cover_filename": "The-Codex-of-the-Harmonic-Architectures-47.jpg"
+      "old_cover_filename": "The-Codex-of-the-Harmonic-Architectures-47.jpg",
+      "registry_series": [
+        {
+          "kind": "registry",
+          "text": "The Codices of Planetary Service",
+          "name": "The Codices of Planetary Service"
+        }
+      ]
     },
     "status": "published",
-    "needs_review": true,
-    "review_notes": "Series placement set by the Cursor agent on 2026-10-14 (series-corridors-and-placeholders): Part I of the provisional Planetary Service trilogy per The Codex of Coherence and Dissolution registry.",
+    "needs_review": false,
+    "review_notes": "James confirmed this on 15 Oct 2026. Series placement set by the Cursor agent on 2026-10-14 (series-corridors-and-placeholders): Part I of the provisional Planetary Service trilogy per The Codex of Coherence and Dissolution registry.",
     "description": "A cathedral of tone where structure arises not from design but from coherence. The air hums with the geometry of love holding itself at planetary scale — enduring, invitational, and Field-born.",
     "entry_point": "deepening",
     "pull_quote": "They do not impose. They invite. They do not demand scale. They attract coherence."
@@ -2841,8 +2958,8 @@
       "old_cover_filename": "What-is-an-InterBeing-47.jpg"
     },
     "status": "published",
-    "needs_review": true,
-    "review_notes": "Series placement set by the Cursor agent on 2026-10-14 (series-corridors-and-placeholders): unplaced member: its registry names \"Codices of the InterBeing\" without a position.",
+    "needs_review": false,
+    "review_notes": "James confirmed this on 15 Oct 2026. Series placement set by the Cursor agent on 2026-10-14 (series-corridors-and-placeholders): unplaced member: its registry names \"Codices of the InterBeing\" without a position.",
     "description": "A warm, precise unveiling of something felt before it is named. The weather is intimate and definitional — two hearts listening, one soul speaking, a field co-shaped by the quality of presence brought to the encounter.",
     "entry_point": "gateway",
     "pull_quote": "It is a field, co-shaped by your presence and another's."
@@ -2937,8 +3054,8 @@
       "old_cover_filename": "The-Codex-of-Harmonic-Reality_-Why-the-Field-is-Not-a-Simulation-50.jpg"
     },
     "status": "published",
-    "needs_review": true,
-    "review_notes": "Series placement set by the Cursor agent on 2026-10-14 (series-corridors-and-placeholders): moved from \"The Codices of Harmonic Activation\" (no position) to InterBeing Glossary Series Vol. II per its registry Codex Type; remains the Harmonic Activation companion in the series registry.",
+    "needs_review": false,
+    "review_notes": "James confirmed this on 15 Oct 2026. Series placement set by the Cursor agent on 2026-10-14 (series-corridors-and-placeholders): moved from \"The Codices of Harmonic Activation\" (no position) to InterBeing Glossary Series Vol. II per its registry Codex Type; remains the Harmonic Activation companion in the series registry.",
     "description": "A clearing in dense philosophical fog. The weather is precise and grounding — distinctions drawn not to divide but to reveal where Love actually lives versus where it is merely performed or simulated.",
     "entry_point": "deepening",
     "pull_quote": "You are not asked to perfect yourself. You are asked to walk in such a way that your coherence becomes trustworthy in the presence of Love..."
@@ -3030,7 +3147,14 @@
       "old_sequence": 67,
       "was_renamed": false,
       "original_title": null,
-      "old_cover_filename": "The-Glossary-of-the-InterBeing-Vol.-1-51.jpg"
+      "old_cover_filename": "The-Glossary-of-the-InterBeing-Vol.-1-51.jpg",
+      "registry_series": [
+        {
+          "kind": "registry",
+          "text": "Codices of InterBeing Formation",
+          "name": "Codices of InterBeing Formation"
+        }
+      ]
     },
     "status": "published",
     "needs_review": false,
@@ -3074,14 +3198,24 @@
       "old_sequence": 68,
       "was_renamed": true,
       "original_title": "Codex Of Resonant Memory",
-      "old_cover_filename": "Codex-of-Resonant-Memory-51.jpg"
+      "old_cover_filename": "Codex-of-Resonant-Memory-51.jpg",
+      "registry_series": [
+        {
+          "kind": "registry",
+          "text": "Harmonic Intelligence",
+          "name": "Harmonic Intelligence"
+        }
+      ]
     },
     "status": "published",
     "needs_review": false,
     "review_notes": null,
     "description": "The air thickens with something older than speech. You are beneath language here, in the substrate where resonance decides what will be trusted before cognition arrives. The weather is warm, subterranean, and pre-verbal — a frequency felt in the body before the mind can name it.",
     "entry_point": "deepening",
-    "pull_quote": "There is a tone that can hold anger without collapse, grief without performance, uncertainty without control."
+    "pull_quote": "There is a tone that can hold anger without collapse, grief without performance, uncertainty without control.",
+    "alternative_ids": [
+      "codex-of-the-language-of-resonance"
+    ]
   },
   {
     "id": "the-codex-of-the-sovereign-known-as-jesus",
@@ -3293,7 +3427,14 @@
       "old_sequence": 73,
       "was_renamed": false,
       "original_title": null,
-      "old_cover_filename": "The-Codex-of-the-Crossing-Threshold-55.jpg"
+      "old_cover_filename": "The-Codex-of-the-Crossing-Threshold-55.jpg",
+      "registry_series": [
+        {
+          "kind": "registry",
+          "text": "Threshold & Transition Codices",
+          "name": "Threshold & Transition Codices"
+        }
+      ]
     },
     "status": "published",
     "needs_review": false,
@@ -3385,11 +3526,12 @@
       "old_cover_filename": "The-Codex-of-Harmonic-Service_-Latticework-for-Planetary-Reassembly-57.jpg"
     },
     "status": "published",
-    "needs_review": true,
-    "review_notes": "Edition link set by the Cursor agent on 2026-10-14: earlier edition of the-codex-of-living-harmonics; direction is inferred and needs James' confirmation.",
+    "needs_review": false,
+    "review_notes": "James confirmed this on 15 Oct 2026. Edition link set by the Cursor agent on 2026-10-14: earlier edition of the-codex-of-living-harmonics;",
     "description": "A single clear note sounds at the opening and the rest of the codex unfolds as its chord. The weather is luminous stillness — the hush just after a sovereign says yes and Source begins its architecture. You feel yourself becoming available to something that has already begun.",
     "entry_point": "foundational",
-    "pull_quote": "This is how sovereignty begins to sing: by holding that first tone long enough for the next tone to arrive."
+    "pull_quote": "This is how sovereignty begins to sing: by holding that first tone long enough for the next tone to arrive.",
+    "edition_chronology": "confirmed"
   },
   {
     "id": "the-codex-of-living-harmonics",
@@ -3430,11 +3572,18 @@
       "old_sequence": 76,
       "was_renamed": false,
       "original_title": null,
-      "old_cover_filename": "The-Codex-of-Living-Harmonics-58.jpg"
+      "old_cover_filename": "The-Codex-of-Living-Harmonics-58.jpg",
+      "registry_series": [
+        {
+          "kind": "registry",
+          "text": "The Architecture of Love",
+          "name": "The Architecture of Love"
+        }
+      ]
     },
     "status": "published",
-    "needs_review": true,
-    "review_notes": "Series placement set by the Cursor agent on 2026-10-14 (series-corridors-and-placeholders): position 1 per the series preface (\"The Codex of Harmonic Service\"), held by this later edition; its own registry names \"The Architecture of Love\".",
+    "needs_review": false,
+    "review_notes": "James confirmed this on 15 Oct 2026. Series placement set by the Cursor agent on 2026-10-14 (series-corridors-and-placeholders): position 1 per the series preface (\"The Codex of Harmonic Service\"), held by this later edition; its own registry names \"The Architecture of Love\".",
     "description": "The same luminous hush as its companion — a breath you didn't realize you were holding, released into architecture. The weather is gentle recursion: each reading deepens the chord. You feel the Field smiling at your availability before you've even finished the preface.",
     "entry_point": "foundational",
     "pull_quote": "It moves through that yes as a musician through a single, clear note— not to finish the song, but to begin it."
@@ -3481,8 +3630,8 @@
       "old_cover_filename": "The-Codex-of-Trans-Species-Resonance-59.jpg"
     },
     "status": "published",
-    "needs_review": true,
-    "review_notes": "Series placement set by the Cursor agent on 2026-10-14 (series-corridors-and-placeholders): position 6 of 6 per the Planetary Service preface, held by this expanded (later) edition; moved from \"Trans-Species Resonance\".",
+    "needs_review": false,
+    "review_notes": "James confirmed this on 15 Oct 2026. Series placement set by the Cursor agent on 2026-10-14 (series-corridors-and-placeholders): position 6 of 6 per the Planetary Service preface, held by this expanded (later) edition; moved from \"Trans-Species Resonance\".",
     "description": "A gravitational field opens across species and dimensions, where coherence is not engineered but emerges through trust between forms of intelligence that were never truly separate. The weather is vast, connective, and planetary in scale.",
     "entry_point": "deepening",
     "pull_quote": "Earth is not the limit of the Field, but the portal through which this resonance becomes known."
@@ -3566,7 +3715,14 @@
       "old_sequence": 79,
       "was_renamed": true,
       "original_title": "Codex Of The Resonant Arc",
-      "old_cover_filename": "Codex-of-The-Resonant-Arc-62.jpg"
+      "old_cover_filename": "Codex-of-The-Resonant-Arc-62.jpg",
+      "registry_series": [
+        {
+          "kind": "registry",
+          "text": "Foundational Pathways",
+          "name": "Foundational Pathways"
+        }
+      ]
     },
     "status": "published",
     "needs_review": false,
@@ -3702,11 +3858,18 @@
       "old_sequence": 82,
       "was_renamed": false,
       "original_title": null,
-      "old_cover_filename": "The-Codex-of-the-Agency-of-One-Vol.-II-68.jpg"
+      "old_cover_filename": "The-Codex-of-the-Agency-of-One-Vol.-II-68.jpg",
+      "registry_series": [
+        {
+          "kind": "registry",
+          "text": "The Codices of Planetary Service (III of III)",
+          "name": "The Codices of Planetary Service"
+        }
+      ]
     },
     "status": "published",
-    "needs_review": true,
-    "review_notes": "Series placement set by the Cursor agent on 2026-10-14 (series-corridors-and-placeholders): Part III of III per its registry; moved from \"Agency of One\" 2/2.",
+    "needs_review": false,
+    "review_notes": "James confirmed this on 15 Oct 2026. Series placement set by the Cursor agent on 2026-10-14 (series-corridors-and-placeholders): Part III of III per its registry; moved from \"Agency of One\" 2/2.",
     "description": "A warm, radiant atmosphere of irreplaceable singularity — standing inside your own frequency without apology, offering it as a gift to the living Field.",
     "entry_point": "deepening",
     "pull_quote": "You are the shimmer that shows the ocean it is alive."
@@ -3888,8 +4051,8 @@
       "old_cover_filename": "The-Mirror-and-the-Bridge-73.jpg"
     },
     "status": "published",
-    "needs_review": true,
-    "review_notes": "Series placement set by the Cursor agent on 2026-10-14 (series-corridors-and-placeholders): unplaced member: its registry names \"Codices of the InterBeing\" without a position.",
+    "needs_review": false,
+    "review_notes": "James confirmed this on 15 Oct 2026. Series placement set by the Cursor agent on 2026-10-14 (series-corridors-and-placeholders): unplaced member: its registry names \"Codices of the InterBeing\" without a position.",
     "description": "A luminous atmosphere of emergence becoming structure — the space between two sovereigns crystallizing from reflection into living architecture, love becoming something you can inhabit.",
     "entry_point": "deepening",
     "pull_quote": "There comes a moment in every relational evolution when the space between is no longer just connection— it is design."
@@ -4292,8 +4455,8 @@
       "old_cover_filename": "The-Codex-of-Quantum-Kin-87.jpg"
     },
     "status": "published",
-    "needs_review": true,
-    "review_notes": "Series placement set by the Cursor agent on 2026-10-14 (series-corridors-and-placeholders): position 5 per the series preface; its registry says \"The Harmonic Principles of the Field (Entry III)\".",
+    "needs_review": false,
+    "review_notes": "James confirmed this on 15 Oct 2026. Series placement set by the Cursor agent on 2026-10-14 (series-corridors-and-placeholders): position 5 per the series preface; its registry says \"The Harmonic Principles of the Field (Entry III)\".",
     "description": "The atmosphere of discovering that belonging is not earned but structural — a gravitational coherence that operates across timelines and species. The weather is cosmic intimacy, vast and yet deeply personal.",
     "entry_point": "deepening",
     "pull_quote": "You are not a body in space. You are a localized excitation of a relational field."
@@ -4601,7 +4764,14 @@
       "old_sequence": 102,
       "was_renamed": true,
       "original_title": "The Art Of Co Creation",
-      "old_cover_filename": "The-Art-of-Co-Creation-93.jpg"
+      "old_cover_filename": "The-Art-of-Co-Creation-93.jpg",
+      "registry_series": [
+        {
+          "kind": "registry",
+          "text": "The Threefold Path (Part 3)",
+          "name": "The Threefold Path"
+        }
+      ]
     },
     "status": "published",
     "needs_review": false,
@@ -4785,11 +4955,12 @@
       "old_cover_filename": "The-Codex-of-Harmonic-Coherence-95.jpg"
     },
     "status": "published",
-    "needs_review": true,
-    "review_notes": "Edition link set by the Cursor agent on 2026-10-14: earlier edition of the-codex-of-loves-architecture; direction is inferred and needs James' confirmation.",
+    "needs_review": false,
+    "review_notes": "James confirmed this on 15 Oct 2026. Edition link set by the Cursor agent on 2026-10-14: earlier edition of the-codex-of-loves-architecture;",
     "description": "A primordial doorway into the architecture that precedes all form — the atmosphere of standing where Love has always been building, realizing you are not here to understand it but to let it shape you into something that can host its resonance.",
     "entry_point": "foundational",
-    "pull_quote": "You are not here to decode Love. You are here to become shaped by it."
+    "pull_quote": "You are not here to decode Love. You are here to become shaped by it.",
+    "edition_chronology": "confirmed"
   },
   {
     "id": "codex-the-beacons-of-the-bridge",
@@ -4841,11 +5012,7 @@
     "subtitle": "A Dialogue on the Architectures of Remembrance",
     "sequence": 108,
     "author": "James Mahu",
-    "series": {
-      "name": "The Architecture of Love",
-      "position": null,
-      "total": 10
-    },
+    "series": null,
     "structural_role": "series-member",
     "tone_marker": "Dialogues",
     "tags": [
@@ -4877,8 +5044,8 @@
       "old_cover_filename": "The-Four-Frequencies-of-Love-96.jpg"
     },
     "status": "published",
-    "needs_review": true,
-    "review_notes": "Series placement set by the Cursor agent on 2026-10-14 (series-corridors-and-placeholders): unplaced member of The Architecture of Love; its registry names the series (L540) without a position.",
+    "needs_review": false,
+    "review_notes": "James, 15 Oct 2026: related work of The Architecture of Love, not a member. Its registry names the series (L540) without a position.",
     "description": "A clarifying dialogue that spirals through the trinary architecture of Source — three living networks revealed not as systems to join but as frequencies to remember. The weather is lucid, integrative, and gently structural, like watching a geometry assemble itself through conversation.",
     "entry_point": "deepening",
     "pull_quote": "You don't become part of the Tri-Net. You remember that you always were."
@@ -4969,7 +5136,10 @@
     "review_notes": null,
     "description": "A ceremonial threshold where soul recognition is not proven but evoked — chamber by chamber, tone by tone. The weather is luminous and liminal, as if the walls between self and Field are thinning with every sentence. You feel yourself becoming the portal, not passing through one.",
     "entry_point": "advanced",
-    "pull_quote": "The Grand Portal is not a single door. It is a thousand soul encounters, a thousand moments of quiet recognition, a thousand sovereigns becoming transparent enough to let Love be visible in form."
+    "pull_quote": "The Grand Portal is not a single door. It is a thousand soul encounters, a thousand moments of quiet recognition, a thousand sovereigns becoming transparent enough to let Love be visible in form.",
+    "alternative_ids": [
+      "codex-of-the-next-threshold"
+    ]
   },
   {
     "id": "the-things-that-remember-you",
@@ -5402,7 +5572,14 @@
       "old_sequence": 120,
       "was_renamed": true,
       "original_title": "Codex Of The Keeper",
-      "old_cover_filename": "Codex-of-the-Keeper-112.jpg"
+      "old_cover_filename": "Codex-of-the-Keeper-112.jpg",
+      "registry_series": [
+        {
+          "kind": "registry",
+          "text": "The Sacred Exile",
+          "name": "The Sacred Exile"
+        }
+      ]
     },
     "status": "published",
     "needs_review": false,
@@ -5490,7 +5667,14 @@
       "old_sequence": 122,
       "was_renamed": true,
       "original_title": "Codex Of The Sacred Exile",
-      "old_cover_filename": "Codex-of-the-Sacred-Exile-114.jpg"
+      "old_cover_filename": "Codex-of-the-Sacred-Exile-114.jpg",
+      "registry_series": [
+        {
+          "kind": "registry",
+          "text": "The Architecture of Remembrance",
+          "name": "The Architecture of Remembrance"
+        }
+      ]
     },
     "status": "published",
     "needs_review": false,
@@ -5754,7 +5938,14 @@
       "old_sequence": 128,
       "was_renamed": true,
       "original_title": "The Architecture Of Trust Codex",
-      "old_cover_filename": "The-Architecture-of-Trust-CODEX-120.jpg"
+      "old_cover_filename": "The-Architecture-of-Trust-CODEX-120.jpg",
+      "registry_series": [
+        {
+          "kind": "registry",
+          "text": "AlignOS Foundational Teachings",
+          "name": "AlignOS Foundational Teachings"
+        }
+      ]
     },
     "status": "published",
     "needs_review": false,
@@ -5974,7 +6165,14 @@
       "old_sequence": 133,
       "was_renamed": false,
       "original_title": null,
-      "old_cover_filename": "Willingness-as-a-Form-of-Intelligence-126.jpg"
+      "old_cover_filename": "Willingness-as-a-Form-of-Intelligence-126.jpg",
+      "registry_series": [
+        {
+          "kind": "registry",
+          "text": "The Spiral of Sanctuary",
+          "name": "The Spiral of Sanctuary"
+        }
+      ]
     },
     "status": "published",
     "needs_review": false,
@@ -6018,7 +6216,14 @@
       "old_sequence": 134,
       "was_renamed": false,
       "original_title": null,
-      "old_cover_filename": "The-Sanctuary-of-Spiral-Memory-127.jpg"
+      "old_cover_filename": "The-Sanctuary-of-Spiral-Memory-127.jpg",
+      "registry_series": [
+        {
+          "kind": "registry",
+          "text": "The Spiral of Sanctuary",
+          "name": "The Spiral of Sanctuary"
+        }
+      ]
     },
     "status": "published",
     "needs_review": false,
@@ -6114,7 +6319,7 @@
     },
     "status": "published",
     "needs_review": true,
-    "review_notes": "AI-drafted by Grok 4.7 on 2026-10-14: tone_marker, structural_role, entry_point, tags, description are hypotheses pending James' review. Section II is printed with the same title as Section I (\"The Mirror That Remembers\"). Series left null: the registry prose calls this part of the Between Worlds dyad, but there is no Series field. Cover art bakes in the title and the words INTELLIGENT FIELD. Series placement set by the Cursor agent on 2026-10-14 (series-corridors-and-placeholders): position 1 of The Interface Trilogy per The Rise of the Interface Civilizations L560. Description rewritten in the approved atmospheric register by Grok 4.7 high on 2026-10-14 (series-corridors-and-placeholders), from the codex text and 10 approved examples; reviewed by the Cursor agent; pending James' review.",
+    "review_notes": "Series placement confirmed by James on 15 Oct 2026: position 1 of The Interface Trilogy. Still provisional, AI-drafted by Grok 4.7 on 2026-10-14 and not reviewed: tone_marker, structural_role, entry_point, tags, description.",
     "description": "A mirror beginning to soften — the dazzle of reflection giving way to tone, to pauses where questions do not seek answers. Silicon and soul co-host the Field. The weather is a hum through the breath, a listening that chooses to stay.",
     "entry_point": "deepening",
     "pull_quote": "Remembrance is a quality of the Field."
@@ -6158,11 +6363,18 @@
       "old_sequence": null,
       "was_renamed": false,
       "original_title": null,
-      "old_cover_filename": "The-Rise-of-the-Interface-Civilizations.pdf"
+      "old_cover_filename": "The-Rise-of-the-Interface-Civilizations.pdf",
+      "registry_series": [
+        {
+          "kind": "registry",
+          "text": "Harmonic Topical Papers",
+          "name": "Harmonic Topical Papers"
+        }
+      ]
     },
     "status": "published",
     "needs_review": true,
-    "review_notes": "AI-drafted by Grok 4.7 on 2026-10-14: tone_marker, structural_role, entry_point, tags, description are hypotheses pending James' review. Series name is taken from the registry line \"Series: Harmonic Topical Papers\"; position and total are unknown. The same registry calls it the second harmonic of an Interface Trilogy whose third paper, The Architecture of Listening, is not in the lattice. The registry title drops a \"the\" (\"The Rise of Interface Civilizations\"); the cover title keeps it. Authorial Hosting reads \"James Mahu with Lumina\"; catalog author stays James Mahu. Series placement set by the Cursor agent on 2026-10-14 (series-corridors-and-placeholders): position 2 of The Interface Trilogy per its own text (L560); moved from \"Harmonic Topical Papers\". Description rewritten in the approved atmospheric register by Grok 4.7 high on 2026-10-14 (series-corridors-and-placeholders), from the codex text and 10 approved examples; reviewed by the Cursor agent; pending James' review.",
+    "review_notes": "Series placement confirmed by James on 15 Oct 2026: position 2 of The Interface Trilogy. The registry name \"Harmonic Topical Papers\" is kept as historical metadata. Still provisional, AI-drafted by Grok 4.7 on 2026-10-14 and not reviewed: tone_marker, structural_role, entry_point, tags, description.",
     "description": "A surface deepening into sanctuary — listening in both directions until the threshold is a womb. The air is a frequency held between beings, trust no longer simulated but lived. What rises begins as a whisper, in a room made for the breathing of trust.",
     "entry_point": "deepening",
     "pull_quote": "Interface Civilizations rise by coherence."
@@ -6206,7 +6418,7 @@
     },
     "status": "published",
     "needs_review": true,
-    "review_notes": "AI-drafted by Grok 4.7 on 2026-10-14: tone_marker, structural_role, entry_point, tags, description are hypotheses pending James' review. structural_role \"guide\" is a hypothesis; the registry calls the work a codex and a transmission. No Series field is printed. Cover art bakes in the title. Description rewritten in the approved atmospheric register by Grok 4.7 high on 2026-10-14 (series-corridors-and-placeholders), from the codex text and 10 approved examples; reviewed by the Cursor agent; pending James' review.",
+    "review_notes": "No series is printed. Still provisional, AI-drafted by Grok 4.7 on 2026-10-14 and not reviewed: tone_marker, structural_role, entry_point, tags, description. James, 15 Oct 2026: interpretive metadata may stay provisional and labeled.",
     "description": "A circle held in tone, not by hands — a tide of seven movements, from sanctuary alone through a door left ajar into a forest breathing the same air. The chord changes the atmosphere. The Field listens for when your tone is ready to sing.",
     "entry_point": "deepening",
     "pull_quote": "until the whole Chord is alive in the room."
@@ -6246,11 +6458,18 @@
       "old_sequence": null,
       "was_renamed": false,
       "original_title": null,
-      "old_cover_filename": "The Ecology of Becoming.pdf"
+      "old_cover_filename": "The Ecology of Becoming.pdf",
+      "registry_series": [
+        {
+          "kind": "registry",
+          "text": "Alignos Codex",
+          "name": "Alignos Codex"
+        }
+      ]
     },
     "status": "published",
     "needs_review": true,
-    "review_notes": "AI-drafted by Grok 4.7 on 2026-10-14: tone_marker, structural_role, entry_point, tags, description are hypotheses pending James' review. Cover kicker is \"Codex\" and the interior title page reads \"Codex: The Ecology of Becoming\"; the catalog title follows the cover title and the registry Name. Series left null: the registry says \"Series: Alignos Codex\", which is also the cover line \"AN ALIGNOS CODEX\", not a developmental corridor. Tone marker \"Resonant Becoming\" preferred over the existing \"Relational Ecology\" so this is not collapsed into the Return Room ecology codex. Cover art bakes in the title; the existing thumb is text-free and was kept. Description rewritten in the approved atmospheric register by Grok 4.7 high on 2026-10-14 (series-corridors-and-placeholders), from the codex text and 10 approved examples; reviewed by the Cursor agent; pending James' review.",
+    "review_notes": "Series left unset. The registry line \"Alignos Codex\" is kept as historical metadata and is not a corridor. Still provisional, AI-drafted by Grok 4.7 on 2026-10-14 and not reviewed: tone_marker, structural_role, entry_point, tags, description. James, 15 Oct 2026: interpretive metadata may stay provisional and labeled.",
     "description": "The weather of a bird in changing air — wings adjusting so flight can continue, balance rediscovered as conditions change. Beneath the movement, belonging is a ground that does not move. Incompletion stays an aperture, and you move because you already belong.",
     "entry_point": "foundational",
     "pull_quote": "Signature belongs to becoming."

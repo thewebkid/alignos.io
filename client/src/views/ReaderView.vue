@@ -192,6 +192,18 @@ const laterEdition = computed(() =>
 const earlierEditions = computed(() =>
   (codex.value?.earlierEditionIds ?? []).map(id => codexRegistry?.get(id)).filter(Boolean)
 )
+const alternativeVersions = computed(() =>
+  (codex.value?.alternativeVersionIds ?? []).map(id => codexRegistry?.get(id)).filter(Boolean)
+)
+const registryLines = computed(() =>
+  (codex.value?.registrySeries ?? []).map((s) => ({
+    ...s,
+    label: s.kind === 'preface' ? 'Preface' : 'Registry',
+    to: s.seriesId && s.seriesId !== codex.value?.series?.id
+      ? { name: 'lattice', query: { series: s.seriesId } }
+      : null
+  }))
+)
 
 // Series navigation — siblingIds is the positioned members in order, including self
 const siblingIndex = computed(() => codex.value?.siblingIds?.indexOf(codex.value.id) ?? -1)
@@ -293,12 +305,21 @@ const nextCodex = computed(() => {
             <RouterLink :to="{ name: 'reader', params: { id: laterEdition.id } }">{{ laterEdition.title }}</RouterLink>.
           </div>
 
-          <div v-if="seriesLabel || earlierEditions.length" class="codex-context">
+          <div v-if="seriesLabel || earlierEditions.length || alternativeVersions.length || registryLines.length" class="codex-context">
             <RouterLink v-if="seriesLink" :to="seriesLink" class="context-series">{{ seriesLabel }}</RouterLink>
             <span v-else-if="seriesLabel" class="context-series">{{ seriesLabel }}</span>
             <span v-for="e in earlierEditions" :key="e.id" class="context-edition">
               Earlier edition:
               <RouterLink :to="{ name: 'reader', params: { id: e.id } }">{{ e.title }}</RouterLink>
+            </span>
+            <span v-for="e in alternativeVersions" :key="e.id" class="context-edition">
+              Alternative version:
+              <RouterLink :to="{ name: 'reader', params: { id: e.id } }">{{ e.title }}</RouterLink>
+            </span>
+            <span v-for="(line, i) in registryLines" :key="`${line.kind}-${i}`" class="context-edition">
+              {{ line.label }}:
+              <RouterLink v-if="line.to" :to="line.to">{{ line.text }}</RouterLink>
+              <template v-else>{{ line.text }}</template>
             </span>
           </div>
 

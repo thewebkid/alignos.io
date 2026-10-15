@@ -33,6 +33,10 @@ function validateRegistry(registry, catalogById, pdfExists, errors) {
     for (const cid of rec.companion_ids || []) {
       if (!catalogById.has(cid)) errors.push(`${where}: companion "${cid}" is not a catalog id`);
     }
+    for (const cid of rec.related_ids || []) {
+      if (!catalogById.has(cid)) errors.push(`${where}: related "${cid}" is not a catalog id`);
+      if ((rec.companion_ids || []).includes(cid)) errors.push(`${where}: related "${cid}" is also a companion`);
+    }
     if (rec.compilation_pdf) {
       if (rec.compilation_pdf !== `${rec.id}.pdf`) errors.push(`${where}: compilation_pdf must be "${rec.id}.pdf"`);
       if (catalogById.has(rec.id)) errors.push(`${where}: compilation name collides with a catalog id`);
@@ -90,16 +94,36 @@ export function resolveSeries(catalog, registry, { pdfExists } = {}) {
     codexSeries.set(e.id, { id: rec.id, name: rec.name, position: pos, total: rec.total ?? null });
   }
 
+  for (const rec of registry) {
+    const m = members.get(rec.id);
+    const memberIds = new Set([...m.positioned.map((p) => p.id), ...m.unplaced]);
+    for (const cid of rec.related_ids || []) {
+      if (memberIds.has(cid)) errors.push(`series "${rec.id}": related "${cid}" is also a member`);
+    }
+  }
+
   const earlierByLater = new Map();
   for (const e of catalog) {
-    if (!e.later_edition_id) continue;
     const where = `catalog "${e.id}" (seq ${e.sequence})`;
-    const later = catalogById.get(e.later_edition_id);
-    if (!later) errors.push(`${where}: later_edition_id "${e.later_edition_id}" is not a catalog id`);
-    else if (later.id === e.id) errors.push(`${where}: later_edition_id points to itself`);
-    if (e.series?.position != null) errors.push(`${where}: an earlier edition cannot hold a series position`);
-    if (!earlierByLater.has(e.later_edition_id)) earlierByLater.set(e.later_edition_id, []);
-    earlierByLater.get(e.later_edition_id).push(e.id);
+    if (e.later_edition_id && e.alternative_ids?.length) {
+      errors.push(`${where}: an entry cannot be both an earlier edition and an alternative version`);
+    }
+    if (e.later_edition_id) {
+      if (e.edition_chronology !== 'verified' && e.edition_chronology !== 'confirmed') {
+        errors.push(`${where}: later_edition_id requires edition_chronology "verified" or "confirmed"`);
+      }
+      const later = catalogById.get(e.later_edition_id);
+      if (!later) errors.push(`${where}: later_edition_id "${e.later_edition_id}" is not a catalog id`);
+      else if (later.id === e.id) errors.push(`${where}: later_edition_id points to itself`);
+      if (e.series?.position != null) errors.push(`${where}: an earlier edition cannot hold a series position`);
+      if (!earlierByLater.has(e.later_edition_id)) earlierByLater.set(e.later_edition_id, []);
+      earlierByLater.get(e.later_edition_id).push(e.id);
+    }
+    for (const oid of e.alternative_ids || []) {
+      const other = catalogById.get(oid);
+      if (!other) errors.push(`${where}: alternative_ids "${oid}" is not a catalog id`);
+      else if (!(other.alternative_ids || []).includes(e.id)) errors.push(`${where}: alternative "${oid}" does not link back`);
+    }
   }
 
   const bySequence = (a, b) => catalogById.get(a).sequence - catalogById.get(b).sequence;
@@ -118,6 +142,12 @@ export function resolveSeries(catalog, registry, { pdfExists } = {}) {
       siblingIds: series?.position != null ? orderedIds.get(series.id) : [],
       laterEditionId: e.later_edition_id ?? null,
       earlierEditionIds: (earlierByLater.get(e.id) ?? []).sort(bySequence),
+      alternativeVersionIds: [...(e.alternative_ids ?? [])].sort(bySequence),
+      registrySeries: (e.provenance?.registry_series ?? []).map((s) => ({
+        kind: s.kind,
+        text: s.text,
+        seriesId: nameIndex.get(String(s.name).toLowerCase()) ?? null,
+      })),
     });
   }
 
@@ -132,6 +162,7 @@ export function resolveSeries(catalog, registry, { pdfExists } = {}) {
       members: m.positioned,
       unplacedIds: m.unplaced,
       companionIds: rec.companion_ids ?? [],
+      relatedIds: rec.related_ids ?? [],
       compilationPdf: rec.compilation_pdf ?? null,
       planned: (rec.planned ?? []).map((p) => ({ position: p.position, title: p.title, subtitle: p.subtitle ?? null, source: p.source })),
       source: rec.source,

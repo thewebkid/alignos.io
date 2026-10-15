@@ -1,7 +1,7 @@
 # series-corridor-view Specification
 
 ## Purpose
-Defines how readers see a series as a corridor: a lattice filter that shows members in order with unwritten positions as quiet placeholders, and series context inside the reader.
+Defines how readers see a series as a corridor: a lattice filter that shows published members in order, links related works, and gives series context inside the reader. Unwritten positions are not shown.
 ## Requirements
 ### Requirement: Lattice series filter
 The lattice SHALL offer a series filter listing every registry series by canonical name. Selecting a series SHALL set `?series={series-id}` on `/lattice`, and loading `/lattice?series={series-id}` SHALL select it. While a series is selected, the lattice SHALL show a short header (series name, how many positions are published out of the total, and a link to any companion text or compilation PDF), then the corridor. The reading-progress filters SHALL continue to work within the corridor.

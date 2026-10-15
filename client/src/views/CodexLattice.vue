@@ -104,37 +104,30 @@ const browse = (value) => {
 
 const getCodexes = (ids) => ids.map(id => codexRegistry?.get(id)).filter(Boolean)
 
-// Positioned members and planned positions in position order; planned
-// positions render only here, never in the unfiltered lattice.
+// Published members only. Unwritten positions stay in the registry and are
+// not rendered.
 const corridor = computed(() => {
   const s = selectedSeries.value
   if (!s) return null
-  const slots = [
-    ...s.members.map(m => ({ position: m.position, item: codexRegistry?.get(m.id) })),
-    ...s.planned.map(p => ({
-      position: p.position,
-      item: {
-        planned: true,
-        id: `planned-${s.id}-${p.position}`,
-        position: p.position,
-        total: s.total,
-        title: p.title,
-        subtitle: p.subtitle
-      }
-    }))
-  ]
+  const positioned = s.members
+    .map(m => ({ position: m.position, item: codexRegistry?.get(m.id) }))
+    .filter(x => x.item)
+    .sort((a, b) => a.position - b.position)
+    .map(x => x.item)
   return {
     series: s,
-    positioned: slots.filter(x => x.item).sort((a, b) => a.position - b.position).map(x => x.item),
+    positioned,
     unplaced: getCodexes(s.unplacedIds),
-    companions: getCodexes(s.companionIds)
+    companions: getCodexes(s.companionIds),
+    related: getCodexes(s.relatedIds ?? [])
   }
 })
 
 const writtenLabel = computed(() => {
   const s = selectedSeries.value
   if (!s) return ''
-  return s.total ? `${s.written} of ${s.total} written` : `${s.written} written`
+  const n = s.members.length + s.unplacedIds.length
+  return n === 1 ? '1 codex' : `${n} codices`
 })
 
 // Get all codexes in sequence order
@@ -160,7 +153,7 @@ const collectionCodexes = computed(() => {
 // Codexes the progress chips count over: the corridor or collection when one is selected
 const scopeCodexes = computed(() => {
   const c = corridor.value
-  if (c) return [...c.positioned.filter(item => !item.planned), ...c.unplaced, ...c.companions]
+  if (c) return [...c.positioned, ...c.unplaced, ...c.companions]
   if (selectedCollection.value) return collectionCodexes.value
   return showNoSeries.value ? noSeriesCodexes.value : allCodexes.value
 })
@@ -190,10 +183,7 @@ const filteredCodexes = computed(() => {
   return scopeCodexes.value.filter(matchesFilter)
 })
 
-// Planned cards have no reading progress, so they show only under "All"
-const corridorPositioned = computed(() =>
-  corridor.value?.positioned.filter(item => (item.planned ? activeFilter.value === 'all' : matchesFilter(item))) ?? []
-)
+const corridorPositioned = computed(() => corridor.value?.positioned.filter(matchesFilter) ?? [])
 const corridorUnplaced = computed(() => corridor.value?.unplaced.filter(matchesFilter) ?? [])
 const corridorCompanions = computed(() => corridor.value?.companions.filter(matchesFilter) ?? [])
 const corridorEmpty = computed(() =>
@@ -282,6 +272,10 @@ const filterCounts = computed(() => {
               <span>{{ writtenLabel }}</span>
               <span v-for="c in corridor.companions" :key="c.id">
                 Companion:
+                <RouterLink :to="{ name: 'reader', params: { id: c.id } }">{{ c.title }}</RouterLink>
+              </span>
+              <span v-for="c in corridor.related" :key="c.id">
+                Related:
                 <RouterLink :to="{ name: 'reader', params: { id: c.id } }">{{ c.title }}</RouterLink>
               </span>
               <span v-if="corridor.series.compilationPdf">

@@ -1,7 +1,7 @@
 # series-registry Specification
 
 ## Purpose
-Gives every codex series one canonical record (name, alternate names, total, order, companions, compilation asset, and planned unwritten positions) so corridors are shown whole and their gaps stay visible instead of being inferred from free-text names.
+Gives every codex series one canonical record (name, alternate names, total, order, companions, related works, compilation asset, and planned unwritten positions) so corridors keep a cited order. Works James has named but not written stay recorded and are not shown in the lattice.
 ## Requirements
 ### Requirement: Series registry is the source of series identity
 The system SHALL keep a committed series registry with one record per series. Each record SHALL have a kebab-case `id` derived from its canonical name, the canonical `name`, `aliases` (other names found in James' text, possibly empty), `total` (or null when unknown), `companion_ids` (catalog ids of non-numbered companion texts, possibly empty), `compilation_pdf` (or null), `planned` positions (possibly empty), and a `source` note citing where the canonical name and order come from.

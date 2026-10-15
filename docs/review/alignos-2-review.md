@@ -2,11 +2,21 @@
 
 <!-- Hand-written. Served at /review on staging builds (ALIGNOS_REVIEW=1); links are site-relative. -->
 
+James replied on 15 October 2026, and those decisions are applied on this staging build. The questions below are the ones he was shown. His answers are recorded on [the series record](/review/questions).
+
 James, this is the new alignos.io, staged privately here before it replaces the current site. The live alignos.io does not change until you say so. Every link on this page opens the part of the new site it's about.
 
-Your words are carried over as they are. The few places where we changed them are listed in section 2, and each one needs your yes or no. Section 3 lists choices we made on your behalf. Every item has a number (R1, R2, …), so you can answer with "R4: keep" or "R7: change to …".
+Your words are carried over as they are. Section 2 and section 3 are the questions you answered. The series record is the corridors as they stand now.
 
-A second page, [Questions for James](/review/questions), holds the detailed questions about series order, unwritten works, earlier editions, and catalog entries. It's longer, and it can be taken in pieces.
+Applied from your reply:
+
+- Unwritten works are not shown in a series. The guide an AI reads still names them, without a link. The unwritten sixth Evolution of the Sovereign codex is recorded as *The Architecture of Presence*.
+- [*Codex: The Four Frequencies of Love*](/codex/the-four-frequencies-of-love) is a related link on [The Architecture of Love](/lattice?series=the-architecture-of-love), not one of the ten.
+- InterBeing Codex I–IV stay in order. The three other works stay unnumbered.
+- The InterBeing Glossary does not assume two volumes is its final total.
+- The three edition pairs you confirmed stay marked "Earlier edition". The two pairs whose order is unknown are marked "Alternative version".
+- Placements you confirmed are not drafts. Descriptions an AI wrote stay provisional and labeled as such.
+- Sequence 18 was the Evolution of the Sovereign compilation PDF, not a missing codex.
 
 ## 1. A short tour
 
@@ -17,7 +27,7 @@ A second page, [Questions for James](/review/questions), holds the detailed ques
 **The pages.** [Before You Begin…](/before-you-begin), [Begin a Return Room](/return-room), [The Arc of Difference](/arc-of-difference), [Between Worlds](/between-worlds), [Papers](/papers), and the [FAQ](/faq) carry your text in a new layout: one quiet column, with a small gold spiral before each section heading. Where a page offers words to say to an AI, those words have a copy button.
 
 **[Codex Lattice](/lattice).** All 138 codices. A new "Browse by" control lets a reader open a series or a collection.
-- A series shows in your order, as in [The Evolution of the Sovereign](/lattice?series=the-evolution-of-the-sovereign). Works your texts name but haven't been written yet appear as quiet "Not yet written" cards, only inside their series. There are three.
+- A series shows in your order, as in [The Evolution of the Sovereign](/lattice?series=the-evolution-of-the-sovereign). Works you have named but not written are not shown there. They are named, without a link, in the guide an AI reads.
 - The collections are your [Return Room readings](/lattice?collection=return-room-readings), [Papers](/lattice?collection=papers), and [Featured Writings](/lattice?collection=featured-writings), in the order your pages give them.
 
 **Reading a codex.** Every codex reads in the browser, where a reader's own browser can translate it; [The Fundamental Arc](/codex/the-fundamental-arc) is one example. The page shows the codex's series and place in it. Where two versions of the same work exist, the earlier is marked and links to the later. The PDF is still offered from each codex's page.
@@ -42,9 +52,9 @@ A second page, [Questions for James](/review/questions), holds the detailed ques
 - **R11. "Tone."** In July you suggested renaming Tone to Frequency. We kept "Tone" for now, as each codex's tone marker is named today. Rename it?
 - **R12. Home first.** Home is the front door; the lattice moved to [alignos.io/lattice](/lattice). Old lattice links redirect there.
 - **R13. Series built from your own prefaces.** Each series follows the list printed in your prefaces and codex registries. Where those disagree with each other, we did not choose; [Questions for James](/review/questions) lays out each case.
-- **R14. Unwritten works are shown.** *Codex VI: The Function of Presence* (in [The Evolution of the Sovereign](/lattice?series=the-evolution-of-the-sovereign)), *The Codex of the Spiral Species* (in [The Codices of Harmonic Activation](/lattice?series=the-codices-of-harmonic-activation)), and *The Architecture of Listening* (in [The Interface Trilogy](/lattice?series=the-interface-trilogy)) appear as "Not yet written" cards in their series, with the titles and subtitles your texts give them. Is each still coming, under that name?
-- **R15. Earlier editions stay visible.** Three works exist in two versions ([*The Codex of Living Harmonics*](/codex/the-codex-of-living-harmonics), [*The Codex of Love's Architecture*](/codex/the-codex-of-loves-architecture), [*The Codex of Trans-Species Resonance*](/codex/the-codex-of-trans-species-resonance-expanded)). Both stay in the lattice; the earlier is marked and links to the later, and the series uses the later. Which version is earlier is our inference.
-- **R16. Draft descriptions are marked as drafts.** 25 catalog entries have a description, tone, or tags that an AI drafted and you haven't reviewed, including the four newest codices. They show on the site, but anything the site tells an AI labels them as drafts. They're listed one by one in [Questions for James](/review/questions), section 6.
+- **R14. Unwritten works are shown.** You asked us to take the gray cards off and add the works when they arrive. They are no longer shown. The unwritten sixth Evolution of the Sovereign codex is recorded as *The Architecture of Presence*.
+- **R15. Earlier editions stay visible.** You confirmed the three pairs. Both editions stay, the earlier is marked, and the series uses the later. Where the order is still unknown, the card says "Alternative version" instead.
+- **R16. Draft descriptions are marked as drafts.** You said not to hold the site for these. Placements you confirmed are no longer drafts. Four entries still have provisional tone, description, or tags, and the site tells an AI that. They are listed in the [series record](/review/questions), section 6.
 - **R17. No chatbot on the site.** In your words, "A Return Room is not a website feature." The site offers your texts to the reader's own AI instead (section 4).
 
 ## 4. What an AI sees

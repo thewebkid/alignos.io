@@ -62,6 +62,8 @@ export class Codex {
   siblingIds;
   laterEditionId;
   earlierEditionIds;
+  alternativeVersionIds;
+  registrySeries;
   keywords;
   glossaryTerms;
   _wordCount;
@@ -103,6 +105,8 @@ export class Codex {
     // Editions
     this.laterEditionId = data.laterEditionId ?? null;
     this.earlierEditionIds = data.earlierEditionIds ?? [];
+    this.alternativeVersionIds = data.alternativeVersionIds ?? [];
+    this.registrySeries = data.registrySeries ?? [];
 
     // Semantic metadata
     this.keywords = data.keywords ?? [];
@@ -463,6 +467,8 @@ export class Codex {
       siblingIds: this.siblingIds,
       laterEditionId: this.laterEditionId,
       earlierEditionIds: this.earlierEditionIds,
+      alternativeVersionIds: this.alternativeVersionIds,
+      registrySeries: this.registrySeries,
       keywords: this.keywords,
       glossaryTerms: this.glossaryTerms,
       registry: this.registry,

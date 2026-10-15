@@ -106,7 +106,10 @@ for (const col of collections) {
 }
 
 const publishedSeries = allSeries.filter((s) => s.members.length || s.unplacedIds.length);
-const seriesLabel = (s) => (s.total ? `${s.written} of ${s.total} written` : `${s.written} written`);
+const seriesLabel = (s) => {
+  const n = s.members.length + (s.unplacedIds?.length ?? 0);
+  return n === 1 ? '1 codex' : `${n} codices`;
+};
 
 // --- Bundles ----------------------------------------------------------------
 
@@ -310,6 +313,7 @@ const llmsJson = {
     pullQuote: c.pullQuote,
     description: c.description,
     metadataStatus: c.metadataStatus,
+    alternativeVersionIds: c.alternativeVersionIds ?? [],
     readerUrl: codexUrl(c.id),
     markdownUrl: mdUrl(c.id),
   })),
@@ -325,6 +329,7 @@ const llmsJson = {
         ? { position: e.position, title: e.planned.title, status: 'not yet written' }
         : { position: e.position, id: e.codex.id, title: e.codex.title, status: 'published', readerUrl: codexUrl(e.codex.id) }),
     companionIds: s.companionIds,
+    relatedIds: s.relatedIds ?? [],
   })),
   collections: collections.map((c) => ({
     id: c.id,
