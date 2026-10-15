@@ -1,6 +1,7 @@
 <script setup>
 // PageView — James' framing pages from client/src/content/pages/{slug}.md.
 // Route meta: page (slug), layout ('threshold' | 'standard'), next (onward action).
+// A `markdown` prop replaces the slug lookup (ReviewView).
 import { computed } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import PromptBlock from '../components/PromptBlock.vue'
@@ -9,15 +10,18 @@ import { parsePageMarkdown } from '../lib/markdown.js'
 
 const pages = import.meta.glob('../content/pages/*.md', { query: '?raw', import: 'default', eager: true })
 
+const props = defineProps({ markdown: { type: String, default: null } })
+
 const route = useRoute()
 const router = useRouter()
 
-const source = computed(() => pages[`../content/pages/${route.meta.page}.md`] ?? '')
+const source = computed(() => props.markdown ?? pages[`../content/pages/${route.meta.page}.md`] ?? '')
 const segments = computed(() => parsePageMarkdown(source.value))
 const layout = computed(() => route.meta.layout ?? 'standard')
 const next = computed(() => route.meta.next ?? null)
 
-const isInternal = (href) => href?.startsWith('/') && !href.startsWith('/pdf/')
+// Files (/pdf/…, /llms.txt, /bundles/….md) load normally; only app routes go through the router
+const isInternal = (href) => href?.startsWith('/') && !/\.[a-z0-9]+$/i.test(href.split(/[?#]/)[0])
 
 // Internal links inside rendered markdown navigate with the router
 const handleContentClick = (e) => {

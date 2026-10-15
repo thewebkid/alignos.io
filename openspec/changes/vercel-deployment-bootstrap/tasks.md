@@ -53,6 +53,7 @@
 
 - [x] 7.1 Run a full build locally (`cd client && npm run build`) to confirm no build errors
 - [ ] 7.2 Deploy to Vercel production (`vercel --prod` or merge to `master`)
+- [ ] 7.2a Before the DNS move: remove `ALIGNOS_REVIEW` from the Vercel project (review pages, `review-route`), redeploy, and confirm `/review` redirects home
 - [ ] 7.3 Point `alignos.io` DNS to Vercel (add domain in Vercel dashboard, update DNS records)
 - [ ] 7.4 Confirm SSL certificate is provisioned for `alignos.io`
 - [ ] 7.5 Smoke test: home page loads, codex reader works, search works, `/api/codex-lattice-meta` returns JSON

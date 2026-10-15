@@ -1957,5 +1957,24 @@
     "api/codex/[id].js": {
       "includeFiles": "client/src/generated/codex-lattice.json"
     }
-  }
+  },
+  "headers": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "suf": ".vercel.app"
+          }
+        }
+      ],
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        }
+      ]
+    }
+  ]
 }
