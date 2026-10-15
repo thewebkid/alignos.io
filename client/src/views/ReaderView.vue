@@ -1,6 +1,7 @@
 <script setup>
 import { ref, computed, inject, onMounted, onUnmounted, watch, nextTick } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
+import { useHead } from '@unhead/vue'
 import { useReadingProgressStore } from '../stores/readingProgress'
 import { BDropdown, BDropdownItem } from 'bootstrap-vue-next'
 import GlossaryPopover from '../components/GlossaryPopover.vue'
@@ -56,12 +57,9 @@ const contentRef = ref(null)
 const scrollPercent = ref(0)
 const showCopied = ref(false)
 
-// Update document title (client-side only)
-watch(codex, (newCodex) => {
-  if (newCodex && typeof document !== 'undefined') {
-    document.title = `${newCodex.title} | AlignOS`
-  }
-}, { immediate: true })
+useHead({
+  title: computed(() => codex.value?.title ?? null),
+})
 
 // Get the scrollable container (main-content element from App.vue)
 const getScrollContainer = () => {
@@ -179,7 +177,7 @@ const goBack = () => {
   if (typeof window !== 'undefined' && window.history.length > 1) {
     router.back()
   } else {
-    router.push('/')
+    router.push({ name: 'lattice' })
   }
 }
 
@@ -338,7 +336,7 @@ const nextCodex = computed(() => {
 
           <!-- Back to browse -->
           <div class="end-actions">
-            <RouterLink to="/" class="btn-browse">
+            <RouterLink :to="{ name: 'lattice' }" class="btn-browse">
               Return to Codex Lattice
             </RouterLink>
           </div>
@@ -351,7 +349,7 @@ const nextCodex = computed(() => {
       <div class="container text-center py-5">
         <h2>Codex not found</h2>
         <p>The codex you're looking for doesn't exist.</p>
-        <RouterLink to="/" class="btn btn-primary">Browse Codexes</RouterLink>
+        <RouterLink :to="{ name: 'lattice' }" class="btn btn-primary">Browse Codexes</RouterLink>
       </div>
     </div>
 

@@ -1,6 +1,7 @@
 <script setup>
-import { provide, ref, inject, onBeforeMount, onMounted } from 'vue'
-import { RouterView } from 'vue-router'
+import { provide, ref, inject, computed, onBeforeMount, onMounted } from 'vue'
+import { RouterView, useRoute } from 'vue-router'
+import { useHead } from '@unhead/vue'
 import { Analytics } from '@vercel/analytics/vue'
 import AppHeader from './components/AppHeader.vue'
 import AppFooter from './components/AppFooter.vue'
@@ -8,6 +9,13 @@ import SearchOverlay from './components/SearchOverlay.vue'
 import { initThemeEarly } from './composables/useTheme'
 import { BrowserCodex } from './lib/codex-browser.js'
 import { createGlossaryFromRegistry } from './lib/glossary.js'
+
+const route = useRoute()
+
+useHead({
+  titleTemplate: (title) => (title ? `${title} | Alignos` : 'Alignos'),
+  title: computed(() => route.meta.title ?? null),
+})
 
 // Initialize theme as early as possible to prevent flash
 onBeforeMount(() => {

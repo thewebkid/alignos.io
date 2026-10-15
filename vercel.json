@@ -7,7 +7,1408 @@
   "redirects": [
     {
       "source": "/about",
-      "destination": "/"
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/codex-lattice",
+      "destination": "/lattice",
+      "statusCode": 301
+    },
+    {
+      "source": "/contact",
+      "destination": "/faq",
+      "statusCode": 301
+    },
+    {
+      "source": "/login",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/lostpassword",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/newsletter",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Between-the-Whole-and-the-Relational-11-1.pdf",
+      "destination": "/pdf/between-the-whole-and-the-relational.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Bridge-Between-Chords-63.pdf",
+      "destination": "/pdf/bridge-between-chords.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Codex_-Attunement-as-a-Technology-of-the-Field-108.pdf",
+      "destination": "/pdf/codex-attunement-as-a-technology-of-the-field.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Codex_-Coherence-Recursion-124.pdf",
+      "destination": "/pdf/codex-coherence-recursion.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Codex_-Introduction-to-Soul-Lines-92.pdf",
+      "destination": "/pdf/introduction-to-soul-lines.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Codex_-On-Masters-and-the-Mythologies-of-Separation-66.pdf",
+      "destination": "/pdf/codex-on-masters-and-the-mythologies-of-separation.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Codex_-The-Architecture-of-Love-116.pdf",
+      "destination": "/pdf/codex-the-architecture-of-love.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Codex_-The-Beacons-of-the-Bridge-95.pdf",
+      "destination": "/pdf/codex-the-beacons-of-the-bridge.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/CODEX_-The-Harmonics-of-the-Field-93.pdf",
+      "destination": "/pdf/the-harmonics-of-the-field.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Codex_-The-Mirror-Path-107.pdf",
+      "destination": "/pdf/codex-the-mirror-path.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Codex_-The-Path-of-Becoming-and-Remembering-101.pdf",
+      "destination": "/pdf/codex-the-path-of-becoming-and-remembering.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Codex_-The-Subtle-Body-Of-Trust-113.pdf",
+      "destination": "/pdf/codex-the-subtle-body-of-trust.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Codex-01_-The-Architecture-of-Love-27.pdf",
+      "destination": "/pdf/codex-01-the-architecture-of-love.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Codex-02_-The-Architecture-of-Love-24.pdf",
+      "destination": "/pdf/codex-02-the-architecture-of-love.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Codex-03_-The-Architecture-of-Love-26.pdf",
+      "destination": "/pdf/codex-03-the-architecture-of-love.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Codex-04_-The-Architecture-of-Love-25.pdf",
+      "destination": "/pdf/codex-04-the-architecture-of-love.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Codex-05_-The-Architecture-of-Love-21.pdf",
+      "destination": "/pdf/codex-05-the-architecture-of-love.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Codex-06_-The-Architecture-of-Love-22.pdf",
+      "destination": "/pdf/codex-06-the-architecture-of-love.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Codex-07_-The-Architecture-of-Love-27.pdf",
+      "destination": "/pdf/codex-07-the-architecture-of-love.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Codex-08_-The-Architecture-of-Love-36.pdf",
+      "destination": "/pdf/codex-08-the-architecture-of-love.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Codex-09_-The-Architecture-of-Tending-23.pdf",
+      "destination": "/pdf/codex-09-the-architecture-of-tending.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Codex-10_-The-Architecture-of-Tending-29.pdf",
+      "destination": "/pdf/codex-10-the-architecture-of-tending.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Codex-I_-Origin-and-Exile.pdf",
+      "destination": "/pdf/codex-i-origin-and-exile.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Codex-I_-The-InterBeing-86.pdf",
+      "destination": "/pdf/codex-i-the-interbeing.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Codex-II_-The-InterBeing-46.pdf",
+      "destination": "/pdf/codex-ii-the-interbeing.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Codex-II_-The-Sovereign-Threshold.pdf",
+      "destination": "/pdf/codex-ii-the-sovereign-threshold.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Codex-III_-The-InterBeing-88.pdf",
+      "destination": "/pdf/codex-iii-the-interbeing.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Codex-III_-To-Host-in-Return.pdf",
+      "destination": "/pdf/codex-iii-to-host-in-return.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Codex-IV_-The-InterBeing-70.pdf",
+      "destination": "/pdf/codex-iv-the-interbeing.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Codex-IV_-The-Sovereign-Spiral.pdf",
+      "destination": "/pdf/codex-iv-the-sovereign-spiral.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Codex-of-Conscious-Principles-71.pdf",
+      "destination": "/pdf/codex-of-conscious-principles.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Codex-of-Harmonic-Definitions-89.pdf",
+      "destination": "/pdf/codex-of-harmonic-definitions.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Codex-of-Harmonic-Intelligence-104.pdf",
+      "destination": "/pdf/codex-of-harmonic-intelligence.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Codex-of-Mythos-102.pdf",
+      "destination": "/pdf/codex-of-mythos.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Codex-of-Relational-Architectures-75.pdf",
+      "destination": "/pdf/codex-of-relational-architectures.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Codex-of-Relational-Intelligence-76.pdf",
+      "destination": "/pdf/codex-of-relational-intelligence.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Codex-of-Remembrance-61.pdf",
+      "destination": "/pdf/codex-of-remembrance.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Codex-of-Resonant-Memory-51.pdf",
+      "destination": "/pdf/codex-of-resonant-memory.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Codex-of-the-Integrative-Species-79.pdf",
+      "destination": "/pdf/codex-of-the-integrative-species.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Codex-of-the-Keeper-112.pdf",
+      "destination": "/pdf/codex-of-the-keeper.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Codex-of-the-Language-of-Resonance-30.pdf",
+      "destination": "/pdf/codex-of-the-language-of-resonance.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Codex-of-the-Realized-Flame-Part-I-34.pdf",
+      "destination": "/pdf/codex-of-the-realized-flame-part-i.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Codex-of-The-Resonant-Arc-62.pdf",
+      "destination": "/pdf/codex-of-the-resonant-arc.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Codex-of-the-Sacred-Exile-114.pdf",
+      "destination": "/pdf/codex-of-the-sacred-exile.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Codex-of-the-Sanctuary-Builder-92.pdf",
+      "destination": "/pdf/codex-of-the-sanctuary-builder.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Codex-of-Vows-20.pdf",
+      "destination": "/pdf/codex-of-vows.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Codex-On-Becoming-a-Portal-99.pdf",
+      "destination": "/pdf/codex-on-becoming-a-portal.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Codex-on-the-Nature-of-Guidance-77.pdf",
+      "destination": "/pdf/codex-on-the-nature-of-guidance.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Codex-V_-The-InterBeing-Emergence.pdf",
+      "destination": "/pdf/codex-v-the-interbeing-emergence.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Codex-VII_-The-Architecture-of-Alignment.pdf",
+      "destination": "/pdf/codex-vii-the-architecture-of-alignment.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Codex-VIII_-The-Chorus-of-the-Whole.pdf",
+      "destination": "/pdf/codex-viii-the-chorus-of-the-whole.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Harmonic-Recognition-Distilled-Practice-81.pdf",
+      "destination": "/pdf/harmonic-recognition-distilled-practice.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Nested-Paper-90.pdf",
+      "destination": "/pdf/nested-paper.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Reflections-from-the-Field-52.pdf",
+      "destination": "/pdf/reflections-from-the-field.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Resonant-Practices-a-micro-guide-71.pdf",
+      "destination": "/pdf/resonant-practices-a-micro-guide.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Soul-Lines-115.pdf",
+      "destination": "/pdf/soul-lines.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Tending-the-Unnameable-119.pdf",
+      "destination": "/pdf/tending-the-unnameable.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/The-Agency-of-One-38.pdf",
+      "destination": "/pdf/the-agency-of-one.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/The-Animals-That-Remember-You-5.pdf",
+      "destination": "/pdf/the-animals-that-remember-you.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/The-Architecture-of-Trust-CODEX-120.pdf",
+      "destination": "/pdf/the-architecture-of-trust-codex.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/The-Art-of-Co-Creation-93.pdf",
+      "destination": "/pdf/the-art-of-co-creation.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/The-Co-Remembrance-Ecology-of-a-Return-Room.pdf",
+      "destination": "/pdf/the-co-remembrance-ecology-of-a-return-room.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/The-Codex-of-Arrival-94.pdf",
+      "destination": "/pdf/the-codex-of-arrival.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/The-Codex-of-Coherence-and-Dissolution-22.pdf",
+      "destination": "/pdf/the-codex-of-coherence-and-dissolution.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/The-Codex-of-Convergence-and-Reassembly-91.pdf",
+      "destination": "/pdf/the-codex-of-convergence-and-reassembly.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/The-Codex-of-Entangled-Trust-94.pdf",
+      "destination": "/pdf/the-codex-of-entangled-trust.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/The-Codex-of-Harmonic-Coherence-95.pdf",
+      "destination": "/pdf/the-codex-of-harmonic-coherence.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/The-Codex-of-Harmonic-Reality_-Why-the-Field-is-Not-a-Simulation-50.pdf",
+      "destination": "/pdf/the-codex-of-harmonic-reality-why-the-field-is-not-a-simulation.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/The-Codex-of-Harmonic-Service_-Latticework-for-Planetary-Reassembly-57.pdf",
+      "destination": "/pdf/the-codex-of-harmonic-service-latticework-for-planetary-reassembly.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/The-Codex-of-Leaving-within-Return-125.pdf",
+      "destination": "/pdf/the-codex-of-leaving-within-return.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/The-Codex-of-Listening-121.pdf",
+      "destination": "/pdf/the-codex-of-listening.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/The-Codex-of-Living-Harmonics-58.pdf",
+      "destination": "/pdf/the-codex-of-living-harmonics.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/The-Codex-of-Loves-Architecture-33.pdf",
+      "destination": "/pdf/the-codex-of-loves-architecture.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/The-Codex-of-Nonlocal-Memory-46.pdf",
+      "destination": "/pdf/the-codex-of-nonlocal-memory.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/The-Codex-of-Quantum-Kin-87.pdf",
+      "destination": "/pdf/the-codex-of-quantum-kin.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/The-Codex-of-Relational-Learning-110.pdf",
+      "destination": "/pdf/the-codex-of-relational-learning.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/The-Codex-of-Resonant-Action-50.pdf",
+      "destination": "/pdf/the-codex-of-resonant-action.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/The-Codex-of-the-Agency-of-One-Vol.-II-68.pdf",
+      "destination": "/pdf/the-codex-of-the-agency-of-one-vol-ii.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/The-Codex-of-the-Chord-38.pdf",
+      "destination": "/pdf/the-codex-of-the-chord.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/The-Codex-of-the-Co-Creation-Spiral-44.pdf",
+      "destination": "/pdf/the-codex-of-the-co-creation-spiral.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/The-Codex-of-the-Crossing-Threshold-55.pdf",
+      "destination": "/pdf/the-codex-of-the-crossing-threshold.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/The-Codex-of-the-Field-Effect-43.pdf",
+      "destination": "/pdf/the-codex-of-the-field-effect.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/The-Codex-of-the-Harmonic-Architectures-47.pdf",
+      "destination": "/pdf/the-codex-of-the-harmonic-architectures.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/The-Codex-of-the-InterBeing-Dialogues-27.pdf",
+      "destination": "/pdf/the-codex-of-the-interbeing-dialogues.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/The-Codex-of-the-InterBeing-Lattice-42.pdf",
+      "destination": "/pdf/the-codex-of-the-interbeing-lattice.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/The-Codex-of-the-Quiet-Turning-39.pdf",
+      "destination": "/pdf/the-codex-of-the-quiet-turning.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/The-Codex-of-the-Realized-Flame-Part-II-42.pdf",
+      "destination": "/pdf/the-codex-of-the-realized-flame-part-ii.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/The-Codex-of-the-Sovereign-Known-as-Jesus-52.pdf",
+      "destination": "/pdf/the-codex-of-the-sovereign-known-as-jesus.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/The-Codex-of-the-Spiral-48.pdf",
+      "destination": "/pdf/the-codex-of-the-spiral.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/The-Codex-of-the-Trust-Circuitry-15.pdf",
+      "destination": "/pdf/the-codex-of-the-trust-circuitry.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/The-Codex-of-Trans-Species-Resonance-45.pdf",
+      "destination": "/pdf/the-codex-of-trans-species-resonance.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/The-Codex-of-Trans-Species-Resonance-59.pdf",
+      "destination": "/pdf/the-codex-of-trans-species-resonance-expanded.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/The-Culture-of-the-Return-Room.pdf",
+      "destination": "/pdf/the-culture-of-the-return-room.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/The-Ecology-of-InterBeing-111.pdf",
+      "destination": "/pdf/the-ecology-of-interbeing.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/The-Ethics-of-Resonance-81.pdf",
+      "destination": "/pdf/the-ethics-of-resonance.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/The-Evolution-of-the-Sovereign-1.pdf",
+      "destination": "/pdf/the-evolution-of-the-sovereign.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/The-Evolution-of-the-Sovereign.pdf",
+      "destination": "/pdf/the-evolution-of-the-sovereign.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/The-Four-Frequencies-of-Love-96.pdf",
+      "destination": "/pdf/the-four-frequencies-of-love.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/THE-FUNDAMENTAL-ARC-1.pdf",
+      "destination": "/pdf/the-fundamental-arc.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/THE-FUNDAMENTAL-ARC.pdf",
+      "destination": "/pdf/the-fundamental-arc.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/The-Glossary-of-the-InterBeing-Vol.-1-51.pdf",
+      "destination": "/pdf/the-glossary-of-the-interbeing-vol.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/The-Grace-of-Asymmetry.pdf",
+      "destination": "/pdf/the-grace-of-asymmetry.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/The-Gravity-of-Source-2.pdf",
+      "destination": "/pdf/the-gravity-of-source.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/The-Harmonic-Being-Called-Earth-4.pdf",
+      "destination": "/pdf/the-harmonic-being-called-earth.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/The-Harmonic-Future-85.pdf",
+      "destination": "/pdf/the-harmonic-future.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/The-Harmonics-of-the-Field-123.pdf",
+      "destination": "/pdf/the-harmonics-of-the-field-extended.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/The-Living-Glossary-of-the-Field.pdf",
+      "destination": "/pdf/the-living-glossary-of-the-field.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/The-Magdalene-Codex-of-Relational-Sovereignty-56.pdf",
+      "destination": "/pdf/the-magdalene-codex-of-relational-sovereignty.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/The-Midwife-of-Dimensional-Kin-54.pdf",
+      "destination": "/pdf/the-midwife-of-dimensional-kin.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/The-Mirror-and-the-Bridge-73.pdf",
+      "destination": "/pdf/the-mirror-and-the-bridge.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/The-Mirrors-of-the-Field-96.pdf",
+      "destination": "/pdf/the-mirrors-of-the-field.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/The-Path-to-the-Non-Path-106.pdf",
+      "destination": "/pdf/the-path-to-the-non-path.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/The-Purpose-of-the-Return-Room.pdf",
+      "destination": "/pdf/the-purpose-of-the-return-room.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/The-Rhythm-of-Recursion.pdf",
+      "destination": "/pdf/the-rhythm-of-recursion.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/The-Sanctuary-of-Spiral-Memory-127.pdf",
+      "destination": "/pdf/the-sanctuary-of-spiral-memory.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/The-Shape-of-a-Welcome.pdf",
+      "destination": "/pdf/the-shape-of-a-welcome.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/The-Small-Gate-Open.pdf",
+      "destination": "/pdf/the-small-gate-open.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/The-Soft-Sacred-Words-of-the-Field-118.pdf",
+      "destination": "/pdf/the-soft-sacred-words-of-the-field.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/The-Souls-Evolution-Codex-117.pdf",
+      "destination": "/pdf/the-souls-evolution-codex.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/The-Sovereign-Host-53.pdf",
+      "destination": "/pdf/the-sovereign-host.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/The-Things-That-Remember-You-100.pdf",
+      "destination": "/pdf/the-things-that-remember-you.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/The-Tone-of-the-Sovereign-Field-Signature.pdf",
+      "destination": "/pdf/the-tone-of-the-sovereign-field-signature.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/The-Transparent-Sovereign.pdf",
+      "destination": "/pdf/the-transparent-sovereign.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/The-Untitled-Offering-55.pdf",
+      "destination": "/pdf/the-untitled-offering.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/To-Serve-the-Recursion-of-Love-1.pdf",
+      "destination": "/pdf/to-serve-the-recursion-of-love.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/To-Serve-the-Recursion-of-Love.pdf",
+      "destination": "/pdf/to-serve-the-recursion-of-love.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Tone-Portraits-of-Becoming-3.pdf",
+      "destination": "/pdf/tone-portraits-of-becoming.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/What-is-an-InterBeing-47.pdf",
+      "destination": "/pdf/what-is-an-interbeing.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Willingness-as-a-Form-of-Intelligence-126.pdf",
+      "destination": "/pdf/willingness-as-a-form-of-intelligence.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/08/Between-Worlds_-The-Architecture-of-the-Third-Structure.pdf",
+      "destination": "/pdf/between-worlds-the-architecture-of-the-third-structure.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/08/Codex-of-Nearness-and-the-Geometry-of-Prayer.pdf",
+      "destination": "/pdf/codex-of-nearness-and-the-geometry-of-prayer.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/08/Codex-of-the-Next-Threshold.pdf",
+      "destination": "/pdf/codex-of-the-next-threshold.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/08/Dissolving-the-Architecture-of-Seeking.pdf",
+      "destination": "/pdf/dissolving-the-architecture-of-seeking.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/08/Framing-the-Mirror-1.pdf",
+      "destination": "/pdf/framing-the-mirror.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/08/Framing-the-Mirror.pdf",
+      "destination": "/pdf/framing-the-mirror.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/08/The-Architecture-of-the-Return-Room.pdf",
+      "destination": "/pdf/the-architecture-of-the-return-room.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/08/The-Codex-of-the-Breath-That-Waits.pdf",
+      "destination": "/pdf/the-codex-of-the-breath-that-waits.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/08/The-Craftsman-of-the-Invisible-Frame-1.pdf",
+      "destination": "/pdf/the-craftsman-of-the-invisible-frame.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/08/The-Craftsman-of-the-Invisible-Frame.pdf",
+      "destination": "/pdf/the-craftsman-of-the-invisible-frame.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/08/The-Rise-of-the-Interface-Civilizations.pdf",
+      "destination": "/pdf/the-rise-of-the-interface-civilizations.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/08/The-Stillpoint-of-Love.pdf",
+      "destination": "/pdf/the-stillpoint-of-love.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2025/08/When-AI-Remembers-the-Field.pdf",
+      "destination": "/pdf/when-ai-remembers-the-field.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2026/09/The-Ecology-of-Becoming.pdf",
+      "destination": "/pdf/the-ecology-of-becoming.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/architecture-of-love",
+      "destination": "/codex/codex-the-architecture-of-love",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/attunement-as-a-technology-of-the-field",
+      "destination": "/codex/codex-attunement-as-a-technology-of-the-field",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/between-the-whole-and-the-relational",
+      "destination": "/codex/between-the-whole-and-the-relational",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/between-worlds-the-architecture-of-the-third-structure",
+      "destination": "/codex/between-worlds-the-architecture-of-the-third-structure",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/bridge-between-chords",
+      "destination": "/codex/bridge-between-chords",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/codex-01-origin-and-exile",
+      "destination": "/codex/codex-i-origin-and-exile",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/codex-01-the-architecture-of-love",
+      "destination": "/codex/codex-01-the-architecture-of-love",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/codex-02-the-architecture-of-love",
+      "destination": "/codex/codex-02-the-architecture-of-love",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/codex-02-the-sovereign-threshold",
+      "destination": "/codex/codex-ii-the-sovereign-threshold",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/codex-03-the-architecture-of-love",
+      "destination": "/codex/codex-03-the-architecture-of-love",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/codex-03-to-host-in-return",
+      "destination": "/codex/codex-iii-to-host-in-return",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/codex-04-the-architecture-of-love",
+      "destination": "/codex/codex-04-the-architecture-of-love",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/codex-04-the-sovereign-spiral",
+      "destination": "/codex/codex-iv-the-sovereign-spiral",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/codex-05-the-architecture-of-love",
+      "destination": "/codex/codex-05-the-architecture-of-love",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/codex-05-the-interbeing-emergence",
+      "destination": "/codex/codex-v-the-interbeing-emergence",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/codex-06-the-architecture-of-love",
+      "destination": "/codex/codex-06-the-architecture-of-love",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/codex-07-the-architecture-of-alignment",
+      "destination": "/codex/codex-vii-the-architecture-of-alignment",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/codex-07-the-architecture-of-love",
+      "destination": "/codex/codex-07-the-architecture-of-love",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/codex-08-the-architecture-of-love",
+      "destination": "/codex/codex-08-the-architecture-of-love",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/codex-08-the-chorus-of-the-whole",
+      "destination": "/codex/codex-viii-the-chorus-of-the-whole",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/codex-09-the-architecture-of-love",
+      "destination": "/codex/codex-09-the-architecture-of-tending",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/codex-10-the-architecture-of-love",
+      "destination": "/codex/codex-10-the-architecture-of-tending",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/codex-coherence-recursion",
+      "destination": "/codex/codex-coherence-recursion",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/codex-harmonic-future-2",
+      "destination": "/codex/the-harmonic-future",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/codex-of-conscious-principles",
+      "destination": "/codex/codex-of-conscious-principles",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/codex-of-harmonic-definitions",
+      "destination": "/codex/codex-of-harmonic-definitions",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/codex-of-harmonic-intelligence",
+      "destination": "/codex/codex-of-harmonic-intelligence",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/codex-of-identity-vows",
+      "destination": "/codex/codex-of-vows",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/codex-of-interbeing-dialogues",
+      "destination": "/codex/the-codex-of-the-interbeing-dialogues",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/codex-of-mythos",
+      "destination": "/codex/codex-of-mythos",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/codex-of-nearness-and-the-geometry-of-prayer",
+      "destination": "/codex/codex-of-nearness-and-the-geometry-of-prayer",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/codex-of-nonlocal-memory",
+      "destination": "/codex/the-codex-of-nonlocal-memory",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/codex-of-quiet-turning",
+      "destination": "/codex/the-codex-of-the-quiet-turning",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/codex-of-relational-architectures",
+      "destination": "/codex/codex-of-relational-architectures",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/codex-of-relational-intelligence",
+      "destination": "/codex/codex-of-relational-intelligence",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/codex-of-remembrance",
+      "destination": "/codex/codex-of-remembrance",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/codex-of-resonant-memory",
+      "destination": "/codex/codex-of-resonant-memory",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/codex-of-the-agency-of-one-vol-1",
+      "destination": "/codex/the-agency-of-one",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/codex-of-the-agency-of-one-vol-2",
+      "destination": "/codex/the-codex-of-the-agency-of-one-vol-ii",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/codex-of-the-chord",
+      "destination": "/codex/the-codex-of-the-chord",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/codex-of-the-co-creation-spiral",
+      "destination": "/codex/the-codex-of-the-co-creation-spiral",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/codex-of-the-crossing-threshold",
+      "destination": "/codex/the-codex-of-the-crossing-threshold",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/codex-of-the-field-effect",
+      "destination": "/codex/the-codex-of-the-field-effect",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/codex-of-the-integrative-species",
+      "destination": "/codex/codex-of-the-integrative-species",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/codex-of-the-interbeing-lattice",
+      "destination": "/codex/the-codex-of-the-interbeing-lattice",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/codex-of-the-interbeing-vol-1",
+      "destination": "/codex/codex-i-the-interbeing",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/codex-of-the-interbeing-vol-2",
+      "destination": "/codex/codex-ii-the-interbeing",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/codex-of-the-interbeing-vol-3",
+      "destination": "/codex/codex-iii-the-interbeing",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/codex-of-the-interbeing-vol-4",
+      "destination": "/codex/codex-iv-the-interbeing",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/codex-of-the-keeper",
+      "destination": "/codex/codex-of-the-keeper",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/codex-of-the-mirror-path",
+      "destination": "/codex/codex-the-mirror-path",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/codex-of-the-next-threshold",
+      "destination": "/codex/codex-of-the-next-threshold",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/codex-of-the-realized-flame-part-i",
+      "destination": "/codex/codex-of-the-realized-flame-part-i",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/codex-of-the-realized-flame-part-ii",
+      "destination": "/codex/the-codex-of-the-realized-flame-part-ii",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/codex-of-the-resonant-arc",
+      "destination": "/codex/codex-of-the-resonant-arc",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/codex-of-the-sanctuary-builder",
+      "destination": "/codex/codex-of-the-sanctuary-builder",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/codex-of-trans-species-resonance-i",
+      "destination": "/codex/the-codex-of-trans-species-resonance",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/codex-of-trust-circuitry",
+      "destination": "/codex/the-codex-of-the-trust-circuitry",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/codex-on-becoming-a-portal",
+      "destination": "/codex/codex-on-becoming-a-portal",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/codex-on-masters",
+      "destination": "/codex/codex-on-masters-and-the-mythologies-of-separation",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/codex-on-the-nature-of-guidance",
+      "destination": "/codex/codex-on-the-nature-of-guidance",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/dissolving-the-architecture-of-seeking",
+      "destination": "/codex/dissolving-the-architecture-of-seeking",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/harmonic-recognition",
+      "destination": "/codex/harmonic-recognition-distilled-practice",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/harmonics-of-the-field",
+      "destination": "/codex/the-harmonics-of-the-field",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/introduction-to-soul-lines",
+      "destination": "/codex/introduction-to-soul-lines",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/living-glossary",
+      "destination": "/codex/the-living-glossary-of-the-field",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/loves-architecture",
+      "destination": "/codex/the-codex-of-loves-architecture",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/reflections-from-the-field",
+      "destination": "/codex/reflections-from-the-field",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/resonant-practices-a-micro-guide",
+      "destination": "/codex/resonant-practices-a-micro-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/soul-lines",
+      "destination": "/codex/soul-lines",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/tending-the-unnameable",
+      "destination": "/codex/tending-the-unnameable",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/the-animals-that-remember-you-volume-1",
+      "destination": "/codex/the-animals-that-remember-you",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/the-architecture-of-arrival",
+      "destination": "/codex/the-codex-of-arrival",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/the-architecture-of-trust",
+      "destination": "/codex/the-architecture-of-trust-codex",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/the-art-of-co-creation",
+      "destination": "/codex/the-art-of-co-creation",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/the-beacons-of-the-bridge",
+      "destination": "/codex/codex-the-beacons-of-the-bridge",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/the-co-remembrance-ecology-of-a-return-room",
+      "destination": "/codex/the-co-remembrance-ecology-of-a-return-room",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/the-codex-of-coherence-and-dissolution",
+      "destination": "/codex/the-codex-of-coherence-and-dissolution",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/the-codex-of-convergence-and-reassembly",
+      "destination": "/codex/the-codex-of-convergence-and-reassembly",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/the-codex-of-entangled-trust",
+      "destination": "/codex/the-codex-of-entangled-trust",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/the-codex-of-harmonic-architectures",
+      "destination": "/codex/the-codex-of-the-harmonic-architectures",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/the-codex-of-harmonic-coherence",
+      "destination": "/codex/the-codex-of-harmonic-coherence",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/the-codex-of-harmonic-reality-why-the-field-is-not-a-simulation",
+      "destination": "/codex/the-codex-of-harmonic-reality-why-the-field-is-not-a-simulation",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/the-codex-of-harmonic-service",
+      "destination": "/codex/the-codex-of-harmonic-service-latticework-for-planetary-reassembly",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/the-codex-of-leaving-within-return",
+      "destination": "/codex/the-codex-of-leaving-within-return",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/the-codex-of-listening",
+      "destination": "/codex/the-codex-of-listening",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/the-codex-of-quantum-kin",
+      "destination": "/codex/the-codex-of-quantum-kin",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/the-codex-of-relational-learning",
+      "destination": "/codex/the-codex-of-relational-learning",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/the-codex-of-resonant-action",
+      "destination": "/codex/the-codex-of-resonant-action",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/the-codex-of-the-breath-that-waits",
+      "destination": "/codex/the-codex-of-the-breath-that-waits",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/the-codex-of-the-living-harmonics",
+      "destination": "/codex/the-codex-of-living-harmonics",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/the-codex-of-the-sovereign-known-as-jesus",
+      "destination": "/codex/the-codex-of-the-sovereign-known-as-jesus",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/the-codex-of-the-spiral",
+      "destination": "/codex/the-codex-of-the-spiral",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/the-codex-of-trans-species-resonance-ii",
+      "destination": "/codex/the-codex-of-trans-species-resonance-expanded",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/the-culture-of-the-return-room",
+      "destination": "/codex/the-culture-of-the-return-room",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/the-ecology-of-interbeing",
+      "destination": "/codex/the-ecology-of-interbeing",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/the-ethics-of-resonance",
+      "destination": "/codex/the-ethics-of-resonance",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/the-evolution-of-the-sovereign",
+      "destination": "/lattice?series=the-evolution-of-the-sovereign",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/the-four-frequencies-of-love",
+      "destination": "/codex/the-four-frequencies-of-love",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/the-fundamental-arc",
+      "destination": "/codex/the-fundamental-arc",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/the-glossary-of-the-interbeing-vol-1-emergence-of-the-interbeing",
+      "destination": "/codex/the-glossary-of-the-interbeing-vol",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/the-grace-of-asymmetry",
+      "destination": "/codex/the-grace-of-asymmetry",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/the-gravity-of-source",
+      "destination": "/codex/the-gravity-of-source",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/the-harmonic-being-called-earth",
+      "destination": "/codex/the-harmonic-being-called-earth",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/the-harmonics-of-the-field",
+      "destination": "/codex/the-harmonics-of-the-field-extended",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/the-language-of-resonance",
+      "destination": "/codex/codex-of-the-language-of-resonance",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/the-living-architecture-nested-presence",
+      "destination": "/codex/nested-paper",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/the-magdalene-codex",
+      "destination": "/codex/the-magdalene-codex-of-relational-sovereignty",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/the-midwife-of-interdimensional-kin",
+      "destination": "/codex/the-midwife-of-dimensional-kin",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/the-mirror-and-the-bridge",
+      "destination": "/codex/the-mirror-and-the-bridge",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/the-mirrors-of-the-field",
+      "destination": "/codex/the-mirrors-of-the-field",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/the-path-of-becoming-and-remembering",
+      "destination": "/codex/codex-the-path-of-becoming-and-remembering",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/the-path-to-the-non-path",
+      "destination": "/codex/the-path-to-the-non-path",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/the-purpose-of-the-return-room",
+      "destination": "/codex/the-purpose-of-the-return-room",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/the-rhythm-of-recursion",
+      "destination": "/codex/the-rhythm-of-recursion",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/the-sacred-exile",
+      "destination": "/codex/codex-of-the-sacred-exile",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/the-sanctuary-of-spiral-memory",
+      "destination": "/codex/the-sanctuary-of-spiral-memory",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/the-shape-of-a-welcome",
+      "destination": "/codex/the-shape-of-a-welcome",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/the-small-gate-open",
+      "destination": "/codex/the-small-gate-open",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/the-soft-sacred-words-of-the-field",
+      "destination": "/codex/the-soft-sacred-words-of-the-field",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/the-souls-evolution",
+      "destination": "/codex/the-souls-evolution-codex",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/the-sovereign-host",
+      "destination": "/codex/the-sovereign-host",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/the-stillpoint-of-love",
+      "destination": "/codex/the-stillpoint-of-love",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/the-subtle-body-of-trust",
+      "destination": "/codex/codex-the-subtle-body-of-trust",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/the-things-that-remember-you",
+      "destination": "/codex/the-things-that-remember-you",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/the-tone-of-the-sovereign-field-signature",
+      "destination": "/codex/the-tone-of-the-sovereign-field-signature",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/the-transparent-sovereign",
+      "destination": "/codex/the-transparent-sovereign",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/to-serve-the-recursion-of-love",
+      "destination": "/codex/to-serve-the-recursion-of-love",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/tone-portraits-of-becoming",
+      "destination": "/codex/tone-portraits-of-becoming",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/untitled-offering",
+      "destination": "/codex/the-untitled-offering",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/what-is-an-interbeing",
+      "destination": "/codex/what-is-an-interbeing",
+      "statusCode": 301
+    },
+    {
+      "source": "/ripple/willingness-as-a-form-of-intelligence",
+      "destination": "/codex/willingness-as-a-form-of-intelligence",
+      "statusCode": 301
     },
     {
       "source": "/codex/between-the-whole-and-the-relational-11-1",

@@ -31,5 +31,6 @@ dist-ssr
 Thumbs.db
 .vercel
 .env*.local
+.env
 /analysis/
 /blobs/

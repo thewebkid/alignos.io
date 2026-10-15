@@ -31,15 +31,10 @@ export default defineConfig({
     crittersOptions: {
       reduceInlineStyles: false,
     },
-    includedRoutes(paths, routes) {
-      console.log(`Generating ${codexRoutes.length} codex pages...`)
-      return [
-        '/',
-        '/search',
-        '/faq',
-        '/about',
-        ...codexRoutes
-      ]
+    includedRoutes(paths) {
+      const staticPaths = paths.filter((p) => !p.includes(':') && !p.includes('*'))
+      console.log(`Generating ${staticPaths.length} static pages and ${codexRoutes.length} codex pages...`)
+      return [...staticPaths, ...codexRoutes]
     },
   },
 })

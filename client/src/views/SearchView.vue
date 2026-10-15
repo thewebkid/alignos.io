@@ -230,12 +230,12 @@ const goToPage = (page) => {
 
       <div class="no-results" v-else-if="query">
         <p>No codexes found matching your search.</p>
-        <RouterLink to="/" class="btn btn-primary">Codex Lattice</RouterLink>
+        <RouterLink :to="{ name: 'lattice' }" class="btn btn-primary">Codex Lattice</RouterLink>
       </div>
 
       <div class="no-query" v-else>
         <p>Enter a search term to find codexes.</p>
-        <RouterLink to="/" class="btn btn-primary">Codex Lattice</RouterLink>
+        <RouterLink :to="{ name: 'lattice' }" class="btn btn-primary">Codex Lattice</RouterLink>
       </div>
     </div>
   </div>

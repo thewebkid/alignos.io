@@ -51,6 +51,11 @@ Turn `navItems` into `{ name, to, children? }`. Desktop renders children as a Bo
   - PDFs from the captured markdown links, matched to catalog ids by normalized filename against `provenance.old_cover_filename` and titles
   - ripple posts from a fresh fetch of the WordPress post sitemap
 - Any match it can't make goes into an `unmatched` section that a human resolves. The committed JSON is the reviewed result. The capture script isn't part of the build.
+- As built:
+  - Ripple posts resolve primarily through the legacy `/codex-lattice/` grid. Each card is an `<li data-title="{ripple slug, truncated to ~30 chars}">` holding the PDF link, so the chain ripple → PDF → catalog id is exact. Cover-image and slug matching is only the fallback.
+  - Hand resolutions live in a `MANUAL` table in the capture script, so a re-run reproduces them.
+  - The compilation post `/ripple/the-evolution-of-the-sovereign/` has no single codex. It redirects to `/lattice?series=the-evolution-of-the-sovereign`, the corridor URL defined by `series-corridors-and-placeholders`.
+  - Sources are written without the trailing slash, because `trailingSlash: false` normalizes requests first. Kept-slug pages whose normalized source equals the destination are skipped. The generator also fails on a `/pdf/` destination that doesn't exist in `client/public/pdf/`.
 - `generate-redirects.js` merges three sources into `vercel.json`: static rules, provenance id redirects, and `legacy-urls.json`. It de-duplicates by source and fails if `legacy-urls.json` has an `unmatched` section or a destination id that isn't in the catalog.
 - *Alternative:* catch-all regex redirects such as `/wp-content/uploads/:path*` → `/`. Rejected because they lose the per-PDF destination, which is the whole value.
 
@@ -62,6 +67,11 @@ Implementation is split:
 - Structural wiring (routes, nav data, redirect scripts) is plain code.
 - The visual pass on header and footer goes to a Kimi K3 (`kimi-k3-max`) subagent: lockup sizing and alignment, dropdown styling, mobile menu, and a contrast check in both themes.
 - Kimi's brief: use only existing `--cl-*` tokens and SCSS partials, keep the header height, match today's hover and transition language, and add no new fonts or palettes.
+- Outcome: no token changes.
+  - The Bootstrap `--bs-dropdown-*` variables are mapped onto `--cl-*` tokens inside `AppHeader.vue`.
+  - The header background is now solid `--cl-surface`. The old `rgba(var(--cl-surface), 0.9)` was invalid CSS (a hex var inside `rgba()`), which left the sticky header transparent. Restoring translucency would need a new `--cl-surface-rgb` token.
+  - The header sits at `z-index: 1020` so its dropdowns overlay the reader's sticky title bar (1000).
+  - The gray wordmark measures about 3.4:1 on light and 4.2:1 on dark. It's kept as supplied; logotypes are exempt from WCAG 1.4.3.
 
 ## Risks / Trade-offs
 

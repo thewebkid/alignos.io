@@ -29,14 +29,17 @@ const totalCodexes = computed(() => codexRegistry?.size || 0)
 
         <!-- Links -->
         <div class="footer-links">
-          <a href="mailto:info@alignos.io" class="footer-link">Contact</a>
-          <span class="divider">·</span>
-          <a href="https://alignos.io" target="_blank" rel="noopener" class="footer-link">
-            alignos.io
-          </a><span class="divider">·</span>
-          <a href="/llms.json">For AI explorers</a>
-          <span class="divider">·</span>
-          <a href="https://coherenceacrossscales.org">Coherence Across Scales (new)</a>
+          <span class="footer-link-item">
+            <a href="mailto:info@alignos.io" class="footer-link">info@alignos.io</a>
+            <span class="divider" aria-hidden="true">·</span>
+          </span>
+          <span class="footer-link-item">
+            <a href="/llms.json" class="footer-link">For AI explorers</a>
+            <span class="divider" aria-hidden="true">·</span>
+          </span>
+          <span class="footer-link-item">
+            <a href="https://coherenceacrossscales.org" class="footer-link">Coherence Across Scales (new)</a>
+          </span>
         </div>
       </div>
     </div>
@@ -86,13 +89,23 @@ const totalCodexes = computed(() => codexRegistry?.size || 0)
 
 .footer-links {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 0.5rem;
+  justify-content: center;
+  row-gap: 0.25rem;
   font-size: 0.875rem;
+}
 
-  //@media (max-width: 576px) {
-    margin-bottom: 100px;
-  //}
+// Each link travels with its trailing divider so a wrapped line
+// never starts with a dangling separator.
+.footer-link-item {
+  display: inline-flex;
+  align-items: baseline;
+  white-space: nowrap;
+
+  &:not(:last-child) {
+    margin-right: 0.5rem;
+  }
 }
 
 .footer-link {
@@ -106,6 +119,7 @@ const totalCodexes = computed(() => codexRegistry?.size || 0)
 }
 
 .divider {
+  margin-left: 0.5rem;
   color: var(--cl-border);
 }
 </style>
