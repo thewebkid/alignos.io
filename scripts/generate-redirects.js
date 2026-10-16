@@ -7,7 +7,6 @@ const ROOT = path.join(__dirname, '..');
 const provenance = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'codex-provenance.json'), 'utf-8'));
 const catalog = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'codex-catalog.json'), 'utf-8'));
 const legacy = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'legacy-urls.json'), 'utf-8'));
-const PUBLIC_DIR = path.join(ROOT, 'client', 'public');
 const vercelPath = path.join(ROOT, 'vercel.json');
 const vercel = JSON.parse(fs.readFileSync(vercelPath, 'utf-8'));
 
@@ -23,7 +22,7 @@ function checkDestination(row) {
   const dest = row.destination.split('?')[0];
   const codex = dest.match(/^\/codex\/([^/]+)$/);
   if (codex && !catalogIds.has(codex[1])) errors.push(`${row.source}: unknown catalog id "${codex[1]}"`);
-  if (dest.startsWith('/pdf/') && !fs.existsSync(path.join(PUBLIC_DIR, dest))) errors.push(`${row.source}: missing file ${dest}`);
+  // PDFs are on Vercel Blob. /pdf/* rewrites there, so a missing local file is expected.
   if (row.id && !catalogIds.has(row.id)) errors.push(`${row.source}: unknown catalog id "${row.id}"`);
 }
 

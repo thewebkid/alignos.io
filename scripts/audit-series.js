@@ -3,7 +3,8 @@
  *
  * Reads data/codex-catalog.json, data/series.json and client/public/md/*.md.
  * Prints findings and writes docs/review/james-questions.md (overwrites it; hand edits
- * belong after generation).
+ * belong after generation). The staging /review pages are retired. The copies James
+ * reviewed live with the archived james-lattice-decisions change.
  *
  * Usage: node scripts/audit-series.js
  */
@@ -21,7 +22,7 @@ const OUT_PATH = path.join(ROOT, 'docs', 'review', 'james-questions.md');
 
 const bySeq = [...catalog].sort((a, b) => a.sequence - b.sequence);
 const byId = new Map(catalog.map((e) => [e.id, e]));
-// Site-relative links: the report is served at /review/questions.
+// Site-relative links. This file is a working list, not a page on the site.
 const codexLink = (id) => `[*${byId.get(id)?.title ?? id}*](/codex/${id})`;
 const seriesLink = (s) => `[${s.name}](/lattice?series=${s.id})`;
 const markdown = new Map(catalog.map((e) => [e.id, fs.readFileSync(path.join(MD_DIR, `${e.id}.md`), 'utf-8')]));

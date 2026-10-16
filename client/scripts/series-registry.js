@@ -3,7 +3,9 @@
  *
  * resolveSeries(catalog, registry, { pdfExists }) validates the registry and every
  * catalog series reference, then returns per-codex series data plus the published
- * registry. Errors are collected, never thrown, so callers can report them all.
+ * registry. pdfExists is optional; compilation PDFs are on blob storage, so the
+ * lattice build does not check the local public/pdf folder. Errors are collected,
+ * never thrown, so callers can report them all.
  */
 
 export const kebab = (s) =>

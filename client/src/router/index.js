@@ -89,13 +89,4 @@ const routes = [
   }
 ]
 
-/* global __ALIGNOS_REVIEW__ */
-if (__ALIGNOS_REVIEW__) {
-  const ReviewView = () => import('../views/ReviewView.vue')
-  routes.splice(-1, 0,
-    { path: '/review', name: 'review', component: ReviewView, meta: { title: 'Review', review: 'alignos-2-review', layout: 'standard' } },
-    { path: '/review/questions', name: 'review-questions', component: ReviewView, meta: { title: 'Questions for James', review: 'james-questions', layout: 'standard' } }
-  )
-}
-
 export default routes

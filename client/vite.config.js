@@ -1,4 +1,4 @@
-import { defineConfig, searchForWorkspaceRoot } from 'vite'
+import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import { resolve } from 'path'
 import fs from 'fs'
@@ -13,15 +13,6 @@ export default defineConfig({
   plugins: [
     vue(),
   ],
-  // Off unless ALIGNOS_REVIEW=1: the review routes and their text drop out of the build.
-  define: {
-    __ALIGNOS_REVIEW__: JSON.stringify(process.env.ALIGNOS_REVIEW === '1'),
-  },
-  server: {
-    fs: {
-      allow: [searchForWorkspaceRoot(process.cwd()), resolve(__dirname, '../docs/review')],
-    },
-  },
   css: {
     preprocessorOptions: {
       scss: {

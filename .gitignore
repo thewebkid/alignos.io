@@ -34,3 +34,8 @@ Thumbs.db
 .env
 /analysis/
 /blobs/
+/client/test-results/
+/client/playwright-report/
+
+# PDFs are on the public alignos-blob store. Local copies live in /blobs.
+/client/public/pdf/

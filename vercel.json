@@ -1943,6 +1943,10 @@
   ],
   "rewrites": [
     {
+      "source": "/pdf/:path*",
+      "destination": "https://qahh5hlfi6v2odz8.public.blob.vercel-storage.com/pdf/:path*"
+    },
+    {
       "source": "/((?!api/).*)",
       "destination": "/index.html"
     }

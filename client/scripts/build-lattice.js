@@ -13,7 +13,6 @@
 import fs from 'fs/promises';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { existsSync } from 'fs';
 import { stripLeadingCoverImage } from '../src/lib/markdown-export.js';
 import { resolveSeries } from './series-registry.js';
 import { resolveCollections } from './collections.js';
@@ -27,7 +26,6 @@ const CATALOG_FILE = path.join(REPO_ROOT, 'data', 'codex-catalog.json');
 const SERIES_FILE = path.join(REPO_ROOT, 'data', 'series.json');
 const COLLECTIONS_FILE = path.join(REPO_ROOT, 'data', 'collections.json');
 const MD_DIR = path.join(CLIENT_DIR, 'public/md');
-const PDF_DIR = path.join(CLIENT_DIR, 'public/pdf');
 const OUTPUT_DIR = path.join(CLIENT_DIR, 'src', 'generated');
 const OUTPUT_FILE = path.join(OUTPUT_DIR, 'codex-lattice.json');
 const OUTPUT_META_FILE = path.join(OUTPUT_DIR, 'codex-lattice-meta.json');
@@ -272,9 +270,8 @@ async function build() {
     .sort((a, b) => a.sequence - b.sequence);
 
   const registry = JSON.parse(await fs.readFile(SERIES_FILE, 'utf-8'));
-  const { errors: seriesErrors, perCodex, published: publishedSeries } = resolveSeries(catalog, registry, {
-    pdfExists: (file) => existsSync(path.join(PDF_DIR, file)),
-  });
+  // Compilation PDFs live on the blob store, not in client/public/pdf.
+  const { errors: seriesErrors, perCodex, published: publishedSeries } = resolveSeries(catalog, registry);
   if (seriesErrors.length) {
     throw new Error(`Series registry validation failed:\n  - ${seriesErrors.join('\n  - ')}`);
   }
