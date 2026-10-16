@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "cd client && npm run dev",
     "build": "cd client && npm run build",
-    "install:client": "cd client && npm install"
+    "install:client": "cd client && npm install",
+    "test": "npm test --prefix client",
+    "test:e2e": "npm run test:e2e --prefix client"
   },
   "keywords": [],
   "author": "kid@thewebkid.com",

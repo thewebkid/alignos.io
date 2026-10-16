@@ -390,7 +390,7 @@ export function createGlossaryFromRegistry(registry) {
   const manager = new GlossaryManager();
 
   // Find the Living Glossary codex
-  const glossaryCodex = registry.getByFilename('The-Living-Glossary-of-the-Field.md');
+  const glossaryCodex = registry.getByFilename('the-living-glossary-of-the-field.md');
 
   if (glossaryCodex) {
     manager.parseGlossary(glossaryCodex.markdown);

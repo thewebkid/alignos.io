@@ -26,6 +26,7 @@ onBeforeMount(() => {
 const showSearch = ref(false)
 const isLatticeLoaded = ref(false)
 const latticeLoadError = ref(null)
+const glossaryRevision = ref(0)
 
 const openSearch = () => {
   showSearch.value = true
@@ -43,6 +44,7 @@ const glossaryManager = inject('glossaryManager')
 provide('searchControls', { openSearch, closeSearch })
 provide('isLatticeLoaded', isLatticeLoaded)
 provide('latticeLoadError', latticeLoadError)
+provide('glossaryRevision', glossaryRevision)
 
 // Load full lattice in background after app mounts (client-side only)
 onMounted(async () => {
@@ -75,6 +77,7 @@ onMounted(async () => {
       glossaryManager.aliases = newGlossaryManager.aliases
       glossaryManager.highlightableTerms = newGlossaryManager.highlightableTerms
       glossaryManager.termUsage = newGlossaryManager.termUsage
+      glossaryRevision.value += 1
 
       console.log(`✨ Glossary refreshed! ${glossaryManager.size} terms loaded`)
 

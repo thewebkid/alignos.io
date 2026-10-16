@@ -1,7 +1,6 @@
 <script setup>
 // PageView — James' framing pages from client/src/content/pages/{slug}.md.
 // Route meta: page (slug), layout ('threshold' | 'standard'), next (onward action).
-// A `markdown` prop replaces the slug lookup (ReviewView).
 import { computed } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import PromptBlock from '../components/PromptBlock.vue'
@@ -10,12 +9,10 @@ import { parsePageMarkdown } from '../lib/markdown.js'
 
 const pages = import.meta.glob('../content/pages/*.md', { query: '?raw', import: 'default', eager: true })
 
-const props = defineProps({ markdown: { type: String, default: null } })
-
 const route = useRoute()
 const router = useRouter()
 
-const source = computed(() => props.markdown ?? pages[`../content/pages/${route.meta.page}.md`] ?? '')
+const source = computed(() => pages[`../content/pages/${route.meta.page}.md`] ?? '')
 const segments = computed(() => parsePageMarkdown(source.value))
 const layout = computed(() => route.meta.layout ?? 'standard')
 const next = computed(() => route.meta.next ?? null)

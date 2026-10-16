@@ -13,6 +13,7 @@ const route = useRoute()
 const router = useRouter()
 const codexRegistry = inject('codexRegistry')
 const glossaryManager = inject('glossaryManager')
+const glossaryRevision = inject('glossaryRevision', ref(0))
 const progressStore = useReadingProgressStore()
 
 // Loading state
@@ -44,6 +45,7 @@ watch(codex, async (newCodex) => {
 
 // Rendered HTML content with glossary terms and codex cross-references
 const htmlContent = computed(() => {
+  glossaryRevision.value
   if (!codex.value || !codex.value.isContentLoaded()) return ''
   // Use toHtmlWithGlossary with both glossary and registry for full processing
   if (codex.value.toHtmlWithGlossary) {
