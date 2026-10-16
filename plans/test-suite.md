@@ -6,7 +6,7 @@ Record of the test work on `ron/feature/pipeline`. This is a plan, not an OpenSp
 
 - [x] Vitest unit tests for glossary parsing and longest-match wrapping, title-over-body search ranking, reading progress (percent only rises, position updates, 95% complete), the three API handlers (200, 404, 405), and PDF-versus-cover URLs. Live in [client/tests/unit](../client/tests/unit).
 - [x] Playwright journeys for home, search, a glossary popover, and reading progress after reload. Live in [client/tests/e2e/reader.spec.js](../client/tests/e2e/reader.spec.js).
-- [x] Local commands from the repo root: `npm test` and `npm run test:e2e`.
+- [x] Local commands from the repo root: `npm test` and `npm run test:e2e`. `npm test` builds the lattice first, because `client/src/generated/` is gitignored and the API tests read those files.
 - [x] GitHub Actions workflow [.github/workflows/tests.yml](../.github/workflows/tests.yml): `unit`, `e2e`, and `redirects` in parallel, on pull requests and on pushes to `master`. Not a required status check.
 - [x] Remove unused Lunr (`client/src/lib/search.js` and the dependency) and the Vite starter sheet (`client/src/style.css`).
 - [x] Fixes the suite found: glossary lookup uses the catalog filename `the-living-glossary-of-the-field.md`; the reader redraws after the full glossary loads; the lattice build no longer requires a compilation PDF in `client/public/pdf`.

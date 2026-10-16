@@ -9,7 +9,7 @@
     "build": "npm run build:lattice && vite-ssg build && node scripts/attribute-md.js",
     "build:spa": "npm run build:lattice && vite build && node scripts/attribute-md.js",
     "preview": "vite preview",
-    "test": "vitest run",
+    "test": "npm run build:lattice && vitest run",
     "test:e2e": "playwright test"
   },
   "dependencies": {
