@@ -33,14 +33,17 @@ describe('codex api', () => {
     const full = invoke(lattice)
     const brief = invoke(meta)
 
+    const fullBody = typeof full.body === 'string' ? JSON.parse(full.body) : full.body
+    const briefBody = typeof brief.body === 'string' ? JSON.parse(brief.body) : brief.body
+
     expect(full.statusCode).toBe(200)
     expect(full.headers['Content-Type']).toBe('application/json')
     expect(full.headers['Cache-Control']).toContain('max-age=3600')
-    expect(Array.isArray(JSON.parse(full.body))).toBe(true)
+    expect(Array.isArray(fullBody)).toBe(true)
 
     expect(brief.statusCode).toBe(200)
-    expect(Array.isArray(JSON.parse(brief.body))).toBe(true)
-    expect(JSON.parse(brief.body)[0].markdown).toBeUndefined()
+    expect(Array.isArray(briefBody)).toBe(true)
+    expect(briefBody[0].markdown).toBeUndefined()
   })
 
   it('returns one codex, a 404, and a 405', () => {
