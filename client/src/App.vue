@@ -102,6 +102,13 @@ onMounted(async () => {
   }
 })
 
+// Runs after the old view unmounts (lattice and reader have saved their positions) and before
+// the new view mounts and restores its own
+const resetScroll = () => {
+  const main = document.querySelector('.main-content')
+  if (main) main.scrollTop = 0
+}
+
 // Global keyboard shortcuts
 const handleKeydown = (e) => {
   // Cmd/Ctrl + K or / to open search
@@ -132,7 +139,7 @@ const handleKeydown = (e) => {
 
     <main class="main-content">
       <RouterView v-slot="{ Component }">
-        <transition name="fade" mode="out-in">
+        <transition name="fade" mode="out-in" @after-leave="resetScroll">
           <component :is="Component" />
         </transition>
       </RouterView>
@@ -178,13 +185,15 @@ const handleKeydown = (e) => {
 
 // Global typography overrides for codex content
 .codex-content {
-  font-family: var(--bs-font-sans-serif, 'Source Sans 3', Georgia, serif);
-  font-size: 1.125rem;
+  font-family: var(--cl-font-reading);
+  font-size: calc(1.125rem * var(--cl-reading-scale));
+  font-size-adjust: var(--cl-font-reading-adjust);
   line-height: 1.8;
   color: var(--cl-reader-text);
 
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--bs-font-serif, 'Source Sans 3', Georgia, serif);
+    font-size-adjust: none;
     color: var(--cl-text-heading);
     margin-top: 2rem;
     margin-bottom: 1rem;
@@ -210,7 +219,6 @@ const handleKeydown = (e) => {
 
   p {
     margin-bottom: 1.25rem;
-    font-family: 'Source Sans 3', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   }
 
   blockquote {
@@ -291,6 +299,14 @@ const handleKeydown = (e) => {
         background-color: var(--cl-glossary-highlight);
         border-bottom-color: var(--cl-primary-hover);
       }
+    }
+  }
+
+  // Reading setting: underline only the first two uses of each term, or none. Hover still shows it.
+  @at-root {
+    html[data-glossary='first-two'] .codex-content .glossary-term.has-definition:not([data-use='1'], [data-use='2']):not(:hover),
+    html[data-glossary='off'] .codex-content .glossary-term.has-definition:not(:hover) {
+      border-bottom-color: transparent;
     }
   }
 

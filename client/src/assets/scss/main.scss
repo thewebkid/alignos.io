@@ -48,9 +48,13 @@ body {
   width: 100%;
 }
 
-// Custom font stack CSS variable
+// Custom font stack CSS variables. Reading settings override the reading font and scale on <html>.
 :root {
   --bs-font-serif: #{$font-family-serif};
+  --cl-font-reading: #{$font-family-sans-serif};
+  // Source Sans 3's x-height ratio, so other reading fonts render at the same apparent size
+  --cl-font-reading-adjust: 0.486;
+  --cl-reading-scale: 1;
 }
 
 // Focus styles
@@ -122,6 +126,74 @@ body {
       color: white;
     }
   }
+}
+
+// Dropdown menus (Return Rooms, lattice filters, codex menu), themed with app tokens in both themes
+.dropdown-menu.cl-dropdown {
+  --bs-dropdown-color: var(--cl-text);
+  --bs-dropdown-bg: var(--cl-surface);
+  --bs-dropdown-border-color: var(--cl-border-light);
+  --bs-dropdown-link-color: var(--cl-text);
+  --bs-dropdown-link-hover-color: var(--cl-primary);
+  --bs-dropdown-link-hover-bg: var(--cl-surface-hover);
+  --bs-dropdown-link-active-color: var(--cl-primary);
+  --bs-dropdown-link-active-bg: var(--cl-surface-hover);
+  --bs-dropdown-link-disabled-color: var(--cl-text-muted);
+  --bs-dropdown-header-color: var(--cl-text-muted);
+  --bs-dropdown-divider-bg: var(--cl-border-light);
+
+  padding: 0.375rem;
+  border-radius: var(--bs-border-radius-lg);
+  box-shadow: 0 0.5rem 1.5rem var(--cl-shadow-lg);
+
+  .dropdown-item {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    border-radius: var(--bs-border-radius-sm);
+    transition: color 0.2s ease, background-color 0.2s ease;
+  }
+
+  .dropdown-header {
+    padding: 0.5rem 0.75rem 0.25rem;
+    font-size: 0.6875rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .dropdown-divider {
+    margin: 0.375rem 0.25rem;
+  }
+}
+
+// Bottom sheet (reading settings on small screens); BOffcanvas teleports to <body>, so not scoped
+.offcanvas.cl-offcanvas {
+  --bs-offcanvas-bg: var(--cl-surface);
+  --bs-offcanvas-color: var(--cl-text);
+  --bs-offcanvas-border-color: var(--cl-border-light);
+  --bs-offcanvas-height: auto;
+  max-height: 85vh;
+  border-radius: var(--bs-border-radius-xl) var(--bs-border-radius-xl) 0 0;
+
+  // The sheet takes focus when it opens; its controls keep their own focus rings
+  &:focus-visible {
+    outline: none;
+  }
+
+  .offcanvas-title {
+    font-family: var(--bs-font-serif);
+    font-weight: 500;
+    color: var(--cl-text-heading);
+  }
+
+  .btn-close {
+    filter: var(--cl-close-filter, none);
+  }
+}
+
+[data-theme='dark'] .offcanvas.cl-offcanvas {
+  --cl-close-filter: invert(1) grayscale(100%) brightness(200%);
 }
 
 // =============================================================================

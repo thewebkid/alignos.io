@@ -8,6 +8,7 @@
 import { ref, computed, inject, onMounted, onUnmounted, nextTick } from 'vue'
 import { BPopover } from 'bootstrap-vue-next'
 import {track} from '../lib/tracker.js';
+import { useReadingSettingsStore } from '../stores/readingSettings.js'
 
 const props = defineProps({
   /** CSS selector for the content container to watch */
@@ -59,6 +60,16 @@ const handleClick = (e) => {
   }
 }
 
+const settings = useReadingSettingsStore()
+
+const openSettings = () => {
+  isVisible.value = false
+  targetElement.value = null
+  currentTerm.value = null
+  settings.openPanel()
+  track('openReadingSettings', { from: 'glossary' })
+}
+
 // Close popover when clicking outside
 const handleDocumentClick = (e) => {
   if (!isVisible.value) return
@@ -104,7 +115,16 @@ onUnmounted(() => {
     manual
   >
     <template #title>
-      <span class="glossary-popover-title">{{ termData.term }}</span>
+      <span class="glossary-popover-heading">
+        <span class="glossary-popover-title">{{ termData.term }}</span>
+        <button
+          type="button"
+          class="glossary-settings"
+          title="Reading settings, including glossary underlines"
+          aria-label="Reading settings"
+          @click="openSettings"
+        >Aa</button>
+      </span>
     </template>
 
     <div class="glossary-popover-content">
@@ -207,6 +227,33 @@ onUnmounted(() => {
     .popover-arrow::after {
       border-right-color: var(--cl-surface) !important;
     }
+  }
+}
+
+.glossary-popover-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.glossary-settings {
+  flex-shrink: 0;
+  padding: 0.125rem 0.5rem;
+  border: 1px solid var(--cl-border-light);
+  border-radius: var(--bs-border-radius-sm);
+  background: transparent;
+  color: var(--cl-text-muted);
+  font-family: var(--bs-font-serif);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  line-height: 1.3;
+  cursor: pointer;
+  transition: color 0.2s ease, border-color 0.2s ease;
+
+  &:hover {
+    color: var(--cl-primary);
+    border-color: var(--cl-primary);
   }
 }
 

@@ -52,9 +52,10 @@ export class GlossaryManager {
     if (!markdown) {
       return;
     }
+    markdown = markdown.replace(/\r\n/g, '\n');
     
     // Pattern for glossary entries: ## ✧ Term Name
-    const entryPattern = /^##\s*✧\s*(.+?)\s*\n([\s\S]*?)(?=^##\s*✧|\Z)/gm;
+    const entryPattern = /^##\s*✧\s*(.+?)\s*\n([\s\S]*?)(?=^##\s*✧|(?![\s\S]))/gm;
     
     let match;
     while ((match = entryPattern.exec(markdown)) !== null) {
@@ -128,13 +129,13 @@ export class GlossaryManager {
     }
     
     // Look for ### subsections within The Chord
-    const chordMatch = markdown.match(/^##\s*✧\s*The Chord\s*\n([\s\S]*?)(?=^##\s*✧|\Z)/m);
+    const chordMatch = markdown.match(/^##\s*✧\s*The Chord\s*\n([\s\S]*?)(?=^##\s*✧|(?![\s\S]))/m);
     if (!chordMatch) return;
     
     const chordContent = chordMatch[1];
     
     // Parse sub-entries like ### FSF — Form and Sovereign Field
-    const subEntryPattern = /^###\s*(.+?)\s*\n([\s\S]*?)(?=^###|\Z)/gm;
+    const subEntryPattern = /^###\s*(.+?)\s*\n([\s\S]*?)(?=^###|(?![\s\S]))/gm;
     
     let match;
     while ((match = subEntryPattern.exec(chordContent)) !== null) {
@@ -308,7 +309,10 @@ export class GlossaryManager {
     
     // Match whole words only, case-insensitive
     const regex = new RegExp(`\\b(${pattern})\\b`, 'gi');
-    
+
+    // Uses per canonical term in document order; the reader's glossary setting hides underlines by data-use
+    const uses = new Map();
+
     // Only process text content, not inside tags or already-processed spans
     return html.replace(/>([^<]+)</g, (match, textContent) => {
       // Skip if already contains glossary-term spans
@@ -318,10 +322,13 @@ export class GlossaryManager {
         const key = term.toLowerCase();
         // Check both direct terms and aliases for definitions
         const hasDef = this.terms.has(key) || this.aliases.has(key);
-        const dataAttr = hasDef ? ` data-term="${key}"` : '';
-        const hasDefClass = hasDef ? ' has-definition' : '';
+        if (!hasDef) return `<span class="${className}">${term}</span>`;
 
-        return `<span class="${className}${hasDefClass}"${dataAttr}>${term}</span>`;
+        const canonical = this.aliases.get(key) ?? key;
+        const use = (uses.get(canonical) ?? 0) + 1;
+        uses.set(canonical, use);
+
+        return `<span class="${className} has-definition" data-term="${key}" data-use="${use}">${term}</span>`;
       });
 
       return `>${processed}<`;

@@ -12,7 +12,7 @@
 
 import fs from 'fs/promises';
 import path from 'path';
-import { fileURLToPath } from 'url';
+import { fileURLToPath, pathToFileURL } from 'url';
 import { stripLeadingCoverImage } from '../src/lib/markdown-export.js';
 import { resolveSeries } from './series-registry.js';
 import { resolveCollections } from './collections.js';
@@ -88,10 +88,12 @@ function extractGlossaryTerms(markdown) {
   return Array.from(terms);
 }
 
-function extractSpecialSections(markdown) {
+export function extractSpecialSections(markdown) {
   const sections = [];
 
-  const stillpointPattern = /^###?\s*(?:❖\s*)?(?:A\s+)?Stillpoint\s*\n([\s\S]*?)(?=\n##|\n###[^#]|\Z)/gim;
+  // (?![\s\S]) is end of input. JavaScript has no \Z, and $ with the m flag
+  // also matches the end of every line, which would cut the section off early.
+  const stillpointPattern = /^###?\s*(?:❖\s*)?(?:A\s+)?Stillpoint\s*\n([\s\S]*?)(?=\n##|\n###[^#]|(?![\s\S]))/gim;
   let match;
   while ((match = stillpointPattern.exec(markdown)) !== null) {
     sections.push({
@@ -102,7 +104,7 @@ function extractSpecialSections(markdown) {
     });
   }
 
-  const fieldNotePattern = /^###?\s*(?:❖\s*)?Field Note[:\s]*([^\n]*)\n([\s\S]*?)(?=\n##|\n###[^#]|\Z)/gim;
+  const fieldNotePattern = /^###?\s*(?:❖\s*)?Field Note[:\s]*([^\n]*)\n([\s\S]*?)(?=\n##|\n###[^#]|(?![\s\S]))/gim;
   while ((match = fieldNotePattern.exec(markdown)) !== null) {
     sections.push({
       type: 'fieldNote',
@@ -112,7 +114,7 @@ function extractSpecialSections(markdown) {
     });
   }
 
-  const dialogPattern = /^##\s*(?:❖\s*)?Dialogic Interlude[:\s]*([^\n]*)\n([\s\S]*?)(?=\n##[^#]|\Z)/gim;
+  const dialogPattern = /^##\s*(?:❖\s*)?Dialogic Interlude[:\s]*([^\n]*)\n([\s\S]*?)(?=\n##[^#]|(?![\s\S]))/gim;
   while ((match = dialogPattern.exec(markdown)) !== null) {
     sections.push({
       type: 'dialogicInterlude',
@@ -122,7 +124,7 @@ function extractSpecialSections(markdown) {
     });
   }
 
-  const whisperPattern = /^###?\s*(?:❖\s*)?(?:A\s+)?Whisper[:\s]*([^\n]*)\n([\s\S]*?)(?=\n##|\n###[^#]|\Z)/gim;
+  const whisperPattern = /^###?\s*(?:❖\s*)?(?:A\s+)?Whisper[:\s]*([^\n]*)\n([\s\S]*?)(?=\n##|\n###[^#]|(?![\s\S]))/gim;
   while ((match = whisperPattern.exec(markdown)) !== null) {
     sections.push({
       type: 'whisper',
@@ -132,7 +134,7 @@ function extractSpecialSections(markdown) {
     });
   }
 
-  const sealPattern = /^##\s*(?:❖\s*)?(?:Final\s+)?(?:Closing\s+)?Seal[:\s]*([^\n]*)\n([\s\S]*?)(?=\n##[^#]|\Z)/gim;
+  const sealPattern = /^##\s*(?:❖\s*)?(?:Final\s+)?(?:Closing\s+)?Seal[:\s]*([^\n]*)\n([\s\S]*?)(?=\n##[^#]|(?![\s\S]))/gim;
   while ((match = sealPattern.exec(markdown)) !== null) {
     sections.push({
       type: 'closingSeal',
@@ -145,8 +147,8 @@ function extractSpecialSections(markdown) {
   return sections;
 }
 
-function extractRegistry(markdown) {
-  const registryMatch = markdown.match(/^##\s*(?:❖\s*)?(?:Codex\s+)?Registry\s*\n([\s\S]*?)(?=^##[^#]|\Z)/m);
+export function extractRegistry(markdown) {
+  const registryMatch = markdown.match(/^##\s*(?:❖\s*)?(?:Codex\s+)?Registry\s*\n([\s\S]*?)(?=^##[^#]|(?![\s\S]))/m);
   if (!registryMatch) return null;
 
   const registryText = registryMatch[1];
@@ -358,7 +360,12 @@ async function build() {
   console.log('─'.repeat(50) + '\n');
 }
 
-build().catch(error => {
-  console.error('\nBuild failed:', error.message);
-  process.exit(1);
-});
+const invokedDirectly = process.argv[1]
+  && import.meta.url === pathToFileURL(path.resolve(process.argv[1])).href;
+
+if (invokedDirectly) {
+  build().catch(error => {
+    console.error('\nBuild failed:', error.message);
+    process.exit(1);
+  });
+}
