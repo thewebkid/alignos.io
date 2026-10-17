@@ -39,6 +39,11 @@ const setTheme = (mode) => {
   track('setTheme', { theme: mode })
 }
 
+const openCarry = () => {
+  settings.openCarry()
+  track('openCarry')
+}
+
 const resetProgress = () => {
   progress.clearAll()
   confirmingReset.value = false
@@ -145,12 +150,15 @@ onMounted(() => {
     <div class="rs-progress">
       <template v-if="!confirmingReset">
         <span>{{ progress.stats.started }} started · {{ progress.stats.completed }} complete</span>
-        <button
-          v-if="progress.stats.started"
-          type="button"
-          class="rs-link"
-          @click="confirmingReset = true"
-        >Reset…</button>
+        <span class="rs-confirm">
+          <button type="button" class="rs-link" @click="openCarry">Carry my reading</button>
+          <button
+            v-if="progress.stats.started"
+            type="button"
+            class="rs-link"
+            @click="confirmingReset = true"
+          >Reset…</button>
+        </span>
       </template>
       <template v-else>
         <span>Clear all reading progress?</span>

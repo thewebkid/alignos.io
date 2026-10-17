@@ -6,6 +6,8 @@ const HARMONIC = 'the-codices-of-harmonic-activation'
 const main = (page) => page.locator('.main-content')
 const scrollTop = (page) => main(page).evaluate((el) => Math.round(el.scrollTop))
 const scrollTo = (page, top) => main(page).evaluate((el, t) => { el.scrollTop = t }, top)
+const scrollFraction = (page) => main(page).evaluate((el) => el.scrollTop / (el.scrollHeight - el.clientHeight))
+const reading = (fraction) => ({ furthest: fraction, position: fraction, lastRead: new Date().toISOString() })
 const progressEntry = (page, id) =>
   page.evaluate((key) => JSON.parse(localStorage.getItem('codex-reading-progress') || '{}')[key] ?? null, id)
 
@@ -86,21 +88,36 @@ test.describe('codex resume rule', () => {
   })
 
   test('a partly read codex resumes where it was left', async ({ page }) => {
-    await seed(page, { 'codex-reading-progress': { [CODEX]: { scrollPercent: 40, scrollPosition: 1500, lastRead: new Date().toISOString() } } })
+    await seed(page, { 'codex-reading-progress': { [CODEX]: reading(0.4) } })
     await page.goto(`/codex/${CODEX}`)
-    await expect.poll(() => scrollTop(page), { timeout: 15_000 }).toBeGreaterThan(1400)
+    await expect.poll(() => scrollFraction(page), { timeout: 15_000 }).toBeCloseTo(0.4, 2)
   })
 
   test('a partly read codex resumes from the Continue reading shelf', async ({ page }) => {
-    await seed(page, { 'codex-reading-progress': { [CODEX]: { scrollPercent: 40, scrollPosition: 1500, lastRead: new Date().toISOString() } } })
+    await seed(page, { 'codex-reading-progress': { [CODEX]: reading(0.4) } })
     await page.goto('/lattice')
     await page.locator(`.continue-shelf a[href="/codex/${CODEX}"]`).first().click()
     await expect(page).toHaveURL(new RegExp(`/codex/${CODEX}$`))
-    await expect.poll(() => scrollTop(page), { timeout: 15_000 }).toBeGreaterThan(1400)
+    await expect.poll(() => scrollFraction(page), { timeout: 15_000 }).toBeCloseTo(0.4, 2)
+  })
+
+  test('progress saved in pixels resumes from its furthest point', async ({ page }) => {
+    await seed(page, { 'codex-reading-progress': { [CODEX]: { scrollPercent: 40, scrollPosition: 1500, lastRead: new Date().toISOString() } } })
+    await page.goto(`/codex/${CODEX}`)
+    await expect.poll(() => scrollFraction(page), { timeout: 15_000 }).toBeCloseTo(0.4, 2)
+  })
+
+  test('a larger text size resumes at the same place in the codex', async ({ page }) => {
+    await seed(page, {
+      'codex-reading-progress': { [CODEX]: reading(0.5) },
+      'alignos-reading': { font: 'source-sans', scale: 1.25, glossary: 'always', pace: 'typical' }
+    })
+    await page.goto(`/codex/${CODEX}`)
+    await expect.poll(() => scrollFraction(page), { timeout: 15_000 }).toBeCloseTo(0.5, 2)
   })
 
   test('a finished codex opens at the top', async ({ page }) => {
-    await seed(page, { 'codex-reading-progress': { [CODEX]: { scrollPercent: 100, scrollPosition: 9000, lastRead: new Date().toISOString() } } })
+    await seed(page, { 'codex-reading-progress': { [CODEX]: reading(1) } })
     await page.goto(`/codex/${CODEX}`)
     await expect(page.locator('.codex-content')).toBeVisible()
     await page.waitForTimeout(1500)
