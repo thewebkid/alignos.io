@@ -87,6 +87,7 @@ defineProps({
 // so it never competes with the ivory cover titles around it.
 .planned-title {
   font-family: var(--bs-font-serif), serif;
+  font-size-adjust: none;
   font-style: italic;
   font-weight: 500;
   font-size: 1.0625rem;
@@ -102,6 +103,7 @@ defineProps({
 .planned-subtitle {
   margin-top: 0.375rem;
   font-family: var(--bs-font-serif), serif;
+  font-size-adjust: none;
   font-style: italic;
   font-size: 0.8125rem;
   line-height: 1.35;
@@ -120,6 +122,7 @@ defineProps({
   justify-content: center;
   gap: 0.375rem;
   font-family: var(--bs-font-serif), serif;
+  font-size-adjust: none;
   font-style: italic;
   font-size: 0.8125rem;
   letter-spacing: 0.04em;

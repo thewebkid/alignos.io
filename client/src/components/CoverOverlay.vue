@@ -95,6 +95,7 @@ defineProps({
 
 .overlay-title {
   font-family: var(--bs-font-serif), serif;
+  font-size-adjust: none;
   font-weight: 500;
   color: var(--cov-ivory);
   text-shadow: 0 1px 6px rgba(var(--cov-scrim), 0.55);
@@ -120,6 +121,7 @@ defineProps({
 
 .tone-marker-text {
   font-family: var(--bs-font-serif), serif;
+  font-size-adjust: none;
   font-style: italic;
   letter-spacing: 0.05em;
   color: var(--cov-gold);
@@ -151,6 +153,7 @@ defineProps({
 // italic serif, distinct from the ivory series line without needing a chip.
 .edition-line {
   font-family: var(--bs-font-serif), serif;
+  font-size-adjust: none;
   font-style: italic;
   letter-spacing: 0.05em;
   color: var(--cov-gold);
@@ -272,6 +275,7 @@ defineProps({
   .overlay-subtitle {
     margin-top: 0.375rem;
     font-family: var(--bs-font-serif), serif;
+    font-size-adjust: none;
     font-size: 1.0625rem;
     line-height: 1.35;
     color: var(--cov-ivory);
