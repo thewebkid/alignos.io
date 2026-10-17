@@ -162,7 +162,10 @@ alignos/
 - `npm run dev` - Start Vite dev server with hot reload
 - `npm run build` - Build for production
 - `npm run preview` - Preview production build
-- `npm run build:lattice` - Generate codex lattice JSON
+- `npm run build:lattice` - Generate codex lattice JSON (also writes `src/generated/codex-aliases.json`, retired codex id → current id, and fails the build if a retired id is reused or an alias chain dead-ends)
+- `npm test` - Unit tests (Vitest)
+- `npm run test:e2e` - Playwright e2e against the dev server on 5555
+- `npm run test:e2e:handoff` - Opt-in two-site e2e with the legacy reader (`READER_DIR`, default `../../alignos/client`) on 5556 and 5557
 
 ### Server
 - `npm start` - Start production server
@@ -193,6 +196,17 @@ Custom theme variables are defined in `client/src/assets/scss/_variables.scss`
 ## 🔍 Search Configuration
 
 The search index is built from markdown files in `client/md/` using the `build-lattice.js` script. The generated index is stored in `client/src/generated/codex-lattice.json`.
+
+## 🔗 Reading Handoff
+
+Reading progress lives only in each browser's localStorage. A handoff link carries it to `/import`:
+`https://alignos.io/import#z=…` (deflate-raw + base64url JSON; `#j=` is the uncompressed fallback). The fragment never reaches a server, and `main.js` strips it before the router or analytics see it.
+
+- **From the legacy reader** (`alignos.cosmiccreation.net`, repo `c:\src\alignos`): a first-visit dialog, then a banner, or forward mode via `VITE_HANDOFF_MODE`. Retired codex ids are mapped through `codex-aliases.json`.
+- **Between devices:** "Carry my reading" in the reading settings panel offers share, copy, and a QR code (links up to 1,200 characters).
+- **Merging** never lowers progress: the furthest point is the max of both sides, and the current position comes from the more recently read side.
+
+`client/tests/fixtures/handoff/reader-links.json` holds links made by the reader's encoder. If those stop decoding, the two formats have drifted.
 
 ## 📝 Content Management
 

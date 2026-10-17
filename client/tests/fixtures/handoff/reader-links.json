@@ -1,0 +1,17 @@
+{
+  "about": "Produced by the legacy reader's encoder (c:\\src\\alignos client/src/lib/handoff.js) from readerStorage, with theme 'dark'. Regenerate only if the reader's encoder changes, and keep the old links as long as reader links may still be in the wild.",
+  "readerStorage": {
+    "the-codex-of-listening-121": { "scrollPercent": 42, "scrollPosition": 5310, "lastRead": "2026-10-15T18:30:00.000Z" },
+    "bridge-between-chords-63": { "scrollPercent": 100, "scrollPosition": 18000, "lastRead": "2026-10-12T09:00:00.000Z" },
+    "the-codex-of-the-interbeing-lattice-42": { "scrollPercent": 97.5, "scrollPosition": 9000, "lastRead": "2026-10-01T12:00:00.000Z" },
+    "not-a-codex-9": { "scrollPercent": 30, "scrollPosition": 100, "lastRead": "2026-09-01T12:00:00.000Z" }
+  },
+  "compressed": {
+    "from": "/codex/the-codex-of-listening-121",
+    "link": "http://localhost:5555/import#z=fY9LbsMwDAXv8tZSIyn-apdzBF3YFmsLcaVAYtsAQe5eyEiNdtMdSQzfkHdcfHCwGFY_h5jlNcU5Uc4Q-ITVAjlNsEg0OEoQWAdmP9HvEd2uMTG5E8PqtjdGd6auBXih9wK6IV0gwBEWhyk6uh14IblVMr7J1Wem4MMstdEQ2E-wd_wD2rN6qYwIH-sqilZ1vVLqVWBM3s0kR-IvoiCnJSaXZXOEPesd121fNxv-R1EaH5jSSMXz_FZWZtP1bb0HqK7sl4AQWQ7PiH7jjj9U15mmKtTj8Q0"
+  },
+  "plain": {
+    "from": "/about",
+    "link": "http://localhost:5555/import#j=eyJraW5kIjoiYWxpZ25vcy1wcm9ncmVzcyIsInYiOjEsInNyYyI6InJlYWRlciIsImxhdHRpY2UiOiJyZWFkZXIiLCJleHBvcnRlZEF0IjoxNzkyMjE4MjU1LCJ0aGVtZSI6ImRhcmsiLCJ0byI6Ii9hYm91dCIsInByb2dyZXNzIjp7InRoZS1jb2RleC1vZi1saXN0ZW5pbmctMTIxIjpbMC40MixudWxsLDE3OTIwODkwMDBdLCJicmlkZ2UtYmV0d2Vlbi1jaG9yZHMtNjMiOlsxLG51bGwsMTc5MTc5NTYwMF0sInRoZS1jb2RleC1vZi10aGUtaW50ZXJiZWluZy1sYXR0aWNlLTQyIjpbMC45NzUsbnVsbCwxNzkwODU2MDAwXSwibm90LWEtY29kZXgtOSI6WzAuMyxudWxsLDE3ODgyNjQwMDBdfX0"
+  }
+}

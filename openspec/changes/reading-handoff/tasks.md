@@ -24,7 +24,7 @@
 
 - [x] 4.1 Add `src/lib/handoff/envelope.js`: build a document from store state, encode as `#z=` (deflate-raw + base64url) with a `#j=` fallback, decode either, and validate (kind, version, clamped 0–1 values, skip bad entries)
 - [x] 4.2 Unit tests: round trip in both encodings, unknown version rejected, truncated input rejected, out-of-range values clamped, `position: null` handled
-- [ ] 4.3 Capture fixture links from the reader's encoder (after 6.3) into `client/tests/fixtures/handoff/` and add a test that decodes them
+- [x] 4.3 Capture fixture links from the reader's encoder (after 6.3) into `client/tests/fixtures/handoff/` and add a test that decodes them
 
 ## 5. Arrival at `/import` (alignos.io)
 
@@ -44,22 +44,22 @@
 
 ## 7. Legacy reader handoff (`c:\src\alignos`, local branch only until go-live)
 
-- [ ] 7.1 Change the dev script to `--port 5556`
-- [ ] 7.2 Add config reading `VITE_ALIGNOS_ORIGIN` (default `https://alignos.io`) and `VITE_HANDOFF_MODE` (default `prompt`); add `client/.env.development` with `VITE_ALIGNOS_ORIGIN=http://localhost:5555`
-- [ ] 7.3 Add `src/lib/handoff.js`: read localStorage directly and encode a `src: "reader"` document (tuples with `position: null`, theme only when saved, `to` = current path) in the same format as alignos.io
-- [ ] 7.4 Add the client-only handoff component in `App.vue`: the first-visit dialog with read/completed counts (or the no-progress wording), the `alignos-handoff-prompted` flag, the session-dismissible banner above `<RouterView>`, and the link rebuilt on route change and rendered as a plain `<a href>`
-- [ ] 7.5 Forward mode: in the ViteSSG client setup, `location.replace` the handoff link for the current path before mount
-- [ ] 7.6 Verify an `off`-mode build renders no handoff UI, and a production build with no env vars links to `https://alignos.io`
+- [x] 7.1 Change the dev script to `--port 5556`
+- [x] 7.2 Add config reading `VITE_ALIGNOS_ORIGIN` (default `https://alignos.io`) and `VITE_HANDOFF_MODE` (default `prompt`); add `client/.env.development` with `VITE_ALIGNOS_ORIGIN=http://localhost:5555`
+- [x] 7.3 Add `src/lib/handoff.js`: read localStorage directly and encode a `src: "reader"` document (tuples with `position: null`, theme only when saved, `to` = current path) in the same format as alignos.io
+- [x] 7.4 Add the client-only handoff component in `App.vue`: the first-visit dialog with read/completed counts (or the no-progress wording), the `alignos-handoff-prompted` flag, the session-dismissible banner above `<RouterView>`, and the link rebuilt on route change and rendered as a plain `<a href>`
+- [x] 7.5 Forward mode: in the ViteSSG client setup, `location.replace` the handoff link for the current path before mount
+- [x] 7.6 Verify an `off`-mode build renders no handoff UI, and a production build with no env vars links to `https://alignos.io`
 
 ## 8. Two-site testing
 
-- [ ] 8.1 Add `client/playwright.handoff.config.js` running alignos.io on 5555 and the reader from `READER_DIR` (default `../../alignos/client`) on 5556 with `VITE_ALIGNOS_ORIGIN=http://127.0.0.1:5555`; add `npm run test:e2e:handoff`
-- [ ] 8.2 Two-site e2e: seed reader progress for old IDs, accept the dialog, assert merged progress and landing on alignos.io; repeat after more reader reading to confirm nothing is lowered; forward mode from `/codex/bridge-between-chords-63`
+- [x] 8.1 Add `client/playwright.handoff.config.js` running alignos.io on 5555 and the reader from `READER_DIR` (default `../../alignos/client`) on 5556 (prompt) and 5557 (forward), all on `localhost` so a running reader dev server can be reused; add `npm run test:e2e:handoff`
+- [x] 8.2 Two-site e2e: seed reader progress for old IDs, accept the dialog, assert merged progress and landing on alignos.io; repeat after more reader reading to confirm nothing is lowered; forward mode from `/codex/bridge-between-chords-63`
 - [ ] 8.3 Manual pass on real devices: phone and desktop, reader on `localhost:5556` to alignos.io on `localhost:5555` (LAN host for the phone), plus carry from phone to laptop via share and from laptop to phone via QR
 
 ## 9. Docs and launch
 
-- [ ] 9.1 Update `README.md` (and `PRERENDERING-SUMMARY.md` if the route list is documented there) with `/import`, the alias build output, and the two-site test command
+- [x] 9.1 Update `README.md` (and `PRERENDERING-SUMMARY.md` if the route list is documented there) with `/import`, the alias build output, and the two-site test command
 - [ ] 9.2 Get the final copy for the reader dialog, the banner, and the arrival summary reviewed by James
 - [ ] 9.3 Ship the alignos.io side with the launch deploy; after the DNS cut, verify `https://alignos.io/import` with a fixture link and the www 308 to the apex
 - [ ] 9.4 Push the reader to `main`, deploy with no env vars, and verify a seeded handoff from the live reader arrives on `https://alignos.io`

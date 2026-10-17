@@ -10,6 +10,7 @@
     "build:spa": "npm run build:lattice && vite build && node scripts/attribute-md.js",
     "preview": "vite preview",
     "test": "npm run build:lattice && vitest run",
+    "test:e2e:handoff": "playwright test --config playwright.handoff.config.js",
     "test:e2e": "playwright test"
   },
   "dependencies": {
