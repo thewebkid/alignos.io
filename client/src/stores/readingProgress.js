@@ -70,6 +70,11 @@ export const useReadingProgressStore = defineStore('readingProgress', () => {
     return progress.value[codexId]?.scrollPosition || 0
   }
 
+  // Where to reopen a codex: the saved position while it's being read, otherwise the top
+  const resumePosition = (codexId) => {
+    return isStarted(codexId) && !isComplete(codexId) ? getScrollPosition(codexId) : 0
+  }
+
   // Get all codexes sorted by last read
   const recentlyRead = computed(() => {
     return Object.entries(progress.value)
@@ -101,6 +106,7 @@ export const useReadingProgressStore = defineStore('readingProgress', () => {
     isStarted,
     updateProgress,
     getScrollPosition,
+    resumePosition,
     getLastRead,
     recentlyRead,
     stats,

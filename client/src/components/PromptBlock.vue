@@ -63,9 +63,7 @@ const copy = async () => {
 
 .prompt-text {
   margin: 0;
-  font-family: var(--cl-font-reading);
-  font-size-adjust: var(--cl-font-reading-adjust);
-  font-size: calc(1.0625rem * var(--cl-reading-scale));
+  font-size: 1.0625rem;
   font-style: italic;
   line-height: 1.7;
   color: var(--cl-text);

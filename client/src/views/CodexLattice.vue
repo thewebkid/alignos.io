@@ -1,9 +1,16 @@
 <script setup>
-import { ref, computed, inject, onMounted, onUnmounted } from 'vue'
+import { ref, computed, inject, watch, nextTick, onMounted, onBeforeUnmount } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { BDropdown, BDropdownItem, BDropdownDivider, BDropdownHeader } from 'bootstrap-vue-next'
 import CodexGrid from '../components/CodexGrid.vue'
 import { useReadingProgressStore } from '../stores/readingProgress'
+import {
+  useLatticeStateStore,
+  scopeFromQuery,
+  queryFromScope,
+  sameScope,
+  filterChangeScrollTarget
+} from '../stores/latticeState.js'
 import {track} from '../lib/tracker.js';
 import { cdnUrl } from '../lib/cdn-config.js'
 import seriesData from '../generated/series.json'
@@ -11,50 +18,14 @@ import seriesData from '../generated/series.json'
 const codexRegistry = inject('codexRegistry')
 const collections = inject('collections')
 const progressStore = useReadingProgressStore()
+const lattice = useLatticeStateStore()
 const route = useRoute()
 const router = useRouter()
-const scrollPercent = ref(0)
-// Dynamic scroll position key based on route path
-const scrollKey = `lattice-position`
 
-const handleScroll = () => {
+const getScrollContainer = () => (typeof document === 'undefined' ? null : document.querySelector('.main-content'))
 
-
-  const container = getScrollContainer()
-  if (!container) return
-
-
-  localStorage.setItem(scrollKey, container.scrollTop.toString())
-}
-// Get the scrollable container
-const getScrollContainer = () => {
-  return document.querySelector('.main-content')
-}
-
-// Save scroll position before unmounting
-onUnmounted(() => {
-  const container = getScrollContainer()
-  if (container) {
-    localStorage.setItem(scrollKey, container.scrollTop.toString())
-  }
-})
-
-// Restore scroll position on mount
-onMounted(() => {
-  const container = getScrollContainer()
-
-  if (container) {
-    const savedPosition = localStorage.getItem(scrollKey)
-    if (savedPosition) {
-      setTimeout(() => {
-        container.scrollTo({ top: parseInt(savedPosition), behavior: 'instant' })
-      }, 0)
-    }
-  }
-})
-
-// Filter state
-const activeFilter = ref('all')
+// Filter state lives in the lattice store; the URL mirrors the scope so corridors stay shareable
+const activeFilter = computed(() => lattice.progress)
 
 const filters = [
   { id: 'all', label: 'Any progress' },
@@ -65,24 +36,54 @@ const filters = [
 
 const progressLabel = computed(() => filters.find(f => f.id === activeFilter.value).label)
 
-// Series corridor — selected via ?series={series-id}; ?series=none lists works outside every series
+// Series corridor — ?series={series-id}; ?series=none lists works outside every series
 const NO_SERIES = 'none'
 const seriesOptions = [...seriesData].sort((a, b) => a.name.localeCompare(b.name))
 const seriesById = new Map(seriesData.map(s => [s.id, s]))
 
-const selectedSeries = computed(() => {
-  const id = route.query.series
-  return typeof id === 'string' ? seriesById.get(id) ?? null : null
-})
-
-const showNoSeries = computed(() => route.query.series === NO_SERIES)
-
 // Curated collection — ?collection={id}; never active together with ?series=
 const collectionOptions = computed(() => [...(collections?.values() ?? [])].filter(c => c.showInLattice))
 
+// Scopes that no longer exist read as Everything
+const validScope = (scope) => {
+  if (scope?.kind === 'series') return scope.id === NO_SERIES || seriesById.has(scope.id) ? scope : null
+  if (scope?.kind === 'collection') return collections?.get(scope.id)?.showInLattice ? scope : null
+  return null
+}
+
+// The route is global, so these watchers also see the navigation away from the lattice
+const onLattice = () => route.name === 'lattice'
+
+const mirrorUrl = () => {
+  if (!onLattice() || sameScope(validScope(scopeFromQuery(route.query)), lattice.scope)) return
+  const query = { ...route.query }
+  delete query.series
+  delete query.collection
+  router.replace({ query: { ...query, ...queryFromScope(lattice.scope) } })
+}
+
+const arrive = (query) => {
+  lattice.arrive(validScope(scopeFromQuery(query)))
+  if (!validScope(lattice.scope)) lattice.setScope(null)
+}
+
+arrive(route.query)
+watch(() => route.query, (query) => {
+  if (!onLattice()) return
+  arrive(query)
+  mirrorUrl()
+})
+watch(() => lattice.scope, mirrorUrl)
+
+const selectedSeries = computed(() =>
+  lattice.scope?.kind === 'series' ? seriesById.get(lattice.scope.id) ?? null : null
+)
+
+const showNoSeries = computed(() => lattice.scope?.kind === 'series' && lattice.scope.id === NO_SERIES)
+
 const selectedCollection = computed(() => {
-  if (route.query.series) return null
-  const c = collections?.get(route.query.collection)
+  if (lattice.scope?.kind !== 'collection') return null
+  const c = collections?.get(lattice.scope.id)
   return c?.showInLattice ? c : null
 })
 
@@ -101,16 +102,81 @@ const browseValue = computed(() => {
   return ''
 })
 
+// The bar is sticky, so its own rect reports where it's stuck; it docks where the hero ends
+const heroRef = ref(null)
+const dockTop = (main) => (heroRef.value
+  ? heroRef.value.getBoundingClientRect().bottom - main.getBoundingClientRect().top + main.scrollTop
+  : 0)
+
+// Filter changes never move the bar: a docked bar stays docked over the start of the new results
+const keepBarStill = async (change) => {
+  const main = getScrollContainer()
+  const target = main ? filterChangeScrollTarget({ scrollTop: main.scrollTop, dockTop: dockTop(main) }) : null
+  change()
+  if (target === null) return
+  await nextTick()
+  main.scrollTop = target
+}
+
 const browse = (value) => {
   const [kind, id] = value ? value.split(':') : []
-  const query = { ...route.query }
-  delete query.series
-  delete query.collection
-  if (kind && id) query[kind] = id
-  router.replace({ query })
+  keepBarStill(() => lattice.setScope(kind && id ? { kind, id } : null))
   if (kind === 'series') track('filterSeries', { series: id })
   if (kind === 'collection') track('filterCollection', { collection: id })
 }
+
+const setProgressFilter = (id) => {
+  keepBarStill(() => lattice.setProgress(id))
+}
+
+const isFiltered = computed(() => lattice.scope !== null || lattice.progress !== 'all')
+
+const resetFilters = () => {
+  keepBarStill(() => lattice.reset())
+  track('resetLatticeFilters')
+}
+
+// Keeps a docked bar reachable however short the results get
+const resultsMin = ref(0)
+let resizeObserver = null
+let scrollFrame = 0
+let unmounted = false
+
+const onScroll = () => {
+  if (scrollFrame) return
+  scrollFrame = requestAnimationFrame(() => {
+    scrollFrame = 0
+    const main = getScrollContainer()
+    if (main) lattice.saveScroll(main.scrollTop)
+  })
+}
+
+onMounted(() => {
+  const main = getScrollContainer()
+  if (!main) return
+  mirrorUrl()
+
+  resultsMin.value = main.clientHeight
+  resizeObserver = new ResizeObserver(() => {
+    resultsMin.value = main.clientHeight
+  })
+  resizeObserver.observe(main)
+
+  nextTick(() => requestAnimationFrame(() => {
+    if (unmounted) return
+    main.scrollTop = lattice.scrollTop
+    main.addEventListener('scroll', onScroll, { passive: true })
+  }))
+})
+
+// Before unmount, not after: removing the view's DOM clamps scrollTop, which must not be saved
+onBeforeUnmount(() => {
+  unmounted = true
+  cancelAnimationFrame(scrollFrame)
+  resizeObserver?.disconnect()
+  getScrollContainer()?.removeEventListener('scroll', onScroll)
+  lattice.flush()
+})
 
 const getCodexes = (ids) => ids.map(id => codexRegistry?.get(id)).filter(Boolean)
 
@@ -236,9 +302,9 @@ const filterCounts = computed(() => {
 </script>
 
 <template>
-  <div class="browse-view">
+  <div class="browse-view" :style="{ '--lattice-results-min': `${resultsMin}px` }">
     <!-- Hero section -->
-    <section class="hero-section">
+    <section ref="heroRef" class="hero-section">
       <div class="container">
         <h1 class="hero-title">Codex Lattice</h1>
         <p class="hero-subtitle">
@@ -312,7 +378,7 @@ const filterCounts = computed(() => {
               v-for="filter in filters"
               :key="filter.id"
               :active="activeFilter === filter.id"
-              @click="activeFilter = filter.id"
+              @click="setProgressFilter(filter.id)"
             >
               <span class="filter-option">
                 {{ filter.label }}
@@ -321,6 +387,20 @@ const filterCounts = computed(() => {
             </BDropdownItem>
           </BDropdown>
 
+          <button
+            v-if="isFiltered"
+            type="button"
+            class="filter-reset"
+            aria-label="Reset filters"
+            title="Reset filters"
+            @click="resetFilters"
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M3 12a9 9 0 1 0 3-6.7L3 8"/>
+              <path d="M3 3v5h5"/>
+            </svg>
+          </button>
+
           <span class="filter-summary">{{ shownCount }} of {{ scopeCodexes.length }}</span>
         </div>
       </div>
@@ -328,7 +408,7 @@ const filterCounts = computed(() => {
 
     <!-- Codex grid -->
     <section class="grid-section">
-      <div class="container" @scroll="handleScroll">
+      <div class="container">
         <section v-if="showShelf" class="continue-shelf" aria-labelledby="continue-reading">
           <h2 id="continue-reading" class="continue-title">Continue reading</h2>
           <CodexGrid :codexes="continueCodexes" row />
@@ -410,8 +490,9 @@ const filterCounts = computed(() => {
 </template>
 
 <style lang="scss" scoped>
+// The lattice sets its own scroll on filter changes; browser scroll anchoring would nudge it
 .browse-view {
-  // Let content flow naturally
+  overflow-anchor: none;
 }
 
 .hero-section {
@@ -426,6 +507,7 @@ const filterCounts = computed(() => {
 
 .hero-title {
   font-family: var(--bs-font-serif);
+  font-size-adjust: none;
   font-size: clamp(2rem, 5vw, 3rem);
   font-weight: 500;
   color: var(--cl-text-heading);
@@ -509,6 +591,31 @@ const filterCounts = computed(() => {
   }
 }
 
+// Same shape as the filter toggles, icon only
+.filter-reset {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  aspect-ratio: 1;
+  padding: 0 0.625rem;
+  border: 1px solid var(--cl-border-light);
+  border-radius: var(--bs-border-radius);
+  background: var(--cl-surface);
+  color: var(--cl-text-muted);
+  cursor: pointer;
+  transition: color 0.2s ease, border-color 0.2s ease;
+
+  &:hover {
+    border-color: var(--cl-primary);
+    color: var(--cl-primary);
+  }
+
+  svg {
+    opacity: 0.8;
+  }
+}
+
 .filter-label {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -545,12 +652,15 @@ const filterCounts = computed(() => {
 .continue-title {
   margin: 0 0 1rem;
   font-family: var(--bs-font-serif);
+  font-size-adjust: none;
   font-size: 1.1875rem;
   font-weight: 500;
   color: var(--cl-text-heading);
 }
 
+// At least the visible height, so the page can always scroll far enough to keep the bar docked
 .grid-section {
+  min-height: var(--lattice-results-min, 0px);
   padding: 2rem 0;
 }
 
@@ -565,6 +675,7 @@ const filterCounts = computed(() => {
 
 .corridor-title {
   font-family: var(--bs-font-serif);
+  font-size-adjust: none;
   font-size: clamp(1.625rem, 3.5vw, 2.25rem);
   font-weight: 500;
   color: var(--cl-text-heading);
@@ -605,6 +716,7 @@ const filterCounts = computed(() => {
 
 .corridor-section-title {
   font-family: var(--bs-font-serif);
+  font-size-adjust: none;
   font-size: 1.1875rem;
   font-weight: 500;
   color: var(--cl-text-heading);

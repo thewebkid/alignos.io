@@ -24,8 +24,9 @@ test('a glossary term opens its definition', async ({ page }) => {
 test('reading progress survives a reload', async ({ page }) => {
   await page.goto('/codex/when-ai-remembers-the-field')
   await expect(page.locator('.codex-content')).toBeVisible()
+  // Halfway, not the end: a finished codex reopens at the top
   await page.locator('.main-content').evaluate((el) => {
-    el.scrollTop = el.scrollHeight
+    el.scrollTop = (el.scrollHeight - el.clientHeight) / 2
   })
   await expect.poll(() => page.evaluate(() => localStorage.getItem('codex-reading-progress'))).toContain('when-ai-remembers-the-field')
   await page.reload()

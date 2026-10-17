@@ -64,7 +64,8 @@ $body-color: $warm-800;
 // Typography
 $font-family-sans-serif: 'Source Sans 3', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 $font-family-serif: 'Cormorant Garamond', 'Playfair Display', Georgia, 'Times New Roman', serif;
-$font-family-base: $font-family-sans-serif;
+// The reading-font setting is the site's body font; it defaults to $font-family-sans-serif (main.scss)
+$font-family-base: var(--cl-font-reading);
 
 $font-size-base: 1rem;
 $line-height-base: 1.6;

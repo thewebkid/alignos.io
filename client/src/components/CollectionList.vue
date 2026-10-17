@@ -5,6 +5,7 @@
 import { computed, inject } from 'vue'
 import { cdnUrl } from '../lib/cdn-config.js'
 import { track } from '../lib/tracker.js'
+import { useLatticeStateStore } from '../stores/latticeState.js'
 
 const props = defineProps({
   id: {
@@ -15,6 +16,7 @@ const props = defineProps({
 
 const collections = inject('collections')
 const codexRegistry = inject('codexRegistry')
+const lattice = useLatticeStateStore()
 
 const collection = computed(() => collections?.get(props.id) ?? null)
 
@@ -44,6 +46,9 @@ const itemLink = (item) =>
     ? { name: 'lattice', query: { series: item.id } }
     : { name: 'reader', params: { id: item.id } }
 
+const seriesLink = (s) => ({ name: 'lattice', query: { series: s.id } })
+const collectionLink = computed(() => ({ name: 'lattice', query: { collection: props.id } }))
+
 const seriesLabel = (s) => (s.position && s.total ? `${s.name} · Part ${s.position} of ${s.total}` : s.name)
 
 const paragraphs = (note) => (note ? note.split('\n\n') : [])
@@ -59,27 +64,28 @@ const paragraphs = (note) => (note ? note.split('\n\n') : [])
       :class="`collection-section--${section.style}`"
     >
       <li v-for="item in section.items" :key="`${item.kind}-${item.id}`" class="collection-item">
-        <RouterLink v-if="thumbFor(item)" :to="itemLink(item)" class="item-thumb" tabindex="-1" aria-hidden="true">
+        <RouterLink v-if="thumbFor(item)" :to="itemLink(item)" @click="lattice.primeLink(itemLink(item), $event)" class="item-thumb" tabindex="-1" aria-hidden="true">
           <img :src="thumbFor(item)" alt="" loading="lazy" />
         </RouterLink>
 
         <div class="item-body">
           <h3 class="item-title">
             <span v-if="section.style === 'star'" class="item-star" aria-hidden="true">✧ </span>
-            <RouterLink :to="itemLink(item)" class="cl-title-link">{{ item.label }}</RouterLink>
+            <RouterLink :to="itemLink(item)" @click="lattice.primeLink(itemLink(item), $event)" class="cl-title-link">{{ item.label }}</RouterLink>
           </h3>
 
           <RouterLink
             v-if="item.series"
-            :to="{ name: 'lattice', query: { series: item.series.id } }"
+            :to="seriesLink(item.series)"
             class="item-series"
+            @click="lattice.primeLink(seriesLink(item.series), $event)"
           >{{ seriesLabel(item.series) }}</RouterLink>
 
           <p v-if="item.tagline" class="item-tagline"><em>{{ item.tagline }}</em></p>
           <p v-for="(p, pi) in paragraphs(item.note)" :key="pi" class="item-note">{{ p }}</p>
 
           <div class="item-actions">
-            <RouterLink :to="itemLink(item)" class="cl-pill cl-pill--primary">
+            <RouterLink :to="itemLink(item)" @click="lattice.primeLink(itemLink(item), $event)" class="cl-pill cl-pill--primary">
               {{ item.kind === 'series' ? 'View series' : 'Read' }}
             </RouterLink>
           </div>
@@ -88,7 +94,7 @@ const paragraphs = (note) => (note ? note.split('\n\n') : [])
     </component>
 
     <p v-if="collection.showInLattice" class="collection-lattice-link">
-      <RouterLink :to="{ name: 'lattice', query: { collection: collection.id } }">Browse these in the Codex Lattice</RouterLink>
+      <RouterLink :to="collectionLink" @click="lattice.primeLink(collectionLink, $event)">Browse these in the Codex Lattice</RouterLink>
     </p>
 
     <p v-if="collection.offerBundle" class="collection-bundle">
@@ -162,6 +168,7 @@ const paragraphs = (note) => (note ? note.split('\n\n') : [])
 
 .item-title {
   font-family: var(--bs-font-serif);
+  font-size-adjust: none;
   font-size: 1.375rem;
   font-weight: 500;
   margin: 0 0 0.375rem;
@@ -187,8 +194,6 @@ const paragraphs = (note) => (note ? note.split('\n\n') : [])
 
 .item-tagline {
   margin: 0 0 0.625rem;
-  font-family: var(--cl-font-reading);
-  font-size-adjust: var(--cl-font-reading-adjust);
   font-size: 1rem;
   color: var(--cl-text-muted);
 }
