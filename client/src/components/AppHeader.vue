@@ -377,6 +377,22 @@ const handleSearchClick = () => {
   }
 }
 
+// Desktop nav stays on one line; at the largest text size the narrow desktop band needs tighter links
+@media (min-width: 992px) {
+  .nav-link,
+  .navbar-nav :deep(.dropdown-toggle) {
+    white-space: nowrap;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .nav-link,
+  .navbar-nav :deep(.dropdown-toggle) {
+    padding-right: 0.625rem !important;
+    padding-left: 0.625rem !important;
+  }
+}
+
 // Collapsed mobile menu
 @media (max-width: 991.98px) {
   .navbar-collapse {
@@ -420,6 +436,7 @@ const handleSearchClick = () => {
   background: transparent;
   color: var(--cl-text-muted);
   font-family: var(--bs-font-serif);
+  font-size-adjust: none;
   font-size: 1.125rem;
   font-weight: 600;
   transition: all 0.2s ease;

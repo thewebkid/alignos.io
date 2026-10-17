@@ -23,4 +23,20 @@ describe('reading progress', () => {
     expect(store.isComplete('codex-a')).toBe(true)
     expect(store.stats.completed).toBe(1)
   })
+
+  it('resumes only a codex that is started and not complete', () => {
+    const store = useReadingProgressStore()
+
+    expect(store.resumePosition('never-opened')).toBe(0)
+
+    store.updateProgress('reading', 40, 1200)
+    expect(store.resumePosition('reading')).toBe(1200)
+
+    store.updateProgress('finished', 95, 8000)
+    expect(store.resumePosition('finished')).toBe(0)
+
+    // Scrolling back after finishing doesn't lower the furthest point, so it still opens at the top
+    store.updateProgress('finished', 40, 3000)
+    expect(store.resumePosition('finished')).toBe(0)
+  })
 })

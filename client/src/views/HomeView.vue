@@ -3,9 +3,11 @@
 // The spotlight and Featured Writings come from data/collections.json.
 import { computed, inject } from 'vue'
 import { cdnUrl } from '../lib/cdn-config.js'
+import { useLatticeStateStore } from '../stores/latticeState.js'
 
 const collections = inject('collections')
 const codexRegistry = inject('codexRegistry')
+const lattice = useLatticeStateStore()
 
 const spotlight = computed(() => {
   const item = collections?.get('home-spotlight')?.items[0]
@@ -68,14 +70,14 @@ const invitations = [
     <section v-if="spotlight" class="home-spotlight">
       <div class="container">
         <div class="spotlight-inner">
-          <RouterLink v-if="spotlight.cover" :to="itemLink(spotlight)" class="spotlight-cover" tabindex="-1" aria-hidden="true">
+          <RouterLink v-if="spotlight.cover" :to="itemLink(spotlight)" @click="lattice.primeLink(itemLink(spotlight), $event)" class="spotlight-cover" tabindex="-1" aria-hidden="true">
             <img :src="spotlight.cover" alt="" />
           </RouterLink>
           <div class="spotlight-text">
             <h2 class="section-title">{{ spotlight.label }}</h2>
             <p class="spotlight-quote">{{ spotlight.note }}</p>
             <div class="home-actions">
-              <RouterLink :to="itemLink(spotlight)" class="cl-pill cl-pill--primary">Read</RouterLink>
+              <RouterLink :to="itemLink(spotlight)" @click="lattice.primeLink(itemLink(spotlight), $event)" class="cl-pill cl-pill--primary">Read</RouterLink>
             </div>
           </div>
         </div>
@@ -111,15 +113,15 @@ const invitations = [
         <p class="featured-intro" v-html="featuredIntro"></p>
         <div class="featured-grid">
           <article v-for="item in featured.items" :key="`${item.kind}-${item.id}`" class="featured-card">
-            <RouterLink v-if="coverFor(item)" :to="itemLink(item)" class="featured-cover" tabindex="-1" aria-hidden="true">
+            <RouterLink v-if="coverFor(item)" :to="itemLink(item)" @click="lattice.primeLink(itemLink(item), $event)" class="featured-cover" tabindex="-1" aria-hidden="true">
               <img :src="coverFor(item)" alt="" loading="lazy" />
             </RouterLink>
             <h3 class="featured-title">
-              <RouterLink :to="itemLink(item)" class="cl-title-link">{{ item.label }}</RouterLink>
+              <RouterLink :to="itemLink(item)" @click="lattice.primeLink(itemLink(item), $event)" class="cl-title-link">{{ item.label }}</RouterLink>
             </h3>
             <p class="featured-note">{{ item.note }}</p>
             <div class="home-actions">
-              <RouterLink :to="itemLink(item)" class="cl-pill cl-pill--primary">
+              <RouterLink :to="itemLink(item)" @click="lattice.primeLink(itemLink(item), $event)" class="cl-pill cl-pill--primary">
                 {{ item.kind === 'series' ? 'View series' : 'Read' }}
               </RouterLink>
             </div>
@@ -180,6 +182,7 @@ section {
 
 .section-title {
   font-family: var(--bs-font-serif);
+  font-size-adjust: none;
   font-size: clamp(1.625rem, 3vw, 2.125rem);
   font-weight: 500;
   color: var(--cl-text-heading);
@@ -199,6 +202,7 @@ section {
 
 .hero-lines {
   font-family: var(--bs-font-serif);
+  font-size-adjust: none;
   font-size: clamp(1.875rem, 4.8vw, 3rem);
   font-weight: 500;
   line-height: 1.45;
@@ -208,6 +212,7 @@ section {
 
 .hero-welcome {
   font-family: var(--bs-font-serif);
+  font-size-adjust: none;
   font-size: 1.5rem;
   color: var(--cl-accent);
   margin: 0;
@@ -235,8 +240,6 @@ section {
 }
 
 .spotlight-quote {
-  font-family: var(--cl-font-reading);
-  font-size-adjust: var(--cl-font-reading-adjust);
   font-size: 1.1875rem;
   font-style: italic;
   line-height: 1.75;
@@ -265,6 +268,7 @@ section {
 
 .invitation-heading {
   font-family: var(--bs-font-serif);
+  font-size-adjust: none;
   font-size: 1.5rem;
   font-weight: 500;
   color: var(--cl-text-heading);
@@ -298,8 +302,6 @@ section {
   }
 
   p {
-    font-family: var(--cl-font-reading);
-    font-size-adjust: var(--cl-font-reading-adjust);
     font-size: clamp(1.1875rem, 2.2vw, 1.5rem);
     font-style: italic;
     line-height: 1.6;
@@ -358,6 +360,7 @@ section {
 
 .featured-title {
   font-family: var(--bs-font-serif);
+  font-size-adjust: none;
   font-size: 1.4375rem;
   font-weight: 500;
   margin: 1.25rem 0 0.5rem;
@@ -392,8 +395,6 @@ section {
   text-align: center;
 
   p {
-    font-family: var(--cl-font-reading);
-    font-size-adjust: var(--cl-font-reading-adjust);
     font-size: 1.1875rem;
     font-style: italic;
     line-height: 1.9;

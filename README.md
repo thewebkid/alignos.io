@@ -224,4 +224,5 @@ For issues or questions, please open an issue on GitHub.
 
 ---
 
-Built with ❤️ by Claude, Grok, Copilot, and Ron (thewebkid)
+Web app built with ❤️ by Claude, Grok, Kimi, Copilot, and Ron (thewebkid)
+All Content Transmissions By James Mahu and Lumina

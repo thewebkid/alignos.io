@@ -1,9 +1,10 @@
 <script setup>
-import { ref, computed, inject, onMounted, onUnmounted, watch, nextTick } from 'vue'
+import { ref, computed, inject, onMounted, onBeforeUnmount, watch, nextTick } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { useHead } from '@unhead/vue'
 import { useReadingProgressStore } from '../stores/readingProgress'
 import { useReadingSettingsStore } from '../stores/readingSettings.js'
+import { useLatticeStateStore } from '../stores/latticeState.js'
 import { BDropdown, BDropdownItem, BDropdownDivider } from 'bootstrap-vue-next'
 import GlossaryPopover from '../components/GlossaryPopover.vue'
 import { cdnUrl } from '../lib/cdn-config.js'
@@ -17,6 +18,7 @@ const glossaryManager = inject('glossaryManager')
 const glossaryRevision = inject('glossaryRevision', ref(0))
 const progressStore = useReadingProgressStore()
 const settings = useReadingSettingsStore()
+const lattice = useLatticeStateStore()
 
 // Loading state
 const isLoadingContent = ref(false)
@@ -87,6 +89,10 @@ const handleScroll = () => {
   if (scrollHeight > 0) {
     scrollPercent.value = Math.round((scrollTop / scrollHeight) * 100)
 
+    // Sitting at the top hasn't begun a codex; this also drops scroll events queued by the
+    // page transition (the shell's reset to 0) that arrive after this view mounts
+    if (codex.value && scrollTop <= 0 && !progressStore.isStarted(codex.value.id)) return
+
     // Throttled progress update
     if (codex.value) {
       progressStore.updateProgress(codex.value.id, scrollPercent.value, scrollTop)
@@ -106,26 +112,65 @@ const handleContentClick = (e) => {
   }
 }
 
-// Restore scroll position on mount
-onMounted(async () => {
+// Resume a codex that's being read. Waits for the text, then for the cover (it has no reserved
+// height, so it moves everything below it), and gives up if the reader scrolls first.
+const coverRef = ref(null)
+const COVER_WAIT_MS = 2000
+const USER_SCROLL_EVENTS = ['wheel', 'touchstart', 'pointerdown', 'keydown']
+let cancelRestore = null
+
+// Reads the loading flags, not htmlContent: isContentLoaded() isn't reactive, so evaluating
+// htmlContent before the load finishes would cache an empty render
+const contentSettled = () => new Promise((resolve) => {
+  const settled = () => !isLoadingContent.value && Boolean(contentLoadError.value || codex.value?.isContentLoaded())
+  if (settled()) return resolve()
+  const stop = watch(settled, (done) => {
+    if (!done) return
+    stop()
+    resolve()
+  })
+})
+
+const coverSettled = () => new Promise((resolve) => {
+  const img = coverRef.value
+  if (!img || img.complete) return resolve()
+  img.addEventListener('load', resolve, { once: true })
+  img.addEventListener('error', resolve, { once: true })
+  setTimeout(resolve, COVER_WAIT_MS)
+})
+
+const restorePosition = (container, top) => {
+  let cancelled = false
+  const cancel = () => {
+    cancelled = true
+    USER_SCROLL_EVENTS.forEach((type) => container.removeEventListener(type, cancel))
+  }
+  USER_SCROLL_EVENTS.forEach((type) => container.addEventListener(type, cancel, { passive: true }))
+
+  contentSettled()
+    .then(() => nextTick())
+    .then(coverSettled)
+    .then(() => {
+      if (cancelled) return
+      container.scrollTo({ top, behavior: 'instant' })
+      cancel()
+    })
+  return cancel
+}
+
+onMounted(() => {
   const container = getScrollContainer()
   if (!container) return
 
-  if (codex.value) {
-    const savedPosition = progressStore.getScrollPosition(codex.value.id)
-    // Small delay to ensure content is rendered
-    await nextTick()
-    setTimeout(() => {
-      container.scrollTo({ top: savedPosition, behavior: 'instant' })
-    }, 100)
-
-  }
+  const top = codex.value ? progressStore.resumePosition(codex.value.id) : 0
+  if (top > 0) cancelRestore = restorePosition(container, top)
 
   container.addEventListener('scroll', handleScroll, { passive: true })
-  //handleScroll() // Initial calculation
 })
 
-onUnmounted(() => {
+// Before unmount, not after: removing the view's DOM clamps scrollTop, which must not be recorded
+onBeforeUnmount(() => {
+  cancelRestore?.()
   const container = getScrollContainer()
   if (container) {
     container.removeEventListener('scroll', handleScroll)
@@ -333,7 +378,7 @@ const openReadingSettings = () => {
           </div>
 
           <div v-if="seriesLabel || earlierEditions.length || alternativeVersions.length || registryLines.length" class="codex-context">
-            <RouterLink v-if="seriesLink" :to="seriesLink" class="context-series">{{ seriesLabel }}</RouterLink>
+            <RouterLink v-if="seriesLink" :to="seriesLink" class="context-series" @click="lattice.primeLink(seriesLink, $event)">{{ seriesLabel }}</RouterLink>
             <span v-else-if="seriesLabel" class="context-series">{{ seriesLabel }}</span>
             <span v-for="e in earlierEditions" :key="e.id" class="context-edition">
               Earlier edition:
@@ -345,7 +390,7 @@ const openReadingSettings = () => {
             </span>
             <span v-for="(line, i) in registryLines" :key="`${line.kind}-${i}`" class="context-edition">
               {{ line.label }}:
-              <RouterLink v-if="line.to" :to="line.to">{{ line.text }}</RouterLink>
+              <RouterLink v-if="line.to" :to="line.to" @click="lattice.primeLink(line.to, $event)">{{ line.text }}</RouterLink>
               <template v-else>{{ line.text }}</template>
             </span>
           </div>
@@ -356,6 +401,7 @@ const openReadingSettings = () => {
                leading cover image, so the reader paints it explicitly.) -->
           <img
             v-if="coverSrc"
+            ref="coverRef"
             :src="coverSrc"
             :alt="codex.title"
             class="reader-cover-image"
@@ -497,6 +543,7 @@ const openReadingSettings = () => {
   width: 18px;
   text-align: center;
   font-family: var(--bs-font-serif);
+  font-size-adjust: none;
   font-weight: 600;
   color: var(--cl-text-muted);
 }
@@ -504,6 +551,7 @@ const openReadingSettings = () => {
 .reader-title {
   max-width: 100%;
   font-family: var(--bs-font-serif);
+  font-size-adjust: none;
   font-size: 1rem;
   font-weight: 500;
   color: var(--cl-text-heading);
@@ -599,6 +647,7 @@ const openReadingSettings = () => {
   a {
     color: var(--cl-primary);
     font-family: var(--bs-font-serif);
+    font-size-adjust: none;
   }
 }
 
@@ -673,6 +722,7 @@ const openReadingSettings = () => {
 
 .series-title {
   font-family: var(--bs-font-serif);
+  font-size-adjust: none;
   font-size: 1rem;
   color: var(--cl-primary);
   font-weight: 500;

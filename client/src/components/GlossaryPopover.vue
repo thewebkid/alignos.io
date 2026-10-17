@@ -245,6 +245,7 @@ onUnmounted(() => {
   background: transparent;
   color: var(--cl-text-muted);
   font-family: var(--bs-font-serif);
+  font-size-adjust: none;
   font-size: 0.9375rem;
   font-weight: 600;
   line-height: 1.3;
@@ -259,6 +260,7 @@ onUnmounted(() => {
 
 .glossary-popover-title {
   font-family: var(--bs-font-serif);
+  font-size-adjust: none;
   font-size: 1.1rem;
   font-weight: 600;
   color: var(--cl-text-heading);

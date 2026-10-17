@@ -159,6 +159,7 @@ const editionLabel = computed(() => {
   background: linear-gradient(135deg, var(--cl-primary), var(--cl-accent));
   color: white;
   font-family: var(--bs-font-serif),serif;
+  font-size-adjust: none;
   font-size: 3rem;
   font-weight: 500;
 }

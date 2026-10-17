@@ -252,6 +252,7 @@ const goToPage = (page) => {
 
   h1 {
     font-family: var(--bs-font-serif);
+    font-size-adjust: none;
     color: var(--cl-text-heading);
     margin-bottom: 0.5rem;
   }
@@ -344,6 +345,7 @@ const goToPage = (page) => {
 
 .result-title {
   font-family: var(--bs-font-serif);
+  font-size-adjust: none;
   font-size: 1.125rem;
   font-weight: 500;
   color: var(--cl-text-heading);

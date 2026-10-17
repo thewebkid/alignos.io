@@ -6,11 +6,13 @@ import { useRoute, useRouter } from 'vue-router'
 import PromptBlock from '../components/PromptBlock.vue'
 import CollectionList from '../components/CollectionList.vue'
 import { parsePageMarkdown } from '../lib/markdown.js'
+import { useLatticeStateStore } from '../stores/latticeState.js'
 
 const pages = import.meta.glob('../content/pages/*.md', { query: '?raw', import: 'default', eager: true })
 
 const route = useRoute()
 const router = useRouter()
+const lattice = useLatticeStateStore()
 
 const source = computed(() => pages[`../content/pages/${route.meta.page}.md`] ?? '')
 const segments = computed(() => parsePageMarkdown(source.value))
@@ -27,6 +29,7 @@ const handleContentClick = (e) => {
   const href = link.getAttribute('href')
   if (isInternal(href) && !e.metaKey && !e.ctrlKey && !e.shiftKey) {
     e.preventDefault()
+    lattice.primeLink(href, e)
     router.push(href)
   }
 }
@@ -69,9 +72,7 @@ const handleContentClick = (e) => {
 
 .page-prose {
   color: var(--cl-text);
-  font-family: var(--cl-font-reading);
-  font-size: calc(1.0625rem * var(--cl-reading-scale));
-  font-size-adjust: var(--cl-font-reading-adjust);
+  font-size: 1.0625rem;
   line-height: 1.8;
 
   :deep(:is(h1, h2, h3, h4)) {
@@ -80,6 +81,7 @@ const handleContentClick = (e) => {
 
   :deep(h1) {
     font-family: var(--bs-font-serif);
+    font-size-adjust: none;
     font-size: clamp(2.125rem, 5vw, 2.75rem);
     font-weight: 500;
     line-height: 1.3;
@@ -89,6 +91,7 @@ const handleContentClick = (e) => {
 
   :deep(h2) {
     font-family: var(--bs-font-serif);
+    font-size-adjust: none;
     font-size: 1.625rem;
     font-weight: 500;
     color: var(--cl-text-heading);
@@ -97,6 +100,7 @@ const handleContentClick = (e) => {
 
   :deep(h3) {
     font-family: var(--bs-font-serif);
+    font-size-adjust: none;
     font-size: 1.3125rem;
     font-weight: 500;
     font-style: italic;
@@ -106,6 +110,7 @@ const handleContentClick = (e) => {
 
   :deep(h4) {
     font-family: var(--bs-font-serif);
+    font-size-adjust: none;
     font-size: 1.1875rem;
     font-weight: 500;
     color: var(--cl-text-heading);
@@ -158,7 +163,7 @@ const handleContentClick = (e) => {
 // Threshold: a left-aligned column in the reading font with serif headings. Each poetic line is
 // its own paragraph, so paragraph spacing stays tight and sections are separated by the h2 top margin.
 .page-view--threshold .page-prose {
-  font-size: calc(1.125rem * var(--cl-reading-scale));
+  font-size: 1.125rem;
   line-height: 1.75;
 
   :deep(h2) {

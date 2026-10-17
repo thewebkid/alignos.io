@@ -102,8 +102,8 @@ onMounted(async () => {
   }
 })
 
-// Runs after the old view unmounts (lattice and reader have saved their positions) and before
-// the new view mounts and restores its own
+// The view is keyed by path, so this runs on every path change: after the old view unmounts and
+// before the new one mounts. Views that remember a position (lattice, reader) restore it on mount.
 const resetScroll = () => {
   const main = document.querySelector('.main-content')
   if (main) main.scrollTop = 0
@@ -138,9 +138,9 @@ const handleKeydown = (e) => {
     <AppHeader @open-search="openSearch" />
 
     <main class="main-content">
-      <RouterView v-slot="{ Component }">
+      <RouterView v-slot="{ Component, route: viewRoute }">
         <transition name="fade" mode="out-in" @after-leave="resetScroll">
-          <component :is="Component" />
+          <component :is="Component" :key="viewRoute.path" />
         </transition>
       </RouterView>
       <AppFooter />
@@ -185,9 +185,7 @@ const handleKeydown = (e) => {
 
 // Global typography overrides for codex content
 .codex-content {
-  font-family: var(--cl-font-reading);
-  font-size: calc(1.125rem * var(--cl-reading-scale));
-  font-size-adjust: var(--cl-font-reading-adjust);
+  font-size: 1.125rem;
   line-height: 1.8;
   color: var(--cl-reader-text);
 

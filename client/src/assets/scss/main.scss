@@ -26,15 +26,18 @@
 // =============================================================================
 
 // HTML & Body baseline
+// The text-size setting scales the root, so every rem on the site (type and rem spacing) follows it
 html {
   scroll-behavior: smooth;
   height: 100%;
+  font-size: calc(100% * var(--cl-reading-scale));
 }
 
 body {
   background-color: var(--cl-bg);
   color: var(--cl-text);
-  font-family: $font-family-sans-serif;
+  font-family: var(--cl-font-reading);
+  font-size-adjust: var(--cl-font-reading-adjust);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100%;
@@ -48,13 +51,22 @@ body {
   width: 100%;
 }
 
-// Custom font stack CSS variables. Reading settings override the reading font and scale on <html>.
+// Custom font stack CSS variables. Reading settings override the reading font and scale on <html>;
+// the reading font is the body font everywhere, and the scale sizes the root.
 :root {
-  --bs-font-serif: #{$font-family-serif};
-  --cl-font-reading: #{$font-family-sans-serif};
+  // inspect() keeps the quotes; unquoted, 'Source Sans 3' is an invalid family name
+  --bs-font-serif: #{inspect($font-family-serif)};
+  --cl-font-reading: #{inspect($font-family-sans-serif)};
   // Source Sans 3's x-height ratio, so other reading fonts render at the same apparent size
   --cl-font-reading-adjust: 0.486;
   --cl-reading-scale: 1;
+}
+
+// font-size-adjust is inherited from body and tuned to the reading font; the heading face opts out.
+// Rules that set var(--bs-font-serif) on other elements opt out beside the font-family.
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-size-adjust: none;
 }
 
 // Focus styles
@@ -183,6 +195,7 @@ body {
 
   .offcanvas-title {
     font-family: var(--bs-font-serif);
+    font-size-adjust: none;
     font-weight: 500;
     color: var(--cl-text-heading);
   }
@@ -231,6 +244,7 @@ a {
 
 .font-serif {
   font-family: var(--bs-font-serif) !important;
+  font-size-adjust: none;
 }
 
 .text-heading {
