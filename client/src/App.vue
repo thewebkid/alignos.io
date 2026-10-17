@@ -6,6 +6,7 @@ import { Analytics } from '@vercel/analytics/vue'
 import AppHeader from './components/AppHeader.vue'
 import AppFooter from './components/AppFooter.vue'
 import SearchOverlay from './components/SearchOverlay.vue'
+import CarryReadingModal from './components/CarryReadingModal.vue'
 import { initThemeEarly } from './composables/useTheme'
 import { BrowserCodex } from './lib/codex-browser.js'
 import { createGlossaryFromRegistry } from './lib/glossary.js'
@@ -150,6 +151,7 @@ const handleKeydown = (e) => {
       :show="showSearch"
       @close="closeSearch"
     />
+    <CarryReadingModal />
   </div>
 </template>
 

@@ -10,6 +10,7 @@
     "build:spa": "npm run build:lattice && vite build && node scripts/attribute-md.js",
     "preview": "vite preview",
     "test": "npm run build:lattice && vitest run",
+    "test:e2e:handoff": "playwright test --config playwright.handoff.config.js",
     "test:e2e": "playwright test"
   },
   "dependencies": {
@@ -20,6 +21,7 @@
     "dompurify": "^3.3.1",
     "marked": "^17.0.1",
     "pinia": "^3.0.4",
+    "uqr": "^0.1.3",
     "vue": "^3.5.24",
     "vue-router": "^4.6.4"
   },

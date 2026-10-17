@@ -101,6 +101,9 @@ export const useReadingSettingsStore = defineStore('readingSettings', () => {
   // Whether the settings panel is open; opened from the header, glossary popup, or codex menu
   const panelOpen = ref(false)
 
+  // The "Carry my reading" dialog, opened from the panel; it replaces the panel rather than stacking on it
+  const carryOpen = ref(false)
+
   const fontOption = computed(() => READING_FONTS.find(f => f.id === font.value))
   const wpm = computed(() => READING_PACES.find(p => p.id === pace.value).wpm)
 
@@ -154,6 +157,11 @@ export const useReadingSettingsStore = defineStore('readingSettings', () => {
     panelOpen.value = false
   }
 
+  const openCarry = () => {
+    panelOpen.value = false
+    carryOpen.value = true
+  }
+
   return {
     font,
     scale,
@@ -161,8 +169,10 @@ export const useReadingSettingsStore = defineStore('readingSettings', () => {
     pace,
     wpm,
     panelOpen,
+    carryOpen,
     minutesFor,
     openPanel,
-    closePanel
+    closePanel,
+    openCarry
   }
 })

@@ -1,7 +1,8 @@
 import { defineStore } from 'pinia'
 import { ref, computed, watch } from 'vue'
+import { COMPLETE_AT, mergeProgress, normalizeProgress, roundFraction } from '../lib/progress.js'
 
-const STORAGE_KEY = 'codex-reading-progress'
+export const STORAGE_KEY = 'codex-reading-progress'
 
 export const useReadingProgressStore = defineStore('readingProgress', () => {
   // Load initial state from localStorage (client-side only)
@@ -9,7 +10,7 @@ export const useReadingProgressStore = defineStore('readingProgress', () => {
     if (typeof window === 'undefined') return {}
     try {
       const stored = localStorage.getItem(STORAGE_KEY)
-      return stored ? JSON.parse(stored) : {}
+      return stored ? normalizeProgress(JSON.parse(stored)) : {}
     } catch (e) {
       console.warn('Failed to load reading progress:', e)
       return {}
@@ -36,14 +37,19 @@ export const useReadingProgressStore = defineStore('readingProgress', () => {
     return progress.value[codexId]?.lastRead ||
       'unopened';
   }
-  // Get scroll percentage for a codex
-  const getScrollPercent = (codexId) => {
-    return progress.value[codexId]?.scrollPercent || 0
+
+  // Furthest point reached, as a fraction
+  const getFurthest = (codexId) => {
+    return progress.value[codexId]?.furthest || 0
   }
 
-  // Check if codex is complete (>= 95% read)
+  // Furthest point as a whole percent, for display and filters
+  const getScrollPercent = (codexId) => {
+    return Math.round(getFurthest(codexId) * 100)
+  }
+
   const isComplete = (codexId) => {
-    return getScrollPercent(codexId) >= 95
+    return getFurthest(codexId) >= COMPLETE_AT
   }
 
   // Check if codex has been started
@@ -51,43 +57,39 @@ export const useReadingProgressStore = defineStore('readingProgress', () => {
     return !!progress.value[codexId]
   }
 
-  // Update progress for a codex
-  const updateProgress = (codexId, scrollPercent, scrollPosition) => {
-    const existing = progress.value[codexId] || {}
-
-    // Always update the last position (for restoration to where user left off)
-    // But only increase the max scroll percent (for progress tracking - never decreases)
+  // Record the current position (a fraction); the furthest point never decreases
+  const updateProgress = (codexId, fraction) => {
+    const existing = progress.value[codexId]
+    const position = roundFraction(fraction)
     progress.value[codexId] = {
-      ...existing,
-      scrollPercent: Math.max(scrollPercent, existing.scrollPercent || 0),
-      scrollPosition, // Always update to current position
+      furthest: Math.max(position, existing?.furthest || 0),
+      position,
       lastRead: new Date().toISOString()
     }
   }
 
-  // Get last scroll position for restoration
-  const getScrollPosition = (codexId) => {
-    return progress.value[codexId]?.scrollPosition || 0
+  // Where to reopen a codex, as a fraction: the saved position while it's being read, otherwise the top
+  const resumePosition = (codexId) => {
+    return isStarted(codexId) && !isComplete(codexId) ? progress.value[codexId].position : 0
   }
 
-  // Where to reopen a codex: the saved position while it's being read, otherwise the top
-  const resumePosition = (codexId) => {
-    return isStarted(codexId) && !isComplete(codexId) ? getScrollPosition(codexId) : 0
+  // Combine progress from another device or site; nothing already read is lowered
+  const merge = (incoming) => {
+    progress.value = mergeProgress(progress.value, incoming)
   }
 
   // Get all codexes sorted by last read
   const recentlyRead = computed(() => {
     return Object.entries(progress.value)
-      .filter(([_, data]) => data.lastRead)
       .sort((a, b) => new Date(b[1].lastRead) - new Date(a[1].lastRead))
-      .map(([id, data]) => ({ id, ...data }))
+      .map(([id, data]) => ({ id, ...data, scrollPercent: Math.round(data.furthest * 100) }))
   })
 
   // Get reading statistics
   const stats = computed(() => {
-    const entries = Object.entries(progress.value)
+    const entries = Object.values(progress.value)
     const started = entries.length
-    const completed = entries.filter(([_, data]) => data.scrollPercent >= 95).length
+    const completed = entries.filter((data) => data.furthest >= COMPLETE_AT).length
     const inProgress = started - completed
 
     return { started, completed, inProgress }
@@ -101,12 +103,13 @@ export const useReadingProgressStore = defineStore('readingProgress', () => {
   return {
     progress,
     getProgress,
+    getFurthest,
     getScrollPercent,
     isComplete,
     isStarted,
     updateProgress,
-    getScrollPosition,
     resumePosition,
+    merge,
     getLastRead,
     recentlyRead,
     stats,

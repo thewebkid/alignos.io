@@ -16,6 +16,7 @@ import { fileURLToPath, pathToFileURL } from 'url';
 import { stripLeadingCoverImage } from '../src/lib/markdown-export.js';
 import { resolveSeries } from './series-registry.js';
 import { resolveCollections } from './collections.js';
+import { resolveAliases } from './codex-aliases.js';
 import { codexUrl } from './canonical.js';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -25,12 +26,14 @@ const REPO_ROOT = path.join(CLIENT_DIR, '..');
 const CATALOG_FILE = path.join(REPO_ROOT, 'data', 'codex-catalog.json');
 const SERIES_FILE = path.join(REPO_ROOT, 'data', 'series.json');
 const COLLECTIONS_FILE = path.join(REPO_ROOT, 'data', 'collections.json');
+const PROVENANCE_FILE = path.join(REPO_ROOT, 'data', 'codex-provenance.json');
 const MD_DIR = path.join(CLIENT_DIR, 'public/md');
 const OUTPUT_DIR = path.join(CLIENT_DIR, 'src', 'generated');
 const OUTPUT_FILE = path.join(OUTPUT_DIR, 'codex-lattice.json');
 const OUTPUT_META_FILE = path.join(OUTPUT_DIR, 'codex-lattice-meta.json');
 const OUTPUT_SERIES_FILE = path.join(OUTPUT_DIR, 'series.json');
 const OUTPUT_COLLECTIONS_FILE = path.join(OUTPUT_DIR, 'collections.json');
+const OUTPUT_ALIASES_FILE = path.join(OUTPUT_DIR, 'codex-aliases.json');
 const CODEX_CONTENT_DIR = path.join(CLIENT_DIR, 'public', 'codex-content');
 
 const CORE_VOCABULARY = [
@@ -288,6 +291,12 @@ async function build() {
     throw new Error(`Collections validation failed:\n  - ${collectionErrors.join('\n  - ')}`);
   }
 
+  const provenance = JSON.parse(await fs.readFile(PROVENANCE_FILE, 'utf-8'));
+  const { errors: aliasErrors, aliases } = resolveAliases(provenance, catalog.map((e) => e.id));
+  if (aliasErrors.length) {
+    throw new Error(`Codex id aliases failed:\n  - ${aliasErrors.join('\n  - ')}`);
+  }
+
   const codexes = [];
 
   for (const entry of catalog) {
@@ -341,6 +350,7 @@ async function build() {
 
   await fs.writeFile(OUTPUT_SERIES_FILE, JSON.stringify(publishedSeries, null, 2));
   await fs.writeFile(OUTPUT_COLLECTIONS_FILE, JSON.stringify(publishedCollections, null, 2));
+  await fs.writeFile(OUTPUT_ALIASES_FILE, JSON.stringify(aliases, null, 2));
 
   let contentFilesWritten = 0;
   for (const codex of codexes) {
@@ -356,6 +366,7 @@ async function build() {
   console.log(`  Meta: ${OUTPUT_META_FILE} (${(metaSize / 1024).toFixed(0)} KB)`);
   console.log(`  Series: ${OUTPUT_SERIES_FILE} (${publishedSeries.length} series)`);
   console.log(`  Collections: ${OUTPUT_COLLECTIONS_FILE} (${publishedCollections.length} collections)`);
+  console.log(`  Aliases: ${OUTPUT_ALIASES_FILE} (${Object.keys(aliases).length} retired ids)`);
   console.log(`  Content files: ${contentFilesWritten}`);
   console.log('─'.repeat(50) + '\n');
 }

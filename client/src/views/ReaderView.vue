@@ -87,15 +87,15 @@ const handleScroll = () => {
   const scrollHeight = container.scrollHeight - container.clientHeight
 
   if (scrollHeight > 0) {
-    scrollPercent.value = Math.round((scrollTop / scrollHeight) * 100)
+    const fraction = Math.min(1, scrollTop / scrollHeight)
+    scrollPercent.value = Math.round(fraction * 100)
 
     // Sitting at the top hasn't begun a codex; this also drops scroll events queued by the
     // page transition (the shell's reset to 0) that arrive after this view mounts
     if (codex.value && scrollTop <= 0 && !progressStore.isStarted(codex.value.id)) return
 
-    // Throttled progress update
     if (codex.value) {
-      progressStore.updateProgress(codex.value.id, scrollPercent.value, scrollTop)
+      progressStore.updateProgress(codex.value.id, fraction)
     }
   }
 }
@@ -139,7 +139,8 @@ const coverSettled = () => new Promise((resolve) => {
   setTimeout(resolve, COVER_WAIT_MS)
 })
 
-const restorePosition = (container, top) => {
+// The position is a fraction, measured against the length once the text and cover have settled
+const restorePosition = (container, fraction) => {
   let cancelled = false
   const cancel = () => {
     cancelled = true
@@ -152,6 +153,7 @@ const restorePosition = (container, top) => {
     .then(coverSettled)
     .then(() => {
       if (cancelled) return
+      const top = fraction * (container.scrollHeight - container.clientHeight)
       container.scrollTo({ top, behavior: 'instant' })
       cancel()
     })
@@ -162,8 +164,8 @@ onMounted(() => {
   const container = getScrollContainer()
   if (!container) return
 
-  const top = codex.value ? progressStore.resumePosition(codex.value.id) : 0
-  if (top > 0) cancelRestore = restorePosition(container, top)
+  const resumeAt = codex.value ? progressStore.resumePosition(codex.value.id) : 0
+  if (resumeAt > 0) cancelRestore = restorePosition(container, resumeAt)
 
   container.addEventListener('scroll', handleScroll, { passive: true })
 })

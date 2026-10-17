@@ -199,6 +199,7 @@ $transition-fade: opacity 0.2s ease-in-out;
   --cl-overlay: rgba(0, 0, 0, 0.7);
   
   --cl-reader-bg: #{$dark-surface};
+  --cl-reader-bg-blur: rgba(37, 42, 61, 0.9);
   --cl-reader-text: #e8e4df;
   --cl-progress-track: #{$dark-border};
   --cl-progress-fill: #{$teal-400};

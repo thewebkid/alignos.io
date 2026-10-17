@@ -15,6 +15,9 @@ import { CodexRegistry } from './lib/codex-registry.js'
 import { BrowserCodex } from './lib/codex-browser.js'
 import { createGlossaryFromRegistry } from './lib/glossary.js'
 import collectionsData from './generated/collections.json'
+import { captureHandoff } from './lib/handoff/slot.js'
+
+captureHandoff()
 
 // Export for vite-ssg
 export const createApp = ViteSSG(
