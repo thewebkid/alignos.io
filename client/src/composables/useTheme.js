@@ -8,9 +8,12 @@ const THEME_MODES = {
   SYSTEM: 'system'
 }
 
+// Indigo dark is the default for visitors without a saved preference
+const DEFAULT_MODE = THEME_MODES.DARK
+
 // Shared state across all component instances
-const themeMode = ref(THEME_MODES.SYSTEM)
-const effectiveTheme = ref('light')
+const themeMode = ref(DEFAULT_MODE)
+const effectiveTheme = ref('dark')
 
 let mediaQuery = null
 let isInitialized = false
@@ -34,6 +37,9 @@ function applyTheme(theme) {
 
   // Also update color-scheme for native browser elements
   document.documentElement.style.colorScheme = theme
+
+  const themeColor = document.querySelector('meta[name="theme-color"]')
+  if (themeColor) themeColor.content = theme === 'dark' ? '#1a1f2e' : '#4a7c7e'
 }
 
 /**
@@ -63,15 +69,15 @@ function saveThemePreference(mode) {
  * Load theme preference from localStorage
  */
 function loadThemePreference() {
-  if (typeof localStorage === 'undefined') return THEME_MODES.SYSTEM
+  if (typeof localStorage === 'undefined') return DEFAULT_MODE
   try {
     const saved = localStorage.getItem(STORAGE_KEY)
     return saved && Object.values(THEME_MODES).includes(saved)
       ? saved
-      : THEME_MODES.SYSTEM
+      : DEFAULT_MODE
   } catch (e) {
     console.warn('Failed to load theme preference:', e)
-    return THEME_MODES.SYSTEM
+    return DEFAULT_MODE
   }
 }
 

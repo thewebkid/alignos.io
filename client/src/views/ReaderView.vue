@@ -3,7 +3,8 @@ import { ref, computed, inject, onMounted, onUnmounted, watch, nextTick } from '
 import { useRoute, useRouter } from 'vue-router'
 import { useHead } from '@unhead/vue'
 import { useReadingProgressStore } from '../stores/readingProgress'
-import { BDropdown, BDropdownItem } from 'bootstrap-vue-next'
+import { useReadingSettingsStore } from '../stores/readingSettings.js'
+import { BDropdown, BDropdownItem, BDropdownDivider } from 'bootstrap-vue-next'
 import GlossaryPopover from '../components/GlossaryPopover.vue'
 import { cdnUrl } from '../lib/cdn-config.js'
 import {track} from '../lib/tracker.js';
@@ -15,6 +16,7 @@ const codexRegistry = inject('codexRegistry')
 const glossaryManager = inject('glossaryManager')
 const glossaryRevision = inject('glossaryRevision', ref(0))
 const progressStore = useReadingProgressStore()
+const settings = useReadingSettingsStore()
 
 // Loading state
 const isLoadingContent = ref(false)
@@ -221,6 +223,17 @@ const nextCodex = computed(() => {
   if (i < 0 || i >= codex.value.siblingIds.length - 1) return null
   return codexRegistry?.codexes.get(codex.value.siblingIds[i + 1]) ?? null
 })
+
+// At the reader's chosen pace, from the unread share of the codex
+const minutesLeft = computed(() => {
+  if (!codex.value?.wordCount || scrollPercent.value >= 95) return null
+  return Math.ceil(settings.minutesFor(codex.value.wordCount) * (1 - scrollPercent.value / 100))
+})
+
+const openReadingSettings = () => {
+  settings.openPanel()
+  track('openReadingSettings', { from: 'codexMenu' })
+}
 </script>
 
 <template>
@@ -244,13 +257,18 @@ const nextCodex = computed(() => {
             <span class="d-none d-sm-inline">Back</span>
           </button>
 
-          <h1 class="reader-title" v-if="codex">{{ codex.title }}</h1>
+          <div class="reader-heading" v-if="codex">
+            <h1 class="reader-title">{{ codex.title }}</h1>
+            <span v-if="minutesLeft" class="reader-remaining">
+              About {{ minutesLeft }} {{ minutesLeft === 1 ? 'minute' : 'minutes' }} left
+            </span>
+          </div>
 
           <b-dropdown
             variant="outline-secondary"
             size="sm" no-caret
             class="codex-dropdown"
-            menu-class="codex-dropdown-menu"
+            menu-class="cl-dropdown codex-dropdown-menu"
             toggle-class="d-flex align-items-center"
           >
             <template #button-content>
@@ -291,6 +309,13 @@ const nextCodex = computed(() => {
                 <line x1="12" y1="15" x2="12" y2="3"/>
               </svg>
               Download Markdown
+            </b-dropdown-item>
+
+            <BDropdownDivider />
+
+            <b-dropdown-item @click="openReadingSettings">
+              <span class="menu-glyph me-2" aria-hidden="true">Aa</span>
+              Reading settings
             </b-dropdown-item>
           </b-dropdown>
         </div>
@@ -455,8 +480,29 @@ const nextCodex = computed(() => {
   gap: 1rem;
 }
 
-.reader-title {
+.reader-heading {
   flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reader-remaining {
+  font-size: 0.75rem;
+  color: var(--cl-text-muted);
+}
+
+.menu-glyph {
+  width: 18px;
+  text-align: center;
+  font-family: var(--bs-font-serif);
+  font-weight: 600;
+  color: var(--cl-text-muted);
+}
+
+.reader-title {
+  max-width: 100%;
   font-family: var(--bs-font-serif);
   font-size: 1rem;
   font-weight: 500;
@@ -516,27 +562,12 @@ const nextCodex = computed(() => {
 }
 
 :deep(.codex-dropdown-menu) {
-  min-width: 200px;
-  border-color: var(--cl-border);
-  background: var(--cl-surface);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-
-  @media (prefers-color-scheme: dark) {
-    background: var(--cl-surface);
-    border-color: var(--cl-border);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  }
+  min-width: 220px;
 
   .dropdown-item {
     display: flex;
     align-items: center;
-    padding: 0.75rem 1rem;
-    font-size: 0.875rem;
-    color: var(--cl-text);
-
-    &:hover {
-      background: var(--cl-surface-hover);
-    }
+    padding: 0.625rem 0.75rem;
 
     svg {
       flex-shrink: 0;

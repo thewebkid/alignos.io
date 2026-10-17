@@ -29,6 +29,29 @@ describe('glossary', () => {
     expect(html).not.toMatch(/>Return<\/span> Room/)
   })
 
+  it('keeps the last entry when no entry follows it', () => {
+    const glossary = new GlossaryManager()
+    glossary.parseGlossary(markdown.replace(/\n/g, '\r\n'))
+
+    expect(glossary.getTerm('return room').essence).toBe('A sanctuary of listening.')
+    expect(glossary.getTerm('stillpoint').fieldDesire).toBe('To be met without being used.')
+  })
+
+  it('numbers each use of a term in document order, aliases included', () => {
+    const glossary = new GlossaryManager()
+    glossary.parseGlossary(markdown)
+    glossary.aliases.set('stillness', 'stillpoint')
+    glossary.highlightableTerms.add('stillness')
+
+    const html = glossary.injectLinks(
+      '<h2>Stillpoint</h2><p>A Stillpoint, then stillness.</p><p>The Stillpoint again, and a Return Room.</p>'
+    )
+    const uses = [...html.matchAll(/data-term="([^"]+)" data-use="(\d+)"/g)].map(([, term, use]) => `${term}:${use}`)
+
+    expect(uses).toEqual(['stillpoint:1', 'stillpoint:2', 'stillness:3', 'stillpoint:4', 'return room:1'])
+    expect(html.match(/has-definition/g)).toHaveLength(5)
+  })
+
   it('loads terms from the catalog filename of the Living Glossary', () => {
     const registry = new CodexRegistry().loadFromData([
       {

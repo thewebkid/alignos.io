@@ -2,6 +2,7 @@
 import { computed } from 'vue'
 import { RouterLink } from 'vue-router'
 import { useReadingProgressStore } from '../stores/readingProgress.js'
+import { useReadingSettingsStore } from '../stores/readingSettings.js'
 import { BTooltip } from 'bootstrap-vue-next'
 import { cdnUrl } from '../lib/cdn-config.js'
 import CoverOverlay from './CoverOverlay.vue'
@@ -18,6 +19,9 @@ const props = defineProps({
 })
 
 const progressStore = useReadingProgressStore()
+const settings = useReadingSettingsStore()
+
+const readingMinutes = computed(() => settings.minutesFor(props.codex.wordCount))
 
 const scrollPercent = computed(() => {
   return progressStore.getScrollPercent(props.codex.id)
@@ -89,7 +93,7 @@ const editionLabel = computed(() => {
       <div v-else>
         Not started
       </div>
-      <em>~{{codex.readingTime}} minute read</em>
+      <em>~{{ readingMinutes }} minute read</em>
     </BTooltip>
   </div>
 </template>

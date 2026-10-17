@@ -187,8 +187,9 @@ const paragraphs = (note) => (note ? note.split('\n\n') : [])
 
 .item-tagline {
   margin: 0 0 0.625rem;
-  font-family: var(--bs-font-serif);
-  font-size: 1.0625rem;
+  font-family: var(--cl-font-reading);
+  font-size-adjust: var(--cl-font-reading-adjust);
+  font-size: 1rem;
   color: var(--cl-text-muted);
 }
 

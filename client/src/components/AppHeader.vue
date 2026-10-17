@@ -1,12 +1,64 @@
 <script setup>
-import { ref } from 'vue'
+import { ref, computed, watch, onMounted, onUnmounted } from 'vue'
 import { RouterLink, useRoute } from 'vue-router'
-import { BNavItemDropdown, BDropdownItem } from 'bootstrap-vue-next'
-import ThemeToggle from './ThemeToggle.vue'
+import { BNavItemDropdown, BDropdownItem, BOffcanvas } from 'bootstrap-vue-next'
+import ReadingSettings from './ReadingSettings.vue'
+import { useReadingSettingsStore } from '../stores/readingSettings.js'
 
 const emit = defineEmits(['open-search'])
 const route = useRoute()
 const navExpanded = ref(false)
+
+// Reading settings: a popover under the Aa button on desktop, a bottom sheet below lg
+const settings = useReadingSettingsStore()
+const settingsAnchor = ref(null)
+const isDesktop = ref(true)
+let desktopQuery = null
+
+const syncDesktop = () => {
+  isDesktop.value = desktopQuery.matches
+}
+
+const toggleSettings = () => {
+  navExpanded.value = false
+  settings.panelOpen = !settings.panelOpen
+}
+
+const sheetOpen = computed({
+  get: () => settings.panelOpen && !isDesktop.value,
+  set: (open) => {
+    settings.panelOpen = open
+  }
+})
+
+const closeOnOutside = (e) => {
+  if (isDesktop.value && !settingsAnchor.value?.contains(e.target)) settings.closePanel()
+}
+
+const closeOnEscape = (e) => {
+  if (e.key === 'Escape') settings.closePanel()
+}
+
+watch(() => settings.panelOpen, (open) => {
+  document.removeEventListener('pointerdown', closeOnOutside)
+  document.removeEventListener('keydown', closeOnEscape)
+  if (open) {
+    document.addEventListener('pointerdown', closeOnOutside)
+    document.addEventListener('keydown', closeOnEscape)
+  }
+})
+
+onMounted(() => {
+  desktopQuery = window.matchMedia('(min-width: 992px)')
+  syncDesktop()
+  desktopQuery.addEventListener('change', syncDesktop)
+})
+
+onUnmounted(() => {
+  desktopQuery?.removeEventListener('change', syncDesktop)
+  document.removeEventListener('pointerdown', closeOnOutside)
+  document.removeEventListener('keydown', closeOnEscape)
+})
 
 const navItems = [
   { name: 'Codex Lattice', to: '/lattice', match: ['/lattice', '/codex/'] },
@@ -65,6 +117,15 @@ const handleSearchClick = () => {
 
         <!-- Mobile controls -->
         <div class="mobile-controls d-flex d-lg-none align-items-center gap-2">
+          <button
+            class="btn btn-reading"
+            type="button"
+            title="Reading settings"
+            aria-label="Reading settings"
+            :aria-expanded="sheetOpen"
+            @click="toggleSettings"
+          >Aa</button>
+
           <!-- Search button (always visible on mobile) -->
           <button
             class="btn btn-search-mobile d-flex align-items-center justify-content-center"
@@ -98,6 +159,7 @@ const handleSearchClick = () => {
                   class="d-none d-lg-block"
                   :text="item.name"
                   :toggle-class="['nav-link', { active: isActive(item) }]"
+                  menu-class="cl-dropdown"
                 >
                   <BDropdownItem
                     v-for="child in item.children"
@@ -141,9 +203,24 @@ const handleSearchClick = () => {
               </li>
             </template>
 
-            <!-- Theme toggle (desktop) -->
-            <li class="nav-item ms-lg-2 d-none d-lg-block">
-              <ThemeToggle variant="default" />
+            <!-- Reading settings (desktop) -->
+            <li ref="settingsAnchor" class="nav-item ms-lg-2 d-none d-lg-block settings-anchor">
+              <button
+                class="btn btn-reading"
+                type="button"
+                title="Reading settings"
+                aria-label="Reading settings"
+                :aria-expanded="settings.panelOpen && isDesktop"
+                @click="toggleSettings"
+              >Aa</button>
+              <div
+                v-if="settings.panelOpen && isDesktop"
+                class="settings-popover"
+                role="dialog"
+                aria-label="Reading settings"
+              >
+                <ReadingSettings />
+              </div>
             </li>
 
             <!-- Search button (desktop) -->
@@ -161,15 +238,19 @@ const handleSearchClick = () => {
                 <kbd class="d-none d-xl-inline ms-2">⌘K</kbd>
               </button>
             </li>
-
-            <!-- Theme toggle (mobile) -->
-            <li class="nav-item d-lg-none w-100 mt-3 pt-3 border-top">
-              <ThemeToggle variant="mobile" @click="closeNav" />
-            </li>
           </ul>
         </div>
       </div>
     </nav>
+
+    <BOffcanvas
+      v-model="sheetOpen"
+      placement="bottom"
+      title="Reading settings"
+      class="cl-offcanvas"
+    >
+      <ReadingSettings />
+    </BOffcanvas>
   </header>
 </template>
 
@@ -294,34 +375,6 @@ const handleSearchClick = () => {
       opacity: 0.55;
     }
   }
-
-  // Theme the menu with app tokens so it matches in BOTH light and dark,
-  // regardless of whether the theme came from the data attribute or the OS.
-  :deep(.dropdown-menu) {
-    --bs-dropdown-color: var(--cl-text);
-    --bs-dropdown-bg: var(--cl-surface);
-    --bs-dropdown-border-color: var(--cl-border-light);
-    --bs-dropdown-link-color: var(--cl-text);
-    --bs-dropdown-link-hover-color: var(--cl-primary);
-    --bs-dropdown-link-hover-bg: var(--cl-surface-hover);
-    --bs-dropdown-link-active-color: var(--cl-primary);
-    --bs-dropdown-link-active-bg: var(--cl-surface-hover);
-    --bs-dropdown-link-disabled-color: var(--cl-text-muted);
-    --bs-dropdown-header-color: var(--cl-text-muted);
-    --bs-dropdown-divider-bg: var(--cl-border-light);
-
-    margin-top: 0.375rem;
-    padding: 0.375rem;
-    border-radius: var(--bs-border-radius-lg);
-    box-shadow: 0 0.5rem 1.5rem var(--cl-shadow-lg);
-  }
-
-  :deep(.dropdown-item) {
-    padding: 0.5rem 0.75rem;
-    font-weight: 500;
-    border-radius: var(--bs-border-radius-sm);
-    transition: color 0.2s ease, background-color 0.2s ease;
-  }
 }
 
 // Collapsed mobile menu
@@ -353,6 +406,51 @@ const handleSearchClick = () => {
       transform: scale(0.95);
     }
   }
+}
+
+.btn-reading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 1px solid var(--cl-border-light);
+  border-radius: var(--bs-border-radius);
+  background: transparent;
+  color: var(--cl-text-muted);
+  font-family: var(--bs-font-serif);
+  font-size: 1.125rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+
+  &:hover,
+  &[aria-expanded='true'] {
+    background: var(--cl-surface-hover);
+    border-color: var(--cl-border);
+    color: var(--cl-primary);
+  }
+}
+
+.mobile-controls .btn-reading {
+  border-color: transparent;
+}
+
+.settings-anchor {
+  position: relative;
+}
+
+.settings-popover {
+  position: absolute;
+  top: calc(100% + 0.625rem);
+  right: 0;
+  z-index: 1030;
+  width: 21rem;
+  padding: 1.125rem;
+  background: var(--cl-surface);
+  border: 1px solid var(--cl-border-light);
+  border-radius: var(--bs-border-radius-lg);
+  box-shadow: 0 0.5rem 1.5rem var(--cl-shadow-lg);
 }
 
 .btn-search {

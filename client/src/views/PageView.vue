@@ -69,8 +69,14 @@ const handleContentClick = (e) => {
 
 .page-prose {
   color: var(--cl-text);
-  font-size: 1.0625rem;
+  font-family: var(--cl-font-reading);
+  font-size: calc(1.0625rem * var(--cl-reading-scale));
+  font-size-adjust: var(--cl-font-reading-adjust);
   line-height: 1.8;
+
+  :deep(:is(h1, h2, h3, h4)) {
+    font-size-adjust: none;
+  }
 
   :deep(h1) {
     font-family: var(--bs-font-serif);
@@ -128,8 +134,7 @@ const handleContentClick = (e) => {
     margin: 2.5rem 0;
     padding-left: 1.25rem;
     border-left: 3px solid var(--cl-accent);
-    font-family: var(--bs-font-serif);
-    font-size: 1.125rem;
+    font-size: 1.0625em;
     font-style: italic;
     line-height: 1.7;
     color: var(--cl-text-muted);
@@ -150,12 +155,11 @@ const handleContentClick = (e) => {
   }
 }
 
-// Threshold: a left-aligned serif column. Each poetic line is its own paragraph, so paragraph
-// spacing stays tight and sections are separated by the h2 top margin instead.
+// Threshold: a left-aligned column in the reading font with serif headings. Each poetic line is
+// its own paragraph, so paragraph spacing stays tight and sections are separated by the h2 top margin.
 .page-view--threshold .page-prose {
-  font-family: var(--bs-font-serif);
-  font-size: 1.1875rem;
-  line-height: 1.7;
+  font-size: calc(1.125rem * var(--cl-reading-scale));
+  line-height: 1.75;
 
   :deep(h2) {
     margin: 3.25rem 0 1.125rem;

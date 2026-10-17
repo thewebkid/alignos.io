@@ -74,7 +74,7 @@ Every route in the route map, including each published `/codex/{id}`, SHALL be p
 - **THEN** it contains the page's heading and body text in the HTML
 
 ### Requirement: Primary navigation
-The header navigation SHALL show, in order: **Codex Lattice** (`/lattice`), **Return Rooms** (a menu with **Before You Begin…** → `/before-you-begin`, **Begin a Return Room** → `/return-room`, **The Arc of Difference** → `/arc-of-difference`), **Between Worlds** (`/between-worlds`), **Papers** (`/papers`), **FAQ** (`/faq`), followed by the existing search and theme controls. The active item SHALL be highlighted, and Return Rooms SHALL be highlighted when any of its children is active. On narrow screens the same items appear in the collapsed menu, with Return Rooms' children listed beneath it.
+The header navigation SHALL show, in order: **Codex Lattice** (`/lattice`), **Return Rooms** (a menu with **Before You Begin…** → `/before-you-begin`, **Begin a Return Room** → `/return-room`, **The Arc of Difference** → `/arc-of-difference`), **Between Worlds** (`/between-worlds`), **Papers** (`/papers`), **FAQ** (`/faq`), followed by the reading-settings control (**Aa**) and search. The active item SHALL be highlighted, and Return Rooms SHALL be highlighted when any of its children is active. On narrow screens the same items appear in the collapsed menu, with Return Rooms' children listed beneath it.
 
 #### Scenario: Return Rooms menu
 - **WHEN** a visitor opens the Return Rooms menu
@@ -87,6 +87,21 @@ The header navigation SHALL show, in order: **Codex Lattice** (`/lattice`), **Re
 #### Scenario: Mobile menu
 - **WHEN** the viewport is below the navbar breakpoint and the menu is opened
 - **THEN** all nav items, including the three Return Rooms children, are reachable
+
+### Requirement: Reading settings
+The **Aa** control SHALL open reading settings: theme (Light, Indigo, Auto), reading font, text size, glossary underlines (Always, First two, Off), and reading pace (Unhurried, Typical, Brisk). Changes SHALL apply immediately and persist in the browser. Without a saved choice, the theme SHALL be Indigo (dark), the font Source Sans 3, glossary underlines Always, and the pace Typical (200 words per minute). Glossary terms SHALL open their definition when clicked in every glossary mode. The panel SHALL also open from the glossary popup and the codex menu.
+
+#### Scenario: First visit
+- **WHEN** a visitor with no saved settings loads any page
+- **THEN** the page renders in the Indigo theme without first painting the light theme
+
+#### Scenario: Glossary underlines after the second use
+- **WHEN** the glossary setting is First two and a term appears three times in a codex
+- **THEN** only the first two uses are underlined, and clicking the third opens its definition
+
+#### Scenario: Pace changes reading times
+- **WHEN** the pace is Unhurried
+- **THEN** lattice reading times and the reader's minutes-left line use 150 words per minute
 
 ### Requirement: Footer
 Every page SHALL end with a footer that shows the line "You are not asked to arrive complete. Only to return willing." and a contact link `mailto:info@alignos.io`. The footer MUST NOT reference `contact@alignos.io`, a contact form, or a newsletter. The footer SHALL link to the machine-readable entry point for AI readers (`/llms.txt`) and to Coherence Across Scales.

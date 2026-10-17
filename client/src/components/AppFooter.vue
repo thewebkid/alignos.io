@@ -68,9 +68,10 @@ const totalCodexes = computed(() => codexRegistry?.size || 0)
 }
 
 .quote-text {
-  font-family: var(--bs-font-serif);
+  font-family: var(--cl-font-reading);
+  font-size-adjust: var(--cl-font-reading-adjust);
   font-style: italic;
-  font-size: 1rem;
+  font-size: 0.9375rem;
   color: var(--cl-text-muted);
   margin: 0;
   line-height: 1.6;

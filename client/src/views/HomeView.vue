@@ -235,8 +235,9 @@ section {
 }
 
 .spotlight-quote {
-  font-family: var(--bs-font-serif);
-  font-size: 1.3125rem;
+  font-family: var(--cl-font-reading);
+  font-size-adjust: var(--cl-font-reading-adjust);
+  font-size: 1.1875rem;
   font-style: italic;
   line-height: 1.75;
   color: var(--cl-text);
@@ -297,8 +298,9 @@ section {
   }
 
   p {
-    font-family: var(--bs-font-serif);
-    font-size: clamp(1.3125rem, 2.6vw, 1.75rem);
+    font-family: var(--cl-font-reading);
+    font-size-adjust: var(--cl-font-reading-adjust);
+    font-size: clamp(1.1875rem, 2.2vw, 1.5rem);
     font-style: italic;
     line-height: 1.6;
     color: var(--cl-text-muted);
@@ -390,8 +392,9 @@ section {
   text-align: center;
 
   p {
-    font-family: var(--bs-font-serif);
-    font-size: 1.3125rem;
+    font-family: var(--cl-font-reading);
+    font-size-adjust: var(--cl-font-reading-adjust);
+    font-size: 1.1875rem;
     font-style: italic;
     line-height: 1.9;
     color: var(--cl-text);

@@ -1,6 +1,7 @@
 <script setup>
 import { ref, computed, inject, onMounted, onUnmounted } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
+import { BDropdown, BDropdownItem, BDropdownDivider, BDropdownHeader } from 'bootstrap-vue-next'
 import CodexGrid from '../components/CodexGrid.vue'
 import { useReadingProgressStore } from '../stores/readingProgress'
 import {track} from '../lib/tracker.js';
@@ -56,11 +57,13 @@ onMounted(() => {
 const activeFilter = ref('all')
 
 const filters = [
-  { id: 'all', label: 'All' },
+  { id: 'all', label: 'Any progress' },
   { id: 'unread', label: 'Unread' },
-  { id: 'reading', label: 'In Progress' },
+  { id: 'reading', label: 'In progress' },
   { id: 'complete', label: 'Complete' }
 ]
+
+const progressLabel = computed(() => filters.find(f => f.id === activeFilter.value).label)
 
 // Series corridor — selected via ?series={series-id}; ?series=none lists works outside every series
 const NO_SERIES = 'none'
@@ -83,7 +86,14 @@ const selectedCollection = computed(() => {
   return c?.showInLattice ? c : null
 })
 
-// "Browse by" select values are prefixed so one control drives either filter
+const scopeLabel = computed(() => {
+  if (selectedSeries.value) return selectedSeries.value.name
+  if (showNoSeries.value) return 'Not in a series'
+  if (selectedCollection.value) return selectedCollection.value.title
+  return 'Everything'
+})
+
+// Scope menu values are prefixed so one control drives either filter
 const browseValue = computed(() => {
   if (selectedSeries.value) return `series:${selectedSeries.value.id}`
   if (showNoSeries.value) return `series:${NO_SERIES}`
@@ -190,6 +200,22 @@ const corridorEmpty = computed(() =>
   !corridorPositioned.value.length && !corridorUnplaced.value.length && !corridorCompanions.value.length
 )
 
+const shownCount = computed(() => (corridor.value
+  ? corridorPositioned.value.length + corridorUnplaced.value.length + corridorCompanions.value.length
+  : filteredCodexes.value.length))
+
+// Started but not finished, most recent first; only on the unfiltered lattice
+const SHELF_SIZE = 6
+const continueCodexes = computed(() => progressStore.recentlyRead
+  .filter(p => p.scrollPercent > 0 && p.scrollPercent < 95)
+  .map(p => codexRegistry?.get(p.id))
+  .filter(Boolean)
+  .slice(0, SHELF_SIZE))
+
+const showShelf = computed(() =>
+  browseValue.value === '' && activeFilter.value === 'all' && continueCodexes.value.length > 0
+)
+
 // Count for each filter
 const filterCounts = computed(() => {
   const counts = { all: scopeCodexes.value.length, unread: 0, reading: 0, complete: 0 }
@@ -228,36 +254,74 @@ const filterCounts = computed(() => {
     <section class="filter-section">
       <div class="container">
         <div class="filter-controls">
-          <div class="filter-bar-wrap">
-            <div class="filter-bar">
-              <button
-                v-for="filter in filters"
-                :key="filter.id"
-                class="filter-btn"
-                :class="{ active: activeFilter === filter.id }"
-                @click="activeFilter = filter.id"
-              >
+          <BDropdown
+            class="filter-dropdown filter-dropdown--scope"
+            :variant="null"
+            toggle-class="filter-toggle"
+            menu-class="cl-dropdown filter-menu"
+            aria-label="Browse by series or collection"
+          >
+            <template #button-content>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M12 3 2 8l10 5 10-5-10-5Z"/>
+                <path d="m2 13 10 5 10-5"/>
+              </svg>
+              <span class="filter-label">{{ scopeLabel }}</span>
+            </template>
+
+            <BDropdownItem :active="browseValue === ''" @click="browse('')">Everything</BDropdownItem>
+            <BDropdownDivider />
+            <BDropdownHeader>Series</BDropdownHeader>
+            <BDropdownItem
+              v-for="s in seriesOptions"
+              :key="s.id"
+              :active="browseValue === `series:${s.id}`"
+              @click="browse(`series:${s.id}`)"
+            >{{ s.name }}</BDropdownItem>
+            <BDropdownItem
+              :active="browseValue === `series:${NO_SERIES}`"
+              @click="browse(`series:${NO_SERIES}`)"
+            >Not in a series</BDropdownItem>
+            <template v-if="collectionOptions.length">
+              <BDropdownDivider />
+              <BDropdownHeader>Collections</BDropdownHeader>
+              <BDropdownItem
+                v-for="c in collectionOptions"
+                :key="c.id"
+                :active="browseValue === `collection:${c.id}`"
+                @click="browse(`collection:${c.id}`)"
+              >{{ c.title }}</BDropdownItem>
+            </template>
+          </BDropdown>
+
+          <BDropdown
+            class="filter-dropdown"
+            :variant="null"
+            :toggle-class="['filter-toggle', { 'is-filtered': activeFilter !== 'all' }]"
+            menu-class="cl-dropdown filter-menu"
+            aria-label="Filter by reading progress"
+          >
+            <template #button-content>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M22 3H2l8 9.46V19l4 2v-8.54L22 3z"/>
+              </svg>
+              <span class="filter-label">{{ progressLabel }}</span>
+            </template>
+
+            <BDropdownItem
+              v-for="filter in filters"
+              :key="filter.id"
+              :active="activeFilter === filter.id"
+              @click="activeFilter = filter.id"
+            >
+              <span class="filter-option">
                 {{ filter.label }}
                 <span class="filter-count">{{ filterCounts[filter.id] }}</span>
-              </button>
-            </div>
-          </div>
+              </span>
+            </BDropdownItem>
+          </BDropdown>
 
-          <select
-            class="form-select form-select-sm series-select"
-            aria-label="Browse by"
-            :value="browseValue"
-            @change="browse($event.target.value)"
-          >
-            <option value="">All</option>
-            <optgroup label="Series">
-              <option v-for="s in seriesOptions" :key="s.id" :value="`series:${s.id}`">{{ s.name }}</option>
-              <option :value="`series:${NO_SERIES}`">Not in a series</option>
-            </optgroup>
-            <optgroup v-if="collectionOptions.length" label="Collections">
-              <option v-for="c in collectionOptions" :key="c.id" :value="`collection:${c.id}`">{{ c.title }}</option>
-            </optgroup>
-          </select>
+          <span class="filter-summary">{{ shownCount }} of {{ scopeCodexes.length }}</span>
         </div>
       </div>
     </section>
@@ -265,6 +329,11 @@ const filterCounts = computed(() => {
     <!-- Codex grid -->
     <section class="grid-section">
       <div class="container" @scroll="handleScroll">
+        <section v-if="showShelf" class="continue-shelf" aria-labelledby="continue-reading">
+          <h2 id="continue-reading" class="continue-title">Continue reading</h2>
+          <CodexGrid :codexes="continueCodexes" row />
+        </section>
+
         <template v-if="corridor">
           <header class="corridor-header">
             <h2 class="corridor-title">{{ corridor.series.name }}</h2>
@@ -383,148 +452,102 @@ const filterCounts = computed(() => {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 0.5rem 1rem;
+  gap: 0.5rem 0.625rem;
 }
 
-.filter-bar-wrap {
-  position: relative;
-  flex: 1 1 auto;
+// Scope and progress dropdowns: one shape, menus from the shared .cl-dropdown
+.filter-dropdown {
   min-width: 0;
 
-  // Add gradient fade on right edge to indicate more filters
-  &::after {
-    content: '';
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    width: 3rem;
-    background: linear-gradient(to left, var(--cl-bg), transparent);
-    pointer-events: none;
-    opacity: 1;
-    transition: opacity 0.2s;
+  &--scope {
+    max-width: 18rem;
+  }
 
-    @media (min-width: 640px) {
-      display: none;
+  :deep(.filter-toggle) {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    max-width: 100%;
+    padding: 0.5rem 0.875rem;
+    border: 1px solid var(--cl-border-light);
+    border-radius: var(--bs-border-radius);
+    background: var(--cl-surface);
+    color: var(--cl-text-muted);
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.5;
+    transition: color 0.2s ease, border-color 0.2s ease;
+
+    &:hover,
+    &.show {
+      border-color: var(--cl-border);
+      color: var(--cl-text);
     }
+
+    &.is-filtered {
+      border-color: var(--cl-primary);
+      color: var(--cl-primary);
+    }
+
+    svg {
+      flex-shrink: 0;
+      opacity: 0.8;
+    }
+
+    &::after {
+      margin-left: 0.125rem;
+      border-top-width: 0.28em;
+      border-right-width: 0.24em;
+      border-left-width: 0.24em;
+      opacity: 0.55;
+    }
+  }
+
+  :deep(.filter-menu) {
+    max-height: min(60vh, 28rem);
+    overflow-y: auto;
   }
 }
 
-.filter-bar {
-  display: flex;
-  gap: 0.5rem;
-  overflow-x: auto;
-  padding: 0.25rem;
-
-  // Show thin scrollbar on mobile so users know to scroll
-  @media (max-width: 639px) {
-    padding-right: 3rem;
-    scrollbar-width: thin;
-    scrollbar-color: var(--cl-border-light) transparent;
-
-    &::-webkit-scrollbar {
-      display: block;
-      height: 4px;
-    }
-
-    &::-webkit-scrollbar-thumb {
-      background: var(--cl-border-light);
-      border-radius: 2px;
-    }
-
-    &::-webkit-scrollbar-track {
-      background: transparent;
-    }
-  }
-
-  // Hide scrollbar on larger screens
-  @media (min-width: 640px) {
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    &::-webkit-scrollbar {
-      display: none;
-    }
-  }
-}
-
-.filter-btn {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.5rem 1rem;
-  border: 1px solid var(--cl-border-light);
-  border-radius: var(--bs-border-radius-pill);
-  background: var(--cl-surface);
-  color: var(--cl-text-muted);
-  font-size: 0.875rem;
-  font-weight: 500;
+.filter-label {
+  overflow: hidden;
+  text-overflow: ellipsis;
   white-space: nowrap;
-  cursor: pointer;
-  transition: all 0.2s ease;
+}
 
-  &:hover {
-    border-color: var(--cl-border);
-    color: var(--cl-text);
-  }
-
-  &.active {
-    background: var(--cl-primary);
-    border-color: var(--cl-primary);
-    color: white;
-
-    .filter-count {
-      background: rgba(255, 255, 255, 0.2);
-      color: white;
-    }
-  }
+.filter-option {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  min-width: 10rem;
 }
 
 .filter-count {
-  background: var(--cl-surface-hover);
-  padding: 0.125rem 0.5rem;
-  border-radius: var(--bs-border-radius-pill);
-  font-size: 0.75rem;
+  font-size: 0.8125rem;
+  font-variant-numeric: tabular-nums;
   color: var(--cl-text-muted);
 }
 
-// Series select — dressed to match the filter chips it sits beside:
-// same pill shape, surface, resting-muted text, height, and hover cadence.
-.series-select {
-  flex: 1 1 100%;
-  padding: 0.5rem 2.25rem 0.5rem 1rem;
-  border-color: var(--cl-border-light);
-  border-radius: var(--bs-border-radius-pill);
-  background-color: var(--cl-surface);
+.filter-summary {
+  margin-left: auto;
+  font-size: 0.8125rem;
+  font-variant-numeric: tabular-nums;
   color: var(--cl-text-muted);
-  font-size: 0.875rem;
+  white-space: nowrap;
+}
+
+.continue-shelf {
+  margin-bottom: 2.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--cl-border-light);
+}
+
+.continue-title {
+  margin: 0 0 1rem;
+  font-family: var(--bs-font-serif);
+  font-size: 1.1875rem;
   font-weight: 500;
-  line-height: 1.5;
-  cursor: pointer;
-  transition: all 0.2s ease;
-
-  &:hover {
-    border-color: var(--cl-border);
-    color: var(--cl-text);
-  }
-
-  &:focus {
-    border-color: var(--cl-border);
-    box-shadow: none;
-  }
-
-  // Some platforms render the open list natively and ignore these.
-  optgroup {
-    font-style: normal;
-    font-weight: 600;
-  }
-
-  option {
-    font-weight: 400;
-  }
-
-  @media (min-width: 640px) {
-    flex: 0 1 18rem;
-  }
+  color: var(--cl-text-heading);
 }
 
 .grid-section {

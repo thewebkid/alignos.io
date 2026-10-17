@@ -9,8 +9,37 @@
     <link rel="alternate" type="text/plain" title="llms.txt" href="/llms.txt">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Alignos is a field of remembrance. Not a system to follow, but a resonance to return to." />
-    <meta name="theme-color" content="#4a7c7e" media="(prefers-color-scheme: light)" />
-    <meta name="theme-color" content="#1a1f2e" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#1a1f2e" />
+
+    <!-- Saved theme and reading settings, applied before first paint. Keys match useTheme.js and stores/readingSettings.js -->
+    <script>
+      (function () {
+        var root = document.documentElement
+        var mode = null
+        var reading = null
+        try {
+          mode = localStorage.getItem('alignos-theme')
+          reading = JSON.parse(localStorage.getItem('alignos-reading') || 'null')
+        } catch (e) {}
+        var theme = mode === 'light' || mode === 'dark' ? mode
+          : mode === 'system' ? (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
+          : 'dark'
+        root.setAttribute('data-theme', theme)
+        root.style.colorScheme = theme
+        if (theme === 'light') document.querySelector('meta[name="theme-color"]').content = '#4a7c7e'
+        if (!reading) return
+        if (reading.glossary) root.setAttribute('data-glossary', reading.glossary)
+        if (reading.scale) root.style.setProperty('--cl-reading-scale', reading.scale)
+        if (reading.fontStack) root.style.setProperty('--cl-font-reading', reading.fontStack)
+        if (reading.fontHref) {
+          var link = document.createElement('link')
+          link.rel = 'stylesheet'
+          link.href = reading.fontHref
+          link.dataset.readingFont = ''
+          document.head.appendChild(link)
+        }
+      })()
+    </script>
 
     <!-- Structured data for AI/LLM discovery -->
     <script type="application/ld+json">
@@ -30,8 +59,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 
     <title>Alignos</title>
   </head>
