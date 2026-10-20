@@ -38,7 +38,22 @@ const totalCodexes = computed(() => codexRegistry?.size || 0)
             <span class="divider" aria-hidden="true">·</span>
           </span>
           <span class="footer-link-item">
-            <a href="https://coherenceacrossscales.org" class="footer-link">Coherence Across Scales (new)</a>
+            <a href="https://coherenceacrossscales.org" class="footer-link">Coherence Across Scales</a>
+            <span class="divider" aria-hidden="true">·</span>
+          </span>
+          <span class="footer-link-item">
+            <a
+              href="https://www.youtube.com/@Alignos"
+              class="footer-link footer-link-icon"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Alignos on YouTube"
+              title="Alignos on YouTube"
+            >
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true" focusable="false">
+                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+              </svg>
+            </a>
           </span>
         </div>
       </div>
@@ -115,6 +130,13 @@ const totalCodexes = computed(() => codexRegistry?.size || 0)
   &:hover {
     color: var(--cl-primary);
   }
+}
+
+.footer-link-icon {
+  display: inline-flex;
+  align-items: center;
+  align-self: center;
+  line-height: 1;
 }
 
 .divider {
