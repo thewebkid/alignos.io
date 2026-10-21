@@ -4,6 +4,8 @@ A running list of errors found in the lattice and the questions that need an ans
 
 Last audit: 2026-10-20 (change `lattice-integrity-audit`). Sources compared: `data/codex-catalog.json`, `data/series.json`, `client/public/md/`, the 138 PDFs in the blob store, and the planning sheets `proposed-changes.xlsx`, `proposed-changes-v2.xlsx` and `codex-catalog.xlsx` (in the gitignored `analysis/` folder).
 
+The questions in "Needs James" are written up for sending, with defaults, interim behaviour and a recommended order, in `docs/lattice-open-questions-for-james.md`. Update both together.
+
 How to re-run:
 
 ```powershell

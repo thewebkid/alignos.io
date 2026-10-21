@@ -68,6 +68,26 @@ export const useReadingProgressStore = defineStore('readingProgress', () => {
     }
   }
 
+  // Explicit complete — for when scroll-based tracking isn't enough (e.g. finished offline, or
+  // skimming never hit 95%). Furthest becomes 1; the saved resume position is left alone.
+  const markAsRead = (codexId) => {
+    const existing = progress.value[codexId]
+    progress.value[codexId] = {
+      furthest: 1,
+      position: existing?.position ?? 1,
+      lastRead: new Date().toISOString()
+    }
+  }
+
+  // Drop this codex from progress so it counts as unread. Callers that are still on the page
+  // should pause auto-tracking for the visit, or the current scroll will re-write progress.
+  const markAsUnread = (codexId) => {
+    if (!progress.value[codexId]) return
+    const next = { ...progress.value }
+    delete next[codexId]
+    progress.value = next
+  }
+
   // Where to reopen a codex, as a fraction: the saved position while it's being read, otherwise the top
   const resumePosition = (codexId) => {
     return isStarted(codexId) && !isComplete(codexId) ? progress.value[codexId].position : 0
@@ -108,6 +128,8 @@ export const useReadingProgressStore = defineStore('readingProgress', () => {
     isComplete,
     isStarted,
     updateProgress,
+    markAsRead,
+    markAsUnread,
     resumePosition,
     merge,
     getLastRead,

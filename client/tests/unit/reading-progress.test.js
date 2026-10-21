@@ -105,6 +105,47 @@ describe('reading progress store', () => {
     expect(store.getProgress('a')).toEqual({ furthest: 0.8, position: 0.5, lastRead: TUE })
     expect(store.isComplete('b')).toBe(true)
   })
+
+  it('marks a codex complete without moving the resume position', () => {
+    const store = useReadingProgressStore()
+    store.updateProgress('codex-a', 0.3)
+
+    store.markAsRead('codex-a')
+
+    expect(store.isComplete('codex-a')).toBe(true)
+    expect(store.getFurthest('codex-a')).toBe(1)
+    expect(store.getProgress('codex-a').position).toBe(0.3)
+    expect(store.stats.completed).toBe(1)
+  })
+
+  it('marks an unopened codex complete from scratch', () => {
+    const store = useReadingProgressStore()
+
+    store.markAsRead('codex-a')
+
+    expect(store.isStarted('codex-a')).toBe(true)
+    expect(store.isComplete('codex-a')).toBe(true)
+    expect(store.getProgress('codex-a')).toMatchObject({ furthest: 1, position: 1 })
+  })
+
+  it('clears a codex so it counts as unread', () => {
+    const store = useReadingProgressStore()
+    store.updateProgress('codex-a', 0.95)
+    store.updateProgress('codex-b', 0.2)
+
+    store.markAsUnread('codex-a')
+
+    expect(store.isStarted('codex-a')).toBe(false)
+    expect(store.getProgress('codex-a')).toBeNull()
+    expect(store.isStarted('codex-b')).toBe(true)
+    expect(store.stats).toEqual({ started: 1, completed: 0, inProgress: 1 })
+  })
+
+  it('markAsUnread is a no-op when the codex was never started', () => {
+    const store = useReadingProgressStore()
+    store.markAsUnread('never-opened')
+    expect(store.progress).toEqual({})
+  })
 })
 
 describe('normalizeEntry', () => {

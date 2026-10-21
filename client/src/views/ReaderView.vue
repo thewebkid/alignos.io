@@ -62,6 +62,9 @@ const htmlContent = computed(() => {
 const contentRef = ref(null)
 const scrollPercent = ref(0)
 const showCopied = ref(false)
+// After "Mark as Unread", ignore scroll writes for the rest of this visit so sitting at the
+// bottom of a skimmed codex doesn't immediately re-complete it.
+const trackingPaused = ref(false)
 
 useHead({
   title: computed(() => codex.value?.title ?? null),
@@ -94,7 +97,7 @@ const handleScroll = () => {
     // page transition (the shell's reset to 0) that arrive after this view mounts
     if (codex.value && scrollTop <= 0 && !progressStore.isStarted(codex.value.id)) return
 
-    if (codex.value) {
+    if (codex.value && !trackingPaused.value) {
       progressStore.updateProgress(codex.value.id, fraction)
     }
   }
@@ -281,6 +284,32 @@ const openReadingSettings = () => {
   settings.openPanel()
   track('openReadingSettings', { from: 'codexMenu' })
 }
+
+const canMarkRead = computed(() =>
+  codex.value ? !progressStore.isComplete(codex.value.id) : false
+)
+const canMarkUnread = computed(() =>
+  codex.value ? progressStore.isStarted(codex.value.id) : false
+)
+
+const markAsRead = () => {
+  if (!codex.value) return
+  trackingPaused.value = false
+  progressStore.markAsRead(codex.value.id)
+  track('markAsRead', { codex: codex.value.id })
+}
+
+const markAsUnread = () => {
+  if (!codex.value) return
+  trackingPaused.value = true
+  progressStore.markAsUnread(codex.value.id)
+  track('markAsUnread', { codex: codex.value.id })
+}
+
+// Opening another codex remounts this view; reset pause if the same instance is reused
+watch(() => route.params.id, () => {
+  trackingPaused.value = false
+})
 </script>
 
 <template>
@@ -359,6 +388,22 @@ const openReadingSettings = () => {
             </b-dropdown-item>
 
             <BDropdownDivider />
+
+            <b-dropdown-item v-if="canMarkRead" @click="markAsRead">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="me-2">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                <polyline points="22 4 12 14.01 9 11.01"/>
+              </svg>
+              Mark as Read
+            </b-dropdown-item>
+
+            <b-dropdown-item v-if="canMarkUnread" @click="markAsUnread">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="me-2">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="8" y1="12" x2="16" y2="12"/>
+              </svg>
+              Mark as Unread
+            </b-dropdown-item>
 
             <b-dropdown-item @click="openReadingSettings">
               <span class="menu-glyph me-2" aria-hidden="true">Aa</span>
