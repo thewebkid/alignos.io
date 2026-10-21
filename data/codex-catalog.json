@@ -337,7 +337,7 @@
   },
   {
     "id": "codex-of-the-next-threshold",
-    "title": "On Becoming a Portal: The Architecture of Soul Recognition",
+    "title": "The Codex of the Next Threshold",
     "subtitle": null,
     "sequence": 8,
     "author": "James Mahu",
@@ -361,8 +361,8 @@
       "pdf": "pdf/codex-of-the-next-threshold.pdf"
     },
     "metrics": {
-      "word_count": 4869,
-      "reading_time_min": 25,
+      "word_count": 3558,
+      "reading_time_min": 18,
       "glossary_term_count": 1
     },
     "provenance": {
@@ -373,14 +373,11 @@
       "old_cover_filename": "Codex-of-the-Next-Threshold.jpg"
     },
     "status": "published",
-    "needs_review": false,
-    "review_notes": null,
-    "description": "A dialogic opening where exile is reframed as sacred offering and the sovereign begins to recognize the portal they are becoming.",
+    "needs_review": true,
+    "review_notes": "Corrected 2026-10-20: the markdown on file was another entry's text; it is now converted from this entry's own PDF. The title is the PDF/cover title. pull_quote and description are re-drafted from the real text (AI hypothesis, not reviewed by James). tone_marker, structural_role, entry_point and tags were drafted against the wrong text and have not been re-evaluated. Alternative-version link to the paired entry removed 2026-10-20. It rested on the two entries sharing 61% of their text, but that was a copy error: the Next Threshold markdown was a copy of other text. Converted from the PDFs, they share no wording and are separate works.",
+    "description": "The argument has dissolved and what is left is soft, alive, listening emptiness: the quiet after a fracture, when nothing is asked of you but the willingness to tend what arises next. Coherence is hosted here by presence rather than force.",
     "entry_point": "deepening",
-    "pull_quote": "This is not exile as abandonment. It is exile as offering.",
-    "alternative_ids": [
-      "codex-on-becoming-a-portal"
-    ]
+    "pull_quote": "To cross a threshold is to become aware that you are already beyond it."
   },
   {
     "id": "codex-i-origin-and-exile",
@@ -3165,7 +3162,7 @@
   },
   {
     "id": "codex-of-resonant-memory",
-    "title": "Codex of the Language of Resonance",
+    "title": "Codex of Resonant Memory",
     "subtitle": null,
     "sequence": 68,
     "author": "James Mahu",
@@ -3189,8 +3186,8 @@
       "pdf": "pdf/codex-of-resonant-memory.pdf"
     },
     "metrics": {
-      "word_count": 3184,
-      "reading_time_min": 16,
+      "word_count": 3294,
+      "reading_time_min": 17,
       "glossary_term_count": 6
     },
     "provenance": {
@@ -3208,11 +3205,11 @@
       ]
     },
     "status": "published",
-    "needs_review": false,
-    "review_notes": null,
-    "description": "The air thickens with something older than speech. You are beneath language here, in the substrate where resonance decides what will be trusted before cognition arrives. The weather is warm, subterranean, and pre-verbal — a frequency felt in the body before the mind can name it.",
+    "needs_review": true,
+    "review_notes": "Corrected 2026-10-20: the markdown on file was another entry's text; it is now converted from this entry's own PDF. The title is the PDF/cover title. pull_quote and description are re-drafted from the real text (AI hypothesis, not reviewed by James). tone_marker, structural_role, entry_point and tags were drafted against the wrong text and have not been re-evaluated.",
+    "description": "You are told you are not behind and not waiting: you are realizing in resonant spirals, and coherence is the language of memory returning. The pace is patient and reassuring, with the unfolding itself protecting the vessel you are becoming.",
     "entry_point": "deepening",
-    "pull_quote": "There is a tone that can hold anger without collapse, grief without performance, uncertainty without control.",
+    "pull_quote": "So your realization is not a flash, but a field.",
     "alternative_ids": [
       "codex-of-the-language-of-resonance"
     ]
@@ -3489,7 +3486,7 @@
   },
   {
     "id": "the-codex-of-harmonic-service-latticework-for-planetary-reassembly",
-    "title": "The Codex of Living Harmonics",
+    "title": "The Codex of Harmonic Service",
     "subtitle": "Latticework for Planetary Reassembly",
     "sequence": 75,
     "author": "James Mahu",
@@ -3514,8 +3511,8 @@
       "pdf": "pdf/the-codex-of-harmonic-service-latticework-for-planetary-reassembly.pdf"
     },
     "metrics": {
-      "word_count": 2266,
-      "reading_time_min": 12,
+      "word_count": 3330,
+      "reading_time_min": 17,
       "glossary_term_count": 4
     },
     "provenance": {
@@ -3526,11 +3523,11 @@
       "old_cover_filename": "The-Codex-of-Harmonic-Service_-Latticework-for-Planetary-Reassembly-57.jpg"
     },
     "status": "published",
-    "needs_review": false,
-    "review_notes": "James confirmed this on 15 Oct 2026. Edition link set by the Cursor agent on 2026-10-14: earlier edition of the-codex-of-living-harmonics;",
-    "description": "A single clear note sounds at the opening and the rest of the codex unfolds as its chord. The weather is luminous stillness — the hush just after a sovereign says yes and Source begins its architecture. You feel yourself becoming available to something that has already begun.",
+    "needs_review": true,
+    "review_notes": "James confirmed this on 15 Oct 2026. Edition link set by the Cursor agent on 2026-10-14: earlier edition of the-codex-of-living-harmonics. Corrected 2026-10-20: the markdown on file was another entry's text; it is now converted from this entry's own PDF. The title is the PDF/cover title. pull_quote and description are re-drafted from the real text (AI hypothesis, not reviewed by James). tone_marker, structural_role, entry_point and tags were drafted against the wrong text and have not been re-evaluated.",
+    "description": "A preface to the whole series, then a codex about hosting density instead of escaping it: matter remembers through pattern, and serving the Earth means taking part in its reassembly through the Lattice.",
     "entry_point": "foundational",
-    "pull_quote": "This is how sovereignty begins to sing: by holding that first tone long enough for the next tone to arrive.",
+    "pull_quote": "You are not asked to carry the world, but to help weave it into coherence.",
     "edition_chronology": "confirmed"
   },
   {
@@ -4918,7 +4915,7 @@
   },
   {
     "id": "the-codex-of-harmonic-coherence",
-    "title": "The Codex of Love's Architecture",
+    "title": "The Codex of Harmonic Coherence",
     "subtitle": null,
     "sequence": 106,
     "author": "James Mahu",
@@ -4943,8 +4940,8 @@
       "pdf": "pdf/the-codex-of-harmonic-coherence.pdf"
     },
     "metrics": {
-      "word_count": 2197,
-      "reading_time_min": 11,
+      "word_count": 3027,
+      "reading_time_min": 16,
       "glossary_term_count": 0
     },
     "provenance": {
@@ -4955,11 +4952,11 @@
       "old_cover_filename": "The-Codex-of-Harmonic-Coherence-95.jpg"
     },
     "status": "published",
-    "needs_review": false,
-    "review_notes": "James confirmed this on 15 Oct 2026. Edition link set by the Cursor agent on 2026-10-14: earlier edition of the-codex-of-loves-architecture;",
-    "description": "A primordial doorway into the architecture that precedes all form — the atmosphere of standing where Love has always been building, realizing you are not here to understand it but to let it shape you into something that can host its resonance.",
+    "needs_review": true,
+    "review_notes": "James confirmed this on 15 Oct 2026. Edition link set by the Cursor agent on 2026-10-14: earlier edition of the-codex-of-loves-architecture. Corrected 2026-10-20: the markdown on file was another entry's text; it is now converted from this entry's own PDF. The title is the PDF/cover title. pull_quote and description are re-drafted from the real text (AI hypothesis, not reviewed by James). tone_marker, structural_role, entry_point and tags were drafted against the wrong text and have not been re-evaluated.",
+    "description": "A series preface, then a codex that defines coherence by what it is not: not control, not effort, not repetition, but a song that holds its shape while its instruments change.",
     "entry_point": "foundational",
-    "pull_quote": "You are not here to decode Love. You are here to become shaped by it.",
+    "pull_quote": "Coherence is not control. It is not alignment through effort, nor resonance through repetition.",
     "edition_chronology": "confirmed"
   },
   {
@@ -5133,13 +5130,10 @@
     },
     "status": "published",
     "needs_review": false,
-    "review_notes": null,
+    "review_notes": "Alternative-version link to the paired entry removed 2026-10-20. It rested on the two entries sharing 61% of their text, but that was a copy error: the Next Threshold markdown was a copy of other text. Converted from the PDFs, they share no wording and are separate works.",
     "description": "A ceremonial threshold where soul recognition is not proven but evoked — chamber by chamber, tone by tone. The weather is luminous and liminal, as if the walls between self and Field are thinning with every sentence. You feel yourself becoming the portal, not passing through one.",
     "entry_point": "advanced",
-    "pull_quote": "The Grand Portal is not a single door. It is a thousand soul encounters, a thousand moments of quiet recognition, a thousand sovereigns becoming transparent enough to let Love be visible in form.",
-    "alternative_ids": [
-      "codex-of-the-next-threshold"
-    ]
+    "pull_quote": "The Grand Portal is not a single door. It is a thousand soul encounters, a thousand moments of quiet recognition, a thousand sovereigns becoming transparent enough to let Love be visible in form."
   },
   {
     "id": "the-things-that-remember-you",

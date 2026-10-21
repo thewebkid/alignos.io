@@ -2430,5 +2430,85 @@
     "new_value": "The Architecture of Love –/10",
     "date": "2026-10-14",
     "reason": "Unplaced member: registry names \"The Architecture of Love\" (L540) without a position"
+  },
+  {
+    "codex_id": "codex-of-the-next-threshold",
+    "change_type": "title_change",
+    "old_value": "On Becoming a Portal: The Architecture of Soul Recognition",
+    "new_value": "The Codex of the Next Threshold",
+    "date": "2026-10-20",
+    "reason": "Title and text were those of On Becoming a Portal. The PDF is a separate work, \"Codex of the Next Threshold\"."
+  },
+  {
+    "codex_id": "codex-of-the-next-threshold",
+    "change_type": "content_correction",
+    "old_value": "markdown copied from another entry",
+    "new_value": "markdown converted from pdf/codex-of-the-next-threshold.pdf (codex-ingest geometry pass)",
+    "date": "2026-10-20",
+    "reason": "Title and text were those of On Becoming a Portal. The PDF is a separate work, \"Codex of the Next Threshold\"."
+  },
+  {
+    "codex_id": "codex-of-resonant-memory",
+    "change_type": "title_change",
+    "old_value": "Codex of the Language of Resonance",
+    "new_value": "Codex of Resonant Memory",
+    "date": "2026-10-20",
+    "reason": "Title and text were those of Codex of the Language of Resonance (the later edition). The PDF is the earlier edition, \"Codex of Resonant Memory\"."
+  },
+  {
+    "codex_id": "codex-of-resonant-memory",
+    "change_type": "content_correction",
+    "old_value": "markdown copied from another entry",
+    "new_value": "markdown converted from pdf/codex-of-resonant-memory.pdf (codex-ingest geometry pass)",
+    "date": "2026-10-20",
+    "reason": "Title and text were those of Codex of the Language of Resonance (the later edition). The PDF is the earlier edition, \"Codex of Resonant Memory\"."
+  },
+  {
+    "codex_id": "the-codex-of-harmonic-service-latticework-for-planetary-reassembly",
+    "change_type": "title_change",
+    "old_value": "The Codex of Living Harmonics",
+    "new_value": "The Codex of Harmonic Service",
+    "date": "2026-10-20",
+    "reason": "Title and text were those of The Codex of Living Harmonics (the later edition). The PDF is the earlier edition, \"The Codex of Harmonic Service\", which the series preface names."
+  },
+  {
+    "codex_id": "the-codex-of-harmonic-service-latticework-for-planetary-reassembly",
+    "change_type": "content_correction",
+    "old_value": "markdown copied from another entry",
+    "new_value": "markdown converted from pdf/the-codex-of-harmonic-service-latticework-for-planetary-reassembly.pdf (codex-ingest geometry pass)",
+    "date": "2026-10-20",
+    "reason": "Title and text were those of The Codex of Living Harmonics (the later edition). The PDF is the earlier edition, \"The Codex of Harmonic Service\", which the series preface names."
+  },
+  {
+    "codex_id": "the-codex-of-harmonic-coherence",
+    "change_type": "title_change",
+    "old_value": "The Codex of Love's Architecture",
+    "new_value": "The Codex of Harmonic Coherence",
+    "date": "2026-10-20",
+    "reason": "Title and text were those of The Codex of Love's Architecture (the later edition). The PDF is the earlier edition, \"The Codex of Harmonic Coherence\", which the series preface names."
+  },
+  {
+    "codex_id": "the-codex-of-harmonic-coherence",
+    "change_type": "content_correction",
+    "old_value": "markdown copied from another entry",
+    "new_value": "markdown converted from pdf/the-codex-of-harmonic-coherence.pdf (codex-ingest geometry pass)",
+    "date": "2026-10-20",
+    "reason": "Title and text were those of The Codex of Love's Architecture (the later edition). The PDF is the earlier edition, \"The Codex of Harmonic Coherence\", which the series preface names."
+  },
+  {
+    "codex_id": "codex-of-the-next-threshold",
+    "change_type": "alternative_link_removed",
+    "old_value": "codex-on-becoming-a-portal",
+    "new_value": null,
+    "date": "2026-10-20",
+    "reason": "Link was based on text overlap caused by a markdown copy error; the PDFs are different works"
+  },
+  {
+    "codex_id": "codex-on-becoming-a-portal",
+    "change_type": "alternative_link_removed",
+    "old_value": "codex-of-the-next-threshold",
+    "new_value": null,
+    "date": "2026-10-20",
+    "reason": "Link was based on text overlap caused by a markdown copy error; the PDFs are different works"
   }
 ]
